@@ -1,0 +1,805 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_DxBattleDevelopHud_OnTestPlay_Topic",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTopicText",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "TopicData",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'STRUCT_DxBattleDevelopHud_Topic'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/STRUCT_DxBattleDevelopHud_Topic.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "COLOR_GREEN",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "COLOR_ORANGE",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "COLOR_YELLOW",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "COLOR_WHITE",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.19"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.18"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:ExecuteUbergraph_DxBattleDevelopHud_OnTestPlay_Topic'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:SetTopicText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.2"
+      },
+      {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:OnInitialized'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.1"
+      },
+      {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:ExecuteUbergraph_DxBattleDevelopHud_OnTestPlay_Topic'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BeginSlide",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TopicText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TopicData",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'STRUCT_DxBattleDevelopHud_Topic'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/STRUCT_DxBattleDevelopHud_Topic.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_DxBattleDevelopHud_OnTestPlay_Topic": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:ExecuteUbergraph_DxBattleDevelopHud_OnTestPlay_Topic'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.0"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:OnInitialized'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.1"
+      },
+      "SetTopicText": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_Topic_C:SetTopicText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DxBattleDevelopHud_OnTestPlay_Topic_C'Default__DxBattleDevelopHud_OnTestPlay_Topic_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.4"
+    }
+  },
+  {
+    "Type": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Name": "Default__DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.DxBattleDevelopHud_OnTestPlay_Topic_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TopicData": {
+        "TopicType_2_57C45D3C4CBE4EEC71084DB783E66983": "ENUM_DxBattleDevelopHud_TopicType::NewEnumerator0",
+        "TriggerPlayerName_11_AB20321841AF1DCE68D57C8ADA2E3C56": {
+          "CultureInvariantString": null
+        },
+        "TopicImpact_14_A51423CF446F6381727EB3BA00FB4ED6": "ENUM_DxBattleDevelopHud_TopicImpactType::NewEnumerator0"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_23",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 400.0,
+          "Bottom": 25.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_23",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 400.0,
+          "Bottom": 25.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.6"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.Image_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_23",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.0,
+          "Right": 395.0,
+          "Bottom": 25.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.TopicText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.3,
+        "Hex": "4C000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.8"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "BeginSlide",
+    "Outer": "BeginSlide_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "57223093-458B121C-F8DC7080-D8A82995",
+          "Name": "CanvasPanel_23",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'CanvasPanel'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "57223093-458B121C-F8DC7080-D8A82995",
+          "BindingName": "CanvasPanel_23",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.13"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "BF670644-48FBB7CE-60173BBC-6D1B459D"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 125
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 300.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.14"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.15"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "287CD06E-46172629-3A17D09F-4F8F335A"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "BeginSlide",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.12"
+        }
+      ],
+      "EvaluationFieldGuid": "F1D114CC-4B9D65C4-72D12BA9-049594F9",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.12"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "F1D114CC-4B9D65C4-72D12BA9-049594F9"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "BeginSlide_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 30000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.12"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "57223093-458B121C-F8DC7080-D8A82995"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 30000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "E950BC92-44AB2CD1-F494CF8A-53FD841A",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TopicText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Font": {
+        "Size": 12
+      },
+      "Margin": {
+        "Top": 2.5,
+        "Bottom": 5.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_23.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "BeginSlide_INST",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.BeginSlide'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.11"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "CanvasPanel_23",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "57223093-458B121C-F8DC7080-D8A82995",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "BeginSlide",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'DxBattleDevelopHud_OnTestPlay_Topic_C:BeginSlide_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.16"
+      },
+      "Signature": "E950BC92-44AB2CD1-F494CF8A-53FD841A"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_Topic_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_Topic_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/DxBattleDevelopHud_OnTestPlay_Topic.5"
+      }
+    }
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_TowerSurvivalSetting",
+    "Outer": "BP_TowerSurvivalSetting_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameModeBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Game_Mode_Tower_Survival",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GameMode_TowerSurvival_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameMode_TowerSurvival.23"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_TowerSurvivalSetting_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_TowerSurvivalSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_TowerSurvivalSetting_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.6"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_TowerSurvivalSetting_C:ExecuteUbergraph_BP_TowerSurvivalSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_TowerSurvivalSetting_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.1"
+      },
+      {
+        "ObjectName": "Function'BP_TowerSurvivalSetting_C:ExecuteUbergraph_BP_TowerSurvivalSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TowerFloorInfoTable",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'DataTable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "PreviewStartFloor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_TowerSurvivalSetting": {
+        "ObjectName": "Function'BP_TowerSurvivalSetting_C:ExecuteUbergraph_BP_TowerSurvivalSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.0"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_TowerSurvivalSetting_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_TowerSurvivalSetting_C'Default__BP_TowerSurvivalSetting_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.3"
+    }
+  },
+  {
+    "Type": "BP_TowerSurvivalSetting_C",
+    "Name": "Default__BP_TowerSurvivalSetting_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.BP_TowerSurvivalSetting_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PreviewStartFloor": 1,
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_TowerSurvivalSetting_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_TowerSurvivalSetting_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.4"
+      },
+      "VariableGuid": "422B24AE-46F5C67C-9552A286-3CE5A9A9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_TowerSurvivalSetting_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TowerSurvivalSetting_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TowerSurvivalSetting_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_TowerSurvivalSetting_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerSurvivalSetting.5"
+      }
+    }
+  }
+]

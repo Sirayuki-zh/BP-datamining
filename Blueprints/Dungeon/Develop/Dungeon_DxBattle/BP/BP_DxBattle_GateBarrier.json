@@ -1,0 +1,3453 @@
+[
+  {
+    "Type": "Function",
+    "Name": "TargetDesructed__DelegateSignature",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DxBattle_GateBarrier",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_CurrentHP",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_HitInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Direction_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Strength_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DamageCauser_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Divide_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotationFromAxes_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindLookAtRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_RemainPercent",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnEmitterAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBSpawnEmitterAtLocationParam",
+        "Flags": "RF_Public",
+        "ElementSize": 72,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBSpawnEmitterAtLocationParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_2",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_3",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_4",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_5",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_6",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_7",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_8",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Direction",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Strength",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_9",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Temp_name_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bFromSweep_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_ComponentBoundEvent_SweepResult_1",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ConstParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_ComponentBoundEvent_SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ConstParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Destructible_Target_C:Destruct'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Destructible_Target_C:Destruct'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Direction",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Strength",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "HideActorThisLevel",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Destructible_Base_C:HideActorThisLevel'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Destructible_Base_C:HideActorThisLevel'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.3"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowActorThisLevel",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Destructible_Base_C:ShowActorThisLevel'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Destructible_Base_C:ShowActorThisLevel'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.2"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DamageReaction",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "RemainPercent",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Damaged",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Destructible_Base_C:Damaged'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.14"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Destructible_Base_C:Damaged'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.14"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "CurrentHP",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HitInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 144,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Direction",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Strength",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Destructible_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.15"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Destructible_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.15"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayHitSE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Particle",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "SwitchGroup",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Hit SE",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBProjectile_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBProjectileBase'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInstigator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocallyControlled_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocallyControlled_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkSwitch",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkSwitch'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 32,
+          "Struct": {
+            "ObjectName": "ScriptStruct'AkSwitch'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkSwitch_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkSwitch'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 32,
+          "Struct": {
+            "ObjectName": "ScriptStruct'AkSwitch'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AkEventVariables_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AkEventVariables'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostAkEventBySceneComponent_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Destructible_Target_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.3"
+    },
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_DxBattle_GateBarrier_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.17"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.45"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_DxBattle_GateBarrier_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ExecuteUbergraph_BP_DxBattle_GateBarrier'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Destructible_Target_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:PlayHitSE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.12"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.11"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:Damaged'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.10"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:DamageReaction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.9"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ShowActorThisLevel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.8"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:HideActorThisLevel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.7"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.6"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.5"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.4"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.3"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.2"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ExecuteUbergraph_BP_DxBattle_GateBarrier'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.1"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:TargetDesructed__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyCountCollision",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerCountCollision",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyDxBattleNetCullingDamage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyDxBattleNetCullingDamageComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitCol",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCol",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBLineSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBLineSoundComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionBoxComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBSwitchableNavModifier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBSwitchableNavModifierComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PS_ENV_EngramBarrier_Wall",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_ENV_cmn_gmk_suppliers_a1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_ENV_cmn_gmk_suppliers_a",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PS_ENV_EngramBarrier1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PS_ENV_EngramBarrier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "TargetDesructed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_DxBattle_GateBarrier_C:TargetDesructed__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.0"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SetBarrierMaterialParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "RotYawOfffset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "DebugHitCheck",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Machine_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Machine_Spark_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Machine_Break_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Break",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_Break_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GateBarrier_End",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsGameModeDX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "TargetDesructed__DelegateSignature": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:TargetDesructed__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.0"
+      },
+      "ExecuteUbergraph_BP_DxBattle_GateBarrier": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ExecuteUbergraph_BP_DxBattle_GateBarrier'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.1"
+      },
+      "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.2"
+      },
+      "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.3"
+      },
+      "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.4"
+      },
+      "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.5"
+      },
+      "Destruct": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.6"
+      },
+      "HideActorThisLevel": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:HideActorThisLevel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.7"
+      },
+      "ShowActorThisLevel": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ShowActorThisLevel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.8"
+      },
+      "DamageReaction": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:DamageReaction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.9"
+      },
+      "Damaged": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:Damaged'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.10"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.11"
+      },
+      "PlayHitSE": {
+        "ObjectName": "Function'BP_DxBattle_GateBarrier_C:PlayHitSE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.12"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DxBattle_GateBarrier_C'Default__BP_DxBattle_GateBarrier_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.14"
+    }
+  },
+  {
+    "Type": "BP_DxBattle_GateBarrier_C",
+    "Name": "Default__BP_DxBattle_GateBarrier_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.BP_DxBattle_GateBarrier_C'",
+    "Template": {
+      "ObjectName": "BP_Destructible_Target_C'Default__BP_Destructible_Target_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.4"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "SetBarrierMaterialParam": 1.0,
+      "RotYawOfffset": 45.0,
+      "GateBarrier_Machine_Loop": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Machine_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Machine_Loop.1"
+      },
+      "GateBarrier_Machine_Spark_Loop": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Machine_Spark_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Machine_Spark_Loop.1"
+      },
+      "GateBarrier_Machine_Break_Loop": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Machine_Break_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Machine_Break_Loop.1"
+      },
+      "GateBarrier_Loop": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Loop.1"
+      },
+      "GateBarrier_Break": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Break'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Break.1"
+      },
+      "GateBarrier_Break_Loop": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_Break_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_Break_Loop.1"
+      },
+      "GateBarrier_End": {
+        "ObjectName": "AkAudioEvent'Play_GateBarrier_End'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/DxBattle/Play_GateBarrier_End.1"
+      },
+      "IsGameModeDX": true,
+      "Multiply Stack Trace Length": 0.0,
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__BP_DxBattle_GateBarrier_C:StaticMeshComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.53"
+      },
+      "HindranceComponent": {
+        "ObjectName": "SphereComponent'Default__BP_DxBattle_GateBarrier_C:SphereComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.49"
+      },
+      "CollisionGroupComponent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_DxBattle_GateBarrier_C:CollisionGroupComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.24"
+      },
+      "MaxHitPoint": 10000.0,
+      "TakeDamageType": "ESBDestrcutibleDamageType::EnemyOnly",
+      "DamageParticle": {
+        "ObjectName": "ParticleSystem'PS_ENV_EngramBarrier_HIT'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/ENV/Particle/EngramBarrier/PS_ENV_EngramBarrier_HIT.194"
+      },
+      "DestructParticle": {
+        "ObjectName": "ParticleSystem'PS_ENV_EngramBarrier_End'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/ENV/Particle/EngramBarrier/PS_ENV_EngramBarrier_End.104"
+      },
+      "IsDxBattleMode": true,
+      "IsDxBattleInfinityHP": true,
+      "DestructibleComponent": {
+        "ObjectName": "DestructibleComponent'Default__BP_DxBattle_GateBarrier_C:DestructibleComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.18"
+      },
+      "bHidden": true,
+      "RootComponent": {
+        "ObjectName": "DestructibleComponent'Default__BP_DxBattle_GateBarrier_C:DestructibleComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.18"
+      },
+      "Tags": [
+        "Destructible",
+        "DxBattleGateBarrier"
+      ]
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "DamageCol_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 9.0,
+        "Z": 32.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -5.3999996,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitCol_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 9.0,
+        "Z": 32.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -5.3999996,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "EnemyCountCollision",
+          "DelegatePropertyName": "OnComponentEndOverlap",
+          "FunctionNameToBind": "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "EnemyCountCollision",
+          "DelegatePropertyName": "OnComponentBeginOverlap",
+          "FunctionNameToBind": "BndEvt__BP_DxBattle_GateBarrier_EnemyCount_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "PlayerCountCollision",
+          "DelegatePropertyName": "OnComponentEndOverlap",
+          "FunctionNameToBind": "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "PlayerCountCollision",
+          "DelegatePropertyName": "OnComponentBeginOverlap",
+          "FunctionNameToBind": "BndEvt__BP_DxBattle_GateBarrier_PlayerCount_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DestructibleComponent",
+    "Name": "DestructibleComponent0",
+    "Outer": "Default__BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'DestructibleComponent'",
+    "Template": {
+      "ObjectName": "DestructibleComponent'Default__BP_Destructible_Target_C:DestructibleComponent0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.5"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBTargetableComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBTargetableComponent'BP_DxBattle_GateBarrier_C:SBTargetable_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.28"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Destructible_Base_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.31"
+            },
+            "SCSVariableName": "SBTargetable",
+            "AssociatedGuid": "B41805A8-415B161B-18DCA497-6A87EAAA"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SphereComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SphereComponent'BP_DxBattle_GateBarrier_C:PawnSphere_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.47"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Destructible_Base_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.31"
+            },
+            "SCSVariableName": "PawnSphere",
+            "AssociatedGuid": "4AF69AAF-4ABA3233-947FC6AA-0D47818A"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "PS_ENV_EngramBarrier1_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_ENV_EngramBarrier_Generator'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/ENV/Particle/EngramBarrier/PS_ENV_EngramBarrier_Generator.54"
+      },
+      "RelativeLocation": {
+        "X": 0.776001,
+        "Y": 81.29061,
+        "Z": 789.4473
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.00024
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "PS_ENV_EngramBarrier_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_ENV_EngramBarrier_Generator'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/ENV/Particle/EngramBarrier/PS_ENV_EngramBarrier_Generator.54"
+      },
+      "RelativeLocation": {
+        "X": 0.776001,
+        "Y": 81.29061,
+        "Z": 789.4473
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.00024
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "PS_ENV_EngramBarrier_Wall_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_ENV_EngramBarrier_Wall'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/ENV/Particle/EngramBarrier/PS_ENV_EngramBarrier_Wall.35"
+      },
+      "InstanceParameters": [
+        {
+          "Name": "None",
+          "ParamType": "PSPT_None",
+          "Scalar": 0.0,
+          "Scalar_Low": 0.0,
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Vector_Low": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Color": {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          "Actor": null,
+          "Material": null
+        }
+      ],
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 14.605316,
+        "Z": -49.989746
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBCollisionBoxComponent",
+    "Name": "SBCollisionBox_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBCollisionBoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 1600.0,
+        "Y": 500.0,
+        "Z": 3000.0
+      },
+      "AreaClass": null,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "SBBlockAllPawn",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBPlayerPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBEnemyPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBPhotoModeCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -250.0,
+        "Z": 4000.0
+      }
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroupComponent",
+    "Outer": "Default__BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_Destructible_Target_C:CollisionGroupComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "DestructibleComponent'Default__BP_DxBattle_GateBarrier_C:DestructibleComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.18"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleNetCullingDamageComponent",
+    "Name": "SBEnemyDxBattleNetCullingDamage_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBEnemyDxBattleNetCullingDamageComponent'",
+    "Properties": {
+      "BossEnemyDamage": 3000.0,
+      "SpecialEnemyDamage": 250.0,
+      "OtherEnemyDamage": 150.0
+    }
+  },
+  {
+    "Type": "SBLineSoundComponent",
+    "Name": "SBLineSound_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBLineSoundComponent'"
+  },
+  {
+    "Type": "SBSwitchableNavModifierComponent",
+    "Name": "SBSwitchableNavModifier_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBSwitchableNavModifierComponent'",
+    "Properties": {
+      "NavModifierArea": {
+        "ObjectName": "Class'SBNavArea_Null'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "CubeBuilderParameter": {
+        "X": 2500.0,
+        "Y": 3000.0,
+        "Z": 2200.0
+      },
+      "CylinderBuilderParameter": {
+        "Radius": 1135.3092,
+        "Sides": 32,
+        "Z": 1800.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -440.0,
+        "Z": 450.0
+      },
+      "RelativeScale3D": {
+        "X": 1.3,
+        "Y": 0.3,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "SBTargetableComponent",
+    "Name": "SBTargetable_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SBTargetableComponent'",
+    "Template": {
+      "ObjectName": "SBTargetableComponent'BP_Destructible_Base_C:SBTargetable_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.38"
+    },
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 200.0,
+        "Z": 60.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DxBattle_GateBarrier_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.29"
+      },
+      "VariableGuid": "44DACB35-4AEA706B-B0B2C681-E8EE6C44",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_DxBattle_GateBarrier_C:SM_ENV_cmn_gmk_suppliers_a_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.51"
+      },
+      "ParentComponentOrVariableName": "CollisionGroupComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.39"
+        }
+      ],
+      "VariableGuid": "136566C2-48AC21C1-DA3F7CBD-9DD0629D",
+      "InternalVariableName": "SM_ENV_cmn_gmk_suppliers_a"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_DxBattle_GateBarrier_C:DamageCol_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.15"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3151D89C-4A9113C6-A70A399A-56D47F4F",
+      "InternalVariableName": "DamageCol"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_DxBattle_GateBarrier_C:HitCol_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.16"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "2932CFF4-4B767388-F2D0708C-F4B0E7F1",
+      "InternalVariableName": "HitCol"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyDxBattleNetCullingDamageComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyDxBattleNetCullingDamageComponent'BP_DxBattle_GateBarrier_C:SBEnemyDxBattleNetCullingDamage_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.25"
+      },
+      "VariableGuid": "F2E37E23-46B65978-EF133AA4-286520F6",
+      "InternalVariableName": "SBEnemyDxBattleNetCullingDamage"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_DxBattle_GateBarrier_C:PlayerCountCollision_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.48"
+      },
+      "ParentComponentOrVariableName": "DestructibleComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "95BD4341-4A4899D6-3DE334AC-A8BE4EB0",
+      "InternalVariableName": "PlayerCountCollision"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_DxBattle_GateBarrier_C:EnemyCountCollision_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.46"
+      },
+      "ParentComponentOrVariableName": "DestructibleComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C24F2045-4C4E31C8-BE236B8B-0DD2F41B",
+      "InternalVariableName": "EnemyCountCollision"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBSwitchableNavModifierComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBSwitchableNavModifierComponent'BP_DxBattle_GateBarrier_C:SBSwitchableNavModifier_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.27"
+      },
+      "ParentComponentOrVariableName": "DestructibleComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8E04E06E-47EB7DFD-7B36B6B8-E81FE7F2",
+      "InternalVariableName": "SBSwitchableNavModifier"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_DxBattle_GateBarrier_C:SM_ENV_cmn_gmk_suppliers_a1_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.50"
+      },
+      "ParentComponentOrVariableName": "CollisionGroupComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.40"
+        }
+      ],
+      "VariableGuid": "7826FBA7-4508CDC4-46EB2B90-3554FD0D",
+      "InternalVariableName": "SM_ENV_cmn_gmk_suppliers_a1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'BP_DxBattle_GateBarrier_C:PS_ENV_EngramBarrier_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.21"
+      },
+      "VariableGuid": "3349DE03-4A117FDB-A09484A8-4B547408",
+      "InternalVariableName": "PS_ENV_EngramBarrier"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'BP_DxBattle_GateBarrier_C:PS_ENV_EngramBarrier1_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.20"
+      },
+      "VariableGuid": "E5E98A3A-425D7965-321968BD-D4EEC244",
+      "InternalVariableName": "PS_ENV_EngramBarrier1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'BP_DxBattle_GateBarrier_C:PS_ENV_EngramBarrier_Wall_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.22"
+      },
+      "ParentComponentOrVariableName": "CollisionGroupComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "415A27FD-41E0322C-F097B29A-E51F0CC7",
+      "InternalVariableName": "PS_ENV_EngramBarrier_Wall"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBLineSoundComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBLineSoundComponent'BP_DxBattle_GateBarrier_C:SBLineSound_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.26"
+      },
+      "ParentComponentOrVariableName": "DestructibleComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E67CDB83-48FE69F5-5E295B84-37DE27D8",
+      "InternalVariableName": "SBLineSound"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionBoxComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionBoxComponent'BP_DxBattle_GateBarrier_C:SBCollisionBox_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.23"
+      },
+      "ParentComponentOrVariableName": "DestructibleComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "230A3DBA-4F056B66-BAB01596-7154F518",
+      "InternalVariableName": "SBCollisionBox"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_DxBattle_GateBarrier_C:Sphere_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.52"
+      },
+      "ParentComponentOrVariableName": "SBTargetable",
+      "ParentComponentOwnerClassName": "BP_Destructible_Base_C",
+      "VariableGuid": "F8F450C4-4654A3DA-76BD4CA2-21D4B036",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.31"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.38"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.41"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.37"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.43"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.42"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.44"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.32"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.33"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.34"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.35"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.36"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.39"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.40"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.31"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.38"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.41"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.37"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.43"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.42"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.44"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.32"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.33"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.34"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.35"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.36"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DxBattle_GateBarrier_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.30"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "EnemyCountCollision_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 2000.0,
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel6",
+        "CollisionProfileName": "SBOverlapOnlyEnemy",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBEnemyPawn",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "PawnSphere_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'BP_Destructible_Base_C:PawnSphere_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.51"
+    },
+    "Properties": {
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "PlayerCountCollision_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 10000.0,
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel6",
+        "CollisionProfileName": "SBOverlapOnlyPlayer",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBPlayerPawn",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComponent0",
+    "Outer": "Default__BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_Destructible_Target_C:SphereComponent0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.11"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "DestructibleComponent'Default__BP_DxBattle_GateBarrier_C:DestructibleComponent0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.18"
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_ENV_cmn_gmk_suppliers_a1_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_ENV_cmn_gmk_suppliers_a'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/GMKAssets/suppliers_a/Mesh/SM_ENV_cmn_gmk_suppliers_a.2"
+      },
+      "RelativeLocation": {
+        "X": -1023.0,
+        "Y": -520.0,
+        "Z": 0.0
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_ENV_cmn_gmk_suppliers_a_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_ENV_cmn_gmk_suppliers_a'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/GMKAssets/suppliers_a/Mesh/SM_ENV_cmn_gmk_suppliers_a.2"
+      },
+      "bUseDefaultCollision": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 1023.0,
+        "Y": -520.0,
+        "Z": 0.0
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Sphere'",
+        "ObjectPath": "Engine/Content/BasicShapes/Sphere.2"
+      },
+      "bUseDefaultCollision": false,
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'BasicShapeMaterial'",
+          "ObjectPath": "Engine/Content/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "Default__BP_DxBattle_GateBarrier_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Template": {
+      "ObjectName": "StaticMeshComponent'Default__BP_Destructible_Target_C:StaticMeshComponent0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_Destructible_Target.12"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_EF_EngramBarrier01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Mesh/SM/SM_EF_EngramBarrier01.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI1_EF_EmgramBarrier'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Effect/Material/Material_Instance/MI1/MI1_Other/MI1_EF_EmgramBarrier.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'MI1_EF_EmgramBarrier_02'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Effect/Material/Material_Instance/MI1/MI1_Other/MI1_EF_EmgramBarrier_02.0"
+        }
+      ],
+      "CastShadow": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_DxBattle_GateBarrier_C:CollisionGroupComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BP_DxBattle_GateBarrier.24"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -220.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 55.0,
+        "Y": 50.0,
+        "Z": 50.0
+      }
+    }
+  }
+]

@@ -1,0 +1,796 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_TimeAttackClearCheck",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameMode_Dungeon:OnDeathEnemyDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ReplicatedDungeonWall_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_ReplicatedDungeonWall.5"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Replicated_Dungeon_Wall",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ReplicatedDungeonWall_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_ReplicatedDungeonWall.5"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameModeBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerPawn_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_Mode_Dungeon_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameMode_DungeonNormal'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ActorHasTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameMode_Dungeon:OnSpawnEnemyDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ActorHasTag_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerPawn_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LookTAPoint_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckDeadEnemyTag",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckSpawnedEnemyTag",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearCheck",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorBeginOverlap",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveActorBeginOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ExecuteUbergraph_BP_TimeAttackClearCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBDungeonClearCheck'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.5"
+      },
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.4"
+      },
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ClearCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.3"
+      },
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:CheckSpawnedEnemyTag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.2"
+      },
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:CheckDeadEnemyTag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.1"
+      },
+      {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ExecuteUbergraph_BP_TimeAttackClearCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Box",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CheckWalls",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "SoftObjectProperty",
+          "Name": "CheckWalls",
+          "Flags": "RF_Public",
+          "ElementSize": 48,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_ReplicatedDungeonWall_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_ReplicatedDungeonWall.5"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CheckGoalArea",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CheckEnemySpawn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CheckEnemyDead",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CheckEnemyTag",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NoPassCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_TimeAttackClearCheck": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ExecuteUbergraph_BP_TimeAttackClearCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.0"
+      },
+      "CheckDeadEnemyTag": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:CheckDeadEnemyTag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.1"
+      },
+      "CheckSpawnedEnemyTag": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:CheckSpawnedEnemyTag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.2"
+      },
+      "ClearCheck": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ClearCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.3"
+      },
+      "ReceiveActorBeginOverlap": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_TimeAttackClearCheck_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_TimeAttackClearCheck_C'Default__BP_TimeAttackClearCheck_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.7"
+    }
+  },
+  {
+    "Type": "BP_TimeAttackClearCheck_C",
+    "Name": "Default__BP_TimeAttackClearCheck_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.BP_TimeAttackClearCheck_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CheckEnemyTag": "Dng_ClearBoss",
+      "bAlwaysRelevant": true,
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box_GEN_VARIABLE",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel6",
+        "CollisionProfileName": "SBOverlapOnlyPlayer",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBPlayerPawn",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_TimeAttackClearCheck_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.9"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.11"
+        }
+      ],
+      "VariableGuid": "5798D2EE-4C75A119-88EFC884-B6042A4F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_TimeAttackClearCheck_C:Box_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.8"
+      },
+      "VariableGuid": "D32B00D5-47250EB9-2F72A3B1-2319B9C6",
+      "InternalVariableName": "Box"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_TimeAttackClearCheck_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_TimeAttackClearCheck_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_TimeAttack/BP_TimeAttackClearCheck.10"
+      }
+    }
+  }
+]

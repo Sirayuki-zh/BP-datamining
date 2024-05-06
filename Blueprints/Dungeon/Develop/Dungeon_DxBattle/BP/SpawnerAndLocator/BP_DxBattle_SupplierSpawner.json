@@ -1,0 +1,566 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DxBattle_SupplierSpawner",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_SelfObject",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Percent",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_SelfObject_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_Type",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'ENUM_DxBattle_DeviceBreakType'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/ENUM_DxBattle_DeviceBreakType.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "DeviceDamagedEvent",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:DeviceDamagedEvent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:DeviceDamagedEvent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelfObject",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Percent",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DeviceBrokenEvent",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:DeviceBrokenEvent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.6"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:DeviceBrokenEvent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.6"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelfObject",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCauser",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Type",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'ENUM_DxBattle_DeviceBreakType'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/ENUM_DxBattle_DeviceBreakType.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnDevice",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:SpawnDevice'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.11"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_DxBattle_DeviceSpawner_Base_C:SpawnDevice'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.11"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "device",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_DxBattle_Device_Base_C:OnDeviceBroken__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SpawnDevice_success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnDevice_device",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Device_Base_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.15"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_Supplier_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_DxBattle_Supplier.28"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_DeviceSpawner_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.16"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DxBattle_SupplierSpawner_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.11"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_DxBattle_SupplierSpawner_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:ExecuteUbergraph_BP_DxBattle_SupplierSpawner'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_DeviceSpawner_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.16"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:SpawnDevice'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.3"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:DeviceBrokenEvent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.2"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:DeviceDamagedEvent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.1"
+      },
+      {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:ExecuteUbergraph_BP_DxBattle_SupplierSpawner'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Arrow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ArrowComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "StatusAlimentInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "StatusAlimentInfo",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "RangeOfEffect",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DxBattle_SupplierSpawner": {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:ExecuteUbergraph_BP_DxBattle_SupplierSpawner'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.0"
+      },
+      "DeviceDamagedEvent": {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:DeviceDamagedEvent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.1"
+      },
+      "DeviceBrokenEvent": {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:DeviceBrokenEvent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.2"
+      },
+      "SpawnDevice": {
+        "ObjectName": "Function'BP_DxBattle_SupplierSpawner_C:SpawnDevice'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DxBattle_SupplierSpawner_C'Default__BP_DxBattle_SupplierSpawner_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.5"
+    }
+  },
+  {
+    "Type": "BP_DxBattle_SupplierSpawner_C",
+    "Name": "Default__BP_DxBattle_SupplierSpawner_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.BP_DxBattle_SupplierSpawner_C'",
+    "Template": {
+      "ObjectName": "BP_DxBattle_DeviceSpawner_Base_C'Default__BP_DxBattle_DeviceSpawner_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.17"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "StatusAlimentInfo": [
+        {
+          "DataTable": {
+            "ObjectName": "CompositeDataTable'CDT_MapGimmickStatusAliment'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/MapGimmick/CDT_MapGimmickStatusAliment.0"
+          },
+          "RowName": "ESupllier_Infinite_SpeedUp"
+        }
+      ],
+      "RangeOfEffect": 3000.0,
+      "DeviceHP": 500,
+      "SpawnRelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "EditorPlaceMesh": {
+        "ObjectName": "StaticMesh'SM_ENV_cmn_gmk_gatestone_a'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/GMKAssets/gatestone/Mesh/SM_ENV_cmn_gmk_gatestone_a.2"
+      },
+      "RemoteRole": "ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Properties": {
+      "ArrowColor": {
+        "B": 255,
+        "G": 255,
+        "R": 0,
+        "A": 255,
+        "Hex": "FF00FFFF"
+      },
+      "ArrowSize": 2.0
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DxBattle_SupplierSpawner_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.8"
+      },
+      "VariableGuid": "1E8771C4-43A9F879-AAAF8CB6-A5B0A972",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ArrowComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ArrowComponent'BP_DxBattle_SupplierSpawner_C:Arrow_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.6"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_DxBattle_DeviceSpawner_Base_C",
+      "VariableGuid": "83C40DE1-47ED35BA-0D39C1A2-66C740E5",
+      "InternalVariableName": "Arrow"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DxBattle_SupplierSpawner_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_SupplierSpawner_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DxBattle_SupplierSpawner_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DxBattle_SupplierSpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/SpawnerAndLocator/BP_DxBattle_SupplierSpawner.9"
+      }
+    }
+  }
+]

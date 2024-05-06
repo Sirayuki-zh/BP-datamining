@@ -1,0 +1,1345 @@
+[
+  {
+    "Type": "Function",
+    "Name": "init",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "Type",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'ENUM_DxBattle_SequenceType'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/ENUM_DxBattle_SequenceType.0"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "TimeMultiply",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsHideFlag",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "TempVisiblity",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "TempTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_X",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_X_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_Y_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_X_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector2D_Y_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBarColor",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InColorAndOpacity",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.33"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:SetBarColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.1"
+      },
+      {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:init'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Danger",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Normal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Serious",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UnderBar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Warning",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Time Multiply",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "init": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:init'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.0"
+      },
+      "SetBarColor": {
+        "ObjectName": "Function'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:SetBarColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C'Default__DxBattleDevelopHud_OnTestPlay_SeqFlag_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.3"
+    }
+  },
+  {
+    "Type": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Name": "Default__DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.DxBattleDevelopHud_OnTestPlay_SeqFlag_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Danger",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.13"
+      },
+      "bIsVariable": true,
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Normal",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.10"
+      },
+      "bIsVariable": true,
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Serious",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.11"
+      },
+      "bIsVariable": true,
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Warning",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.12"
+      },
+      "bIsVariable": true,
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 30.0,
+          "Bottom": 5.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.UnderBar'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.32"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 30.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 40.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 30.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 35.0,
+          "Bottom": 100.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Danger",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": -35.0,
+          "Right": 25.0,
+          "Bottom": 25.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.5"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Danger",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.5"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Normal",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": -30.0,
+          "Right": 20.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.6"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Normal",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.6"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.28"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Serious",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": -35.0,
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.7"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Serious",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 65.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.7"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Serious",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.0,
+          "Top": -65.0,
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.7"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Warning",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": -30.0,
+          "Right": 20.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.8"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Warning",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 2.0,
+          "Bottom": 50.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.8"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Image_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 456.0,
+          "Y": 457.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FFFFFF00"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.21"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Warning.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.22"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.195761,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FFFF7A00"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.14"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Danger.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.15"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 1.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF00FF00"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.16"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Normal.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.17"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FFFF0000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.18"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.19"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_NamePlateIconBossEnemy'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/NamePlate/UI_NamePlateIconBossEnemy.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.Serious.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.20"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "UnderBar",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DxBattleDevelopHud_OnTestPlay_SeqFlag_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DxBattleDevelopHud_OnTestPlay_SeqFlag_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/Hud/OnTestPlay_SeqBar/DxBattleDevelopHud_OnTestPlay_SeqFlag.4"
+      }
+    }
+  }
+]

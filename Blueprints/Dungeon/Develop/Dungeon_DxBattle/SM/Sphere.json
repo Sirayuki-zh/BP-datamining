@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_8",
+    "Outer": "Sphere",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 3.8146973E-06,
+              "Z": 0.0
+            },
+            "Radius": 50.000004,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "EngineTraceChannel1",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBDamage",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBPlayerPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBEnemyPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBCharacterBody",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBTrigger",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBPhotoModeCamera",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBWater",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBAk",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "PhysicsType": "PhysType_Kinematic"
+    },
+    "BodySetupGuid": "F93A868C471D0DE82928079B965DD3B6",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 25,
+        "SizeOnDisk": 25,
+        "OffsetInFile": "0x11301"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_12",
+    "Outer": "Sphere",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x11362"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Sphere",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material'DefaultMaterial'",
+            "ObjectPath": "Engine/Content/EngineMaterials/DefaultMaterial.0"
+          },
+          "MaterialSlotName": "DefaultMaterial",
+          "ImportedMaterialSlotName": "DefaultMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 188.01874,
+            "LocalUVDensities": 191.04904,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 191.04904,
+      "LightMapResolution": 32,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 3.8146973E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 50.000004
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'Sphere:BodySetup_8'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/SM/Sphere.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'Sphere:NavCollision_12'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/SM/Sphere.1"
+    },
+    "LightingGuid": "C6E744DE-4EA5DE38-4CDF8F86-3ADF2412",
+    "RenderData": null
+  }
+]
