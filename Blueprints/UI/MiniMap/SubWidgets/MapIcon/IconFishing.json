@@ -1,0 +1,159 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "IconFishing_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'IconFishing_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.7"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBMapFishingIcon'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "IconFishing_C'Default__IconFishing_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.1"
+    }
+  },
+  {
+    "Type": "IconFishing_C",
+    "Name": "Default__IconFishing_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.IconFishing_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'IconFishing_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "IconSize",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'IconFishing_C:WidgetTree.IconSize.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'IconFishing_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'IconFishing_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'IconFishing_C:WidgetTree.IconSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "IconSize",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'IconFishing_C:WidgetTree.IconSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.3"
+      },
+      "Content": {
+        "ObjectName": "Image'IconFishing_C:WidgetTree.Icon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.6"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_110'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_110.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'IconFishing_C:WidgetTree.IconSize.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.5"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "IconFishing_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'IconFishing_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconFishing.2"
+      }
+    }
+  }
+]

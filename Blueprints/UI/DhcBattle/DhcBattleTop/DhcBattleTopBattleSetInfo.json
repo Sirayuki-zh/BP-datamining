@@ -1,0 +1,1816 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetupInfo",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InScoreInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 224,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBDhcBattleHighScoreInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocalScoreInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 224,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBDhcBattleHighScoreInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalPresetEquipItem",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBPlayerPresetEquipItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalTopInfoItems",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "LocalTopInfoItems",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESBPlayerPresetEquipItem'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalClassLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalClassType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBClassType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalArrayIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalType",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "LocalUniqueId",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocalCordeItem",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBPlayerPresetEquipItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalCordeItemArray",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "LocalCordeItemArray",
+          "Flags": "RF_Public",
+          "ElementSize": 40,
+          "Struct": {
+            "ObjectName": "ScriptStruct'SBPlayerPresetEquipItem'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalImagineSlotId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalEquipItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "LocalEquipItemUniqueId",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalEquipType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBCharaEquipType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalCharaEquipTypes",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "LocalCharaEquipTypes",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESBCharaEquipType'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalClassAbililtySkillIdArrayForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "LocalClassAbililtySkillIdArrayForCorde",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalTacticalSkillIdArrayForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "LocalTacticalSkillIdArrayForCorde",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalULTSkillIdForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalRegularSkillIdArrayForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "LocalRegularSkillIdArrayForCorde",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalInnerImagineUniqueIdArrayForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "LocalInnerImagineUniqueIdArrayForCorde",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalBattleImagineUniqueIdArrayForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "LocalBattleImagineUniqueIdArrayForCorde",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "LocalWeaponUniqueIdForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalWeaponItemIdForCorde",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "LocalIsStorageMode",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalCordeId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSubPaletteReleased_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetClassAbilitySlotCnt_OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetTacticalSkillSlotCnt_OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetInnerImagineSlotCnt_OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetBattleImagineSlotCnt_OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRegularSkillSlotCnt_OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBattleImagineSlotCnt",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESBCharaEquipType'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInnerImagineSlotCnt",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRegularSkillSlotCnt",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESBSkillType'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTacticalSkillSlotCnt",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetClassAbilitySlotCnt",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "OutSlotCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalCnt",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetIsWeaponLost",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "OutIsWeaponLost",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsWeaponLost_OutIsLost",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRegularAndULTSkillIdByClassType",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InClassType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBClassType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OutRegularMainSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OutRegularSubSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OutULTSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LocalRowNames",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "LocalRowNames",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocalSkillDataTable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'DataTable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalClassLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalULTSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalRegularSubSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalRegularMainSkillId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetClassLevelFromClassType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindSkillMasteryParam_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindSkillMasteryParam_OutSkillMasteryParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBSkillMasteryParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetSkillType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBSkillType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 400,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBPlayerSkillData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindSkillDataMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindSkillDataMaster_SkillDataMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBSkillDataMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSkillDataTable_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DataTable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetDataTableRowNames_OutRowNames",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_GetDataTableRowNames_OutRowNames",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetClassTypeFromWeaponId",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InWeaponId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "OutClassType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "Enum": {
+          "ObjectName": "Enum'ESBClassType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetWeaponMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWeaponMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetSkillInfoSubPalette",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bInIsSubPaletteReleased",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DhcBattleTopBattleSetInfo_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:ResetSkillInfoSubPalette'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.9"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetClassTypeFromWeaponId'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.8"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetRegularAndULTSkillIdByClassType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.7"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetIsWeaponLost'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.6"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetClassAbilitySlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.5"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetTacticalSkillSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.4"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetRegularSkillSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.3"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetInnerImagineSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.2"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetBattleImagineSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.1"
+      },
+      {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:SetupInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ClassAbilityInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DhcBattleTopClassAbilityInfo_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopClassAbilityInfo.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnhanceImagineInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DhcBattleTopEnhanceImagineInfo_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopEnhanceImagineInfo.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkillInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DhcBattleTopSkillInfo_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopSkillInfo.15"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DhcBattleTopWeaponInfo_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopWeaponInfo.8"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetupInfo": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:SetupInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.0"
+      },
+      "GetBattleImagineSlotCnt": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetBattleImagineSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.1"
+      },
+      "GetInnerImagineSlotCnt": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetInnerImagineSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.2"
+      },
+      "GetRegularSkillSlotCnt": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetRegularSkillSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.3"
+      },
+      "GetTacticalSkillSlotCnt": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetTacticalSkillSlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.4"
+      },
+      "GetClassAbilitySlotCnt": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetClassAbilitySlotCnt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.5"
+      },
+      "GetIsWeaponLost": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetIsWeaponLost'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.6"
+      },
+      "GetRegularAndULTSkillIdByClassType": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetRegularAndULTSkillIdByClassType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.7"
+      },
+      "GetClassTypeFromWeaponId": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:GetClassTypeFromWeaponId'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.8"
+      },
+      "ResetSkillInfoSubPalette": {
+        "ObjectName": "Function'DhcBattleTopBattleSetInfo_C:ResetSkillInfoSubPalette'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.9"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DhcBattleTopBattleSetInfo_C'Default__DhcBattleTopBattleSetInfo_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.11"
+    }
+  },
+  {
+    "Type": "DhcBattleTopBattleSetInfo_C",
+    "Name": "Default__DhcBattleTopBattleSetInfo_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.DhcBattleTopBattleSetInfo_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 690.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.12"
+      },
+      "Content": {
+        "ObjectName": "DhcBattleTopWeaponInfo_C'DhcBattleTopBattleSetInfo_C:WidgetTree.WeaponInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 200.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.12"
+      },
+      "Content": {
+        "ObjectName": "DhcBattleTopSkillInfo_C'DhcBattleTopBattleSetInfo_C:WidgetTree.SkillInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 440.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.12"
+      },
+      "Content": {
+        "ObjectName": "DhcBattleTopClassAbilityInfo_C'DhcBattleTopBattleSetInfo_C:WidgetTree.ClassAbilityInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 440.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.12"
+      },
+      "Content": {
+        "ObjectName": "DhcBattleTopEnhanceImagineInfo_C'DhcBattleTopBattleSetInfo_C:WidgetTree.EnhanceImagineInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.18"
+      }
+    }
+  },
+  {
+    "Type": "DhcBattleTopClassAbilityInfo_C",
+    "Name": "ClassAbilityInfo",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopClassAbilityInfo.DhcBattleTopClassAbilityInfo_C'",
+    "Template": {
+      "ObjectName": "DhcBattleTopClassAbilityInfo_C'Default__DhcBattleTopClassAbilityInfo_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopClassAbilityInfo.5"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.15"
+      }
+    }
+  },
+  {
+    "Type": "DhcBattleTopEnhanceImagineInfo_C",
+    "Name": "EnhanceImagineInfo",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopEnhanceImagineInfo.DhcBattleTopEnhanceImagineInfo_C'",
+    "Template": {
+      "ObjectName": "DhcBattleTopEnhanceImagineInfo_C'Default__DhcBattleTopEnhanceImagineInfo_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopEnhanceImagineInfo.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.16"
+      }
+    }
+  },
+  {
+    "Type": "DhcBattleTopSkillInfo_C",
+    "Name": "SkillInfo",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopSkillInfo.DhcBattleTopSkillInfo_C'",
+    "Template": {
+      "ObjectName": "DhcBattleTopSkillInfo_C'Default__DhcBattleTopSkillInfo_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopSkillInfo.16"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.14"
+      }
+    }
+  },
+  {
+    "Type": "DhcBattleTopWeaponInfo_C",
+    "Name": "WeaponInfo",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopWeaponInfo.DhcBattleTopWeaponInfo_C'",
+    "Template": {
+      "ObjectName": "DhcBattleTopWeaponInfo_C'Default__DhcBattleTopWeaponInfo_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopWeaponInfo.9"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DhcBattleTopBattleSetInfo_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DhcBattleTopBattleSetInfo_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleTop/DhcBattleTopBattleSetInfo.12"
+      }
+    }
+  }
+]

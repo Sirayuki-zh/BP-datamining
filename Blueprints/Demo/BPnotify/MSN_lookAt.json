@@ -1,0 +1,920 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_MSN_lookAt",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Delta",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_PlayerStatus",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBMovieScenePlayerStatus'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsGame_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_getAnimCtrlComponent_NewLocalVar_01",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_BoolToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBLookAtCustomParam",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLookAtCustomParam'",
+          "ObjectPath": "/Script/SBAnimNode"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_BoolToFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBLookAtCustomParam_1",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLookAtCustomParam'",
+          "ObjectPath": "/Script/SBAnimNode"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Object_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_getAnimCtrlComponent_NewLocalVar_01_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Object_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_getAnimCtrlComponent_NewLocalVar_01_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FindImageCaptureProtocol_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MovieSceneImageCaptureProtocolBase'",
+          "ObjectPath": "/Script/MovieSceneCapture"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_BoolToFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBLookAtCustomParam_2",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLookAtCustomParam'",
+          "ObjectPath": "/Script/SBAnimNode"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivNotifyTick",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBMovieSceneNotify:ReceivNotifyTick'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Delta",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "PlayerStatus",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBMovieScenePlayerStatus'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivRestoreState",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBMovieSceneNotify:ReceivRestoreState'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivStoreState",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBMovieSceneNotify:ReceivStoreState'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetNotifyName",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBMovieSceneNotify:GetNotifyName'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_2",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "getAnimCtrlComponent",
+    "Outer": "MSN_lookAt_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewLocalVar_01",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewLocalVar_0",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBNpc_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBNpcCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "MSN_lookAt_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'MSN_lookAt_C:ExecuteUbergraph_MSN_lookAt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBMovieSceneNotify'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'MSN_lookAt_C:getAnimCtrlComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.5"
+      },
+      {
+        "ObjectName": "Function'MSN_lookAt_C:GetNotifyName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.4"
+      },
+      {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivStoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.3"
+      },
+      {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivRestoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.2"
+      },
+      {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivNotifyTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.1"
+      },
+      {
+        "ObjectName": "Function'MSN_lookAt_C:ExecuteUbergraph_MSN_lookAt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "lookAtModeWeight",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "interpSpeed_Start",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "interpSpeed_End",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "targetName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "SBanimCompo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | Transient | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBAnimationControlComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "NewVar_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "EnabkeDeadBand",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "EnableCustomEye",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "isDone",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Transient | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TickEnable",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Transient | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CutSnap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "isPlayedSeq",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Transient | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_MSN_lookAt": {
+        "ObjectName": "Function'MSN_lookAt_C:ExecuteUbergraph_MSN_lookAt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.0"
+      },
+      "ReceivNotifyTick": {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivNotifyTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.1"
+      },
+      "ReceivRestoreState": {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivRestoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.2"
+      },
+      "ReceivStoreState": {
+        "ObjectName": "Function'MSN_lookAt_C:ReceivStoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.3"
+      },
+      "GetNotifyName": {
+        "ObjectName": "Function'MSN_lookAt_C:GetNotifyName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.4"
+      },
+      "getAnimCtrlComponent": {
+        "ObjectName": "Function'MSN_lookAt_C:getAnimCtrlComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.5"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CollapseCategories | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MSN_lookAt_C'Default__MSN_lookAt_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.7"
+    }
+  },
+  {
+    "Type": "MSN_lookAt_C",
+    "Name": "Default__MSN_lookAt_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_lookAt.MSN_lookAt_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "lookAtModeWeight": 1.0,
+      "interpSpeed_Start": 1.0,
+      "interpSpeed_End": 1.0,
+      "targetName": "Null",
+      "TickEnable": true
+    }
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_FieldStatus_TQ_Mer",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'SBFieldStatusSetting'",
+        "ObjectPath": "/Script/SkyBlue"
+      }
+    },
+    "Rows": {
+      "---聖夜のプレゼント＜TQ112＞---": {
+        "DefaultStatus": "EFieldStatus::Unavailable",
+        "ConditionSettings": []
+      },
+      "TQ112_001_start_Npc_Waren": {
+        "DefaultStatus": "EFieldStatus::Unavailable",
+        "ConditionSettings": [
+          {
+            "Status": "EFieldStatus::Available",
+            "ConditionItems": [
+              {
+                "ConditionType": "ESBFieldStatusConditionType::EventTerm",
+                "QuestStatus": {
+                  "QuestId": "MQ101_030",
+                  "QuestStatus": "EQuestStatus::QuestStatus_Close",
+                  "bSetProgress": false,
+                  "QuestStep": ""
+                },
+                "ScenarioFlag": {
+                  "FlagHandle": {
+                    "DataTable": null,
+                    "RowName": "None"
+                  },
+                  "bFlagValue": false
+                },
+                "ResearchTeam": {
+                  "Id": ""
+                },
+                "EventTerm": {
+                  "Id": "102100600"
+                },
+                "EventTermStatus": {
+                  "Id": "None",
+                  "Status": "ESBEventTermCheckNormalStatus::OutofTerm"
+                },
+                "ChallengeQuest": {
+                  "QuestId": "None",
+                  "Setting": "ESBFieldStatusChallengeQuestSettingType::StartConditionPop"
+                },
+                "QuestConditionItem": {
+                  "QuestId": "None",
+                  "ConditionItemId": 0,
+                  "bIsCompleted": false
+                },
+                "DungeonActivateFlag": {
+                  "DungeonId": "None",
+                  "bFlagValue": false
+                },
+                "DungeonCompleteFlag": {
+                  "DungeonId": "None",
+                  "bFlagValue": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "TQ112_001_start_Npc_Carnera": {
+        "DefaultStatus": "EFieldStatus::Unavailable",
+        "ConditionSettings": [
+          {
+            "Status": "EFieldStatus::Available",
+            "ConditionItems": [
+              {
+                "ConditionType": "ESBFieldStatusConditionType::EventTerm",
+                "QuestStatus": {
+                  "QuestId": "TQ103_001",
+                  "QuestStatus": "EQuestStatus::QuestStatus_NotReceived",
+                  "bSetProgress": false,
+                  "QuestStep": ""
+                },
+                "ScenarioFlag": {
+                  "FlagHandle": {
+                    "DataTable": null,
+                    "RowName": "None"
+                  },
+                  "bFlagValue": false
+                },
+                "ResearchTeam": {
+                  "Id": ""
+                },
+                "EventTerm": {
+                  "Id": "102100600"
+                },
+                "EventTermStatus": {
+                  "Id": "None",
+                  "Status": "ESBEventTermCheckNormalStatus::OutofTerm"
+                },
+                "ChallengeQuest": {
+                  "QuestId": "None",
+                  "Setting": "ESBFieldStatusChallengeQuestSettingType::StartConditionPop"
+                },
+                "QuestConditionItem": {
+                  "QuestId": "None",
+                  "ConditionItemId": 0,
+                  "bIsCompleted": false
+                },
+                "DungeonActivateFlag": {
+                  "DungeonId": "None",
+                  "bFlagValue": false
+                },
+                "DungeonCompleteFlag": {
+                  "DungeonId": "None",
+                  "bFlagValue": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

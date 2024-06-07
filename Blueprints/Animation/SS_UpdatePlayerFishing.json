@@ -1,0 +1,231 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SS_UpdatePlayerFishing",
+    "Outer": "SS_UpdatePlayerFishing_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_AnimationSet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'ASAnimationSet'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerFishingComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerFishingComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFishingRodDirection_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "SS_UpdatePlayerFishing_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ASState_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimationSet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'ASAnimationSet'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SS_UpdatePlayerFishing_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'SS_UpdatePlayerFishing_C:ExecuteUbergraph_SS_UpdatePlayerFishing'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ASState_BlueprintBase'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SS_UpdatePlayerFishing_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.1"
+      },
+      {
+        "ObjectName": "Function'SS_UpdatePlayerFishing_C:ExecuteUbergraph_SS_UpdatePlayerFishing'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "WalkBlendYRate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IgnoreRotateBlendY",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | BlueprintReadOnly | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SS_UpdatePlayerFishing": {
+        "ObjectName": "Function'SS_UpdatePlayerFishing_C:ExecuteUbergraph_SS_UpdatePlayerFishing'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.0"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'SS_UpdatePlayerFishing_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SS_UpdatePlayerFishing_C'Default__SS_UpdatePlayerFishing_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.3"
+    }
+  },
+  {
+    "Type": "SS_UpdatePlayerFishing_C",
+    "Name": "Default__SS_UpdatePlayerFishing_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Animation/SS_UpdatePlayerFishing.SS_UpdatePlayerFishing_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WalkBlendYRate": 0.5,
+      "IgnoreRotateBlendY": 0.1
+    }
+  }
+]

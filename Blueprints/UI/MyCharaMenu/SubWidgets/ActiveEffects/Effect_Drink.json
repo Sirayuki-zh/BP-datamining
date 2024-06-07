@@ -1,0 +1,872 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Effect_Drink",
+    "Outer": "Effect_Drink_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_CustomEvent_Name",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_EffucaryValueType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBLiquidMemoryEfficacyValueType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_FloatToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_CustomEvent_InString",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "NonAct iveData",
+    "Outer": "Effect_Drink_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "InString",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ActiveData",
+    "Outer": "Effect_Drink_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "Name",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Value",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "EffucaryValueType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBLiquidMemoryEfficacyValueType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "Effect_Drink_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:PreConstruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Effect_Drink_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Effect_Drink_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Effect_Drink_C:ExecuteUbergraph_Effect_Drink'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Effect_Drink_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.3"
+      },
+      {
+        "ObjectName": "Function'Effect_Drink_C:ActiveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.2"
+      },
+      {
+        "ObjectName": "Function'Effect_Drink_C:NonAct iveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.1"
+      },
+      {
+        "ObjectName": "Function'Effect_Drink_C:ExecuteUbergraph_Effect_Drink'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HorizontalBox_Value",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sw_TextSwitch",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Name",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Ready",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Value",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_ValueType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsActive",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ValueTypeId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Effect_Drink": {
+        "ObjectName": "Function'Effect_Drink_C:ExecuteUbergraph_Effect_Drink'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.0"
+      },
+      "NonAct iveData": {
+        "ObjectName": "Function'Effect_Drink_C:NonAct iveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.1"
+      },
+      "ActiveData": {
+        "ObjectName": "Function'Effect_Drink_C:ActiveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.2"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function'Effect_Drink_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Effect_Drink_C'Default__Effect_Drink_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.5"
+    }
+  },
+  {
+    "Type": "Effect_Drink_C",
+    "Name": "Default__Effect_Drink_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.Effect_Drink_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ForegroundColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_Drink_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Effect_Drink_C:WidgetTree.HorizontalBox_36'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 10.0,
+          "Right": 336.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_Drink_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.6"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_Drink_C:WidgetTree.Txt_Name'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 362.0,
+          "Right": 141.0,
+          "Bottom": 44.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_Drink_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.6"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Effect_Drink_C:WidgetTree.Sw_TextSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 35.0,
+          "Right": 510.0,
+          "Bottom": 4.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_Drink_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.6"
+      },
+      "Content": {
+        "ObjectName": "Image'Effect_Drink_C:WidgetTree.Line03'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Value",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'Effect_Drink_C:WidgetTree.HorizontalBox_Value.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.13"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Effect_Drink_C:WidgetTree.HorizontalBox_Value.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Effect_Drink_C:WidgetTree.Sw_TextSwitch.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.22"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Value",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Effect_Drink_C:WidgetTree.HorizontalBox_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.12"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_Drink_C:WidgetTree.Txt_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_Value",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Effect_Drink_C:WidgetTree.HorizontalBox_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.12"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_Drink_C:WidgetTree.Txt_ValueType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line03",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 380.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_InventoryLine04'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Inventory/UI_InventoryLine04.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.10"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 0.0,
+          "Y": 7.0
+        }
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Name",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D663FD9F4A9F83FC2EFF529E46E1759B",
+        "SourceString": "アイテム作成大成功率上昇",
+        "LocalizedString": "アイテム作成大成功率上昇"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.40724,
+          "B": 0.031896,
+          "A": 1.0,
+          "Hex": "FFFFAB32"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Ready",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyChara_Effects'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyChara_Effects.0"
+      },
+      "TextId": 103,
+      "Text": {
+        "Namespace": "",
+        "Key": "10BEC1D34C4E5196BCB700AF02D4237C",
+        "SourceString": "Ready",
+        "LocalizedString": "Ready"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.846873,
+          "B": 0.323143,
+          "A": 1.0,
+          "Hex": "FFFFED9A"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Effect_Drink_C:WidgetTree.Sw_TextSwitch.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.21"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Value",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "03ACD746412B378ABA5A3FB111593E41",
+        "SourceString": "Val",
+        "LocalizedString": "Val"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.708376,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFDBFF00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Effect_Drink_C:WidgetTree.HorizontalBox_Value.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.13"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_ValueType",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "9CD2ACB1426691893A0207A2AFF0B1DF",
+        "SourceString": "個",
+        "LocalizedString": "個"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.708376,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFDBFF00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Effect_Drink_C:WidgetTree.HorizontalBox_Value.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.14"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "Sw_TextSwitch",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Effect_Drink_C:WidgetTree.Sw_TextSwitch.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.21"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Effect_Drink_C:WidgetTree.Sw_TextSwitch.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_Drink_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "Sw_TextSwitch",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Effect_Drink_C:WidgetTree.Sw_TextSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.20"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_Drink_C:WidgetTree.Txt_Ready'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.17"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "Sw_TextSwitch",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 1.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Effect_Drink_C:WidgetTree.Sw_TextSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.20"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Effect_Drink_C:WidgetTree.HorizontalBox_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Effect_Drink_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Effect_Drink_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_Drink.6"
+      }
+    }
+  }
+]

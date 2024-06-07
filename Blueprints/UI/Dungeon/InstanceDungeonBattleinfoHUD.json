@@ -1,0 +1,1971 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_InstanceDungeonBattleinfoHUD",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPlayerReadyVisibility",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InHorizonalBox",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InMax",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InReadyNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetChildrenCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsImage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateDemoHUD",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "InDemoPlay",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "BoolProperty",
+          "Name": "InDemoPlay",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "FieldSize": 1,
+          "ByteOffset": 0,
+          "ByteMask": 1,
+          "FieldMask": 255,
+          "BoolSize": 1,
+          "bIsNativeBool": true
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "InHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "InHUD",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'DemoHUD_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/DemoHUD.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DemoHUD_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/DemoHUD.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRootVisibility",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'InstanceDungeonBattleinfoHUD_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.66"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:ExecuteUbergraph_InstanceDungeonBattleinfoHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBDungeonBattleinfoHUDWidget'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:SetRootVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.4"
+      },
+      {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:UpdateDemoHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.3"
+      },
+      {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:SetPlayerReadyVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.2"
+      },
+      {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.1"
+      },
+      {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:ExecuteUbergraph_InstanceDungeonBattleinfoHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPanel_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_8",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_9",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerImage2_10",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WiatBossBattleBG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "IsDemo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "BoolProperty",
+          "Name": "IsDemo",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "FieldSize": 1,
+          "ByteOffset": 0,
+          "ByteMask": 1,
+          "FieldMask": 255,
+          "BoolSize": 1,
+          "bIsNativeBool": true
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "InitDemoBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "BoolProperty",
+          "Name": "InitDemoBP",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "FieldSize": 1,
+          "ByteOffset": 0,
+          "ByteMask": 1,
+          "FieldMask": 255,
+          "BoolSize": 1,
+          "bIsNativeBool": true
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "DemoHUDUI",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "DemoHUDUI",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'DemoHUD_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/DemoHUD.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsBossAreaBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "PlayerMaxNumBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "PlayerInAreaNumBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_InstanceDungeonBattleinfoHUD": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:ExecuteUbergraph_InstanceDungeonBattleinfoHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.0"
+      },
+      "Construct": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.1"
+      },
+      "SetPlayerReadyVisibility": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:SetPlayerReadyVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.2"
+      },
+      "UpdateDemoHUD": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:UpdateDemoHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.3"
+      },
+      "SetRootVisibility": {
+        "ObjectName": "Function'InstanceDungeonBattleinfoHUD_C:SetRootVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.4"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "InstanceDungeonBattleinfoHUD_C'Default__InstanceDungeonBattleinfoHUD_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.6"
+    }
+  },
+  {
+    "Type": "InstanceDungeonBattleinfoHUD_C",
+    "Name": "Default__InstanceDungeonBattleinfoHUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.InstanceDungeonBattleinfoHUD_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PlayerMaxNumBP": 15,
+      "PlayerInAreaNumBP": 5,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.9"
+        }
+      ],
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WaitBossBattleCanvas",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 178.33144,
+          "Right": 590.0,
+          "Bottom": 130.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'InstanceDungeonBattleinfoHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "WaitBossBattleCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.8"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.WiatBossBattleBG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "WaitBossBattleCanvas",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.8"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "PlayerHorizontalBox1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.14"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.15"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.22"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.23"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.16"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.17"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.18"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.19"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.20"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_17'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.63"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "PlayerHorizontalBox2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.24"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.25"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.27"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.28"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.29"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.30"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.31"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.32"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.33"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_16'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.62"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.36"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.38"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_11",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.41"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_12",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.42"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_13",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.43"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_14",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.44"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_15",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.45"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_16",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.37"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.39"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "PlayerHorizontalBox1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage1_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.40"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.46"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.48"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_10",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.47"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.49"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.50"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.51"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.52"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.53"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.54"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "PlayerHorizontalBox2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerImage2_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.55"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 590.0,
+          "Y": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_UI_InstanceDungeonBattleinfoHUDLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_UI_InstanceDungeonBattleinfoHUDLine.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.60"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 590.0,
+          "Y": 1.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_UI_InstanceDungeonBattleinfoHUDLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_UI_InstanceDungeonBattleinfoHUDLine.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.64"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.14"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_16'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.21"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.15"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.22"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.23"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.16"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.17"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_13'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.18"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_14'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.19"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage1_9",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1.HorizontalBoxSlot_15'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.24"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.28"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.29"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.30"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.31"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "PlayerImage2_9",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 32.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_WaitBossBattlePlayerIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_WaitBossBattlePlayerIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2.HorizontalBoxSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.33"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "WiatBossBattleBG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 400.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_UI_InstanceDungeonBattleinfoHUDBG'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_UI_InstanceDungeonBattleinfoHUDBG.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.10"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_141",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'QuestCommon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/QuestCommon.0"
+      },
+      "TextId": 52,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-UDKakugo_LargePr6-M'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-UDKakugo_LargePr6-M.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.65"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 380.0,
+      "bOverride_WidthOverride": true,
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.61"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.60"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.65"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.61"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.63"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.62"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.64"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'InstanceDungeonBattleinfoHUD_C:WidgetTree.WaitBossBattleCanvas.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.11"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.Image_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.34"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.SizeBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.58"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_16",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_17",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.PlayerHorizontalBox1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "Image'InstanceDungeonBattleinfoHUD_C:WidgetTree.Image_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.35"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox'InstanceDungeonBattleinfoHUD_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.59"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'InstanceDungeonBattleinfoHUD_C:WidgetTree.SBRuntimeTextBlock_141'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.57"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "InstanceDungeonBattleinfoHUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'InstanceDungeonBattleinfoHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/InstanceDungeonBattleinfoHUD.7"
+      }
+    }
+  }
+]

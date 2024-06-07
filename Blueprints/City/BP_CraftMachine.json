@@ -1,0 +1,387 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_CraftMachine",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBScriptActorCreateDesc",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBScriptActorCreateDesc'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_StartScript_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_InOtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_ViewRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInteraction",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InOtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ViewRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsInteractionDisable",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InOtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CraftMachine_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_CraftMachine_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_CraftMachine_C:ExecuteUbergraph_BP_CraftMachine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_CraftMachine_C:IsInteractionDisable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.2"
+      },
+      {
+        "ObjectName": "Function'BP_CraftMachine_C:OnInteraction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.1"
+      },
+      {
+        "ObjectName": "Function'BP_CraftMachine_C:ExecuteUbergraph_BP_CraftMachine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBFieldStatus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBFieldStatusComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBInteractionTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBInteractionTargetComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_CraftMachine": {
+        "ObjectName": "Function'BP_CraftMachine_C:ExecuteUbergraph_BP_CraftMachine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.0"
+      },
+      "OnInteraction": {
+        "ObjectName": "Function'BP_CraftMachine_C:OnInteraction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.1"
+      },
+      "IsInteractionDisable": {
+        "ObjectName": "Function'BP_CraftMachine_C:IsInteractionDisable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'SBInteractionTargetInterface'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CraftMachine_C'Default__BP_CraftMachine_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.4"
+    }
+  },
+  {
+    "Type": "BP_CraftMachine_C",
+    "Name": "Default__BP_CraftMachine_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.BP_CraftMachine_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "SBFieldStatusComponent",
+    "Name": "SBFieldStatus_GEN_VARIABLE",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'SBFieldStatusComponent'"
+  },
+  {
+    "Type": "SBInteractionTargetComponent",
+    "Name": "SBInteractionTarget_GEN_VARIABLE",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'SBInteractionTargetComponent'",
+    "Properties": {
+      "Type": "EInteractionTargetType::Other",
+      "InteractNameID": 12,
+      "HoldTime": 0.0,
+      "bIsHideShowObjectCursor": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_CraftMachine_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.7"
+      },
+      "VariableGuid": "D21E242E-433633D2-9B4A8D94-3EBED6DB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBFieldStatusComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBFieldStatusComponent'BP_CraftMachine_C:SBFieldStatus_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.5"
+      },
+      "VariableGuid": "0D098130-44B53EA7-DB6204B5-AC78BC6A",
+      "InternalVariableName": "SBFieldStatus"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBInteractionTargetComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBInteractionTargetComponent'BP_CraftMachine_C:SBInteractionTarget_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.6"
+      },
+      "VariableGuid": "F56B1A24-46176349-CA8A2A9B-FA254B45",
+      "InternalVariableName": "SBInteractionTarget"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_CraftMachine_C:SceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.8"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.11"
+        }
+      ],
+      "VariableGuid": "81CAEE48-4CF15FAF-A6273E8C-F52A4B3B",
+      "InternalVariableName": "SceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CraftMachine_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_CraftMachine_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CraftMachine.9"
+      }
+    }
+  }
+]

@@ -1,0 +1,784 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_LapCount",
+    "Outer": "LapCount_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "LapCount_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:PreConstruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetLapCount",
+    "Outer": "LapCount_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Count",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Controller",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerController'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGashaComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBGashaComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLoopStepUpGasha_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "LapCount_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'LapCount_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.26"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'LapCount_C:ExecuteUbergraph_LapCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'LapCount_C:SetLapCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.2"
+      },
+      {
+        "ObjectName": "Function'LapCount_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.1"
+      },
+      {
+        "ObjectName": "Function'LapCount_C:ExecuteUbergraph_LapCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bg_L",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bg_M",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Bg_S",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LapCountItem",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'LapCountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LapCountItem_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'LapCountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LapCountItem_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'LapCountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Switch_FrameType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "FrameType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_LapCount": {
+        "ObjectName": "Function'LapCount_C:ExecuteUbergraph_LapCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.0"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function'LapCount_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.1"
+      },
+      "SetLapCount": {
+        "ObjectName": "Function'LapCount_C:SetLapCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LapCount_C'Default__LapCount_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.4"
+    }
+  },
+  {
+    "Type": "LapCount_C",
+    "Name": "Default__LapCount_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.LapCount_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Frame_L",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_L.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_L.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Frame_M",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_M.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_M.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Frame_S",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_S.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_S.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.5"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'LapCount_C:WidgetTree.Switch_FrameType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Frame_L",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 426.0,
+          "Bottom": 72.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_L'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.6"
+      },
+      "Content": {
+        "ObjectName": "Image'LapCount_C:WidgetTree.Bg_L'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Frame_L",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 254.0,
+          "Top": 4.0,
+          "Bottom": 60.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_L'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.6"
+      },
+      "Content": {
+        "ObjectName": "LapCountItem_C'LapCount_C:WidgetTree.LapCountItem_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Frame_M",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 220.0,
+          "Bottom": 72.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.7"
+      },
+      "Content": {
+        "ObjectName": "Image'LapCount_C:WidgetTree.Bg_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Frame_M",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 46.0,
+          "Top": 4.0,
+          "Bottom": 60.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.7"
+      },
+      "Content": {
+        "ObjectName": "LapCountItem_C'LapCount_C:WidgetTree.LapCountItem_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Frame_S",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 208.0,
+          "Bottom": 72.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_S'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LapCount_C:WidgetTree.Bg_S'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Frame_S",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 4.0,
+          "Right": 173.0,
+          "Bottom": 60.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_S'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.8"
+      },
+      "Content": {
+        "ObjectName": "LapCountItem_C'LapCount_C:WidgetTree.LapCountItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg_L",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 426.0,
+          "Y": 72.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_GashaStepUpLapCountBg_L'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Gasha/UI_GashaStepUpLapCountBg_L.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_L.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.10"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg_M",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 220.0,
+          "Y": 72.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_GashaStepUpLapCountBg_M'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Gasha/UI_GashaStepUpLapCountBg_M.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_M.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg_S",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 208.0,
+          "Y": 72.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_GashaStepUpLapCountBg_S'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Gasha/UI_GashaStepUpLapCountBg_S.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_S.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.14"
+      }
+    }
+  },
+  {
+    "Type": "LapCountItem_C",
+    "Name": "LapCountItem",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.LapCountItem_C'",
+    "Template": {
+      "ObjectName": "LapCountItem_C'Default__LapCountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_S.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.15"
+      }
+    }
+  },
+  {
+    "Type": "LapCountItem_C",
+    "Name": "LapCountItem_1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.LapCountItem_C'",
+    "Template": {
+      "ObjectName": "LapCountItem_C'Default__LapCountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_L.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.11"
+      }
+    }
+  },
+  {
+    "Type": "LapCountItem_C",
+    "Name": "LapCountItem_2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.LapCountItem_C'",
+    "Template": {
+      "ObjectName": "LapCountItem_C'Default__LapCountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCountItem.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.Frame_M.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "Switch_FrameType",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.24"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.25"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'LapCount_C:WidgetTree.Switch_FrameType.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LapCount_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "Switch_FrameType",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'LapCount_C:WidgetTree.Switch_FrameType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "Switch_FrameType",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'LapCount_C:WidgetTree.Switch_FrameType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_S'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "Switch_FrameType",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'LapCount_C:WidgetTree.Switch_FrameType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.Frame_L'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "LapCount_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'LapCount_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/LapCount.5"
+      }
+    }
+  }
+]

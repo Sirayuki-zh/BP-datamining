@@ -1,0 +1,481 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_PartyMemberInfo_PlayerName",
+    "Outer": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_Event_InCacheCharacterName",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsBlock",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_PlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_CharacterID",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsUGC",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetPlayerName",
+    "Outer": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBPartyMemberPlayerNameWidget:OnSetPlayerName'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "InCacheCharacterName",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsBlock",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "PlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CharacterID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsUGC",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPlayerName",
+    "Outer": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "InName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsBlock",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "PlayerID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CharacterID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "InIsUGC",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetRestrictText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetPlayerName",
+    "Outer": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "OutPlayerName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'PartyMemberInfo_PlayerName_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.9"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:ExecuteUbergraph_PartyMemberInfo_PlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBPartyMemberPlayerNameWidget'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:GetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.3"
+      },
+      {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:SetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.2"
+      },
+      {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:OnSetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.1"
+      },
+      {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:ExecuteUbergraph_PartyMemberInfo_PlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CharacterName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Player",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | ExposeOnSpawn",
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "OutlineColorType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_PlayerNameOutlineColorType'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/E_PlayerNameOutlineColorType.0"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CacheCharacterNameBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsUGC",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_PartyMemberInfo_PlayerName": {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:ExecuteUbergraph_PartyMemberInfo_PlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.0"
+      },
+      "OnSetPlayerName": {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:OnSetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.1"
+      },
+      "SetPlayerName": {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:SetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.2"
+      },
+      "GetPlayerName": {
+        "ObjectName": "Function'PartyMemberInfo_PlayerName_C:GetPlayerName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PartyMemberInfo_PlayerName_C'Default__PartyMemberInfo_PlayerName_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.5"
+    }
+  },
+  {
+    "Type": "PartyMemberInfo_PlayerName_C",
+    "Name": "Default__PartyMemberInfo_PlayerName_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.PartyMemberInfo_PlayerName_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'PartyMemberInfo_PlayerName_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'PartyMemberInfo_PlayerName_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'PartyMemberInfo_PlayerName_C:WidgetTree.CharacterName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.8"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "CharacterName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "35F1D58242C17EEA80922EAF8F2F3263",
+        "SourceString": "------------",
+        "LocalizedString": "------------"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-UDKakugo_LargePr6-M'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-UDKakugo_LargePr6-M.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 8
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PartyMemberInfo_PlayerName_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.7"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "PartyMemberInfo_PlayerName_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'PartyMemberInfo_PlayerName_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/PartyInfoWindow/PartyMemberInfo_PlayerName.6"
+      }
+    }
+  }
+]

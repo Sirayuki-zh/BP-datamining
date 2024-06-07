@@ -1,0 +1,582 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetData",
+    "Outer": "Fang_expeditionAreaIconTooltip_AreaData_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "Status",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBFang_expeditionStatus'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "AreaName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TimeLimited",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Fang_expeditionAreaIconTooltip_AreaData_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Fang_expeditionAreaIconTooltip_AreaData_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AreaText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Finish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IconSwitcher",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Play",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimeIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetData": {
+        "ObjectName": "Function'Fang_expeditionAreaIconTooltip_AreaData_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Fang_expeditionAreaIconTooltip_AreaData_C'Default__Fang_expeditionAreaIconTooltip_AreaData_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.2"
+    }
+  },
+  {
+    "Type": "Fang_expeditionAreaIconTooltip_AreaData_C",
+    "Name": "Default__Fang_expeditionAreaIconTooltip_AreaData_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.Fang_expeditionAreaIconTooltip_AreaData_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.3"
+      },
+      "Content": {
+        "ObjectName": "Overlay'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.11"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_88",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.6"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87.OverlaySlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_88",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.AreaText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_88",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.5"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.TimeIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.10"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Finish",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_IconFinish'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_IconFinish.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.19"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Play",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_IconPlay'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_IconPlay.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.18"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconMarkLimited'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/CommonIcon/UI_CmnIconMarkLimited.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.7"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_87",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.12"
+        },
+        {
+          "ObjectName": "OverlaySlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87.OverlaySlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.4"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_87",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.11"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.SizeBox_60'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.14"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_87",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 35.0,
+        "Right": 10.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.11"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.5"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_60",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 30.0,
+      "HeightOverride": 30.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.SizeBox_60.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Overlay_87.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.12"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_60",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.SizeBox_60'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.14"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.17"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "AreaText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4797A08D46BA9B2741A758B7AF0A09E8",
+        "SourceString": "派遣先名称",
+        "LocalizedString": "派遣先名称"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 10
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.HorizontalBox_88.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.6"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "IconSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.18"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.SizeBox_60.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "IconSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.17"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Play'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "IconSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.17"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.Finish'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Fang_expeditionAreaIconTooltip_AreaData_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Fang_expeditionAreaIconTooltip_AreaData_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/ToolTipSubWidgets/Fang_expeditionAreaIconTooltip_AreaData.3"
+      }
+    }
+  }
+]

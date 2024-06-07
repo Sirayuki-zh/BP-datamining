@@ -1,0 +1,4610 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_StackBEquipItemDesc",
+    "Outer": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_OwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set OwnItemData",
+    "Outer": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyWeaponStatus",
+    "Outer": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttributeValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "lovalWeaponMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "localWeaponManager",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBWeaponManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "WeaponLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetItemLevel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindWeaponMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindWeaponMaster_WeaponMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetWeaponLevelStatusByUniqueID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetWeaponManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWeaponManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBWeaponManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CalculatedStackBWeaponParam_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CalculatedStackBWeaponParam_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetNameText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyImagineStatus",
+    "Outer": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "AbilityName",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "localStatus",
+        "Flags": "RF_Public",
+        "ElementSize": 108,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ImagineParameter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ImagineLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetItemLevel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindAbilityEffectMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindAbilityEffectMaster_AbilityEffectMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 36,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBAbilityEffectMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetWeaponPerkText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_CalculatedStackBImagineParams_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 108,
+        "Struct": {
+          "ObjectName": "ScriptStruct'ImagineParameter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetNameText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'StackBEquipItemDesc_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.163"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ExecuteUbergraph_StackBEquipItemDesc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ApplyImagineStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.3"
+      },
+      {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ApplyWeaponStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.2"
+      },
+      {
+        "ObjectName": "Function'StackBEquipItemDesc_C:Set OwnItemData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.1"
+      },
+      {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ExecuteUbergraph_StackBEquipItemDesc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'AttributeIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BaseSwitch",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_6",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_302",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagineEquipStatus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'EquipStatusView_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.7"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImagineStat",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_AtrbVal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_ImagineAbilityName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_ImagineAtk",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_ImagineDef",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_ImagineName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_LevelImagine",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_LevelWeapon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_SpecialValue",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_WeaponAtk",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_WeaponCRT",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_WeaponName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_WeaponSpecialName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponEquipStatus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'EquipStatusView_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.7"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponStat",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_StackBEquipItemDesc": {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ExecuteUbergraph_StackBEquipItemDesc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.0"
+      },
+      "Set OwnItemData": {
+        "ObjectName": "Function'StackBEquipItemDesc_C:Set OwnItemData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.1"
+      },
+      "ApplyWeaponStatus": {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ApplyWeaponStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.2"
+      },
+      "ApplyImagineStatus": {
+        "ObjectName": "Function'StackBEquipItemDesc_C:ApplyImagineStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "StackBEquipItemDesc_C'Default__StackBEquipItemDesc_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.5"
+    }
+  },
+  {
+    "Type": "StackBEquipItemDesc_C",
+    "Name": "Default__StackBEquipItemDesc_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.StackBEquipItemDesc_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "AttributeIcon_C",
+    "Name": "AttributeIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.AttributeIcon_C'",
+    "Template": {
+      "ObjectName": "AttributeIcon_C'Default__AttributeIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_47.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.126"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.154"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1141",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.159"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1143",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1143.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.137"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_524",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.157"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 678.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'StackBEquipItemDesc_C:WidgetTree.BaseSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.160"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 430.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.8"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_WeaponName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.111"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1143",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 430.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1143'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.10"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_ImagineName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.105"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_524",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 6.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.11"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_302'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_524",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 25.0,
+          "Right": 402.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.11"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.30"
+      }
+    }
+  },
+  {
+    "Type": "EquipStatusView_C",
+    "Name": "ImagineEquipStatus",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.EquipStatusView_C'",
+    "Template": {
+      "ObjectName": "EquipStatusView_C'Default__EquipStatusView_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.8"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.39"
+      }
+    }
+  },
+  {
+    "Type": "EquipStatusView_C",
+    "Name": "WeaponEquipStatus",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.EquipStatusView_C'",
+    "Template": {
+      "ObjectName": "EquipStatusView_C'Default__EquipStatusView_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/EquipStatusView.8"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.41"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.33"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.34"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.148"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.36"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.150"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.37"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.38"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.138"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_245",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.155"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.46"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.44"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.123"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.47"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.146"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.49"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.145"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_6.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.51"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.149"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_605",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.56"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.52"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.55"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.53"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.54"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_48.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.127"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_651",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.60"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.57"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.58"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.59"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.151"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.63"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.61"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.141"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_729",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.64"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.65"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.66"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.68"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.67"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.140"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_864",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.69"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.70"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.71"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.147"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.19"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.90"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.19"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_WeaponAtk'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.109"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.20"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.134"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.20"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.72"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.21"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 12.0,
+        "Right": 12.0
+      },
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.21"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.113"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.21"
+      },
+      "Content": {
+        "ObjectName": "EquipStatusView_C'StackBEquipItemDesc_C:WidgetTree.ImagineEquipStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_245",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.22"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_245",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.22"
+      },
+      "Content": {
+        "ObjectName": "EquipStatusView_C'StackBEquipItemDesc_C:WidgetTree.WeaponEquipStatus'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_245",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 2.0,
+        "Right": 15.0,
+        "Bottom": 12.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.22"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.75"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_3",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.23"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Lbl_Level_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.89"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_3",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.23"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.91"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_3",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.23"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_LevelImagine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.106"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_3",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.23"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.79"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_4",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.24"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.94"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_4",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.24"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_ImagineAtk'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.103"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_5",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.25"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.95"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_5",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.25"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_ImagineDef'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.104"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_6",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.26"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_48'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.118"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_605",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_49'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.119"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_605",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_50'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.120"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_605",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_AtrbVal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.101"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_605",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_47'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.117"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_605",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.73"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_651",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.28"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_51'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.121"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_651",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.28"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_WeaponSpecialName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.112"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_651",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.28"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_SpecialValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.108"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_651",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.28"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.74"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_7",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.29"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.116"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_7",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.29"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_ImagineAbilityName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.102"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_7",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.29"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.77"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_729",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.30"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Lbl_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.88"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_729",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.30"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_588'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.97"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_729",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.30"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_LevelWeapon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.107"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_8",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 3.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.31"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.133"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_8",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 9.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.31"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.115"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_864",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.32"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_509'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.96"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_864",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.32"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.Txt_WeaponCRT'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.110"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_864",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.32"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_1518'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.93"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.36"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.56"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.60"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.42"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_302",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.63"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.124"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.46"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 6.0,
+          "Y": 32.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.033105,
+        "G": 0.033105,
+        "B": 0.033105,
+        "A": 1.0,
+        "Hex": "FF333333"
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.122"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.158"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.156"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.152"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.153"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.142"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.144"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 140.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnStep_Line'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnStep_Line.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.139"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Lbl_Level",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 1130,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.64"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Lbl_Level_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 1130,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.43"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 11,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.33"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 10,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.44"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_1279",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 33,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_51.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.130"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_1518",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D15FB11F4C0C9E711CF886A6152F79EF",
+        "SourceString": "%",
+        "LocalizedString": "%"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.71"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 11,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.47"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 12,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.49"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_509",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 49,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.69"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_588",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 10,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.65"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 1115,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_4.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.125"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_914",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 13,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_49.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.128"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_992",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 32,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_50.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.129"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_AtrbVal",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "6DEA9F644FC45868FFAA0DBAEF8F0DC1",
+        "SourceString": "00000",
+        "LocalizedString": "00000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.54"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_ImagineAbilityName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.62"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_ImagineAtk",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "08E789974BA975071C4C86A54005A5E2",
+        "SourceString": "00000",
+        "LocalizedString": "00000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.48"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_ImagineDef",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "90B21EA4448F7303ACE64F8E670FDB99",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.50"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_ImagineName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1143.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.14"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_LevelImagine",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EA5B16AD45CEEF93DC1285824D1C8961",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.45"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_LevelWeapon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "9F364EB84F305CF59ABF03955A6AFED2",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_729.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.66"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_SpecialValue",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EB1CE2EA490ABB0F41E791B2D8DE63A9",
+        "SourceString": "00000",
+        "LocalizedString": "00000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.59"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_WeaponAtk",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "A505235C4D7FA310F0F69395382B06BA",
+        "SourceString": "00000",
+        "LocalizedString": "00000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.34"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_WeaponCRT",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "87F90D854EFB9EEA89ED5189090ABED0",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.70"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_WeaponName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.13"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_WeaponSpecialName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.033105,
+          "G": 0.033105,
+          "B": 0.033105,
+          "A": 1.0,
+          "Hex": "FF333333"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.58"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "HeightOverride": 145.0,
+      "MaxDesiredHeight": 145.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.122"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.38"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 430.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.123"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.143"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "HeightOverride": 60.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.124"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.68"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_4",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 100.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_4.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.125"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.61"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_47",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 24.0,
+      "HeightOverride": 26.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_47.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.126"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.55"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_48",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 430.0,
+      "HeightOverride": 34.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_48.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.127"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_6.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.51"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_49",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 66.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_49.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.128"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.52"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_50",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 160.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_50.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.129"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.53"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_51",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 100.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'StackBEquipItemDesc_C:WidgetTree.SizeBox_51.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.130"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.57"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.113"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.80"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.114"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.23"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.115"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Image_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.78"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_4",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.116"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.98"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_47",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_47'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.117"
+      },
+      "Content": {
+        "ObjectName": "AttributeIcon_C'StackBEquipItemDesc_C:WidgetTree.AttributeIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.6"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_48",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_48'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.118"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_605'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.27"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_49",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_49'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.119"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_914'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.99"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_50",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0
+      },
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_50'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.120"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_992'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.100"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_51",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_51'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.121"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBEquipItemDesc_C:WidgetTree.SBRuntimeTextBlock_1279'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.92"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "ImagineStat",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.137"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.138"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.ImagineStat.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.139"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'StackBEquipItemDesc_C:WidgetTree.BaseSwitch.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.162"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.143"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.142"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.140"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.144"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.141"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.37"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.146"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.145"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.67"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_224",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.148"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.147"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.35"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_87",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.150"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.152"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.149"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.153"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.151"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.40"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "WeaponStat",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.154"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.157"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.158"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.155"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.159"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'StackBEquipItemDesc_C:WidgetTree.WeaponStat.VerticalBoxSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.156"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'StackBEquipItemDesc_C:WidgetTree.BaseSwitch.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.161"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "ImagineStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.ImagineStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.131"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1143'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.10"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "ImagineStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 16.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.ImagineStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.131"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.21"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "ImagineStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 12.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.ImagineStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.131"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.87"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.31"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.29"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.85"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'StackBEquipItemDesc_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.114"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.132"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.86"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.133"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.25"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.133"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.24"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_224",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Bottom": 3.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.134"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_864'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.32"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_224",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Bottom": 3.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_224'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.134"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.19"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_87",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.26"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_87",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.20"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_87",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_651'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.28"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_4",
+    "Outer": "VerticalBox_87",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.83"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_87",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.VerticalBox_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.135"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.84"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.8"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBEquipItemDesc_C:WidgetTree.HorizontalBox_245'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.22"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_10",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 12.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.82"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_5",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 16.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_524'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.11"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_8",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0,
+        "Bottom": 7.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBEquipItemDesc_C:WidgetTree.Line'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.81"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_9",
+    "Outer": "WeaponStat",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_1141'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "BaseSwitch",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'StackBEquipItemDesc_C:WidgetTree.BaseSwitch.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.161"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'StackBEquipItemDesc_C:WidgetTree.BaseSwitch.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.162"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "BaseSwitch",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'StackBEquipItemDesc_C:WidgetTree.BaseSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.160"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.WeaponStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.136"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "BaseSwitch",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'StackBEquipItemDesc_C:WidgetTree.BaseSwitch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.160"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBEquipItemDesc_C:WidgetTree.ImagineStat'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.131"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "StackBEquipItemDesc_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'StackBEquipItemDesc_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/StackBEquipItemDesc.7"
+      }
+    }
+  }
+]

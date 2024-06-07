@@ -1,0 +1,1775 @@
+[
+  {
+    "Type": "Function",
+    "Name": "GetHitCollision",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_ZElite_C:GetHitCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_ZElite_C:GetHitCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ZElite_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_NonLeaderZelite_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.66"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_NonLeaderZelite_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ZElite_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_NonLeaderZelite_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChangeEmissiveColor_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCharacterChangeEmissiveColorComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyGuard_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyGuardComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetHitCollision": {
+        "ObjectName": "Function'BP_NonLeaderZelite_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.0"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_NonLeaderZelite_C'Default__BP_NonLeaderZelite_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.2"
+    }
+  },
+  {
+    "Type": "BP_NonLeaderZelite_C",
+    "Name": "Default__BP_NonLeaderZelite_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.BP_NonLeaderZelite_C'",
+    "Template": {
+      "ObjectName": "BP_ZElite_C'Default__BP_ZElite_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.2"
+    },
+    "Properties": {
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_NonLeaderZelite_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.35"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_NonLeaderZelite_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.50"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_NonLeaderZelite_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.38"
+      },
+      "EnemyId": "E302_00_01_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_NonLeaderZelite_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.27"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_NonLeaderZelite_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.42"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_NonLeaderZelite_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.40"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_NonLeaderZelite_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.26"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_NonLeaderZelite_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.28"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_NonLeaderZelite_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.29"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_NonLeaderZelite_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.41"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_NonLeaderZelite_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.49"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_NonLeaderZelite_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.7"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_NonLeaderZelite_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.46"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_NonLeaderZelite_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.48"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_NonLeaderZelite_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.31"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_NonLeaderZelite_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.44"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_NonLeaderZelite_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.36"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_NonLeaderZelite_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.23"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_NonLeaderZelite_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.14"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_NonLeaderZelite_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.60"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_NonLeaderZelite_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.33"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_NonLeaderZelite_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.15"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_NonLeaderZelite_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.37"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_NonLeaderZelite_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.25"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_NonLeaderZelite_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.34"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_NonLeaderZelite_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.51"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_NonLeaderZelite_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.30"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_NonLeaderZelite_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.47"
+      },
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_NonLeaderZelite_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.18"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_NonLeaderZelite_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.13"
+      },
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_NonLeaderZelite_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.55"
+      },
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_NonLeaderZelite_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.58"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_NonLeaderZelite_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.10"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_NonLeaderZelite_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.57"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_NonLeaderZelite_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.56"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_NonLeaderZelite_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.59"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_NonLeaderZelite_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.9"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_NonLeaderZelite_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.24"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_NonLeaderZelite_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.3"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_NonLeaderZelite_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.53"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_NonLeaderZelite_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.8"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_NonLeaderZelite_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.54"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_NonLeaderZelite_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.6"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_NonLeaderZelite_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.21"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_NonLeaderZelite_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.4"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_NonLeaderZelite_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.45"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_NonLeaderZelite_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.32"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_NonLeaderZelite_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.43"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AINonLeaderZelite_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E302_00/BP_AINonLeaderZelite.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_NonLeaderZelite_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.43"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_ZElite_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.3"
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_ZElite_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_NonLeaderZelite_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.21"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_ZElite_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.6"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_ZElite_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.7"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_ZElite_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.8"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_ZElite_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.9"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_ZElite_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.10"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_NonLeaderZelite_C'Default__BP_NonLeaderZelite_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.2"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_NonLeaderZelite_C'Default__BP_NonLeaderZelite_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.2"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_ZElite_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.11"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_ZElite_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.12"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_ZElite_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.13"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E302_00_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E302_00_01.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_ZElite_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.14"
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_ZElite_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.15"
+    }
+  },
+  {
+    "Type": "SBCharacterChangeEmissiveColorComponent",
+    "Name": "SBEnemyChangeEmissiveColor_0_GEN_VARIABLE",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharacterChangeEmissiveColorComponent'",
+    "Properties": {
+      "EmissiveColorList": [
+        {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        },
+        {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF00FFFF"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_ZElite_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.17"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_ZElite_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.18"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_NonLeaderZelite_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.45"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_ZElite_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.19"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_ZElite_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.20"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_ZElite_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.21"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_NonLeaderZelite_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.43"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_ZElite_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.22"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_ZElite_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.23"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_ZElite_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.24"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_ZElite_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.25"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_ZElite_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.26"
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_ZElite_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.27"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_ZElite_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.28"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_ZElite_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.29"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_ZElite_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.30"
+    }
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_ZElite_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.31"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_ZElite_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.32"
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_ZElite_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.33"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_ZElite_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.34"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_ZElite_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.35"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_ZElite_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.36"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_ZElite_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.37"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_ZElite_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.38"
+    }
+  },
+  {
+    "Type": "SBEnemyGuardComponent",
+    "Name": "SBEnemyGuard_0_GEN_VARIABLE",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyGuardComponent'",
+    "Properties": {
+      "AICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_ShieldBreak_ZEL_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/AICustom/BP_AIC_ShieldBreak_ZEL.0"
+        }
+      ],
+      "DefenceConfig": {
+        "GuardBitMask": 3
+      },
+      "bHideShieldWhenGuardBreak": true,
+      "m_GuardEffectSettingList": [
+        {
+          "NeedDurabilityRate": 0.0,
+          "GuardActiveEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardSuccessEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/00_Common/Guard/PS_GAM_Guard_01.PS_GAM_Guard_01",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_Inventory_1",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": false,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "Center_J",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardBreakEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/00_Common/Guard/PS_GAM_GuardShield_Break_Steal.PS_GAM_GuardShield_Break_Steal",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E300_00_Human/Human_BanditLeader/Play_BanditLeader_Shield_Break.Play_BanditLeader_Shield_Break",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_Inventory_1",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": false,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "Center_J",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardEndEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_ZElite_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.40"
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_ZElite_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.41"
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_ZElite_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.42"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_ZElite_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.43"
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_ZElite_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.44"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_ZElite_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.45"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_NonLeaderZelite_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.43"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_ZElite_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.46"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_ZElite_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.47"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_ZElite_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.48"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_ZElite_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.50"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_ZElite_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.51"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_ZElite_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.52"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_ZElite_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.53"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_ZElite_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.54"
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_ZElite_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.56"
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_ZElite_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.57"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_ZElite_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.58"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_ZElite_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.59"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_ZElite_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.60"
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_ZElite_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.61"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_ZElite_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.62"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_ZElite_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_ZElite.63"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_NonLeaderZelite_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.62"
+      },
+      "VariableGuid": "6F2C25E9-4F561C97-3EF09E86-730162C8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyGuardComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyGuardComponent'BP_NonLeaderZelite_C:SBEnemyGuard_0_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.39"
+      },
+      "VariableGuid": "BE0C4132-4884E412-AD948AA5-438D267B",
+      "InternalVariableName": "SBEnemyGuard_0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCharacterChangeEmissiveColorComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCharacterChangeEmissiveColorComponent'BP_NonLeaderZelite_C:SBEnemyChangeEmissiveColor_0_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.16"
+      },
+      "VariableGuid": "B2E2F2DE-4D1E68FA-FA09C397-26045371",
+      "InternalVariableName": "SBEnemyChangeEmissiveColor_0"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_NonLeaderZelite_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NonLeaderZelite_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.64"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NonLeaderZelite_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.65"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_NonLeaderZelite_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.64"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NonLeaderZelite_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.65"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_NonLeaderZelite_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E302_00_ZElite/BP_NonLeaderZelite.63"
+      }
+    }
+  }
+]

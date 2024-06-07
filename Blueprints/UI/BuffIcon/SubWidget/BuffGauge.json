@@ -1,0 +1,1218 @@
+[
+  {
+    "Type": "Function",
+    "Name": "PlayAnim",
+    "Outer": "BuffGauge_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBBuffGauge:PlayAnim'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InStartTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InAnimSpeed",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "BuffGauge_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'BuffGauge_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.21"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'BuffGauge_C:Update_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.20"
+        }
+      ]
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBBuffGauge'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BuffGauge_C:PlayAnim'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Update",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "PlayAnim": {
+        "ObjectName": "Function'BuffGauge_C:PlayAnim'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BuffGauge_C'Default__BuffGauge_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.2"
+    }
+  },
+  {
+    "Type": "BuffGauge_C",
+    "Name": "Default__BuffGauge_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.BuffGauge_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CPGauge",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CPGauge.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CPGauge.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 26.0,
+          "Bottom": 3.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'BuffGauge_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.3"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'BuffGauge_C:WidgetTree.CPGauge'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CPGauge",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'BuffGauge_C:WidgetTree.CPGauge'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.4"
+      },
+      "Content": {
+        "ObjectName": "Image'BuffGauge_C:WidgetTree.BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CPGauge",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'BuffGauge_C:WidgetTree.CPGauge'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.4"
+      },
+      "Content": {
+        "ObjectName": "Image'BuffGauge_C:WidgetTree.Gauge'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.5,
+            "Hex": "7FFFFFFF"
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CPGauge.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.6"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 1.0,
+          "Y": 1.0
+        }
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Gauge",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'BuffGauge_C:WidgetTree.CPGauge.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.7"
+      },
+      "RenderTransformPivot": {
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Update",
+    "Outer": "Update_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B93631FE-42414D09-0731A98A-A5A12BC1",
+          "Name": "Gauge",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "80448AD3-4829ADB2-D2199EAB-FAA7F6AA",
+          "Name": "BG",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B93631FE-42414D09-0731A98A-A5A12BC1",
+          "BindingName": "Gauge",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.13"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "80448AD3-4829ADB2-D2199EAB-FAA7F6AA",
+          "BindingName": "BG",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.14"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 30
+      },
+      "Signature": "5513D40B-4A2E5961-B4FB68B3-86965BCB"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 24
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 60000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": -1.6666667E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": -1.6666667E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.15"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.16"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "Signature": "BA7F6022-4C9A12B0-C5D7C8AB-55F5497D"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_2",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 24
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 60000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": -1.7E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": -1.7E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.17"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.18"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 60000
+            }
+          }
+        }
+      },
+      "Signature": "E3B55CF1-43B0910D-1E752AA7-1EF9D9B0"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Update",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.11"
+        }
+      ],
+      "EvaluationFieldGuid": "FD7FEA12-4CBFA8E2-45038EA1-41A00E2C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.11"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 60000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "FD7FEA12-4CBFA8E2-45038EA1-41A00E2C"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_2",
+    "Outer": "Update",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.12"
+        }
+      ],
+      "EvaluationFieldGuid": "6688D7E0-4CA5352C-F01E2B99-53C4ED6C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.12"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 60000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "6688D7E0-4CA5352C-F01E2B99-53C4ED6C"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Update_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 60000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.11"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'BuffGauge_C:Update_INST.Update.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.12"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "B93631FE-42414D09-0731A98A-A5A12BC1"
+          },
+          {
+            "ObjectBindingID": "80448AD3-4829ADB2-D2199EAB-FAA7F6AA"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 60000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "53923D3E-46BFE379-72097DB6-0F5B673C",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Update_INST",
+    "Outer": "BuffGauge_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'BuffGauge_C:Update_INST.Update'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.10"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Gauge",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B93631FE-42414D09-0731A98A-A5A12BC1",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "BG",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "80448AD3-4829ADB2-D2199EAB-FAA7F6AA",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Update",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'BuffGauge_C:Update_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.19"
+      },
+      "Signature": "53923D3E-46BFE379-72097DB6-0F5B673C"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "BuffGauge_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'BuffGauge_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/SubWidget/BuffGauge.3"
+      }
+    }
+  }
+]

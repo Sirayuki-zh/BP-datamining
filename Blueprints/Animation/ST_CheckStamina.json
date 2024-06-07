@@ -1,0 +1,157 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ReceiveCanEnter",
+    "Outer": "ST_CheckStamina_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ASTransition_BlueprintBase:ReceiveCanEnter'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Player/BP_PlayerCharacter.65"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocallyControlled_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckStamina_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ST_CheckStamina_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'ASTransition_BlueprintBase'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ST_CheckStamina_C:ReceiveCanEnter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckStamina.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "NeedStamina",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShowAlert",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ReceiveCanEnter": {
+        "ObjectName": "Function'ST_CheckStamina_C:ReceiveCanEnter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckStamina.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ST_CheckStamina_C'Default__ST_CheckStamina_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckStamina.2"
+    }
+  },
+  {
+    "Type": "ST_CheckStamina_C",
+    "Name": "Default__ST_CheckStamina_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckStamina.ST_CheckStamina_C'",
+    "Properties": {
+      "ShowAlert": true
+    }
+  }
+]

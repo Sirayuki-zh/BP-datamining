@@ -1,0 +1,378 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ResultWindow_CharacterCardList",
+    "Outer": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetPartyMemberCharacterIds_OutCharacterIds",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "CallFunc_GetPartyMemberCharacterIds_OutCharacterIds",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__ResultWindow_CharacterCardList_CharacterCardList_K2Node_ComponentBoundEvent_0_OnGetCharacterCardInfos__DelegateSignature",
+    "Outer": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'ResultWindow_CharacterCardList_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.13"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'ResultWindow_CharacterCardList_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.11"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:ExecuteUbergraph_ResultWindow_CharacterCardList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.2"
+      },
+      {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:BndEvt__ResultWindow_CharacterCardList_CharacterCardList_K2Node_ComponentBoundEvent_0_OnGetCharacterCardInfos__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.1"
+      },
+      {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:ExecuteUbergraph_ResultWindow_CharacterCardList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CharacterCardList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'CharacterCardList_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CharacterCard/CharacterCardList.26"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Out Party Members",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Out Party Members",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'SBPartyMemberState'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CharacterIdList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "CharacterIdList",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ResultWindow_CharacterCardList": {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:ExecuteUbergraph_ResultWindow_CharacterCardList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.0"
+      },
+      "BndEvt__ResultWindow_CharacterCardList_CharacterCardList_K2Node_ComponentBoundEvent_0_OnGetCharacterCardInfos__DelegateSignature": {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:BndEvt__ResultWindow_CharacterCardList_CharacterCardList_K2Node_ComponentBoundEvent_0_OnGetCharacterCardInfos__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.1"
+      },
+      "Construct": {
+        "ObjectName": "Function'ResultWindow_CharacterCardList_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ResultWindow_CharacterCardList_C'Default__ResultWindow_CharacterCardList_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.4"
+    }
+  },
+  {
+    "Type": "ResultWindow_CharacterCardList_C",
+    "Name": "Default__ResultWindow_CharacterCardList_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.ResultWindow_CharacterCardList_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_71",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.8"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_71",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.6"
+      },
+      "Content": {
+        "ObjectName": "CharacterCardList_C'ResultWindow_CharacterCardList_C:WidgetTree.CharacterCardList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_71",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1560.0,
+          "Bottom": 632.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.6"
+      },
+      "Content": {
+        "ObjectName": "Image'ResultWindow_CharacterCardList_C:WidgetTree.Bg01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.12"
+      }
+    }
+  },
+  {
+    "Type": "CharacterCardList_C",
+    "Name": "CharacterCardList",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/CharacterCard/CharacterCardList.CharacterCardList_C'",
+    "Template": {
+      "ObjectName": "CharacterCardList_C'Default__CharacterCardList_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CharacterCard/CharacterCardList.27"
+    },
+    "Properties": {
+      "CharacterCardType": "ECharacterCardType::NewEnumerator1",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.8"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "CharacterCardList",
+          "DelegatePropertyName": "OnGetCharacterCardInfos",
+          "FunctionNameToBind": "BndEvt__ResultWindow_CharacterCardList_CharacterCardList_K2Node_ComponentBoundEvent_0_OnGetCharacterCardInfos__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg01",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 760.0,
+          "Y": 200.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DungeonResultCommonBG02L'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Dungeon/UI_DungeonResultCommonBG02L.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_71.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.9"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ResultWindow_CharacterCardList_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'ResultWindow_CharacterCardList_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/SubWidget/ResultWindow_CharacterCardList.5"
+      }
+    }
+  }
+]

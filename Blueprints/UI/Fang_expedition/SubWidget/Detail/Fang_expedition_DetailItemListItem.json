@@ -1,0 +1,698 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetData",
+    "Outer": "Fang_expedition_DetailItemListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "RewardType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBRewardItemType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Amount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetNum",
+    "Outer": "Fang_expedition_DetailItemListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Num",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRandomReward",
+    "Outer": "Fang_expedition_DetailItemListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Data",
+        "Flags": "RF_Public",
+        "ElementSize": 36,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBFang_expeditionRandomRewardData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "FangValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LoopEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "IconArray",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "IconArray",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Fang_expedition_DetailItemListItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Fang_expedition_DetailItemListItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetRandomReward'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.2"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.1"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommonIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'CommonIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonIcon/CommonIcon.101"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Heart1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Heart2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Heart3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NumText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_80",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetData": {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.0"
+      },
+      "SetNum": {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.1"
+      },
+      "SetRandomReward": {
+        "ObjectName": "Function'Fang_expedition_DetailItemListItem_C:SetRandomReward'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Fang_expedition_DetailItemListItem_C'Default__Fang_expedition_DetailItemListItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.4"
+    }
+  },
+  {
+    "Type": "Fang_expedition_DetailItemListItem_C",
+    "Name": "Default__Fang_expedition_DetailItemListItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.Fang_expedition_DetailItemListItem_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.5"
+      },
+      "Content": {
+        "ObjectName": "CommonIcon_C'Fang_expedition_DetailItemListItem_C:WidgetTree.CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 64.0,
+          "Right": 64.0,
+          "Bottom": 20.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.5"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.17"
+      }
+    }
+  },
+  {
+    "Type": "CommonIcon_C",
+    "Name": "CommonIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/CommonIcon/CommonIcon.CommonIcon_C'",
+    "Template": {
+      "ObjectName": "CommonIcon_C'Default__CommonIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonIcon/CommonIcon.102"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_110",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.10"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.11"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.19"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_110",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.9"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_DetailItemListItem_C:WidgetTree.Heart1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_110",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 1.0,
+        "Right": 1.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.9"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_DetailItemListItem_C:WidgetTree.Heart2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_110",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.9"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_DetailItemListItem_C:WidgetTree.Heart3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Heart1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 17.0,
+          "Y": 17.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_MarkHeart'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_MarkHeart.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.194618,
+        "B": 0.552012,
+        "A": 1.0,
+        "Hex": "FFFF7AC4"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.10"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Heart2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 17.0,
+          "Y": 17.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_MarkHeart'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_MarkHeart.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.194618,
+        "B": 0.552012,
+        "A": 1.0,
+        "Hex": "FFFF7AC4"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Heart3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 17.0,
+          "Y": 17.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_MarkHeart'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_MarkHeart.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.194618,
+        "B": 0.552012,
+        "A": 1.0,
+        "Hex": "FFFF7AC4"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.12"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NumText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "828862D849ADCECB9D31C68BE573775D",
+        "SourceString": "999",
+        "LocalizedString": "999"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 0.745404,
+          "A": 1.0,
+          "Hex": "FFFFFFE0"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 9
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_80",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.18"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher_80",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.17"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_DetailItemListItem_C:WidgetTree.NumText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher_80",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailItemListItem_C:WidgetTree.WidgetSwitcher_80'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.17"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Fang_expedition_DetailItemListItem_C:WidgetTree.HorizontalBox_110'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Fang_expedition_DetailItemListItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailItemListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailItemListItem.5"
+      }
+    }
+  }
+]

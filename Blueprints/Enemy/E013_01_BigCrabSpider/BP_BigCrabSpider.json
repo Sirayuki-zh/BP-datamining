@@ -1,0 +1,1698 @@
+[
+  {
+    "Type": "Function",
+    "Name": "GetLockOnCameraID",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_CrabSpider_C:GetLockOnCameraID'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_CrabSpider_C:GetLockOnCameraID'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Lock on CameraID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CrabSpider_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BigCrabSpider_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.71"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BigCrabSpider_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CrabSpider_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BigCrabSpider_C:GetLockOnCameraID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCharaBodyCapsule_Add",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetLockOnCameraID": {
+        "ObjectName": "Function'BP_BigCrabSpider_C:GetLockOnCameraID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.0"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BigCrabSpider_C'Default__BP_BigCrabSpider_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.2"
+    }
+  },
+  {
+    "Type": "BP_BigCrabSpider_C",
+    "Name": "Default__BP_BigCrabSpider_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.BP_BigCrabSpider_C'",
+    "Template": {
+      "ObjectName": "BP_CrabSpider_C'Default__BP_CrabSpider_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.2"
+    },
+    "Properties": {
+      "MeshScaleMap": [
+        {
+          "E013_03_01": 0.5
+        }
+      ],
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_BigCrabSpider_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.39"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_BigCrabSpider_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.54"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_BigCrabSpider_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.42"
+      },
+      "EnemyId": "E013_01_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_BigCrabSpider_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.31"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_BigCrabSpider_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.46"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_BigCrabSpider_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.43"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_BigCrabSpider_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.30"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_BigCrabSpider_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.32"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_BigCrabSpider_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.33"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_BigCrabSpider_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.45"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_BigCrabSpider_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.53"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_BigCrabSpider_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.10"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_BigCrabSpider_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.50"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_BigCrabSpider_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.52"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_BigCrabSpider_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.35"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_BigCrabSpider_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.48"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_BigCrabSpider_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.40"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_BigCrabSpider_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.27"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_BigCrabSpider_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.19"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_BigCrabSpider_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.66"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_BigCrabSpider_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.37"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_BigCrabSpider_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.20"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_BigCrabSpider_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.41"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_BigCrabSpider_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.29"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_BigCrabSpider_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.38"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_BigCrabSpider_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.55"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_BigCrabSpider_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.34"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_BigCrabSpider_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.51"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_BigCrabSpider_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.21"
+      },
+      "SpawnEffectScale": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E013/AST_E013_BCS.AST_E013_BCS",
+        "SubPathString": ""
+      },
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_BigCrabSpider_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.22"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_BigCrabSpider_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.18"
+      },
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_BigCrabSpider_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.61"
+      },
+      "ElementStatusEffectSizeScale": 0.9,
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_BigCrabSpider_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.64"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_BigCrabSpider_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.13"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_BigCrabSpider_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.63"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_BigCrabSpider_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.62"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_BigCrabSpider_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.65"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_BigCrabSpider_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.12"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_BigCrabSpider_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.28"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_BigCrabSpider_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.3"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_BigCrabSpider_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.57"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_BigCrabSpider_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.11"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_BigCrabSpider_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.59"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_BigCrabSpider_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.9"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_BigCrabSpider_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.25"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_BigCrabSpider_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.6"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_BigCrabSpider_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.49"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_BigCrabSpider_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.36"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_BigCrabSpider_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.47"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIBigCrabSpider_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E013_01/BP_AIBigCrabSpider.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_BigCrabSpider_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.47"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_CrabSpider_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.3"
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Body_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_CrabSpider_C:ASDamage_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.4"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 180.0,
+      "CapsuleRadius": 110.0
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Tail_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_CrabSpider_C:ASDamage_Tail_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.5"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "CapsuleRadius": 100.0,
+      "RelativeLocation": {
+        "X": -150.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_CrabSpider_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_BigCrabSpider_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.25"
+      },
+      "RelativeLocation": {
+        "X": 3.9470032E-07,
+        "Y": -6.8833828E-15,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBNamePlateComponent2D'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBNamePlateComponent2D'BP_BigCrabSpider_C:NamePlate_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.60"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "NamePlate",
+            "AssociatedGuid": "3AD35B06-411E914E-8622249C-D6FC4554"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_BigCrabSpider_C:SBCharaBodyCapsule_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.16"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_CrabSpider_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.1"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule",
+            "AssociatedGuid": "15295C08-43666A01-5D8D8986-14346461"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_BigCrabSpider_C:ASDamage_Tail_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.5"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_CrabSpider_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.1"
+            },
+            "SCSVariableName": "ASDamage_Tail",
+            "AssociatedGuid": "6C4D0CC7-40B027D7-D4DF4FA9-6E6722F4"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_BigCrabSpider_C:ASDamage_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.4"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_CrabSpider_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.1"
+            },
+            "SCSVariableName": "ASDamage_Body",
+            "AssociatedGuid": "C2803239-43FD83C9-D7E18FA8-E2F54241"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_BigCrabSpider_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.58"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MD_Stance_Diving_C",
+    "Name": "MD_Stance_Diving_C_0",
+    "Outer": "EnemyModifierComp",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/CommonModify/MD_Stance_Diving.MD_Stance_Diving_C'",
+    "Template": {
+      "ObjectName": "MD_Stance_Diving_C'Default__MD_Stance_Diving_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/CommonModify/MD_Stance_Diving.1"
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_CrabSpider_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.8"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_CrabSpider_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.9"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_CrabSpider_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.10"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_CrabSpider_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.11"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_CrabSpider_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.12"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_BigCrabSpider_C'Default__BP_BigCrabSpider_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.2"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_BigCrabSpider_C'Default__BP_BigCrabSpider_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.2"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_CrabSpider_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.13"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_Add_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "CapsuleRadius": 125.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_CrabSpider_C:SBCharaBodyCapsule_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.14"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 290.0,
+      "CapsuleRadius": 210.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_CrabSpider_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.15"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_CrabSpider_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.16"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E013_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E013_01.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_CrabSpider_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.17"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_BigCrabSpider'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/AnimationSampleData/ASA_BigCrabSpider.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_CrabSpider_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.18"
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_CrabSpider_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.19"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_CrabSpider_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.20"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_BigCrabSpider_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.49"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_CrabSpider_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.21"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_CrabSpider_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.22"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_CrabSpider_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.24"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_BigCrabSpider_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.47"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_CrabSpider_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.25"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_CrabSpider_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.26"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_CrabSpider_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.27"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_CrabSpider_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.28"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 64
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_CrabSpider_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.29"
+    },
+    "Properties": {
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_BigCrabSpiderActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/DT_BigCrabSpiderActionTable_Battle.0"
+      },
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_BigCrabSpiderExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/DT_BigCrabSpiderExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_CrabSpider_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.30"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_CrabSpider_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.31"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_CrabSpider_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.32"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_CrabSpider_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.33"
+    }
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_CrabSpider_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.34"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_CrabSpider_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.35"
+    },
+    "Properties": {
+      "MaxRunSpeed": 500.0,
+      "MaxDashSpeed": 600.0,
+      "MaxStepHeight": 125.0,
+      "MaxWalkSpeed": 250.0
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_CrabSpider_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.36"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_CrabSpider_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.37"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_CrabSpider_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.38"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_CrabSpider_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.39"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_CrabSpider_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.40"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_CrabSpider_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.41"
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_CrabSpider_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.42"
+    },
+    "Properties": {
+      "ModifierMap": [
+        {
+          "Stance_Diving": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "MD_Stance_Diving_C'Default__BP_BigCrabSpider_C:EnemyModifierComp.MD_Stance_Diving_C_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.8"
+            }
+          }
+        },
+        {
+          "Stance_Standard": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_BigCrabSpider_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.44"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_0",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'"
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_CrabSpider_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.43"
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_CrabSpider_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.44"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_CrabSpider_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.45"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "CapsuleRadius": 125.0
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_CrabSpider_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.46"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_CrabSpider_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.47"
+    },
+    "Properties": {
+      "SubspeciesScaleRate": 2.0,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E013_01_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E013_01_00/Model/SK_CH_E013_01_00.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_BigCrabSpider_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.47"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -200.0
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_CrabSpider_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.48"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_CrabSpider_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.49"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_CrabSpider_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.50"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_CrabSpider_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.51"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_CrabSpider_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.52"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_CrabSpider_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.53"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_CrabSpider_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.54"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_CrabSpider_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.55"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_CrabSpider_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.56"
+    },
+    "Properties": {
+      "m_ParticleScale": 2.0,
+      "m_DecalSize": 30.0,
+      "SurfaceFootprintSettingList": {
+        "m_FPWalk": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E013/BP_FP_E013_01_Walk.BP_FP_E013_01_Walk_C",
+          "SubPathString": ""
+        },
+        "m_FPRun": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E013/BP_FP_E013_01_Run.BP_FP_E013_01_Run_C",
+          "SubPathString": ""
+        },
+        "m_FPDash": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E013/BP_FP_E013_01_Run.BP_FP_E013_01_Run_C",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_CrabSpider_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.57"
+    }
+  },
+  {
+    "Type": "SBNamePlateComponent2D",
+    "Name": "NamePlate_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBNamePlateComponent2D'",
+    "Template": {
+      "ObjectName": "SBNamePlateComponent2D'BP_CrabSpider_C:NamePlate_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.58"
+    },
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 7.176537E-12,
+        "Z": 50.0
+      }
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_CrabSpider_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.59"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_CrabSpider_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.60"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_CrabSpider_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.61"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_CrabSpider_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.62"
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_CrabSpider_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.63"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_CrabSpider_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.64"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_CrabSpider_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_00_CrabSpider/BP_CrabSpider.66"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BigCrabSpider_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.68"
+      },
+      "VariableGuid": "22CA03CB-474EC5F9-BF74E288-2196A24F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCharaBodyCapsuleComponent'BP_BigCrabSpider_C:SBCharaBodyCapsule_Add_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.15"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "373B3687-43C2FEF6-A74AD2BA-DBFBCF0F",
+      "InternalVariableName": "SBCharaBodyCapsule_Add"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BigCrabSpider_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BigCrabSpider_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.70"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BigCrabSpider_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.70"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BigCrabSpider_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E013_01_BigCrabSpider/BP_BigCrabSpider.69"
+      }
+    }
+  }
+]

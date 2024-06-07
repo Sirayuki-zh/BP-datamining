@@ -1,0 +1,173 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SS_EnemyStepJump_Launch",
+    "Outer": "SS_EnemyStepJump_Launch_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_AnimationSet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'ASAnimationSet'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_TryGetPawnOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "SS_EnemyStepJump_Launch_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ASState_BlueprintBase:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimationSet",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'ASAnimationSet'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SS_EnemyStepJump_Launch_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'SS_EnemyStepJump_Launch_C:ExecuteUbergraph_SS_EnemyStepJump_Launch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ASState_BlueprintBase'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SS_EnemyStepJump_Launch_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.1"
+      },
+      {
+        "ObjectName": "Function'SS_EnemyStepJump_Launch_C:ExecuteUbergraph_SS_EnemyStepJump_Launch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SS_EnemyStepJump_Launch": {
+        "ObjectName": "Function'SS_EnemyStepJump_Launch_C:ExecuteUbergraph_SS_EnemyStepJump_Launch'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.0"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'SS_EnemyStepJump_Launch_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SS_EnemyStepJump_Launch_C'Default__SS_EnemyStepJump_Launch_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.3"
+    }
+  },
+  {
+    "Type": "SS_EnemyStepJump_Launch_C",
+    "Name": "Default__SS_EnemyStepJump_Launch_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Animation/SS_EnemyStepJump_Launch.SS_EnemyStepJump_Launch_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

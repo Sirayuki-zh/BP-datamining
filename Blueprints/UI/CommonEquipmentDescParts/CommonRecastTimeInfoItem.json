@@ -1,0 +1,557 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_CommonRecastTimeInfoItem",
+    "Outer": "CommonRecastTimeInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Color",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTextColor",
+    "Outer": "CommonRecastTimeInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Color",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRecastTime",
+    "Outer": "CommonRecastTimeInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InRecastTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_FloatToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "CommonRecastTimeInfoItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'CommonRecastTimeInfoItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:ExecuteUbergraph_CommonRecastTimeInfoItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:SetRecastTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.2"
+      },
+      {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:SetTextColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.1"
+      },
+      {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:ExecuteUbergraph_CommonRecastTimeInfoItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ColumnTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeadingTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RecastTimeValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimeUnitTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_CommonRecastTimeInfoItem": {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:ExecuteUbergraph_CommonRecastTimeInfoItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.0"
+      },
+      "SetTextColor": {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:SetTextColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.1"
+      },
+      "SetRecastTime": {
+        "ObjectName": "Function'CommonRecastTimeInfoItem_C:SetRecastTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_SetTextColor_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BPI_SetTextColor.1"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CommonRecastTimeInfoItem_C'Default__CommonRecastTimeInfoItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.4"
+    }
+  },
+  {
+    "Type": "CommonRecastTimeInfoItem_C",
+    "Name": "Default__CommonRecastTimeInfoItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.CommonRecastTimeInfoItem_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.6"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 134.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'CommonRecastTimeInfoItem_C:WidgetTree.HeadingTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 156.0,
+          "Right": 10.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'CommonRecastTimeInfoItem_C:WidgetTree.ColumnTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 164.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.5"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.10"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.9"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'CommonRecastTimeInfoItem_C:WidgetTree.RecastTimeValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 1.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.9"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'CommonRecastTimeInfoItem_C:WidgetTree.TimeUnitTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.13"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "HeadingTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 302,
+      "Text": {
+        "Namespace": "",
+        "Key": "4AB2C8B447ABB8918862668294D90DDE",
+        "SourceString": "インターバル",
+        "LocalizedString": "インターバル"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.6"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "TimeUnitTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Craft'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Craft.0"
+      },
+      "TextId": 213,
+      "Text": {
+        "Namespace": "",
+        "Key": "32E44E0C4BE59D45B96A08B2B8EA4680",
+        "SourceString": "Sec.",
+        "LocalizedString": "Sec."
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ColumnTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "40A8DEF24A9EB5EC1D32858A2B04B28F",
+        "SourceString": ":",
+        "LocalizedString": ":"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.7"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "RecastTimeValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "633105FE491D622351EB3E9E27C41F83",
+        "SourceString": "00",
+        "LocalizedString": "00"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'CommonRecastTimeInfoItem_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.10"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "CommonRecastTimeInfoItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'CommonRecastTimeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonEquipmentDescParts/CommonRecastTimeInfoItem.5"
+      }
+    }
+  }
+]

@@ -1,0 +1,1400 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GameState_TowerSurvival",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayInEditor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'UI_TowerSurvaival_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/TowerSurvaival/UI_TowerSurvaival.39"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameModeBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_GameMode_TowerSurvival_C:FloorClearEvent__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameMode_TowerSurvival.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Game_Mode_Tower_Survival",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GameMode_TowerSurvival_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameMode_TowerSurvival.23"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_GameMode_TowerSurvival_C:FloorStartEvent__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameMode_TowerSurvival.0"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameState_Dungeon:OnStartDungeonResult__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReadyCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dng_Intro_Camera_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_IntroSequence/BP_Dng_Intro_Camera.21"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientReady_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerStartLocation_PlayerStart",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerStart'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetPlayerStartLocation_DistFromStart",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_TowerPortal_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerPortal.14"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateFloorUI_Updated",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsGameOver_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameState_Dungeon:SBOnTimeOverDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetEnableLocalPlayerInput_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateFloorUI_Updated_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "EventOnTimeOver",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EventStartDungeonResult",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UIFloorStart",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UIFloorClear",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UIStart",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_ReadyCount",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_Dungeon:BP_ReadyCount'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_GameStarted",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetFloorMax",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "FloorMaxNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_CurrentFloorNum",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateFloorUI_Updated",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_CurrentFloorInfo",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllComponentsOfClass_OutComponents",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllComponentsOfClass_OutComponents",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SBLevelNavModifyControl'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBLevelNavModifyControl'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_TmpPortalGoal",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_TowerPortal_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerPortal.14"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateFloorUI",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Updated",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HUD'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBBattle_HUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBBattleHUD'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBattleContentsHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBBattleContentsHUD'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCurrentHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsTower_HUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'TowerHUD_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/TowerSurvaival/TowerHUD.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "NumReplicatedProperties": 5,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_GameState_TowerSurvival_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.26"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ExecuteUbergraph_BP_GameState_TowerSurvival'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBGameState_TowerSurvival'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UpdateFloorUI'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.15"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_TmpPortalGoal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.14"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_CurrentFloorInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.13"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_CurrentFloorNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.12"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:SetFloorMax'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.11"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_GameStarted'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.10"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:BP_ReadyCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.9"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.8"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIFloorClear'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.7"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIFloorStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.6"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.5"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.4"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:EventStartDungeonResult'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.3"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.2"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:EventOnTimeOver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.1"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ExecuteUbergraph_BP_GameState_TowerSurvival'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UITowerSurvival",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'UI_TowerSurvaival_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/TowerSurvaival/UI_TowerSurvaival.39"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "GameStarted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepIndex": 58,
+        "RepNotifyFunc": "OnRep_GameStarted",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentFloorNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepIndex": 59,
+        "RepNotifyFunc": "OnRep_CurrentFloorNum"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "FloorMaxNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "RepIndex": 60
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentFloorInfo",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepIndex": 61,
+        "RepNotifyFunc": "OnRep_CurrentFloorInfo",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'ST_TowerFloorInfo'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/ST_TowerFloorInfo.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ResultSoundEvent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TowerPortals",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "TowerPortals",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_TowerPortal_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Tower/BP_TowerPortal.14"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TmpPortalGoal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnTemplate | DisableEditOnInstance | RepNotify",
+        "RepIndex": 62,
+        "RepNotifyFunc": "OnRep_TmpPortalGoal",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_InteractionWarpGoal_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_InteractionWarp/BP_InteractionWarpGoal.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFailed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Tower HUD",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'TowerHUD_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/TowerSurvaival/TowerHUD.4"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GameState_TowerSurvival": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ExecuteUbergraph_BP_GameState_TowerSurvival'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.0"
+      },
+      "EventOnTimeOver": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:EventOnTimeOver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.1"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.2"
+      },
+      "EventStartDungeonResult": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:EventStartDungeonResult'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.4"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.5"
+      },
+      "UIFloorStart": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIFloorStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.6"
+      },
+      "UIFloorClear": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIFloorClear'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.7"
+      },
+      "UIStart": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UIStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.8"
+      },
+      "BP_ReadyCount": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:BP_ReadyCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.9"
+      },
+      "OnRep_GameStarted": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_GameStarted'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.10"
+      },
+      "SetFloorMax": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:SetFloorMax'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.11"
+      },
+      "OnRep_CurrentFloorNum": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_CurrentFloorNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.12"
+      },
+      "OnRep_CurrentFloorInfo": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_CurrentFloorInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.13"
+      },
+      "OnRep_TmpPortalGoal": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:OnRep_TmpPortalGoal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.14"
+      },
+      "UpdateFloorUI": {
+        "ObjectName": "Function'BP_GameState_TowerSurvival_C:UpdateFloorUI'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.15"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GameState_TowerSurvival_C'Default__BP_GameState_TowerSurvival_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.17"
+    }
+  },
+  {
+    "Type": "BP_GameState_TowerSurvival_C",
+    "Name": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.BP_GameState_TowerSurvival_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CurrentFloorInfo": {
+        "FloorId_2_E7C43F194E6037BA527FA4888AB55143": "None",
+        "FloorType_28_86962E4845C971C2B82F99930D698CEF": "ETowerFloorType::NewEnumerator1",
+        "StartPointGoalTag_14_ABA1E2CE45EB183E45830588735FF1F3": "None",
+        "ChallengeId_20_10798115481C96EBF99AF2B7005D8FBE": "None",
+        "StreamLevels_18_E1A570874EA12C226C57F58AF1A97F68": []
+      },
+      "ResultSoundEvent": {
+        "ObjectName": "AkAudioEvent'Switch_Music_twr001_Result'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/Music/Music/SwitchMusic/Switch_Music_twr001_Result.1"
+      },
+      "LevelConditionVoiceComponent": {
+        "ObjectName": "SBLevelBuddyVoiceComponent'Default__BP_GameState_TowerSurvival_C:SBLevelBuddyVoiceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.22"
+      },
+      "ClearConditionWatcher": {
+        "ObjectName": "SBDungeonClearConditionWatcher2'Default__BP_GameState_TowerSurvival_C:SBDungeonCaptureObserver2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.20"
+      },
+      "ArenaMissionWatcher": {
+        "ObjectName": "SBArenaMissionWatcher'Default__BP_GameState_TowerSurvival_C:SBMissionCaptureObserver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.18"
+      },
+      "TowerChallengeWatcher": {
+        "ObjectName": "SBTowerChallengeWatcher'Default__BP_GameState_TowerSurvival_C:SBTowerChallengeWatcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.23"
+      },
+      "ServerTime": 637356468770790000,
+      "ServerGameTime": 637357150247400000,
+      "PrimaryActorTick": {
+        "bCanEverTick": true,
+        "bStartWithTickEnabled": false
+      },
+      "RootComponent": {
+        "ObjectName": "SBDungeonClearConditionWatcher2'Default__BP_GameState_TowerSurvival_C:SBDungeonCaptureObserver2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.20"
+      }
+    }
+  },
+  {
+    "Type": "SBArenaMissionWatcher",
+    "Name": "SBMissionCaptureObserver",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBArenaMissionWatcher'"
+  },
+  {
+    "Type": "SBDungeonClearConditionWatcher",
+    "Name": "SBDungeonCaptureObserver",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBDungeonClearConditionWatcher'"
+  },
+  {
+    "Type": "SBDungeonClearConditionWatcher2",
+    "Name": "SBDungeonCaptureObserver2",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBDungeonClearConditionWatcher2'"
+  },
+  {
+    "Type": "SBFrameTimeComponent",
+    "Name": "FrameTimeWatcher",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBFrameTimeComponent'"
+  },
+  {
+    "Type": "SBLevelBuddyVoiceComponent",
+    "Name": "SBLevelBuddyVoiceComponent",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBLevelBuddyVoiceComponent'"
+  },
+  {
+    "Type": "SBTowerChallengeWatcher",
+    "Name": "SBTowerChallengeWatcher",
+    "Outer": "Default__BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SBTowerChallengeWatcher'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GameState_TowerSurvival_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.24"
+      },
+      "VariableGuid": "29D20D6F-4A119B9B-7009E5AA-BC857AC3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_GameState_TowerSurvival_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_GameState_TowerSurvival_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_TowerSurvival.25"
+      }
+    }
+  }
+]

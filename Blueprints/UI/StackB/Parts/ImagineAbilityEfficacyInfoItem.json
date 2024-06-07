@@ -1,0 +1,843 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetAbilityEfficacyInfo",
+    "Outer": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InAbilityConfig",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBAbilityConfig'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "InEfficacyDesc",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InEfficacyValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalAbilityUIAttribute",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBAbilityUIAttribute'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalIconType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBStatusAilmentIconType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalEfficacyValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "LocalEfficacyDesc",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsAbilityDBIconTypeAttributeResist_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_ComvertAddElementResistRate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUnderlineVisibility",
+    "Outer": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InIsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ConvertValueToPercentageNotation",
+    "Outer": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "OutConvertedValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetValueText",
+    "Outer": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InUIAttribute",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBAbilityUIAttribute'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBAbilityUIAttribute'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_ConvertValueToPercentageNotation_OutConvertedValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'ImagineAbilityEfficacyInfoItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.3"
+      },
+      {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:ConvertValueToPercentageNotation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.2"
+      },
+      {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetUnderlineVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.1"
+      },
+      {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetAbilityEfficacyInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DescTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UnderLine",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AbilityConfig",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 96,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBAbilityConfig'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetAbilityEfficacyInfo": {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetAbilityEfficacyInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.0"
+      },
+      "SetUnderlineVisibility": {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetUnderlineVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.1"
+      },
+      "ConvertValueToPercentageNotation": {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:ConvertValueToPercentageNotation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.2"
+      },
+      "SetValueText": {
+        "ObjectName": "Function'ImagineAbilityEfficacyInfoItem_C:SetValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ImagineAbilityEfficacyInfoItem_C'Default__ImagineAbilityEfficacyInfoItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.5"
+    }
+  },
+  {
+    "Type": "ImagineAbilityEfficacyInfoItem_C",
+    "Name": "Default__ImagineAbilityEfficacyInfoItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.ImagineAbilityEfficacyInfoItem_C'",
+    "Properties": {
+      "AbilityConfig": {
+        "Object": null,
+        "ExecuteEnv": "ESBAbilityExecuteEnv::All",
+        "MaxTriggers": 999,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
+        "UIAttribute": 2
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 28.0,
+          "Right": 490.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.6"
+      },
+      "Content": {
+        "ObjectName": "Image'ImagineAbilityEfficacyInfoItem_C:WidgetTree.UnderLine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 4.0,
+          "Right": 390.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ImagineAbilityEfficacyInfoItem_C:WidgetTree.DescTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Top": 4.0,
+          "Right": 66.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ImagineAbilityEfficacyInfoItem_C:WidgetTree.ValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 500.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.6"
+      },
+      "Content": {
+        "ObjectName": "Spacer'ImagineAbilityEfficacyInfoItem_C:WidgetTree.Spacer_104'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "UnderLine",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 4.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FF000000"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_InventoryLine04'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Inventory/UI_InventoryLine04.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.7"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_104",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.10"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DescTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "6E752B734EBE8D9BC9C321821D5CA477",
+        "SourceString": "あいうえおあいうえおあいうえおあいうえおあいうえお",
+        "LocalizedString": "あいうえおあいうえおあいうえおあいうえおあいうえお"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "8FB7FC674A4C8036F993979AAA1B828C",
+        "SourceString": "+100%",
+        "LocalizedString": "+100%"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.708376,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFDBFF00"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.9"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ImagineAbilityEfficacyInfoItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'ImagineAbilityEfficacyInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/ImagineAbilityEfficacyInfoItem.6"
+      }
+    }
+  }
+]

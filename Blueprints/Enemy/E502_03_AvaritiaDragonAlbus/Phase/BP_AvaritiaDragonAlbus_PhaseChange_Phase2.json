@@ -1,0 +1,167 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AvaritiaDragonAlbus_PhaseChange_Phase2",
+    "Outer": "BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerEnemyCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyPhaseComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Avaritia_Dragon_Albus",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AvaritiaDragonAlbus_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/BP_AvaritiaDragonAlbus.11"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBegin",
+    "Outer": "BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyPhase_BlueprintBase:ReceiveBegin'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerEnemyCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyPhaseComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C:ExecuteUbergraph_BP_AvaritiaDragonAlbus_PhaseChange_Phase2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBEnemyPhase_BlueprintBase'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C:ReceiveBegin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.1"
+      },
+      {
+        "ObjectName": "Function'BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C:ExecuteUbergraph_BP_AvaritiaDragonAlbus_PhaseChange_Phase2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AvaritiaDragonAlbus_PhaseChange_Phase2": {
+        "ObjectName": "Function'BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C:ExecuteUbergraph_BP_AvaritiaDragonAlbus_PhaseChange_Phase2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.0"
+      },
+      "ReceiveBegin": {
+        "ObjectName": "Function'BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C:ReceiveBegin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C'Default__BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.3"
+    }
+  },
+  {
+    "Type": "BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C",
+    "Name": "Default__BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E502_03_AvaritiaDragonAlbus/Phase/BP_AvaritiaDragonAlbus_PhaseChange_Phase2.BP_AvaritiaDragonAlbus_PhaseChange_Phase2_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "HitPointRate": 0.6,
+      "ActivateModifierNames": [
+        "Phase2"
+      ]
+    }
+  }
+]

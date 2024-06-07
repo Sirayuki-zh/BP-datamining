@@ -1,0 +1,4218 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_KingKobold",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomFlag",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomFlag'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomAction",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomAction'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDead",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:ReceiveDead'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_KingKobold_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_KoboldElder_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.0"
+    },
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_KingKobold_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.15"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_KingKobold_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.138"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_KingKobold_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_KingKobold_C:ExecuteUbergraph_BP_KingKobold'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_KoboldElder_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_KingKobold_C:BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.4"
+      },
+      {
+        "ObjectName": "Function'BP_KingKobold_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.3"
+      },
+      {
+        "ObjectName": "Function'BP_KingKobold_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.2"
+      },
+      {
+        "ObjectName": "Function'BP_KingKobold_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.1"
+      },
+      {
+        "ObjectName": "Function'BP_KingKobold_C:ExecuteUbergraph_BP_KingKobold'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_disappear",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_disappear",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Jaw",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Spine2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_ChestWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_Chest",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Tail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Hip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Head",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_Tail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_Spine2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_R_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_L_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_Hip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_R_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_L_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_R_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_L_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1_Head",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChant",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyChantComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_HeadWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_HeadWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_BodyWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_BodyWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "StanceEffectActiveTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_KingKobold": {
+        "ObjectName": "Function'BP_KingKobold_C:ExecuteUbergraph_BP_KingKobold'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.0"
+      },
+      "RecvExecCustomFlag": {
+        "ObjectName": "Function'BP_KingKobold_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.1"
+      },
+      "RecvExecCustomAction": {
+        "ObjectName": "Function'BP_KingKobold_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.2"
+      },
+      "ReceiveDead": {
+        "ObjectName": "Function'BP_KingKobold_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.3"
+      },
+      "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_KingKobold_C:BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_KingKobold_C'Default__BP_KingKobold_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.6"
+    }
+  },
+  {
+    "Type": "BP_KingKobold_C",
+    "Name": "Default__BP_KingKobold_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.BP_KingKobold_C'",
+    "Template": {
+      "ObjectName": "BP_KoboldElder_C'Default__BP_KoboldElder_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "BP_MeshScaleOffset": 1.5,
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_KingKobold_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.49"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_KingKobold_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.66"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_KingKobold_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.52"
+      },
+      "EnemyId": "E000_33_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_KingKobold_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.40"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_KingKobold_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.58"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_KingKobold_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.53"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_KingKobold_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.39"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_KingKobold_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.41"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_KingKobold_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.42"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_KingKobold_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.57"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_KingKobold_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.65"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_KingKobold_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.18"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_KingKobold_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.62"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_KingKobold_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.64"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_KingKobold_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.45"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_KingKobold_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.60"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_KingKobold_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.50"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_KingKobold_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.36"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_KingKobold_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.26"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_KingKobold_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.102"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_KingKobold_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.47"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_KingKobold_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.27"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_KingKobold_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.51"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_KingKobold_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.38"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_KingKobold_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.48"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_KingKobold_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.67"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_KingKobold_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.43"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_KingKobold_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.63"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_KingKobold_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.28"
+      },
+      "SpawnEffectSocketName": "Spine2_J",
+      "SpawnEffectScale": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E000/AST_E000_KGM.AST_E000_KGM",
+        "SubPathString": ""
+      },
+      "CustomFlagInfos": [
+        {
+          "Name": "RoarPhase1"
+        },
+        {
+          "Name": "RoarPhase2"
+        },
+        {
+          "Name": "ResetPhase1"
+        },
+        {
+          "Name": "ResetPhase2"
+        }
+      ],
+      "DefaultDodgeLevel": "ESBPerceiveLevel::Level3",
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_KingKobold_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.29"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_KingKobold_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.25"
+      },
+      "CharacterName": "KingKobold",
+      "Weight": 3000.0,
+      "CollisionGroupInfo": [
+        {
+          "GroupName": "None",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "Weak",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "WeakBody",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.1,
+          "NextHitPointRate": [
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2
+          ],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "WeakBodyHead",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": [
+            "WeakBody"
+          ]
+        }
+      ],
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_KingKobold_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.97"
+      },
+      "ElementStatusEffectSizeScale": 0.7,
+      "InventoryWeapons": [
+        {
+          "EquipType": "WeaponEquipType_Main",
+          "DefaultAssetName": "WE01_07_01",
+          "SheatheAttach": {
+            "AttachSocket": "WA_Invalid",
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "UnsheatheAttach": {
+            "AttachSocket": "WA_Right",
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CurrentWeapon": null
+        }
+      ],
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_KingKobold_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.100"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_KingKobold_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.21"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_KingKobold_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.99"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_KingKobold_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.98"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_KingKobold_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.101"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_KingKobold_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.20"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_KingKobold_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.37"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_KingKobold_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.7"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_KingKobold_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.69"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_KingKobold_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.19"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_KingKobold_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.71"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_KingKobold_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.17"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_KingKobold_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.34"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_KingKobold_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.14"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_KingKobold_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.61"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_KingKobold_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.46"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingKobold_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.59"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIKingKobold_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E000_33/BP_AIKingKobold.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingKobold_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.59"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_KoboldElder_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.2"
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Body_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Goblin_C:ASDamage_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.5"
+    },
+    "Properties": {
+      "CapsuleRadius": 70.0,
+      "RelativeLocation": {
+        "X": -10.0,
+        "Y": 10.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_BodyWeak_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 95.0,
+      "CapsuleRadius": 75.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -10.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Chest_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 95.0,
+      "CapsuleRadius": 80.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 80.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_ChestWeak_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 100.0,
+      "CapsuleRadius": 85.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 80.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "ASDamage_Head_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'BP_Goblin_C:ASDamage_Head_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.6"
+    },
+    "Properties": {
+      "SphereRadius": 40.0,
+      "RelativeLocation": {
+        "X": 5.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "ASDamage_HeadWeak_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 45.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 5.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_KoboldElder_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_KingKobold_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.34"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BattleConditionComp",
+          "DelegatePropertyName": "ToNormalMode",
+          "FunctionNameToBind": "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_KingKobold_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.70"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_KingKobold_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.23"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule_Body",
+            "AssociatedGuid": "76E8080A-49E90556-2819BF97-C772F7D8"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionSphereComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionSphereComponent'BP_KingKobold_C:ASDamage_Head_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.12"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "ASDamage_Head",
+            "AssociatedGuid": "F6B53DA2-4B713703-98649B9B-AFB52FFD"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_KingKobold_C:ASDamage_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.8"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "ASDamage_Body",
+            "AssociatedGuid": "03544730-4995E3AF-AECDC9A5-4D9AE029"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_KoboldElder_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.5"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_KoboldElder_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.6"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_KoboldElder_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.7"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_KoboldElder_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.8"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_KoboldElder_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.9"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_KingKobold_C'Default__BP_KingKobold_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.6"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_KingKobold_C'Default__BP_KingKobold_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.6"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      },
+      "BattleStatusBuildResourceLists": [
+        {
+          "ObjectName": "DataTable'DT_EnemyStatusAilmentDB'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Manager/DT_EnemyStatusAilmentDB.0"
+        },
+        {
+          "ObjectName": "DataTable'E000_33_Status'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_33_Status.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_KoboldElder_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.10"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_Body_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_Goblin_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.15"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 170.0,
+      "CapsuleRadius": 60.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_KoboldElder_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.11"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_KoboldElder_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.12"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E000_33'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E000_33.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_KoboldElder_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.13"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_KingKobold'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/AnimationSampleData/ASA_KingKobold.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_KoboldElder_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.14"
+    },
+    "Properties": {
+      "ChanceTimeTablePartsBreak": {
+        "ChanceTimeMap": [
+          {
+            "WeakBody": 6.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_KoboldElder_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.15"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_KoboldElder_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.16"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_KingKobold_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.61"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_KoboldElder_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.17"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_KoboldElder_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.18"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_BodyWeak_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 2
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_HeadWeak_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 3
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_KoboldElder_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.19"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingKobold_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.59"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_KoboldElder_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.20"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_KoboldElder_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.21"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_KoboldElder_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.22"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_KoboldElder_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.23"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 128
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_KoboldElder_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.24"
+    },
+    "Properties": {
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_KingKoboldActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/DT_KingKoboldActionTable_Battle.0"
+      },
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_KingKoboldExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/DT_KingKoboldExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_KoboldElder_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.25"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_KoboldElder_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.26"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_KoboldElder_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.27"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_KoboldElder_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.28"
+    }
+  },
+  {
+    "Type": "SBEnemyChantComponent",
+    "Name": "SBEnemyChant_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyChantComponent'"
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_KoboldElder_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.29"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_KoboldElder_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.30"
+    },
+    "Properties": {
+      "MaxWalkSpeed": 200.0
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_KoboldElder_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.31"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_KoboldElder_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.32"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_KoboldElder_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.33"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_KoboldElder_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.34"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_KoboldElder_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.35"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_KoboldElder_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.36"
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_KoboldElder_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.37"
+    },
+    "Properties": {
+      "ModifierMap": [
+        {
+          "Phase2": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_KingKobold_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.54"
+            }
+          }
+        },
+        {
+          "Stance_RoarPhase1": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_KingKobold_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_1'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.55"
+            }
+          }
+        },
+        {
+          "Stance_RoarPhase2": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_KingKobold_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_2'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.56"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_0",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "bEnableAIMessage": true,
+      "WalkSpeed": 300.0,
+      "RunSpeed": 800.0,
+      "DashSpeed": 900.0,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_Phase2_KingKobold_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/AICustom/BP_AIC_Phase2_KingKobold.0"
+        }
+      ],
+      "AIMessages": [
+        "PhaseChange"
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_1",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'"
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_2",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableWalkSpeed": true,
+      "bEnableRunSpeed": true,
+      "bEnableDashSpeed": true,
+      "WalkSpeed": 300.0,
+      "RunSpeed": 800.0,
+      "DashSpeed": 900.0
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_KoboldElder_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.38"
+    },
+    "Properties": {
+      "PartsBreakInfo": [
+        {
+          "CollisionGroupName": "WeakBody",
+          "Steps": [
+            {
+              "HpPer": 0.0,
+              "SpawnParts": [],
+              "OnMaterialIndexes": [],
+              "OffMaterialIndexes": [],
+              "Effects": [
+                {
+                  "PSTemplate": {
+                    "ObjectName": "ParticleSystem'PS_ECMN_Internal_PartsBreak_Non'",
+                    "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Break/PS_ECMN_Internal_PartsBreak_Non.292"
+                  },
+                  "SocketName": "Spine1_J",
+                  "LocationOffset": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "RotationOffset": {
+                    "Pitch": 0.0,
+                    "Yaw": 0.0,
+                    "Roll": 0.0
+                  },
+                  "Scale": 1.0,
+                  "bAttached": false,
+                  "bCastShadow": false,
+                  "EffectId": "EEffectId::None",
+                  "EffectSE": {
+                    "AssetPathName": "/Game/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Enm_parts_Break.Play_Enm_parts_Break",
+                    "SubPathString": ""
+                  }
+                }
+              ],
+              "OffTargetableComponents": [],
+              "OffCollisionComponents": [
+                "ASDamage_BodyWeak",
+                "ASDamage_ChestWeak",
+                "ASDamage_HeadWeak"
+              ],
+              "AICustoms": [],
+              "ModifierNames": [],
+              "Delay": 0.0,
+              "IgnoreBoneNames": []
+            }
+          ]
+        }
+      ],
+      "DamageCollisionStates": [
+        {
+          "ASDamage_BodyWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_ChestWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_HeadWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_Body": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        },
+        {
+          "ASDamage_Chest": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        },
+        {
+          "ASDamage_Head": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_KoboldElder_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.39"
+    },
+    "Properties": {
+      "PhaseRegister": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_KingKobold_PhaseChange_Phase2_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/Phase/BP_KingKobold_PhaseChange_Phase2.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_KoboldElder_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.40"
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_KoboldElder_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.41"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_KoboldElder_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.42"
+    },
+    "Properties": {
+      "bDisableServerRefreshBones": false,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E000_33'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E000_33/Model/SK_CH_E000_33.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingKobold_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.59"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_KoboldElder_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.43"
+    },
+    "Properties": {
+      "StanceSettings": [
+        {
+          "StanceName": "Standard",
+          "ActivateModifierNames": [
+            "Standard"
+          ]
+        },
+        {
+          "StanceName": "RoarPhase1",
+          "ActivateModifierNames": [
+            "Stance_RoarPhase1"
+          ]
+        },
+        {
+          "StanceName": "RoarPhase2",
+          "ActivateModifierNames": [
+            "Stance_RoarPhase2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_KoboldElder_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.44"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_KoboldElder_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.45"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_KoboldElder_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.46"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_KoboldElder_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.47"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_KoboldElder_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.48"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_KoboldElder_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.49"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_KoboldElder_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.50"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_KoboldElder_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.51"
+    },
+    "Properties": {
+      "m_ParticleScale": 1.5,
+      "SurfaceFootprintSettingList": {
+        "m_FPHeavyAttack": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E000/BP_FP_E000_33_HeavyAttack.BP_FP_E000_33_HeavyAttack_C",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_KoboldElder_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.52"
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_disappear_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Fatigue_Stone'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Fatigue_Stone.199"
+      },
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 0.9
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_01.50"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_Head_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_01.50"
+      },
+      "RelativeLocation": {
+        "X": 110.0,
+        "Y": -35.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_Hip_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_01.50"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 20.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_L_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_02.49"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 25.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_L_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_04'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_04.49"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": -20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_L_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_04'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_04.49"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_R_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_02.49"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -25.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_R_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_04'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_04.49"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_R_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_04'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_04.49"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_Spine2_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_01.50"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase1_Tail_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase1_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase1_02.49"
+      },
+      "RelativeLocation": {
+        "X": 50.0,
+        "Y": -10.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_disappear_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Fatigue_Strength'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Fatigue_Strength.186"
+      },
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_01.82"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Head_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_01.82"
+      },
+      "RelativeLocation": {
+        "X": 48.0,
+        "Y": -25.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Hip_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_02.80"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 20.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Jaw_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_02.80"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": -15.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_02.80"
+      },
+      "RelativeLocation": {
+        "X": -10.0,
+        "Y": -10.0,
+        "Z": 20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_03'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_03.79"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": -20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_03'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_03.79"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_02.80"
+      },
+      "RelativeLocation": {
+        "X": 20.0,
+        "Y": 10.0,
+        "Z": 10.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_03'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_03.79"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 20.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_03'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_03.79"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Spine2_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_02.80"
+      },
+      "RelativeLocation": {
+        "X": -2.0,
+        "Y": -65.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Tail_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGM_Aura_Phase2_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGM_Aura_Phase2_01.82"
+      },
+      "RelativeLocation": {
+        "X": 25.0,
+        "Y": -10.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_KoboldElder_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.53"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_KoboldElder_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.54"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_KoboldElder_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.55"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_KoboldElder_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.56"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E000_33_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_33_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E000_33_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_33_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_KoboldElder_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.57"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_KoboldElder_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.58"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_KingKobold_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_KoboldElder_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_21_KoboldElder/BP_KoboldElder.59"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_KingKobold_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.104"
+      },
+      "VariableGuid": "F6D33527-49D122A4-7AC3EAB9-F97D9BC0",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyChantComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyChantComponent'BP_KingKobold_C:SBEnemyChant_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.44"
+      },
+      "VariableGuid": "0113CBE9-4CAFB2D4-55333B93-8372CB2A",
+      "InternalVariableName": "SBEnemyChant"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_Head_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.74"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F6243C24-4F58D402-82C78C81-0776C1F5",
+      "InternalVariableName": "RoarPhase1_Head"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_L_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.76"
+      },
+      "AttachToName": "L_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F282E08D-42ABCFED-6077B585-8C53F9C4",
+      "InternalVariableName": "RoarPhase1_L_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_R_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.79"
+      },
+      "AttachToName": "R_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "751C594F-4601088A-32DE8EA7-BDFFBDC9",
+      "InternalVariableName": "RoarPhase1_R_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_L_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.77"
+      },
+      "AttachToName": "L_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F06741F0-444CC6CF-D0204DA2-BA489000",
+      "InternalVariableName": "RoarPhase1_L_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_R_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.80"
+      },
+      "AttachToName": "R_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7DB8297E-45E4ABE3-42E44E96-3E315A6E",
+      "InternalVariableName": "RoarPhase1_R_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_Hip_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.75"
+      },
+      "AttachToName": "Hip_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "41A58C50-401F01FD-726985B0-19CDAF2B",
+      "InternalVariableName": "RoarPhase1_Hip"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_L_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.78"
+      },
+      "AttachToName": "L_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "758CA9A0-4339EF56-09C039BC-31D7EFD7",
+      "InternalVariableName": "RoarPhase1_L_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_R_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.81"
+      },
+      "AttachToName": "R_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C69D55D6-4B58027D-EA90CB8B-891F0BE7",
+      "InternalVariableName": "RoarPhase1_R_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_Spine2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.82"
+      },
+      "AttachToName": "Spine2_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0FFB936A-46885A7E-640BA3B6-D0686B8C",
+      "InternalVariableName": "RoarPhase1_Spine2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_19",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_Tail_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.83"
+      },
+      "AttachToName": "Tail1_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E2FC1E2B-4E538B50-72569A96-867CD1A1",
+      "InternalVariableName": "RoarPhase1_Tail"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_Spine2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.95"
+      },
+      "AttachToName": "Spine2_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E11653C8-4B4C1F12-2729B5B3-4CE1E2FB",
+      "InternalVariableName": "RoarPhase2_Spine2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_20",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_Head_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.86"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "EC7F1EC4-4E1A6A22-C5C5DE91-B156735C",
+      "InternalVariableName": "RoarPhase2_Head"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_L_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.89"
+      },
+      "AttachToName": "L_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "64BB7A4A-4D07CFDD-F1F3119A-4E4A9904",
+      "InternalVariableName": "RoarPhase2_L_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_22",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_R_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.92"
+      },
+      "AttachToName": "R_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0CCD8852-40DCA44D-A6483AB9-DB886AAB",
+      "InternalVariableName": "RoarPhase2_R_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_23",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_L_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.90"
+      },
+      "AttachToName": "L_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CF1C989B-41623D30-7B5606AB-EDEA2F2B",
+      "InternalVariableName": "RoarPhase2_L_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_24",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_R_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.93"
+      },
+      "AttachToName": "R_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "35DDD9D2-4E9086B3-1D8D16A0-47628410",
+      "InternalVariableName": "RoarPhase2_R_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_Hip_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.87"
+      },
+      "AttachToName": "Hip_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "49956EF9-458404AA-6645A894-28BFFF1A",
+      "InternalVariableName": "RoarPhase2_Hip"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_26",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_L_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.91"
+      },
+      "AttachToName": "L_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DA7D3B7D-43302C65-2B722B97-0BBEBA23",
+      "InternalVariableName": "RoarPhase2_L_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_27",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_R_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.94"
+      },
+      "AttachToName": "R_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "361A9C30-4BAA0684-982AE897-C10F6C3C",
+      "InternalVariableName": "RoarPhase2_R_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_28",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_disappear_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.72"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "307012C5-4CDD482B-FAA6A695-D0A786BE",
+      "InternalVariableName": "RoarPhase1_disappear"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_29",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_Tail_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.96"
+      },
+      "AttachToName": "Tail1_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "270FB668-4257B476-9612B887-DDCF7D46",
+      "InternalVariableName": "RoarPhase2_Tail"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_KingKobold_C:SBCollisionGroup_BodyWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.32"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.132"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_32'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.131"
+        }
+      ],
+      "VariableGuid": "A1EDA4DC-4B495358-73103BAB-27DA3C38",
+      "InternalVariableName": "SBCollisionGroup_BodyWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_30",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_disappear_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.84"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "49526010-4AC92A04-9ECFDAB1-96F7859C",
+      "InternalVariableName": "RoarPhase2_disappear"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_31",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingKobold_C:ASDamage_Chest_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.10"
+      },
+      "AttachToName": "Spine1_J",
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "550AE898-4FF8F762-3A1DCA84-844CD860",
+      "InternalVariableName": "ASDamage_Chest"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_32",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingKobold_C:ASDamage_ChestWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.11"
+      },
+      "AttachToName": "Spine1_J",
+      "VariableGuid": "7B9BCB33-4E87FDED-317B3DA3-8E3070AA",
+      "InternalVariableName": "ASDamage_ChestWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingKobold_C:ASDamage_BodyWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.9"
+      },
+      "AttachToName": "Hip_J",
+      "VariableGuid": "28934478-4DBFDC30-4CCC6CBD-6C29D310",
+      "InternalVariableName": "ASDamage_BodyWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_Jaw_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.88"
+      },
+      "AttachToName": "Jaw_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4508FAC1-41B03DD0-8B5A5393-B68A6F3F",
+      "InternalVariableName": "RoarPhase2_Jaw"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_KingKobold_C:SBCollisionGroup_HeadWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.33"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.135"
+        }
+      ],
+      "VariableGuid": "FC5567B5-43C8063F-10ADABBC-B812FF2D",
+      "InternalVariableName": "SBCollisionGroup_HeadWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_KingKobold_C:ASDamage_HeadWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.13"
+      },
+      "AttachToName": "Head_J",
+      "VariableGuid": "BB77324B-426704B3-40E165B2-A88B4DE3",
+      "InternalVariableName": "ASDamage_HeadWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase1_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.73"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E66282D1-4B41CF3F-18629F95-89A83F4A",
+      "InternalVariableName": "RoarPhase1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingKobold_C:RoarPhase2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.85"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "52C33733-49A5C3F0-97BF5892-8C8EC819",
+      "InternalVariableName": "RoarPhase2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_KingKobold_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.128"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.134"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.106"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.136"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.137"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.111"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.113"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.114"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.115"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.116"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.118"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.119"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.120"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.121"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_24'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.122"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.123"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.124"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_27'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.125"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_29'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.127"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_31'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.130"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.117"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.133"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_28'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.126"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_30'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.129"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.128"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.132"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.134"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.135"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.106"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.136"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.137"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.111"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.113"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.114"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.115"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.116"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.118"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.119"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.120"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.121"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_24'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.122"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.123"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.124"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_27'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.125"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_29'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.127"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_31'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.130"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_32'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.131"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.117"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.133"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_28'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.126"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_30'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.129"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_KingKobold_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_33_KingKobold/BP_KingKobold.105"
+      }
+    }
+  }
+]

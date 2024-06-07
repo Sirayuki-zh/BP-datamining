@@ -1,0 +1,887 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_DhcBattleMemberItem",
+    "Outer": "DhcBattleMemberItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_CustomEvent_Name",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_ClassType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBClassType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_Level",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_DPS",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDPS",
+    "Outer": "DhcBattleMemberItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DPS",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPlayerInfo",
+    "Outer": "DhcBattleMemberItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "Name",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "ClassType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBClassType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Level",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DhcBattleMemberItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DhcBattleMemberItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.30"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'DhcBattleMemberItem_C:ExecuteUbergraph_DhcBattleMemberItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DhcBattleMemberItem_C:SetPlayerInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.2"
+      },
+      {
+        "ObjectName": "Function'DhcBattleMemberItem_C:SetDPS'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.1"
+      },
+      {
+        "ObjectName": "Function'DhcBattleMemberItem_C:ExecuteUbergraph_DhcBattleMemberItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ClassIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ClassIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassIcon/ClassIcon.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_7",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_DhcBattleMemberItem": {
+        "ObjectName": "Function'DhcBattleMemberItem_C:ExecuteUbergraph_DhcBattleMemberItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.0"
+      },
+      "SetDPS": {
+        "ObjectName": "Function'DhcBattleMemberItem_C:SetDPS'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.1"
+      },
+      "SetPlayerInfo": {
+        "ObjectName": "Function'DhcBattleMemberItem_C:SetPlayerInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DhcBattleMemberItem_C'Default__DhcBattleMemberItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.4"
+    }
+  },
+  {
+    "Type": "DhcBattleMemberItem_C",
+    "Name": "Default__DhcBattleMemberItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.DhcBattleMemberItem_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_368",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_368.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.29"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 42.0,
+          "Top": 3.0,
+          "Right": 2.0,
+          "Bottom": 35.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.5"
+      },
+      "Content": {
+        "ObjectName": "Image'DhcBattleMemberItem_C:WidgetTree.Image'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 330.0,
+          "Bottom": 40.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -100.0,
+          "Right": 76.0,
+          "Bottom": 24.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.6"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DhcBattleMemberItem_C:WidgetTree.SBRuntimeTextBlock_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 5.0,
+          "Right": 24.0,
+          "Bottom": 20.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.6"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DhcBattleMemberItem_C:WidgetTree.SBRuntimeTextBlock_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 40.0,
+          "Bottom": 40.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.7"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 50.0,
+          "Top": 12.626273,
+          "Right": 180.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.7"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DhcBattleMemberItem_C:WidgetTree.SBRuntimeTextBlock_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_2",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 9.0,
+          "Bottom": 26.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.7"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_368",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 28.0,
+          "Bottom": 28.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_368'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.8"
+      },
+      "Content": {
+        "ObjectName": "ClassIcon_C'DhcBattleMemberItem_C:WidgetTree.ClassIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.17"
+      }
+    }
+  },
+  {
+    "Type": "ClassIcon_C",
+    "Name": "ClassIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassIcon/ClassIcon.ClassIcon_C'",
+    "Template": {
+      "ObjectName": "ClassIcon_C'Default__ClassIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassIcon/ClassIcon.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_368.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_323",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.19"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.28"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_323",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.18"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DhcBattleMemberItem_C:WidgetTree.SBRuntimeTextBlock_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.22"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_323",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.18"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DhcBattleMemberItem_C:WidgetTree.SBRuntimeTextBlock_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.23"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 440.0,
+          "Y": 720.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.9"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'DhcBattleHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/DhcBattleHUD.0"
+      },
+      "TextId": 13,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 8
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.19"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'DhcBattleHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/DhcBattleHUD.0"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "2539E3C04086A3EB669455A940A087B7",
+        "SourceString": "000",
+        "LocalizedString": "000"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 8
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.20"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'DhcBattleHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/DhcBattleHUD.0"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "977C314C4E8A95C326A3B5A374DE8771",
+        "SourceString": "00000",
+        "LocalizedString": "00000"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.11"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'DhcBattleHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/DhcBattleHUD.0"
+      },
+      "TextId": 12,
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.12"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_7",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'DhcBattleHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/DhcBattleHUD.0"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "F6C02CD749E534FB2EDFA39891097EE6",
+        "SourceString": "ああああああああああああ",
+        "LocalizedString": "ああああああああああああ"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 10
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.14"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_234",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.29"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_2.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_234",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": -1.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.27"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'DhcBattleMemberItem_C:WidgetTree.HorizontalBox_323'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.18"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_234",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'DhcBattleMemberItem_C:WidgetTree.VerticalBox_234'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.27"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_368'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DhcBattleMemberItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DhcBattleMemberItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DhcBattle/DhcBattleMemberItem.5"
+      }
+    }
+  }
+]

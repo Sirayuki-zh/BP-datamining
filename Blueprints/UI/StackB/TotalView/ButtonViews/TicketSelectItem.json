@@ -1,0 +1,733 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetTextID",
+    "Outer": "TicketSelectItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "TicketId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TokenData",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'MasterToken'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetMasterTokenText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindTokenMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindTokenMaster_TokenMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'MasterToken'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateTokenNum",
+    "Outer": "TicketSelectItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_isValidTokenID_Valid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerController'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetStackBComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBStackBComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindTicketData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBStackBTicketData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "isValidTokenID",
+    "Outer": "TicketSelectItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Valid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "TicketSelectItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'TicketSelectItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'TicketSelectItem_C:isValidTokenID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.2"
+      },
+      {
+        "ObjectName": "Function'TicketSelectItem_C:UpdateTokenNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.1"
+      },
+      {
+        "ObjectName": "Function'TicketSelectItem_C:SetTextID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HB_TicketUse",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Nouse",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_TicketName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_TicketNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WS_Texts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TokenId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "StackBTicketData",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 28,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBStackBTicketData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetTextID": {
+        "ObjectName": "Function'TicketSelectItem_C:SetTextID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.0"
+      },
+      "UpdateTokenNum": {
+        "ObjectName": "Function'TicketSelectItem_C:UpdateTokenNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.1"
+      },
+      "isValidTokenID": {
+        "ObjectName": "Function'TicketSelectItem_C:isValidTokenID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TicketSelectItem_C'Default__TicketSelectItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.4"
+    }
+  },
+  {
+    "Type": "TicketSelectItem_C",
+    "Name": "Default__TicketSelectItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.TicketSelectItem_C'",
+    "Properties": {
+      "StackBTicketData": {
+        "token_id": -1,
+        "type": "ESBStackBTicketType::StackBTicket_NUM",
+        "need_count": -1,
+        "ItemType": "ESBStackBItemType::Invalid",
+        "level_min": -1,
+        "level_max": -1,
+        "success_rate": -1
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSelectItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 5.0,
+          "Right": 338.0,
+          "Bottom": 40.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSelectItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.5"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'TicketSelectItem_C:WidgetTree.WS_Texts'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HB_TicketUse",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.8"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.9"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'TicketSelectItem_C:WidgetTree.WS_Texts.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HB_TicketUse",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox'TicketSelectItem_C:WidgetTree.HB_TicketUse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.7"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'TicketSelectItem_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HB_TicketUse",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'TicketSelectItem_C:WidgetTree.HB_TicketUse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.7"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSelectItem_C:WidgetTree.Txt_TicketNum'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HB_TicketUse",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'TicketSelectItem_C:WidgetTree.HB_TicketUse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.7"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSelectItem_C:WidgetTree.SBRuntimeTextBlock_370'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.11"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_370",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'StackB_MainView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/StackB_MainView.0"
+      },
+      "TextId": 605,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.10"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Nouse",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'StackB_MainView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/StackB_MainView.0"
+      },
+      "TextId": 601,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'TicketSelectItem_C:WidgetTree.WS_Texts.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.19"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBoundsWithoutIntersecting",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_TicketName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'TicketSelectItem_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.16"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_TicketNum",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D286341C4176C297DB1BAE92312315EA",
+        "SourceString": "00",
+        "LocalizedString": "00"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 20
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.9"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 290.0,
+      "MaxDesiredWidth": 290.0,
+      "bOverride_MaxDesiredWidth": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'TicketSelectItem_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'TicketSelectItem_C:WidgetTree.HB_TicketUse.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.8"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'TicketSelectItem_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.15"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSelectItem_C:WidgetTree.Txt_TicketName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WS_Texts",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'TicketSelectItem_C:WidgetTree.WS_Texts.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.18"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'TicketSelectItem_C:WidgetTree.WS_Texts.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSelectItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WS_Texts",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'TicketSelectItem_C:WidgetTree.WS_Texts'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.17"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'TicketSelectItem_C:WidgetTree.HB_TicketUse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WS_Texts",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'TicketSelectItem_C:WidgetTree.WS_Texts'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.17"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSelectItem_C:WidgetTree.Txt_Nouse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "TicketSelectItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'TicketSelectItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TotalView/ButtonViews/TicketSelectItem.5"
+      }
+    }
+  }
+]

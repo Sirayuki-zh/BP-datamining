@@ -1,0 +1,416 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_MapWidget_TraverseCloud",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "InMapId",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Floor",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InMapSizeScale",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetZOrder",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetMiniMapIconZOrder_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCreateDungeonTraverse",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBTraverseCloudWidget:OnCreateDungeonTraverse'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloudCanvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Name",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Position",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Size",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DungeonTraverse",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DungeonTraverse_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/DungeonTraverse.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChild_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DungeonTraverse_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/DungeonTraverse.6"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnCreateCloudTraverse",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBTraverseCloudWidget:OnCreateCloudTraverse'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloudCanvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Name",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Position",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Size",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Texture",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'UserWidget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CloudTraverse",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'MapWidget_CloudImage_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_CloudImage.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChild_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'MapWidget_CloudImage_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_CloudImage.6"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'MapWidget_TraverseCloud_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.8"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:ExecuteUbergraph_MapWidget_TraverseCloud'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBTraverseCloudWidget'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:OnCreateCloudTraverse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.4"
+      },
+      {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:OnCreateDungeonTraverse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.3"
+      },
+      {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:GetZOrder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.2"
+      },
+      {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:Update'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.1"
+      },
+      {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:ExecuteUbergraph_MapWidget_TraverseCloud'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_MapWidget_TraverseCloud": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:ExecuteUbergraph_MapWidget_TraverseCloud'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.0"
+      },
+      "Update": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:Update'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.1"
+      },
+      "GetZOrder": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:GetZOrder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.2"
+      },
+      "OnCreateDungeonTraverse": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:OnCreateDungeonTraverse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.3"
+      },
+      "OnCreateCloudTraverse": {
+        "ObjectName": "Function'MapWidget_TraverseCloud_C:OnCreateCloudTraverse'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.4"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MapWidget_TraverseCloud_C'Default__MapWidget_TraverseCloud_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.6"
+    }
+  },
+  {
+    "Type": "MapWidget_TraverseCloud_C",
+    "Name": "Default__MapWidget_TraverseCloud_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.MapWidget_TraverseCloud_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CountAcrossMapList": [
+        "fld001_Top",
+        "fld002_Top",
+        "fld003_Top",
+        "fld004_Top"
+      ],
+      "TraversePointDataTable": {
+        "ObjectName": "CompositeDataTable'CDT_TraversePoint'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/Database/CDT_TraversePoint.0"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CloudCanvas",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'"
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "MapWidget_TraverseCloud_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'MapWidget_TraverseCloud_C:WidgetTree.CloudCanvas'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Map/SubWidgets/MapWidget_TraverseCloud.7"
+      }
+    }
+  }
+]

@@ -1,0 +1,670 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GenericStatusItemForBattleSet",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:PreConstruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetHeading",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InHeadingTextId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetValue",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_MakeLiteralBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetValueText",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "InText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPrevValue",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "PrevValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor_2",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'GenericStatusItemForBattleSet_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:ExecuteUbergraph_GenericStatusItemForBattleSet'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetPrevValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.5"
+      },
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.4"
+      },
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.3"
+      },
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.2"
+      },
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.1"
+      },
+      {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:ExecuteUbergraph_GenericStatusItemForBattleSet'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Heading",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Value",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "HeadingTextId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Value",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GenericStatusItemForBattleSet": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:ExecuteUbergraph_GenericStatusItemForBattleSet'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.0"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.1"
+      },
+      "SetHeading": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.2"
+      },
+      "SetValue": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.3"
+      },
+      "SetValueText": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.4"
+      },
+      "SetPrevValue": {
+        "ObjectName": "Function'GenericStatusItemForBattleSet_C:SetPrevValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.5"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GenericStatusItemForBattleSet_C'Default__GenericStatusItemForBattleSet_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.7"
+    }
+  },
+  {
+    "Type": "GenericStatusItemForBattleSet_C",
+    "Name": "Default__GenericStatusItemForBattleSet_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.GenericStatusItemForBattleSet_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'GenericStatusItemForBattleSet_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'GenericStatusItemForBattleSet_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.8"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.10"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.11"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'GenericStatusItemForBattleSet_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.10"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Heading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 12.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.10"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.15"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Heading",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "Text": {
+        "Namespace": "",
+        "Key": "597A59CA450DB365CCA3D6A94417B2FB",
+        "SourceString": "XXXX",
+        "LocalizedString": "XXXX"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Heading.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.16"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_Heading",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 150.0,
+      "HeightOverride": 24.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Heading.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.11"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_Value",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 124.0,
+      "HeightOverride": 24.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Value.SizeBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.HBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.12"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_Heading",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "SizeBox'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Heading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.14"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'GenericStatusItemForBattleSet_C:WidgetTree.Txt_Heading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.13"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_1",
+    "Outer": "SizeBox_Value",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'GenericStatusItemForBattleSet_C:WidgetTree.Txt_Value'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.18"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Txt_Value",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "3BE10C744DA496053541CFB789355401",
+        "SourceString": "0",
+        "LocalizedString": "0"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'GenericStatusItemForBattleSet_C:WidgetTree.SizeBox_Value.SizeBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.17"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "GenericStatusItemForBattleSet_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'GenericStatusItemForBattleSet_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/GenericStatusItemForBattleSet.8"
+      }
+    }
+  }
+]

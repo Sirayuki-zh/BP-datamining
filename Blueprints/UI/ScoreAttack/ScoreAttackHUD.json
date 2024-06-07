@@ -1,0 +1,761 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ScoreAttackHUD",
+    "Outer": "ScoreAttackHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTimerWidget_Minute",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTimerWidget_Second",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTimerWidget_Millisecond",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Game_State_Dungeon_Score_Attack",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_GameState_DungeonScoreAttack_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.11"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "ScoreAttackHUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ScoreAttackHUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'ScoreAttackHUD_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.25"
+      },
+      "bClassRequiresNativeTick": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'ScoreAttackHUD_C:ExecuteUbergraph_ScoreAttackHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBContentsHUDBase'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ScoreAttackHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.1"
+      },
+      {
+        "ObjectName": "Function'ScoreAttackHUD_C:ExecuteUbergraph_ScoreAttackHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Dummy_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DummyWidget_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Grp_SA",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RespawnCounter_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'RespawnCounter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScoreAttack_Main",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ScoreAttack_Main_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttack_Main.13"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ScoreAttackHUD": {
+        "ObjectName": "Function'ScoreAttackHUD_C:ExecuteUbergraph_ScoreAttackHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.0"
+      },
+      "Construct": {
+        "ObjectName": "Function'ScoreAttackHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ScoreAttackHUD_C'Default__ScoreAttackHUD_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.3"
+    }
+  },
+  {
+    "Type": "ScoreAttackHUD_C",
+    "Name": "Default__ScoreAttackHUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.ScoreAttackHUD_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Grp_SA",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.6"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1397.6444,
+          "Top": 55.85051,
+          "Right": 491.6889,
+          "Bottom": 393.7682
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.DummyWidget_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1480.0,
+          "Top": 72.0,
+          "Right": 390.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ScoreAttackHUD_C:WidgetTree.Dummy_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 148.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.Line_24'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 226.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.Line_25'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 302.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.Line_26'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 348.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.Line_27'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_18",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1480.0,
+          "Top": 314.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "RespawnCounter_C'ScoreAttackHUD_C:WidgetTree.RespawnCounter_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1322.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "ScoreAttack_Main_C'ScoreAttackHUD_C:WidgetTree.ScoreAttack_Main'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Grp_SA",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 102.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.Grp_SA'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.5"
+      },
+      "Content": {
+        "ObjectName": "Image'ScoreAttackHUD_C:WidgetTree.Line_23'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DummyWidget_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.0,
+        "B": 1.0,
+        "A": 0.8,
+        "Hex": "CCFF00FF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.7"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_23",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.15"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_24",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.9"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_25",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.10"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_26",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.11"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_27",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_13'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.12"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "RespawnCounter_C",
+    "Name": "RespawnCounter_3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.RespawnCounter_C'",
+    "Template": {
+      "ObjectName": "RespawnCounter_C'Default__RespawnCounter_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_18'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.13"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "ScoreAttack_Main_C",
+    "Name": "ScoreAttack_Main",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttack_Main.ScoreAttack_Main_C'",
+    "Template": {
+      "ObjectName": "ScoreAttack_Main_C'Default__ScoreAttack_Main_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttack_Main.14"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.14"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Dummy_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "12E6A8074D29A646DD94D5A2E3F3BAC9",
+        "SourceString": "スコアアタック",
+        "LocalizedString": "スコアアタック"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ScoreAttackHUD_C:WidgetTree.Grp_SA.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ScoreAttackHUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'ScoreAttackHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttackHUD.4"
+      }
+    }
+  }
+]

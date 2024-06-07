@@ -1,0 +1,1773 @@
+[
+  {
+    "Type": "Function",
+    "Name": "OnAnimPlayed__DelegateSignature",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_StackBFailedAnimation",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimationForward_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Animation",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Play",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAnimationFinished",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnAnimationFinished'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Animation",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimaterinComplete",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'StackBFailedAnimation_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.41"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'StackBFailedAnimation_C:Anim_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.40"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'StackBFailedAnimation_C:ExecuteUbergraph_StackBFailedAnimation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'StackBFailedAnimation_C:AnimaterinComplete'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.4"
+      },
+      {
+        "ObjectName": "Function'StackBFailedAnimation_C:OnAnimationFinished'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.3"
+      },
+      {
+        "ObjectName": "Function'StackBFailedAnimation_C:Play'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.2"
+      },
+      {
+        "ObjectName": "Function'StackBFailedAnimation_C:ExecuteUbergraph_StackBFailedAnimation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.1"
+      },
+      {
+        "ObjectName": "Function'StackBFailedAnimation_C:OnAnimPlayed__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anim",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FailPanel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NiagaraSystemWidget_47",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystemWidget'",
+          "ObjectPath": "/Script/NiagaraUIRenderer"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnAnimPlayed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'StackBFailedAnimation_C:OnAnimPlayed__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnAnimPlayed__DelegateSignature": {
+        "ObjectName": "Function'StackBFailedAnimation_C:OnAnimPlayed__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.0"
+      },
+      "ExecuteUbergraph_StackBFailedAnimation": {
+        "ObjectName": "Function'StackBFailedAnimation_C:ExecuteUbergraph_StackBFailedAnimation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.1"
+      },
+      "Play": {
+        "ObjectName": "Function'StackBFailedAnimation_C:Play'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.2"
+      },
+      "OnAnimationFinished": {
+        "ObjectName": "Function'StackBFailedAnimation_C:OnAnimationFinished'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.3"
+      },
+      "AnimaterinComplete": {
+        "ObjectName": "Function'StackBFailedAnimation_C:AnimaterinComplete'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.4"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "StackBFailedAnimation_C'Default__StackBFailedAnimation_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.6"
+    }
+  },
+  {
+    "Type": "StackBFailedAnimation_C",
+    "Name": "Default__StackBFailedAnimation_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.StackBFailedAnimation_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "BackgroundBlur",
+    "Name": "BackgroundBlur_97",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'BackgroundBlur'",
+    "Properties": {
+      "BlurStrength": 10.0,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'StackBFailedAnimation_C:WidgetTree.FailPanel.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.8"
+      },
+      "Content": {
+        "ObjectName": "NiagaraSystemWidget'StackBFailedAnimation_C:WidgetTree.NiagaraSystemWidget_47'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.8"
+      },
+      "Content": {
+        "ObjectName": "BackgroundBlur'StackBFailedAnimation_C:WidgetTree.BackgroundBlur_97'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1920.0,
+          "Bottom": 1080.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.8"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBFailedAnimation_C:WidgetTree.FxBg'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.8"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'StackBFailedAnimation_C:WidgetTree.FailPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 400.0,
+          "Bottom": 115.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.9"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'StackBFailedAnimation_C:WidgetTree.SBRuntimeTextBlock_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 230.0,
+          "Bottom": 90.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.9"
+      },
+      "Content": {
+        "ObjectName": "Image'StackBFailedAnimation_C:WidgetTree.Image'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.17"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "FxBg",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.12"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 283.0,
+          "Y": 97.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_BlackBlurBg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackB/UI_BlackBlurBg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.7,
+        "Hex": "B3FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.15"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anim",
+    "Outer": "Anim_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "8487EAA2-487ED558-27798E8E-481723DA",
+          "Name": "BackgroundBlur_97",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'BackgroundBlur'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "D265C0F0-44B5D2BF-E2D87085-374FC1C3",
+          "Name": "FxBg",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "Tags": [],
+          "Guid": "C99BD80C-471B3F27-845D66AF-4761B700",
+          "Name": "FailPanel",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'VerticalBox'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "8487EAA2-487ED558-27798E8E-481723DA",
+          "BindingName": "BackgroundBlur_97",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.34"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "D265C0F0-44B5D2BF-E2D87085-374FC1C3",
+          "BindingName": "FxBg",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneColorTrack'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.30"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "C99BD80C-471B3F27-845D66AF-4761B700",
+          "BindingName": "FailPanel",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.35"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.20"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 255000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "B61EBDF7-4EDE90CA-FDF4A381-334266C5"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Properties": {
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 180000
+          },
+          {
+            "Value": 195000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 2.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 2.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 180000
+          },
+          {
+            "Value": 195000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 2.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 2.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.21"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.22"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 240000
+            }
+          }
+        }
+      },
+      "Signature": "308AED47-4374C1E3-A001CEBF-57E39EC8"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "Anim",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.19"
+        }
+      ],
+      "EvaluationFieldGuid": "9AA6721F-4F728D2F-DDD80E90-8BDFD436",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.19"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 240000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9AA6721F-4F728D2F-DDD80E90-8BDFD436"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneColorSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneColorSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneColorSection",
+    "Name": "MovieSceneColorSection_0",
+    "Outer": "MovieSceneColorTrack_0",
+    "Class": "UScriptClass'MovieSceneColorSection'",
+    "Properties": {
+      "AlphaCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          },
+          {
+            "Value": 240000
+          },
+          {
+            "Value": 255000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.5,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.5,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.23"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.24"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 255000
+            }
+          }
+        }
+      },
+      "Signature": "08F9C33F-43B08FC1-A7913393-5BB48496"
+    }
+  },
+  {
+    "Type": "MovieSceneColorTrack",
+    "Name": "MovieSceneColorTrack_0",
+    "Outer": "Anim",
+    "Class": "UScriptClass'MovieSceneColorTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "ColorAndOpacity",
+        "PropertyPath": "ColorAndOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneColorSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0.MovieSceneColorSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.29"
+        }
+      ],
+      "EvaluationFieldGuid": "5D8B4B4E-42E7C4FD-688B399B-8BAB4CA9",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneColorSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0.MovieSceneColorSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.29"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 255000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "5D8B4B4E-42E7C4FD-688B399B-8BAB4CA9"
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anim_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                },
+                {
+                  "StartIndex": 3,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 1,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 255000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": 1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 240000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.32"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneColorSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneColorTrack_0.MovieSceneColorSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.29"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.33"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.19"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "8487EAA2-487ED558-27798E8E-481723DA"
+          },
+          {
+            "ObjectBindingID": "D265C0F0-44B5D2BF-E2D87085-374FC1C3"
+          },
+          {
+            "ObjectBindingID": "C99BD80C-471B3F27-845D66AF-4761B700"
+          },
+          {
+            "ObjectBindingID": "C99BD80C-471B3F27-845D66AF-4761B700"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 240000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 255000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "0AF1D877-465C22B8-F822E59B-99A52B6A",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          },
+          {
+            "Value": 240000
+          },
+          {
+            "Value": 255000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 10.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 10.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.25"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.26"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 255000
+            }
+          }
+        }
+      },
+      "Signature": "042B4493-4A79C260-AE870BA6-7972424F"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_3",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 180000
+          },
+          {
+            "Value": 195000
+          },
+          {
+            "Value": 240000
+          },
+          {
+            "Value": 255000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.27"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.28"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 255000
+            }
+          }
+        }
+      },
+      "Signature": "A27291AF-4B934042-59B846A4-DD47E571"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anim",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "BlurStrength",
+        "PropertyPath": "BlurStrength",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.32"
+        }
+      ],
+      "EvaluationFieldGuid": "90B1F8BD-46174FE9-AD6ECE8D-857B1686",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.32"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 255000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "90B1F8BD-46174FE9-AD6ECE8D-857B1686"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_3",
+    "Outer": "Anim",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.33"
+        }
+      ],
+      "EvaluationFieldGuid": "51E8D135-4C1D6EE7-738F36B2-955E4436",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'StackBFailedAnimation_C:Anim_INST.Anim.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.33"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 255000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "51E8D135-4C1D6EE7-738F36B2-955E4436"
+    }
+  },
+  {
+    "Type": "NiagaraSystemWidget",
+    "Name": "NiagaraSystemWidget_47",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'NiagaraSystemWidget'",
+    "Properties": {
+      "NiagaraSystemReference": {
+        "ObjectName": "NiagaraSystem'NS_UI_Reinforce_Failed'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/UI/Craft/NS_UI_Reinforce_Failed.409"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.10"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'StackB_MainView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/StackB_MainView.0"
+      },
+      "TextId": 711,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.2,
+            "Hex": "33000000"
+          }
+        },
+        "TypefaceFontName": "Default",
+        "Size": 72
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.14"
+      },
+      "DisabledColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "FailPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'StackBFailedAnimation_C:WidgetTree.FailPanel.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "FailPanel",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox'StackBFailedAnimation_C:WidgetTree.FailPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.38"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anim_INST",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'StackBFailedAnimation_C:Anim_INST.Anim'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.18"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "BackgroundBlur_97",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "8487EAA2-487ED558-27798E8E-481723DA",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "FxBg",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "D265C0F0-44B5D2BF-E2D87085-374FC1C3",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "FailPanel",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "C99BD80C-471B3F27-845D66AF-4761B700",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anim",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'StackBFailedAnimation_C:Anim_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.31"
+      },
+      "Signature": "0AF1D877-465C22B8-F822E59B-99A52B6A"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "StackBFailedAnimation_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'StackBFailedAnimation_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Animation/StackBFailedAnimation.8"
+      }
+    }
+  }
+]

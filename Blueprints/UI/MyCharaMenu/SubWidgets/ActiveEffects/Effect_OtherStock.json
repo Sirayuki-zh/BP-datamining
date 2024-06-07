@@ -1,0 +1,581 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Effect_OtherStock",
+    "Outer": "Effect_OtherStock_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_CustomEvent_Buff",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_CustomEvent_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_CustomEvent_Amount",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_CustomEvent_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "NotActiveData",
+    "Outer": "Effect_OtherStock_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "Buff",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "Amount",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "Value",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PreConstruct",
+    "Outer": "Effect_OtherStock_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:PreConstruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDesignTime",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Effect_OtherStock_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Effect_OtherStock_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Effect_OtherStock_C:ExecuteUbergraph_Effect_OtherStock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Effect_OtherStock_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.2"
+      },
+      {
+        "ObjectName": "Function'Effect_OtherStock_C:NotActiveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.1"
+      },
+      {
+        "ObjectName": "Function'Effect_OtherStock_C:ExecuteUbergraph_Effect_OtherStock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Amount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Buff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Item",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Num",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Effect_OtherStock": {
+        "ObjectName": "Function'Effect_OtherStock_C:ExecuteUbergraph_Effect_OtherStock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.0"
+      },
+      "NotActiveData": {
+        "ObjectName": "Function'Effect_OtherStock_C:NotActiveData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.1"
+      },
+      "PreConstruct": {
+        "ObjectName": "Function'Effect_OtherStock_C:PreConstruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Effect_OtherStock_C'Default__Effect_OtherStock_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.4"
+    }
+  },
+  {
+    "Type": "Effect_OtherStock_C",
+    "Name": "Default__Effect_OtherStock_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.Effect_OtherStock_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Effect_OtherStock_C:WidgetTree.HorizontalBox_36'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 10.0,
+          "Right": 365.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_OtherStock_C:WidgetTree.Txt_Buff'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 710.0,
+          "Top": 8.0,
+          "Right": 68.0,
+          "Bottom": 36.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_OtherStock_C:WidgetTree.Txt_Num'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.15"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 390.0,
+          "Top": 14.0,
+          "Right": 250.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_OtherStock_C:WidgetTree.Txt_Item'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 640.0,
+          "Top": 14.0,
+          "Right": 62.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Effect_OtherStock_C:WidgetTree.Txt_Amount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.6"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Amount",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyChara_Effects'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyChara_Effects.0"
+      },
+      "NameTextId": "Amount",
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.40724,
+          "B": 0.031896,
+          "A": 1.0,
+          "Hex": "FFFFAB32"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 9
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.10"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Buff",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C6263A2749736148B9DA8AB1B328B567",
+        "SourceString": "宝箱から獲得できる内容物の数アップ１９",
+        "LocalizedString": "宝箱から獲得できる内容物の数アップ１９"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.40724,
+          "B": 0.031896,
+          "A": 1.0,
+          "Hex": "FFFFAB32"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.7"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Item",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "2D7CF18844F4E02D72EC80ABA0C020F2",
+        "SourceString": "[アイテム名]８９１１２３４５６",
+        "LocalizedString": "[アイテム名]８９１１２３４５６"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.40724,
+          "B": 0.031896,
+          "A": 1.0,
+          "Hex": "FFFFAB32"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 9
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.9"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Num",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0D8D1F264D82625E5A595EA492FD6F7A",
+        "SourceString": "9999",
+        "LocalizedString": "9999"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.40724,
+          "B": 0.031896,
+          "A": 1.0,
+          "Hex": "FFFFAB32"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Effect_OtherStock_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Effect_OtherStock_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Effect_OtherStock_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/ActiveEffects/Effect_OtherStock.5"
+      }
+    }
+  }
+]

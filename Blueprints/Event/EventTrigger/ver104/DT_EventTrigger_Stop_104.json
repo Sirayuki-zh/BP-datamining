@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_EventTrigger_Stop_104",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'SBEventTrigger'",
+        "ObjectPath": "/Script/SkyBlue"
+      }
+    },
+    "Rows": {
+      "■■MQ105_020_290■■": {
+        "ScriptAsset": null,
+        "Conditions": [],
+        "CloseConditions": []
+      },
+      "MQ105_020_290_00_MQ106_020_Locked": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'MAV105_020_290'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/STOP/Ver_104/MAV105_020_290.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ106_020",
+            "Value2": "Locked"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "MQ105_020_290_01_MQ106_020_NotReceived": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'MAV105_020_290'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/STOP/Ver_104/MAV105_020_290.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ106_020",
+            "Value2": "NotReceived"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "MQ105_020_290_02_MQ106_020_step0": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'MAV105_020_290'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/STOP/Ver_104/MAV105_020_290.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ106_020",
+            "Value2": "step0"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "MQ105_020_290_02_MQ106_020_Rescue_step1": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'MAV105_020_290_Rescue'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/STOP/Ver_104/MAV105_020_290_Rescue.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ106_020",
+            "Value2": "step1"
+          }
+        ],
+        "CloseConditions": []
+      }
+    }
+  }
+]

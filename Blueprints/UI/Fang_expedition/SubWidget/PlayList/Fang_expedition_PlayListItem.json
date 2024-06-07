@@ -1,0 +1,1762 @@
+[
+  {
+    "Type": "Function",
+    "Name": "OnClick_Playing__DelegateSignature",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClick_Finish__DelegateSignature",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Fang_expedition_PlayListItem",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'Fang_expedition_PlayListBtn_Finish_C:OnButtonClick__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Finish.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'Fang_expedition_PlayListBtn_Play_C:OnButtonClick__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Play.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CB_FinishButtonClick",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CB_PlayButtonClick",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetData",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PlayData",
+        "Flags": "RF_Public",
+        "ElementSize": 288,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBFang_expeditionPlayData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_SetDateTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBDateTimeTextRemainTimeFlag'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEmpty",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBlank",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "TextVisibility",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TimeNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Divide_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Divide_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Fang_expedition_PlayListItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.57"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:ExecuteUbergraph_Fang_expedition_PlayListItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetBlank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.9"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetEmpty'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.8"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.7"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.6"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:CB_PlayButtonClick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.5"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:CB_FinishButtonClick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.4"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.3"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:ExecuteUbergraph_Fang_expedition_PlayListItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.2"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Finish__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.1"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Playing__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Base02",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Blank",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ClockIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ExpeditionName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Finish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'Fang_expedition_PlayListBtn_Finish_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Finish.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FinishText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PanelSwitcher",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Play",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'Fang_expedition_PlayListBtn_Play_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Play.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReleaseCondition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusSwitcher",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimerBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimerText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBDateTimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimeText2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SlotIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClick_Playing",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Playing__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.0"
+        }
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnClick_Finish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Finish__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextTable",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTextTableAsset'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnClick_Playing__DelegateSignature": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Playing__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.0"
+      },
+      "OnClick_Finish__DelegateSignature": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:OnClick_Finish__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.1"
+      },
+      "ExecuteUbergraph_Fang_expedition_PlayListItem": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:ExecuteUbergraph_Fang_expedition_PlayListItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.2"
+      },
+      "Destruct": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.3"
+      },
+      "CB_FinishButtonClick": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:CB_FinishButtonClick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.4"
+      },
+      "CB_PlayButtonClick": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:CB_PlayButtonClick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.5"
+      },
+      "Construct": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.6"
+      },
+      "SetData": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.7"
+      },
+      "SetEmpty": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetEmpty'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.8"
+      },
+      "SetBlank": {
+        "ObjectName": "Function'Fang_expedition_PlayListItem_C:SetBlank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.9"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Fang_expedition_PlayListItem_C'Default__Fang_expedition_PlayListItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.11"
+    }
+  },
+  {
+    "Type": "Fang_expedition_PlayListItem_C",
+    "Name": "Default__Fang_expedition_PlayListItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.Fang_expedition_PlayListItem_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Fang_expedition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Fang_expedition.0"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ExpeditionPossiblePanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "ReleaseCondition",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ReleaseCondition.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.26"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "UnreleasedFramePanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.12"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 550.0,
+          "Bottom": 92.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.12"
+      },
+      "Content": {
+        "ObjectName": "Spacer'Fang_expedition_PlayListItem_C:WidgetTree.Spacer_36'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 152.0,
+          "Top": 18.0,
+          "Right": 370.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 152.0,
+          "Top": 54.0,
+          "Right": 275.0,
+          "Bottom": 25.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.30"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 162.0,
+          "Top": 54.0,
+          "Right": 275.0,
+          "Bottom": 25.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Fang_expedition_PlayListItem_C:WidgetTree.FinishText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 2.0,
+          "Top": -2.0,
+          "Right": 136.0,
+          "Bottom": 96.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_PlayListItem_C:WidgetTree.BtnBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "ExpeditionPossiblePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 57.0,
+          "Top": 50.0,
+          "Right": 470.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_PlayListItem_C:WidgetTree.Base02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "ReleaseCondition",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 20.0,
+          "Top": 31.0,
+          "Right": 510.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ReleaseCondition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.14"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'Fang_expedition_PlayListItem_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "UnreleasedFramePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.15"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_PlayListItem_C:WidgetTree.BaseNone1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "UnreleasedFramePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.15"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ReleaseCondition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.14"
+      }
+    }
+  },
+  {
+    "Type": "Fang_expedition_PlayListBtn_Finish_C",
+    "Name": "Finish",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Finish.Fang_expedition_PlayListBtn_Finish_C'",
+    "Template": {
+      "ObjectName": "Fang_expedition_PlayListBtn_Finish_C'Default__Fang_expedition_PlayListBtn_Finish_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Finish.5"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.56"
+      }
+    }
+  },
+  {
+    "Type": "Fang_expedition_PlayListBtn_Play_C",
+    "Name": "Play",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Play.Fang_expedition_PlayListBtn_Play_C'",
+    "Template": {
+      "ObjectName": "Fang_expedition_PlayListBtn_Play_C'Default__Fang_expedition_PlayListBtn_Play_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListBtn_Play.5"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.55"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.32"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.46"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "TimerBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.33"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.34"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.19"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.29"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_PlayListItem_C:WidgetTree.TimeText2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.49"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.29"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Fang_expedition_PlayListItem_C:WidgetTree.TimeText1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.44"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "TimerBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.30"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_PlayListItem_C:WidgetTree.ClockIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.40"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "TimerBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 8.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.30"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'Fang_expedition_PlayListItem_C:WidgetTree.SBRuntimeTextBlock_136'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.43"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "TimerBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.30"
+      },
+      "Content": {
+        "ObjectName": "SBDateTimeTextBlock'Fang_expedition_PlayListItem_C:WidgetTree.TimerText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.41"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Base02",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 962.0,
+          "Y": 20.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_Base05'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_Base05.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.23"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BaseNone1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 550.0,
+          "Y": 92.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_List02_BaseNone1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_List02_BaseNone1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.25"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Blank",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 60.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_List02_Btn_Blank'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_List02_Btn_Blank.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.54"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BtnBase",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 550.0,
+          "Y": 92.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_List02_BtnBase'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_List02_BtnBase.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.22"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ClockIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 24.0,
+          "Y": 24.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconMarkLimited2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/CommonIcon/UI_CmnIconMarkLimited2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.33"
+      }
+    }
+  },
+  {
+    "Type": "SBDateTimeTextBlock",
+    "Name": "TimerText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBDateTimeTextBlock'",
+    "Properties": {
+      "TemplateType": "ESBDateTimeTextTemplate::Timespan",
+      "Text": {
+        "Namespace": "",
+        "Key": "9C05D0C740191B6E86508493DC6D4E25",
+        "SourceString": "期限無し",
+        "LocalizedString": "期限無し"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.039546,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF3800"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Font",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.35"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "FinishText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Fang_expedition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Fang_expedition.0"
+      },
+      "TextId": 51,
+      "Text": {
+        "Namespace": "",
+        "Key": "75FADE0D427486715EF55DB08D8E89B6",
+        "SourceString": "報酬の受け取り可能",
+        "LocalizedString": "報酬の受け取り可能"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.871367,
+          "G": 0.223228,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFF08200"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.20"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_136",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Fang_expedition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Fang_expedition.0"
+      },
+      "TextId": 50,
+      "Text": {
+        "Namespace": "",
+        "Key": "4B88CA1744BD3B6AC8058FAF956FB77A",
+        "SourceString": "終了まで　あと",
+        "LocalizedString": "終了まで　あと"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.039546,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF3800"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Font",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.TimerBox.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.34"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "TimeText1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Fang_expedition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Fang_expedition.0"
+      },
+      "TextId": 71,
+      "Text": {
+        "Namespace": "",
+        "Key": "6E8C8868470C1042F609FCAF77F7E195",
+        "SourceString": "必要な派遣時間　：　あと",
+        "LocalizedString": "必要な派遣時間　：　あと"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 0.745404,
+          "A": 1.0,
+          "Hex": "FFFFFFE0"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.32"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ReleaseCondition.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.24"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'Fang_expedition_PlayListItem_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.45"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.29"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_36",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Size": {
+        "X": 550.0,
+        "Y": 92.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.17"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ExpeditionName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "63B56F884ABFD798C04BB3A950C7FE51",
+        "SourceString": "遠征先の名前７８９０１２３４５６７８９０",
+        "LocalizedString": "遠征先の名前７８９０１２３４５６７８９０"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.045186,
+          "G": 0.045186,
+          "B": 0.045186,
+          "A": 1.0,
+          "Hex": "FF3C3C3C"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.18"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TimeText2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "6101629A447ED95F3399A395D3783B6F",
+        "SourceString": "{num}時間",
+        "LocalizedString": "{num}時間"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 0.745404,
+          "A": 1.0,
+          "Hex": "FFFFFFE0"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'Fang_expedition_PlayListItem_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.31"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "PanelSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.53"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.52"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "StatusSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.54"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.55"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher.WidgetSwitcherSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.56"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "PanelSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.50"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.UnreleasedFramePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "PanelSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.PanelSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.50"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.ExpeditionPossiblePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "StatusSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.51"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_PlayListItem_C:WidgetTree.Blank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.38"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "StatusSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.51"
+      },
+      "Content": {
+        "ObjectName": "Fang_expedition_PlayListBtn_Play_C'Fang_expedition_PlayListItem_C:WidgetTree.Play'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.28"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_4",
+    "Outer": "StatusSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_PlayListItem_C:WidgetTree.StatusSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.51"
+      },
+      "Content": {
+        "ObjectName": "Fang_expedition_PlayListBtn_Finish_C'Fang_expedition_PlayListItem_C:WidgetTree.Finish'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.27"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Fang_expedition_PlayListItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Fang_expedition_PlayListItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/PlayList/Fang_expedition_PlayListItem.12"
+      }
+    }
+  }
+]

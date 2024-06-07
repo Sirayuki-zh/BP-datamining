@@ -1,0 +1,1904 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DefencePod",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAnimTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsGuard_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDead",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:ReceiveDead'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomAction",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomAction'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHitCollision",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBShieldGuardInterface:GetHitCollision'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DefencePod_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CorePod_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.3"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DefencePod_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.67"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_DefencePod_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DefencePod_C:ExecuteUbergraph_BP_DefencePod'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CorePod_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DefencePod_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.3"
+      },
+      {
+        "ObjectName": "Function'BP_DefencePod_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.2"
+      },
+      {
+        "ObjectName": "Function'BP_DefencePod_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.1"
+      },
+      {
+        "ObjectName": "Function'BP_DefencePod_C:ExecuteUbergraph_BP_DefencePod'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyGuard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyGuardComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DefencePod": {
+        "ObjectName": "Function'BP_DefencePod_C:ExecuteUbergraph_BP_DefencePod'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.0"
+      },
+      "ReceiveDead": {
+        "ObjectName": "Function'BP_DefencePod_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.1"
+      },
+      "RecvExecCustomAction": {
+        "ObjectName": "Function'BP_DefencePod_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.2"
+      },
+      "GetHitCollision": {
+        "ObjectName": "Function'BP_DefencePod_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DefencePod_C'Default__BP_DefencePod_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.5"
+    }
+  },
+  {
+    "Type": "BP_DefencePod_C",
+    "Name": "Default__BP_DefencePod_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.BP_DefencePod_C'",
+    "Template": {
+      "ObjectName": "BP_CorePod_C'Default__BP_CorePod_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.4"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_DefencePod_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.37"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_DefencePod_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.52"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_DefencePod_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.40"
+      },
+      "EnemyId": "E024_01_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_DefencePod_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.29"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_DefencePod_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.44"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_DefencePod_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.42"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_DefencePod_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.28"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_DefencePod_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.30"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_DefencePod_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.31"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_DefencePod_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.43"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_DefencePod_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.51"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_DefencePod_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.10"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_DefencePod_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.48"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_DefencePod_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.50"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_DefencePod_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.33"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_DefencePod_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.46"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_DefencePod_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.38"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_DefencePod_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.25"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_DefencePod_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.17"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_DefencePod_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.62"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_DefencePod_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.35"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_DefencePod_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.18"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_DefencePod_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.39"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_DefencePod_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.27"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_DefencePod_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.36"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_DefencePod_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.53"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_DefencePod_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.32"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_DefencePod_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.49"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_DefencePod_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.19"
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E024/AST_E025_PDT.AST_E025_PDT",
+        "SubPathString": ""
+      },
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_DefencePod_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.20"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_DefencePod_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.16"
+      },
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_DefencePod_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.57"
+      },
+      "WeaponAttachPoint": "Rot_J",
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_DefencePod_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.60"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_DefencePod_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.13"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_DefencePod_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.59"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_DefencePod_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.58"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_DefencePod_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.61"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_DefencePod_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.12"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_DefencePod_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.26"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_DefencePod_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.6"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_DefencePod_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.55"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_DefencePod_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.11"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_DefencePod_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.56"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_DefencePod_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.9"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_DefencePod_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.23"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_DefencePod_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.7"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_DefencePod_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.47"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_DefencePod_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.34"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_DefencePod_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.45"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIDefencePod_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E024_01/BP_AIDefencePod.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_DefencePod_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.45"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_CorePod_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.5"
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_CorePod_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.12"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_DefencePod_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.23"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_CorePod_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.14"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_CorePod_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.15"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_CorePod_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.16"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_CorePod_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.17"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_CorePod_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.18"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_DefencePod_C'Default__BP_DefencePod_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.5"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_DefencePod_C'Default__BP_DefencePod_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.5"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_CorePod_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.19"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_CorePod_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.21"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_CorePod_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.22"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E024_01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E024_01.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_CorePod_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.23"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_DefencePod'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/AnimationSampleData/ASA_DefencePod.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_CorePod_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.24"
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_CorePod_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.26"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_CorePod_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.27"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_DefencePod_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.47"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_CorePod_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.28"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_CorePod_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.29"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_CorePod_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.35"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_DefencePod_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.45"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_CorePod_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.36"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_CorePod_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.37"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_CorePod_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.38"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_CorePod_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.39"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 160
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_CorePod_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.40"
+    },
+    "Properties": {
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_DefencePodActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/DT_DefencePodActionTable_Battle.0"
+      },
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_DefencePodExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/DT_DefencePodExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_CorePod_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.41"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_CorePod_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.42"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_CorePod_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.43"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_CorePod_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.44"
+    }
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_CorePod_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.46"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_CorePod_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.47"
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_CorePod_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.48"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_CorePod_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.49"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_CorePod_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.50"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_CorePod_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.51"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_CorePod_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.52"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_CorePod_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.53"
+    }
+  },
+  {
+    "Type": "SBEnemyGuardComponent",
+    "Name": "SBEnemyGuard_GEN_VARIABLE",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyGuardComponent'",
+    "Properties": {
+      "bBarrierGuard": true,
+      "MaxBarrierLifeTime": 15.0,
+      "DurabilityHPScale": 0.2,
+      "GuardDamageRate": 0.5,
+      "DefenceConfig": {
+        "GuardBitMask": 3
+      },
+      "m_GuardEffectSettingList": [
+        {
+          "NeedDurabilityRate": 0.0,
+          "GuardActiveEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/Enemy/00_ECommon/Barrier/PS_ECMN_BarrierGuard_00.PS_ECMN_BarrierGuard_00",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E022_00_IceCore/DefencePod/Play_E024_DefencePod_BarrierGuard_Loop.Play_E024_DefencePod_BarrierGuard_Loop",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E022_00_IceCore/DefencePod/Stop_E024_DefencePod_BarrierGuard_Loop.Stop_E024_DefencePod_BarrierGuard_Loop",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorMesh",
+            "ParticleScale": 0.3,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "BarrierSocket",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardSuccessEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/Enemy/E003/Particle/PS_E003_Shield_Hit.PS_E003_Shield_Hit",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E024_00_IceCorePod/Animation/Play_E024_DefencePod_Guard.Play_E024_DefencePod_Guard",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardBreakEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/Enemy/E003/Particle/PS_E003_Shield_breakdown.PS_E003_Shield_Breakdown",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E024_00_IceCorePod/Animation/Play_E024_DefencePod_Guard_Break.Play_E024_DefencePod_Guard_Break",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardEndEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_CorePod_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.54"
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_CorePod_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.55"
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_CorePod_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.56"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_CorePod_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.57"
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_CorePod_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.58"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_CorePod_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.59"
+    },
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E024_01_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E024_01_00/Model/SK_CH_E024_01_00.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_DefencePod_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.45"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_CorePod_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.60"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_CorePod_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.61"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_CorePod_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.62"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_CorePod_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.63"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_CorePod_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.64"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_CorePod_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.65"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_CorePod_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.66"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_CorePod_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.67"
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_CorePod_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.69"
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_CorePod_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.70"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_CorePod_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.71"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_CorePod_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.72"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_CorePod_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.73"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E024_01_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E024_00_CorePod/E024_01_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E024_01_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E024_00_CorePod/E024_01_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_CorePod_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.74"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_CorePod_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.75"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_DefencePod_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_CorePod_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_00_CorePod/BP_CorePod.77"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DefencePod_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.64"
+      },
+      "VariableGuid": "899217FD-403B6FBA-23611B99-4E0AFD2E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyGuardComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyGuardComponent'BP_DefencePod_C:SBEnemyGuard_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.41"
+      },
+      "VariableGuid": "ED00721A-4F7C4EFE-16F65E83-246AE3DA",
+      "InternalVariableName": "SBEnemyGuard"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DefencePod_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DefencePod_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.66"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DefencePod_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.66"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DefencePod_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E024_01_DefencePod/BP_DefencePod.65"
+      }
+    }
+  }
+]

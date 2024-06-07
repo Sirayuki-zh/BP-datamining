@@ -1,0 +1,336 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetSequenceIcon",
+    "Outer": "DxBattleSequenceIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DxBattleSequenceIcon_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DxBattleSequenceIcon_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.14"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DxBattleSequenceIcon_C:SetSequenceIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Boss",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MidBoss",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Normal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Rest",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_75",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetSequenceIcon": {
+        "ObjectName": "Function'DxBattleSequenceIcon_C:SetSequenceIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DxBattleSequenceIcon_C'Default__DxBattleSequenceIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.2"
+    }
+  },
+  {
+    "Type": "DxBattleSequenceIcon_C",
+    "Name": "Default__DxBattleSequenceIcon_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.DxBattleSequenceIcon_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleSequenceIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleSequenceIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.3"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Boss",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DxBattleIcon03'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/DxBattle/UI_DxBattleIcon03.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MidBoss",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DxBattleIcon02'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/DxBattle/UI_DxBattleIcon02.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Normal",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DxBattleIcon01'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/DxBattle/UI_DxBattleIcon01.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.10"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Rest",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DxBattleIcon00'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/DxBattle/UI_DxBattleIcon00.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_75",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.10"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.13"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.11"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleSequenceIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.4"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher_75",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.9"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleSequenceIcon_C:WidgetTree.Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "WidgetSwitcher_75",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.9"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleSequenceIcon_C:WidgetTree.MidBoss'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "WidgetSwitcher_75",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.9"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleSequenceIcon_C:WidgetTree.Boss'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "WidgetSwitcher_75",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DxBattleSequenceIcon_C:WidgetTree.WidgetSwitcher_75'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.9"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleSequenceIcon_C:WidgetTree.Rest'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DxBattleSequenceIcon_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DxBattleSequenceIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleSequenceIcon.3"
+      }
+    }
+  }
+]

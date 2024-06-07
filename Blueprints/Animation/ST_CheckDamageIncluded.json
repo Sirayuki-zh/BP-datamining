@@ -1,0 +1,216 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ReceiveCanEnter",
+    "Outer": "ST_CheckDamageIncluded_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ASTransition_BlueprintBase:ReceiveCanEnter'",
+      "ObjectPath": "/Script/ActionSystem"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLastDamageInfo_DamageInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBDamageInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Enemy_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Player_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Player/BP_PlayerCharacter.65"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetDamageReaction_DamageReaction",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_DamageReaction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/DamageType/E_DamageReaction.0"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetDamageReaction_DamageReaction_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'E_DamageReaction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/DamageType/E_DamageReaction.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ST_CheckDamageIncluded_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'ST_TransitionBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_TransitionBase.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'ST_TransitionBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_TransitionBase.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ST_CheckDamageIncluded_C:ReceiveCanEnter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckDamageIncluded.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "IncludedReactions",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "IncludedReactions",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'E_DamageReaction'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/DamageType/E_DamageReaction.0"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ReceiveCanEnter": {
+        "ObjectName": "Function'ST_CheckDamageIncluded_C:ReceiveCanEnter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckDamageIncluded.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ST_CheckDamageIncluded_C'Default__ST_CheckDamageIncluded_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckDamageIncluded.2"
+    }
+  },
+  {
+    "Type": "ST_CheckDamageIncluded_C",
+    "Name": "Default__ST_CheckDamageIncluded_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Animation/ST_CheckDamageIncluded.ST_CheckDamageIncluded_C'",
+    "Template": {
+      "ObjectName": "ST_TransitionBase_C'Default__ST_TransitionBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/ST_TransitionBase.2"
+    },
+    "Properties": {
+      "IncludedReactions": [
+        102
+      ]
+    }
+  }
+]

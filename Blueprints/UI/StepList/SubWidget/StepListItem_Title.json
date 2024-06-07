@@ -1,0 +1,869 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetTextDebug",
+    "Outer": "StepListItem_Title_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "InText",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTextDebugVisible",
+    "Outer": "StepListItem_Title_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetIconQuest",
+    "Outer": "StepListItem_Title_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBStepListTitle:OnSetIconQuest'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InQuestIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetIconWishList",
+    "Outer": "StepListItem_Title_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBStepListTitle:OnSetIconWishList'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InQuestStatus",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EQuestStatus'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "StepListItem_Title_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'StepListItem_Title_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.31"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBStepListTitle'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'StepListItem_Title_C:OnSetIconWishList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.3"
+      },
+      {
+        "ObjectName": "Function'StepListItem_Title_C:OnSetIconQuest'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.2"
+      },
+      {
+        "ObjectName": "Function'StepListItem_Title_C:SetTextDebugVisible'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.1"
+      },
+      {
+        "ObjectName": "Function'StepListItem_Title_C:SetTextDebug'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "QuestIconS",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'QuestIconS_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/QuestIcon/QuestIconS.7"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextDebug",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetTextDebug": {
+        "ObjectName": "Function'StepListItem_Title_C:SetTextDebug'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.0"
+      },
+      "SetTextDebugVisible": {
+        "ObjectName": "Function'StepListItem_Title_C:SetTextDebugVisible'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.1"
+      },
+      "OnSetIconQuest": {
+        "ObjectName": "Function'StepListItem_Title_C:OnSetIconQuest'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.2"
+      },
+      "OnSetIconWishList": {
+        "ObjectName": "Function'StepListItem_Title_C:OnSetIconWishList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "StepListItem_Title_C'Default__StepListItem_Title_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.5"
+    }
+  },
+  {
+    "Type": "StepListItem_Title_C",
+    "Name": "Default__StepListItem_Title_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.StepListItem_Title_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.10"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_111",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_111.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_94",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_94.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_121.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 400.0,
+          "Bottom": 36.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.6"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_121'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Top": -1.0,
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 1.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.6"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_111'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 4.0,
+          "Top": 17.5,
+          "Right": 32.0,
+          "Bottom": 32.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.6"
+      },
+      "Content": {
+        "ObjectName": "Image'StepListItem_Title_C:WidgetTree.RouteGuideIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_111",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 4.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_111'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.7"
+      },
+      "Content": {
+        "ObjectName": "Image'StepListItem_Title_C:WidgetTree.LineH'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_94",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 36.0,
+          "Bottom": 36.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.0,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_94'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.8"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'StepListItem_Title_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.27"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_121",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_121.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.16"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_121.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_129",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_129.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.18"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_129.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_121.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_121",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0,
+        "Right": 2.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_121'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.14"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_94'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_121",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 2.0,
+        "Bottom": 2.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_121'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.14"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_129'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_129",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_129'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'StepListItem_Title_C:WidgetTree.TextTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.26"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_129",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "HorizontalBox'StepListItem_Title_C:WidgetTree.HorizontalBox_129'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'StepListItem_Title_C:WidgetTree.TextDebug'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.25"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconAdventure",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StepListIcon_AdventureBoard'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StepList/UI_StepListIcon_AdventureBoard.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.28"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconInterruptQuest",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 34.0,
+          "Y": 34.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_IconQuest_Interrupt'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Quest/UI_IconQuest_Interrupt.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.29"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "LineH",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 28.0,
+          "Y": 4.0
+        },
+        "Margin": {
+          "Top": 0.1
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineH1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineH1.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.863157,
+        "B": 0.53948,
+        "A": 1.0,
+        "Hex": "FFFFEFC2"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_111.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.12"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "RouteGuideIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 53.0,
+          "Y": 63.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_QuestListRouteGuideIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/QuestList/UI_QuestListRouteGuideIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.11"
+      }
+    }
+  },
+  {
+    "Type": "QuestIconS_C",
+    "Name": "QuestIconS",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/QuestIcon/QuestIconS.QuestIconS_C'",
+    "Template": {
+      "ObjectName": "QuestIconS_C'Default__QuestIconS_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/QuestIcon/QuestIconS.8"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.30"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextDebug",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F58DC15F442B77F6D1A8B89280873B53",
+        "SourceString": "テキストブロック",
+        "LocalizedString": "テキストブロック"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_129.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.19"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextTitle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "26E911C44B6D9F01D41EF88B428B729F",
+        "SourceString": "QuestName",
+        "LocalizedString": "QuestName"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.863157,
+          "B": 0.53948,
+          "A": 1.0,
+          "Hex": "FFFFEFC2"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-UDKakugo_LargePr6-M'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-UDKakugo_LargePr6-M.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.6,
+        "Hex": "99000000"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StepListItem_Title_C:WidgetTree.HorizontalBox_129.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.18"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "IconSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.30"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.29"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'StepListItem_Title_C:WidgetTree.IconSwitcher.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StepListItem_Title_C:WidgetTree.CanvasPanel_94.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "IconSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'StepListItem_Title_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.27"
+      },
+      "Content": {
+        "ObjectName": "Image'StepListItem_Title_C:WidgetTree.IconAdventure'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.20"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "IconSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'StepListItem_Title_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.27"
+      },
+      "Content": {
+        "ObjectName": "Image'StepListItem_Title_C:WidgetTree.IconInterruptQuest'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "IconSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'StepListItem_Title_C:WidgetTree.IconSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.27"
+      },
+      "Content": {
+        "ObjectName": "QuestIconS_C'StepListItem_Title_C:WidgetTree.QuestIconS'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.24"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "StepListItem_Title_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'StepListItem_Title_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StepList/SubWidget/StepListItem_Title.6"
+      }
+    }
+  }
+]

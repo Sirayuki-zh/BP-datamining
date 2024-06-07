@@ -1,0 +1,389 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "IconNPCBuff_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'IconNPCBuff_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.19"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBMapBuffIcon'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "IconNPCBuff_C'Default__IconNPCBuff_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.1"
+    }
+  },
+  {
+    "Type": "IconNPCBuff_C",
+    "Name": "Default__IconNPCBuff_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.IconNPCBuff_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'IconNPCBuff_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "IconSize",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'IconNPCBuff_C:WidgetTree.IconSize.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.5"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'IconNPCBuff_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'IconNPCBuff_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.2"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'IconNPCBuff_C:WidgetTree.IconSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.3"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "IconSize",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'IconNPCBuff_C:WidgetTree.IconSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.3"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.Root'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.12"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ActiveIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_95'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_95.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.13"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ActiveIcon_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_95'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_95.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffObjSwitcher.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.15"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "InactiveIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_96'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_96.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.14"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "InactiveIcon_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_96'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_96.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffObjSwitcher.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.16"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "BuffNPCSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.13"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.Root.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.17"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "BuffObjSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffObjSwitcher.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.15"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.BuffObjSwitcher.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.Root.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.18"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "Root",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.Root.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.17"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'IconNPCBuff_C:WidgetTree.Root.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'IconNPCBuff_C:WidgetTree.IconSize.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.5"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "BuffNPCSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.10"
+      },
+      "Content": {
+        "ObjectName": "Image'IconNPCBuff_C:WidgetTree.ActiveIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "BuffNPCSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.10"
+      },
+      "Content": {
+        "ObjectName": "Image'IconNPCBuff_C:WidgetTree.InactiveIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "BuffObjSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffObjSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.11"
+      },
+      "Content": {
+        "ObjectName": "Image'IconNPCBuff_C:WidgetTree.ActiveIcon_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "BuffObjSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffObjSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.11"
+      },
+      "Content": {
+        "ObjectName": "Image'IconNPCBuff_C:WidgetTree.InactiveIcon_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "Root",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.Root'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.12"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffNPCSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "Root",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.Root'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.12"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'IconNPCBuff_C:WidgetTree.BuffObjSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "IconNPCBuff_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'IconNPCBuff_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MapIcon/IconNPCBuff.2"
+      }
+    }
+  }
+]

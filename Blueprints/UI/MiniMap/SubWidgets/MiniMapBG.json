@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "MiniMapBG_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'MiniMapBG_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.9"
+      },
+      "bClassRequiresNativeTick": true
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBMiniMapBG'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MiniMapBG_C'Default__MiniMapBG_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.1"
+    }
+  },
+  {
+    "Type": "MiniMapBG_C",
+    "Name": "Default__MiniMapBG_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.MiniMapBG_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 400.0,
+          "Y": 400.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Material'M_UI_MiniMapBGScroll'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/MiniMap/M_UI_MiniMapBGScroll.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'MiniMapBG_C:WidgetTree.Switcher.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.7"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_95",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'MiniMapBG_C:WidgetTree.Switcher.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.8"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_130",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'MiniMapBG_C:WidgetTree.ScaleBox_130.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_130",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox'MiniMapBG_C:WidgetTree.ScaleBox_130'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.4"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'MiniMapBG_C:WidgetTree.Switcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "Switcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'MiniMapBG_C:WidgetTree.Switcher.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.8"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'MiniMapBG_C:WidgetTree.Switcher.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'MiniMapBG_C:WidgetTree.ScaleBox_130.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.5"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "Switcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'MiniMapBG_C:WidgetTree.Switcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.6"
+      },
+      "Content": {
+        "ObjectName": "Image'MiniMapBG_C:WidgetTree.BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.2"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "Switcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'MiniMapBG_C:WidgetTree.Switcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.6"
+      },
+      "Content": {
+        "ObjectName": "Image'MiniMapBG_C:WidgetTree.Image_95'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "MiniMapBG_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "ScaleBox'MiniMapBG_C:WidgetTree.ScaleBox_130'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MiniMap/SubWidgets/MiniMapBG.4"
+      }
+    }
+  }
+]

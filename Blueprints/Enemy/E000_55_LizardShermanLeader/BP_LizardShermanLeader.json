@@ -1,0 +1,1814 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_LizardShaman_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_LizardShermanLeader_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.67"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_LizardShermanLeader_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_LizardShaman_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChant_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyChantComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyGuard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyGuardComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_LizardShermanLeader_C'Default__BP_LizardShermanLeader_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.1"
+    }
+  },
+  {
+    "Type": "BP_LizardShermanLeader_C",
+    "Name": "Default__BP_LizardShermanLeader_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.BP_LizardShermanLeader_C'",
+    "Template": {
+      "ObjectName": "BP_LizardShaman_C'Default__BP_LizardShaman_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.1"
+    },
+    "Properties": {
+      "MeshScaleMap": [
+        {
+          "E000_55_00": 0.8
+        }
+      ],
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_LizardShermanLeader_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.35"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_LizardShermanLeader_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.50"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_LizardShermanLeader_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.38"
+      },
+      "EnemyId": "E000_55_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_LizardShermanLeader_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.26"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_LizardShermanLeader_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.42"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_LizardShermanLeader_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.40"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_LizardShermanLeader_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.25"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_LizardShermanLeader_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.27"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_LizardShermanLeader_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.28"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_LizardShermanLeader_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.41"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_LizardShermanLeader_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.49"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_LizardShermanLeader_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.7"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_LizardShermanLeader_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.46"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_LizardShermanLeader_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.48"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_LizardShermanLeader_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.31"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_LizardShermanLeader_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.44"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_LizardShermanLeader_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.36"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_LizardShermanLeader_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.22"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_LizardShermanLeader_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.14"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_LizardShermanLeader_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.61"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_LizardShermanLeader_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.33"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_LizardShermanLeader_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.15"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_LizardShermanLeader_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.37"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_LizardShermanLeader_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.24"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_LizardShermanLeader_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.34"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_LizardShermanLeader_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.51"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_LizardShermanLeader_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.29"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_LizardShermanLeader_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.47"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_LizardShermanLeader_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.16"
+      },
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_LizardShermanLeader_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.17"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_LizardShermanLeader_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.13"
+      },
+      "CharacterName": "LizardShermanLeader",
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_LizardShermanLeader_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.56"
+      },
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_LizardShermanLeader_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.59"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_LizardShermanLeader_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.10"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_LizardShermanLeader_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.58"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_LizardShermanLeader_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.57"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_LizardShermanLeader_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.60"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_LizardShermanLeader_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.9"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_LizardShermanLeader_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.23"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_LizardShermanLeader_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.2"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_LizardShermanLeader_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.53"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_LizardShermanLeader_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.8"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_LizardShermanLeader_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.55"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_LizardShermanLeader_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.6"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_LizardShermanLeader_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.20"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_LizardShermanLeader_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.4"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_LizardShermanLeader_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.45"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_LizardShermanLeader_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.32"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_LizardShermanLeader_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.43"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AILizardShermanLeader_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E000_55/BP_AILizardShermanLeader.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_LizardShermanLeader_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.43"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_LizardShaman_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.2"
+    }
+  },
+  {
+    "Type": "AIFwSmartObjectUserComponent",
+    "Name": "AIFwSmartObjectUser_GEN_VARIABLE",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'AIFwSmartObjectUserComponent'",
+    "Template": {
+      "ObjectName": "AIFwSmartObjectUserComponent'BP_GoblinShaman_C:AIFwSmartObjectUser_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_02_GoblinShaman/BP_GoblinShaman.5"
+    },
+    "Properties": {
+      "UserType": null
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_LizardShaman_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_LizardShermanLeader_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.20"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'AIFwSmartObjectUserComponent'",
+            "ObjectPath": "/Script/AIFramework"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "AIFwSmartObjectUserComponent'BP_LizardShermanLeader_C:AIFwSmartObjectUser_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.3"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "AIFwSmartObjectUser",
+            "AssociatedGuid": "BE736B3D-47659006-6C4198A2-5E05A7CE"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_LizardShermanLeader_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.54"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_LizardShaman_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.5"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_LizardShaman_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.6"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_LizardShaman_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.7"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_LizardShaman_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.8"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_LizardShaman_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.9"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_LizardShermanLeader_C'Default__BP_LizardShermanLeader_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.1"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_LizardShermanLeader_C'Default__BP_LizardShermanLeader_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.1"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_LizardShaman_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.10"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_LizardShaman_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.11"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_LizardShaman_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.12"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E000_55'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E000_55.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_LizardShaman_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.13"
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_LizardShaman_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.14"
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_LizardShaman_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.15"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_LizardShaman_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.16"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_LizardShermanLeader_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.45"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_LizardShaman_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.17"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_LizardShaman_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.18"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_LizardShaman_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.19"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_LizardShermanLeader_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.43"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_LizardShaman_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.20"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_LizardShaman_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.21"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_LizardShaman_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.22"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_LizardShaman_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.23"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 128
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_LizardShaman_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.24"
+    },
+    "Properties": {
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_LizardShermanLeaderExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/DT_LizardShermanLeaderExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_LizardShaman_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.25"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_LizardShaman_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.26"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_LizardShaman_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.27"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_LizardShaman_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.28"
+    }
+  },
+  {
+    "Type": "SBEnemyChantComponent",
+    "Name": "SBEnemyChant_0_GEN_VARIABLE",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyChantComponent'"
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_LizardShaman_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.29"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_LizardShaman_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.30"
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_LizardShaman_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.31"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_LizardShaman_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.32"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_LizardShaman_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.33"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_LizardShaman_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.34"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_LizardShaman_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.35"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_LizardShaman_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.36"
+    }
+  },
+  {
+    "Type": "SBEnemyGuardComponent",
+    "Name": "SBEnemyGuard_GEN_VARIABLE",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyGuardComponent'",
+    "Properties": {
+      "AICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_ShieldBreak_WLD_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_04_GoblinWarlord/AICustom/BP_AIC_ShieldBreak_WLD.0"
+        }
+      ],
+      "DefenceConfig": {
+        "GuardBitMask": 3
+      },
+      "bHideShieldWhenGuardBreak": true,
+      "m_GuardEffectSettingList": [
+        {
+          "NeedDurabilityRate": 0.0,
+          "GuardActiveEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardSuccessEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/00_Common/Guard/PS_GAM_Guard_01.PS_GAM_Guard_01",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E000_00_Goblin/Goblin/Play_Gob_Warload_Shield_Hit.Play_Gob_Warload_Shield_Hit",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_Inventory_1",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": false,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "Center_J",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardBreakEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/00_Common/Guard/PS_GAM_GuardShield_Break_Steal.PS_GAM_GuardShield_Break_Steal",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E000_00_Goblin/Goblin/Play_Gob_Warload_Shield_Break.Play_Gob_Warload_Shield_Break",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_Inventory_1",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": false,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "Center_J",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardEndEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_LizardShaman_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.37"
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_LizardShaman_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.38"
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_LizardShaman_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.39"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_LizardShaman_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.40"
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_LizardShaman_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.41"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_LizardShaman_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.42"
+    },
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E000_07'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E000_07/Model/SK_CH_E000_07.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_LizardShermanLeader_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.43"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_LizardShaman_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.43"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_LizardShaman_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.44"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_LizardShaman_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.45"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_LizardShaman_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.46"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_LizardShaman_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.47"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_LizardShaman_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.48"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_LizardShaman_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.49"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_LizardShaman_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.50"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_LizardShaman_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.51"
+    },
+    "Properties": {
+      "m_ParticleScale": 1.3
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_LizardShaman_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.52"
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_LizardShaman_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.53"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_LizardShaman_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.54"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_LizardShaman_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.55"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_LizardShaman_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.56"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E000_08_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_08_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E000_08_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_08_Effect.0"
+          }
+        },
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E000_33_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_33_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E000_33_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_33_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_LizardShaman_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.57"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_LizardShaman_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.58"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_LizardShaman_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_08_LizardShaman/BP_LizardShaman.59"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_LizardShermanLeader_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.63"
+      },
+      "VariableGuid": "A6ACFABE-4F2220A9-FC3317A4-C360DB0C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyGuardComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyGuardComponent'BP_LizardShermanLeader_C:SBEnemyGuard_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.39"
+      },
+      "VariableGuid": "804EE225-4E5134E9-49C8F595-88B39599",
+      "InternalVariableName": "SBEnemyGuard"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyChantComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyChantComponent'BP_LizardShermanLeader_C:SBEnemyChant_0_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.30"
+      },
+      "VariableGuid": "49AD511B-40AE1D86-78DAB581-39928E1E",
+      "InternalVariableName": "SBEnemyChant_0"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_LizardShermanLeader_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LizardShermanLeader_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.65"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LizardShermanLeader_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.66"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_LizardShermanLeader_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.65"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_LizardShermanLeader_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.66"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_LizardShermanLeader_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_55_LizardShermanLeader/BP_LizardShermanLeader.64"
+      }
+    }
+  }
+]

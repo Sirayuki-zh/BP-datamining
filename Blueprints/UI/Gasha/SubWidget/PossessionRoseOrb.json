@@ -1,0 +1,1490 @@
+[
+  {
+    "Type": "Function",
+    "Name": "UpdateRoseOrbInfo",
+    "Outer": "PossessionRoseOrb_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetExpiredTimeRoseOrbFree_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DateTime'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetExpiredTimeRoseOrbPaid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DateTime'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExpiredDay_IsExpired",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsExpiredDay_IsExpired_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRoseOrbPaid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRoseOrbFree_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsExpiredDay",
+    "Outer": "PossessionRoseOrb_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InDateTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DateTime'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsExpired",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_SBUtcNow_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DateTime'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_DateTimeDateTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Timespan'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakTimespan_Days",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakTimespan_Hours",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakTimespan_Minutes",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakTimespan_Seconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakTimespan_Milliseconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "PossessionRoseOrb_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'PossessionRoseOrb_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.53"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'PossessionRoseOrb_C:IsExpiredDay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.1"
+      },
+      {
+        "ObjectName": "Function'PossessionRoseOrb_C:UpdateRoseOrbInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas_Possession_RoseOrb",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CautionIcon_Free",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ScaleBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CautionIcon_Paid",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ScaleBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_930",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Label_Free_Num",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Label_Paid_Num",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "UpdateRoseOrbInfo": {
+        "ObjectName": "Function'PossessionRoseOrb_C:UpdateRoseOrbInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.0"
+      },
+      "IsExpiredDay": {
+        "ObjectName": "Function'PossessionRoseOrb_C:IsExpiredDay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PossessionRoseOrb_C'Default__PossessionRoseOrb_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.3"
+    }
+  },
+  {
+    "Type": "PossessionRoseOrb_C",
+    "Name": "Default__PossessionRoseOrb_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.PossessionRoseOrb_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Canvas_Possession_RoseOrb",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Free",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_22'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Paid",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_17'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Canvas_Possession_RoseOrb",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 520.0,
+          "Bottom": 38.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "Canvas_Possession_RoseOrb",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 129.0,
+          "Top": 5.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_22",
+    "Outer": "Canvas_Possession_RoseOrb",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 320.0,
+          "Top": 5.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "Canvas_Possession_RoseOrb",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 9.0,
+          "Top": 2.0,
+          "Right": 27.5,
+          "Bottom": 35.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.35"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "Canvas_Possession_RoseOrb",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 47.0,
+          "Top": 5.0,
+          "Right": 84.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.36"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 360.89835
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.5"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.4"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Free",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 3.0,
+          "Right": 4.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.6"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'PossessionRoseOrb_C:WidgetTree.SB_Line2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_Free",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 48.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.6"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_Free",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Right": 124.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.6"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.Free_ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_Free",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -6.0,
+          "Top": 24.0,
+          "Right": 15.0,
+          "Bottom": 15.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.6"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.CautionIcon_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.31"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Paid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 3.0,
+          "Right": 4.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.7"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'PossessionRoseOrb_C:WidgetTree.SB_Line1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_Paid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 10.0,
+          "Right": 48.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.7"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_Paid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Right": 124.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.7"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.Paid_ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.34"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_Paid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -6.0,
+          "Top": 24.0,
+          "Right": 15.0,
+          "Bottom": 15.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.7"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.CautionIcon_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 320.0,
+          "Y": 38.0
+        },
+        "Margin": {
+          "Left": 0.2,
+          "Right": 0.2
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_GashaPossessionTicketBg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Gasha/UI_GashaPossessionTicketBg.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.8"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconRoseOrb_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 82.0,
+          "Y": 82.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_GashaBtnIconRoseOrb'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Gasha/UI_GashaBtnIconRoseOrb.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox.ScaleBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.43"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 28.0,
+          "Y": 28.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_RMShopIcon10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/RMShop/UI_RMShopIcon10.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.CautionIcon_Free.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.39"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_930",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 28.0,
+          "Y": 28.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_RMShopIcon10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/RMShop/UI_RMShopIcon10.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.CautionIcon_Paid.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.40"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 28.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'PossessionRoseOrb_C:WidgetTree.SB_Line1.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.49"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 4.0,
+          "Y": 24.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'PossessionRoseOrb_C:WidgetTree.SB_Line2.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.50"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'GashaMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/GashaMenu.0"
+      },
+      "NameTextId": "PossessionText",
+      "Text": {
+        "Namespace": "",
+        "Key": "632AB56447DEFC021C8E97BE5C83E07C",
+        "SourceString": "所持チケット",
+        "LocalizedString": "所持チケット"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.44"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'RMShop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/RMShop.0"
+      },
+      "NameTextId": "Paid",
+      "Text": {
+        "Namespace": "",
+        "Key": "16DF664E4995C94F1F4AC89D88D6F6BB",
+        "SourceString": "所持チケット",
+        "LocalizedString": "所持チケット"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.45"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'RMShop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/RMShop.0"
+      },
+      "NameTextId": "Free",
+      "Text": {
+        "Namespace": "",
+        "Key": "44AA627547282A6E51F9C5BDF0DB27F8",
+        "SourceString": "所持チケット",
+        "LocalizedString": "所持チケット"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_3.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.46"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "CautionIcon_Free",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.CautionIcon_Free.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.17"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "CautionIcon_Paid",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.CautionIcon_Paid.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.21"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Free_ScaleBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.Free_ScaleBox.ScaleBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.16"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "Paid_ScaleBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.Paid_ScaleBox.ScaleBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.20"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox.ScaleBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.43"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.11"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.Canvas_Possession_RoseOrb.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.12"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_2.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.45"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.19"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.ScaleBox_3.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.15"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "CautionIcon_Free",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.CautionIcon_Free'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.31"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.Image_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.24"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "CautionIcon_Paid",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.CautionIcon_Paid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.32"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.Image_930'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.25"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "Free_ScaleBox",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.Free_ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.33"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'PossessionRoseOrb_C:WidgetTree.Label_Free_Num'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.51"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "Paid_ScaleBox",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.Paid_ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.34"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'PossessionRoseOrb_C:WidgetTree.Label_Paid_Num'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.52"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_2",
+    "Outer": "ScaleBox",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.35"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.IconRoseOrb_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.23"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_1",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.36"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'PossessionRoseOrb_C:WidgetTree.SBRuntimeTextBlock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.28"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_2",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.37"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'PossessionRoseOrb_C:WidgetTree.SBRuntimeTextBlock_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.29"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_3",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "ScaleBox'PossessionRoseOrb_C:WidgetTree.ScaleBox_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.38"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'PossessionRoseOrb_C:WidgetTree.SBRuntimeTextBlock_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.30"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SB_Line1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'PossessionRoseOrb_C:WidgetTree.SB_Line1.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.49"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Paid.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.18"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SB_Line2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'PossessionRoseOrb_C:WidgetTree.SB_Line2.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'PossessionRoseOrb_C:WidgetTree.CanvasPanel_Free.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.14"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SB_Line1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'PossessionRoseOrb_C:WidgetTree.SB_Line1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.47"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.Line'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.26"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SB_Line2",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'PossessionRoseOrb_C:WidgetTree.SB_Line2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.48"
+      },
+      "Content": {
+        "ObjectName": "Image'PossessionRoseOrb_C:WidgetTree.Line_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.27"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Label_Free_Num",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C227DB7646F2EE195E1474A298B710C2",
+        "SourceString": "999,999,999",
+        "LocalizedString": "999,999,999"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.Free_ScaleBox.ScaleBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.41"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Label_Paid_Num",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B49E7F9043D395BAC7F3CF947EFCEBF8",
+        "SourceString": "999,999,999",
+        "LocalizedString": "999,999,999"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'PossessionRoseOrb_C:WidgetTree.Paid_ScaleBox.ScaleBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.42"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "PossessionRoseOrb_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'PossessionRoseOrb_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/PossessionRoseOrb.5"
+      }
+    }
+  }
+]

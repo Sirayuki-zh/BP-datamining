@@ -1,0 +1,832 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetDyeInfo",
+    "Outer": "DyeInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InDyeItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InDyeItemAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InOwnItemListContainer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBOwnItemListContainer'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InColoringShopComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBColoringShopComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bInIsSingleLine",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bLocalIsSingleLine",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocalColoringShopComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBColoringShopComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocalOwnItemListContainer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBOwnItemListContainer'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalRequiredAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalDyeItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalAfterDistributionAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalBeforeDistributionAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalAfterAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalBeforeAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDyeTextFromDyeItemId_OutDyeText",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CalculateConsumptionOfHoldDyeItemsRequiredForDyeing_OutHoldNormalDyeItemConsumeNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CalculateConsumptionOfHoldDyeItemsRequiredForDyeing_OutHoldDistributionDyeItemConsumeNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CalculateConsumptionOfHoldDyeItemsRequiredForDyeing_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetDyeItemHoldAmounts_OutNormalHoldAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetDyeItemHoldAmounts_OutDistributionHoldAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSize",
+    "Outer": "DyeInfoItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OutSize",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanelSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DyeInfoItem_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DyeInfoItem_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.21"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DyeInfoItem_C:GetSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.1"
+      },
+      {
+        "ObjectName": "Function'DyeInfoItem_C:SetDyeInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DyeAmountItemForSingleLine",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DyeAmountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DyeDistributionAmountItem",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DyeAmountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DyeNameText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DyeNormalAmountItem",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'DyeAmountItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.4"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlayForBody",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Overlay'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcherForDyeAmount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetDyeInfo": {
+        "ObjectName": "Function'DyeInfoItem_C:SetDyeInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.0"
+      },
+      "GetSize": {
+        "ObjectName": "Function'DyeInfoItem_C:GetSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DyeInfoItem_C'Default__DyeInfoItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.3"
+    }
+  },
+  {
+    "Type": "DyeInfoItem_C",
+    "Name": "Default__DyeInfoItem_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.DyeInfoItem_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DyeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 620.0,
+          "Bottom": 100.00001
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DyeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.4"
+      },
+      "Content": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.OverlayForBody'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.10"
+      }
+    }
+  },
+  {
+    "Type": "DyeAmountItem_C",
+    "Name": "DyeAmountItemForSingleLine",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.DyeAmountItem_C'",
+    "Template": {
+      "ObjectName": "DyeAmountItem_C'Default__DyeAmountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.5"
+    },
+    "Properties": {
+      "bIsSingleLine": true,
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.20"
+      }
+    }
+  },
+  {
+    "Type": "DyeAmountItem_C",
+    "Name": "DyeDistributionAmountItem",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.DyeAmountItem_C'",
+    "Template": {
+      "ObjectName": "DyeAmountItem_C'Default__DyeAmountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.5"
+    },
+    "Properties": {
+      "bIsDistribution": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.Overlay_319.OverlaySlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.12"
+      }
+    }
+  },
+  {
+    "Type": "DyeAmountItem_C",
+    "Name": "DyeNormalAmountItem",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.DyeAmountItem_C'",
+    "Template": {
+      "ObjectName": "DyeAmountItem_C'Default__DyeAmountItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeAmountItem.5"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.Overlay_319.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.11"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_319",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.Overlay_319.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.11"
+        },
+        {
+          "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.Overlay_319.OverlaySlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.19"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "OverlayForBody",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.OverlayForBody.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.13"
+        },
+        {
+          "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.OverlayForBody.OverlaySlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DyeInfoItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.5"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_319",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Top": -20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.Overlay_319'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.9"
+      },
+      "Content": {
+        "ObjectName": "DyeAmountItem_C'DyeInfoItem_C:WidgetTree.DyeNormalAmountItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.8"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_319",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 20.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.Overlay_319'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.9"
+      },
+      "Content": {
+        "ObjectName": "DyeAmountItem_C'DyeInfoItem_C:WidgetTree.DyeDistributionAmountItem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.7"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "OverlayForBody",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 40.0,
+        "Right": 5.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.OverlayForBody'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.10"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'DyeInfoItem_C:WidgetTree.ScaleBox_102'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.15"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "OverlayForBody",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 250.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.OverlayForBody'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.10"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.18"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_102",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'DyeInfoItem_C:WidgetTree.ScaleBox_102.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.OverlayForBody.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.13"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_102",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "ScaleBox'DyeInfoItem_C:WidgetTree.ScaleBox_102'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.15"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'DyeInfoItem_C:WidgetTree.DyeNameText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.17"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "DyeNameText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "88AAF4F84B587D66EF03289FEEC5BF58",
+        "SourceString": "着色染料（NNN）",
+        "LocalizedString": "着色染料（NNN）"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'DyeInfoItem_C:WidgetTree.ScaleBox_102.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.16"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcherForDyeAmount",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.19"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'DyeInfoItem_C:WidgetTree.OverlayForBody.OverlaySlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcherForDyeAmount",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.18"
+      },
+      "Content": {
+        "ObjectName": "Overlay'DyeInfoItem_C:WidgetTree.Overlay_319'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcherForDyeAmount",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'DyeInfoItem_C:WidgetTree.WidgetSwitcherForDyeAmount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.18"
+      },
+      "Content": {
+        "ObjectName": "DyeAmountItem_C'DyeInfoItem_C:WidgetTree.DyeAmountItemForSingleLine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DyeInfoItem_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DyeInfoItem_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dialog/UsedDyeBreakdownDialog/DyeInfoItem.4"
+      }
+    }
+  }
+]

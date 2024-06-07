@@ -1,0 +1,932 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Fang_expedition_ExpeditionHeartAnm",
+    "Outer": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIconVisibility",
+    "Outer": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.21"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.20"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:ExecuteUbergraph_Fang_expedition_ExpeditionHeartAnm'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:SetIconVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.2"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.1"
+      },
+      {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:ExecuteUbergraph_Fang_expedition_ExpeditionHeartAnm'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnmHeart",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Heart1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeartBG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bVisible",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Fang_expedition_ExpeditionHeartAnm": {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:ExecuteUbergraph_Fang_expedition_ExpeditionHeartAnm'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.0"
+      },
+      "Construct": {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.1"
+      },
+      "SetIconVisibility": {
+        "ObjectName": "Function'Fang_expedition_ExpeditionHeartAnm_C:SetIconVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Fang_expedition_ExpeditionHeartAnm_C'Default__Fang_expedition_ExpeditionHeartAnm_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.4"
+    }
+  },
+  {
+    "Type": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Name": "Default__Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.Fang_expedition_ExpeditionHeartAnm_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bVisible": true,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Top": -15.0,
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.5"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.Heart1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.8"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -15.0,
+          "Top": -15.0,
+          "Right": 30.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.5"
+      },
+      "Content": {
+        "ObjectName": "Image'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.HeartBG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.9"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Heart1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 30.0,
+          "Y": 30.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.338542,
+            "B": 0.632069,
+            "A": 1.0,
+            "Hex": "FFFF9DD1"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_Fang_expedition_MarkHeart'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/MI_UI_Fang_expedition_MarkHeart.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.6"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "HeartBG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.194618,
+            "B": 0.552012,
+            "A": 1.0,
+            "Hex": "FFFF7AC4"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Fang_expedition_MarkHeart'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Fang_expedition/UI_Fang_expedition_MarkHeart.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.7"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "AnmHeart",
+    "Outer": "AnmHeart_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "937EE6C9-41B88E02-33F7FAB6-60529889",
+          "Name": "Heart1",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'Image'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "937EE6C9-41B88E02-33F7FAB6-60529889",
+          "BindingName": "Heart1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.19"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.12"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "ADBA3977-4D281A3B-C325868E-1C45EEF7"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Properties": {
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0001848641,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 3.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0001860793,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 2,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 3.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.13"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.14"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "8598C858-4F27C331-10C526B8-BAD38629"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "AnmHeart",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.11"
+        }
+      ],
+      "EvaluationFieldGuid": "A5A014D2-433F4B92-BE0AF4A6-3F050CD7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.11"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "A5A014D2-433F4B92-BE0AF4A6-3F050CD7"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "AnmHeart_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 30000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.18"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.11"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "937EE6C9-41B88E02-33F7FAB6-60529889"
+          },
+          {
+            "ObjectBindingID": "937EE6C9-41B88E02-33F7FAB6-60529889"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 30000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "323CCAFE-483362B7-C33B2AA6-A36491B0",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 11000
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.5,
+            "Tangent": {
+              "ArriveTangent": -7.295359E-05,
+              "LeaveTangent": -7.295359E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.15"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.16"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "EF8DDCD1-439CC479-BE1D369B-F87C1D82"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "AnmHeart",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.18"
+        }
+      ],
+      "EvaluationFieldGuid": "FE03D0A1-4DCA7F89-2E90DC88-FE617371",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.18"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "FE03D0A1-4DCA7F89-2E90DC88-FE617371"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "AnmHeart_INST",
+    "Outer": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.AnmHeart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.10"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Heart1",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "937EE6C9-41B88E02-33F7FAB6-60529889",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "AnmHeart",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'Fang_expedition_ExpeditionHeartAnm_C:AnmHeart_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.17"
+      },
+      "Signature": "323CCAFE-483362B7-C33B2AA6-A36491B0"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Fang_expedition_ExpeditionHeartAnm_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Fang_expedition_ExpeditionHeartAnm_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_ExpeditionHeartAnm.5"
+      }
+    }
+  }
+]

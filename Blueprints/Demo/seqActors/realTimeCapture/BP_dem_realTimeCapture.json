@@ -1,0 +1,805 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_dem_realTimeCapture",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsStatic_Mesh_Actor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshActor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMaterial_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_delta",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_startTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_endTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_timeSize",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_startFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_endFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateRenderTarget2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "evtMSN_begin",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_begin'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_begin'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "startTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "endTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "timeSize",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "startFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "endFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "evtMSN_End",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_End'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_End'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "evtMSN_tick",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_tick'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_tick'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "time",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "delta",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "updateParam",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHorizontalFieldOfView_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Conv_IntToFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAttachParentActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_CameraFilmbackSettings",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'CameraFilmbackSettings'",
+          "ObjectPath": "/Script/CinematicCamera"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_seqActor_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_dem_realTimeCapture_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.15"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_dem_realTimeCapture_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:ExecuteUbergraph_BP_dem_realTimeCapture'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_seqActor_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:updateParam'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.5"
+      },
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:UserConstructionScript'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.4"
+      },
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_tick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.3"
+      },
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_End'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.2"
+      },
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_begin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.1"
+      },
+      {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:ExecuteUbergraph_BP_dem_realTimeCapture'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SceneCaptureComponent2D",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneCaptureComponent2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CineCamera",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'CineCameraComponent'",
+          "ObjectPath": "/Script/CinematicCamera"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RenderTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "focalLength",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "AutoCreateTexAndSendSlot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "resoX",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "resoY",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "TargetActor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | Interp",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "MaterialParamName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_dem_realTimeCapture": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:ExecuteUbergraph_BP_dem_realTimeCapture'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.0"
+      },
+      "evtMSN_begin": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_begin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.1"
+      },
+      "evtMSN_End": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_End'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.2"
+      },
+      "evtMSN_tick": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:evtMSN_tick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:UserConstructionScript'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.4"
+      },
+      "updateParam": {
+        "ObjectName": "Function'BP_dem_realTimeCapture_C:updateParam'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_dem_realTimeCapture_C'Default__BP_dem_realTimeCapture_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.7"
+    }
+  },
+  {
+    "Type": "BP_dem_realTimeCapture_C",
+    "Name": "Default__BP_dem_realTimeCapture_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.BP_dem_realTimeCapture_C'",
+    "Template": {
+      "ObjectName": "BP_seqActor_Base_C'Default__BP_seqActor_Base_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.5"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "focalLength": 30.0,
+      "resoX": 256,
+      "resoY": 256,
+      "MaterialParamName": "RenderTex"
+    }
+  },
+  {
+    "Type": "CineCameraComponent",
+    "Name": "CineCamera_GEN_VARIABLE",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'CineCameraComponent'",
+    "Properties": {
+      "Filmback": {
+        "SensorWidth": 25.6,
+        "SensorHeight": 25.6,
+        "SensorAspectRatio": 1.0
+      },
+      "LensSettings": {
+        "MinFocalLength": 4.0,
+        "MaxFocalLength": 1000.0,
+        "MinFStop": 1.2,
+        "MaxFStop": 22.0,
+        "MinimumFocusDistance": 0.0,
+        "DiaphragmBladeCount": 7
+      },
+      "FocusSettings": {
+        "FocusMethod": "ECameraFocusMethod::Disable"
+      },
+      "CurrentFocalLength": 35.0,
+      "CurrentAperture": 2.8,
+      "FieldOfView": 40.176373,
+      "AspectRatio": 1.0,
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneCaptureComponent2D",
+    "Name": "SceneCaptureComponent2D_GEN_VARIABLE",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'SceneCaptureComponent2D'",
+    "Properties": {
+      "TextureTarget": {
+        "ObjectName": "CanvasRenderTarget2D'dem_RealTimeCap_sampleTex_256x256'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/dem_RealTimeCap_sampleTex_256x256.0"
+      },
+      "PrimitiveRenderMode": "ESceneCapturePrimitiveRenderMode::PRM_UseShowOnlyList",
+      "CaptureSource": "SCS_FinalColorLDRSceneAlpha",
+      "ShowFlagSettings": [
+        {
+          "ShowFlagName": "Decals",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Fog",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Landscape",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Particles",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "StaticMeshes",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "InstancedFoliage",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "InstancedGrass",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "InstancedStaticMeshes",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Paper2DSprites",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "TextRender",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "AmbientCubemap",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "DistanceFieldAO",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "LightFunctions",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "LightShafts",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "ReflectionEnvironment",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "ScreenSpaceReflections",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "TexturedLightProfiles",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "VolumetricFog",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Translucency",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "AtmosphericFog",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "EyeAdaptation",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "BSP",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "Bloom",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "SkyLighting",
+          "Enabled": false
+        },
+        {
+          "ShowFlagName": "TemporalAA",
+          "Enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_dem_realTimeCapture_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.11"
+      },
+      "VariableGuid": "AA9F6CE1-474CDAC9-8FF0BDBE-EFFB27AD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneCaptureComponent2D'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneCaptureComponent2D'BP_dem_realTimeCapture_C:SceneCaptureComponent2D_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.10"
+      },
+      "VariableGuid": "FF34F1B3-4D0A0EED-2D56A9AB-DBEB878B",
+      "InternalVariableName": "SceneCaptureComponent2D"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'CineCameraComponent'",
+        "ObjectPath": "/Script/CinematicCamera"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CineCameraComponent'BP_dem_realTimeCapture_C:CineCamera_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.8"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_seqActor_Base_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_dem_realTimeCapture_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.13"
+        }
+      ],
+      "VariableGuid": "A4E8761A-48D78701-F581A4A9-BA6ABCE9",
+      "InternalVariableName": "CineCamera"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_dem_realTimeCapture_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_dem_realTimeCapture_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_dem_realTimeCapture_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_dem_realTimeCapture_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_dem_realTimeCapture_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/realTimeCapture/BP_dem_realTimeCapture.12"
+      }
+    }
+  }
+]

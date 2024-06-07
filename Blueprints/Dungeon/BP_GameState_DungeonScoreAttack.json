@@ -1,0 +1,986 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GameState_DungeonScoreAttack",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dng_Intro_Camera_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_IntroSequence/BP_Dng_Intro_Camera.21"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerStartLocation_PlayerStart",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerStart'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetPlayerStartLocation_DistFromStart",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientReady_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayInEditor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_ActorLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBScoreAttackRemainTime'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_InScore",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetScore_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetScore_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReadyCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBGMGameEnd",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Net | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBGMAreaStart",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_ScoreAttackRemainTime",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_DungeonScoreAttack:OnRep_ScoreAttackRemainTime'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimeOver",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_DungeonScoreAttack:OnTimeOver'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnScoreUp",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_DungeonScoreAttack:OnScoreUp'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InScore",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnExtendGameLimitTime",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_DungeonScoreAttack:OnExtendGameLimitTime'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActorLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BP_ReadyCount",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBGameState_Dungeon:BP_ReadyCount'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OverrideScoreAttackSettings",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "RowHandle",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 352,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBScoreAttackSettings'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetScoreAttackHUD",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScoreAttackHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ScoreAttack_Main_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/ScoreAttack_Main.13"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_GameState_DungeonScoreAttack_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:ExecuteUbergraph_BP_GameState_DungeonScoreAttack'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBGameState_DungeonScoreAttack'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetScoreAttackHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.10"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OverrideScoreAttackSettings'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.9"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:BP_ReadyCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.8"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.7"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnExtendGameLimitTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.6"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnScoreUp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.5"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnTimeOver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.4"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnRep_ScoreAttackRemainTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.3"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetBGMAreaStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.2"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetBGMGameEnd'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.1"
+      },
+      {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:ExecuteUbergraph_BP_GameState_DungeonScoreAttack'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_ScoreAttackManager",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ScoreAttackManager_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/BP_ScoreAttackManager.13"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "ReadyCountDown",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ReadyCountInt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReadyGoUIStarted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ScoreAttackSettingsHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "BGMMode",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "Enum'ESBScoreAttackRemainTime'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TmpScore",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ResultSoundEvent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'AkAudioEvent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "InputBlocked",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GameState_DungeonScoreAttack": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:ExecuteUbergraph_BP_GameState_DungeonScoreAttack'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.0"
+      },
+      "SetBGMGameEnd": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetBGMGameEnd'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.1"
+      },
+      "SetBGMAreaStart": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetBGMAreaStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.2"
+      },
+      "OnRep_ScoreAttackRemainTime": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnRep_ScoreAttackRemainTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.3"
+      },
+      "OnTimeOver": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnTimeOver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.4"
+      },
+      "OnScoreUp": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnScoreUp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.5"
+      },
+      "OnExtendGameLimitTime": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OnExtendGameLimitTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.6"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.7"
+      },
+      "BP_ReadyCount": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:BP_ReadyCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.8"
+      },
+      "OverrideScoreAttackSettings": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:OverrideScoreAttackSettings'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.9"
+      },
+      "SetScoreAttackHUD": {
+        "ObjectName": "Function'BP_GameState_DungeonScoreAttack_C:SetScoreAttackHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GameState_DungeonScoreAttack_C'Default__BP_GameState_DungeonScoreAttack_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.12"
+    }
+  },
+  {
+    "Type": "BP_GameState_DungeonScoreAttack_C",
+    "Name": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.BP_GameState_DungeonScoreAttack_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ScoreAttackSettingsHandle": {
+        "DataTable": {
+          "ObjectName": "DataTable'DT_ScoreAttack'",
+          "ObjectPath": "BLUEPROTOCOL/Content/LevelDesign/Blueprint/BP_sad0102/DT_ScoreAttack.0"
+        },
+        "RowName": "Defaults"
+      },
+      "ResultSoundEvent": {
+        "ObjectName": "AkAudioEvent'Switch_Music_Time_ScoreAttack_Result'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/Music/Music/SwitchMusic/Switch_Music_Time_ScoreAttack_Result.1"
+      },
+      "LevelConditionVoiceComponent": {
+        "ObjectName": "SBLevelBuddyVoiceComponent'Default__BP_GameState_DungeonScoreAttack_C:SBLevelBuddyVoiceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.18"
+      },
+      "ClearConditionWatcher": {
+        "ObjectName": "SBDungeonClearConditionWatcher2'Default__BP_GameState_DungeonScoreAttack_C:SBDungeonCaptureObserver2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.16"
+      },
+      "ArenaMissionWatcher": {
+        "ObjectName": "SBArenaMissionWatcher'Default__BP_GameState_DungeonScoreAttack_C:SBMissionCaptureObserver'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.14"
+      },
+      "TowerChallengeWatcher": {
+        "ObjectName": "SBTowerChallengeWatcher'Default__BP_GameState_DungeonScoreAttack_C:SBTowerChallengeWatcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.19"
+      },
+      "ServerTime": 637387523104510000,
+      "ServerGameTime": 637387866270600000,
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      },
+      "NetUpdateFrequency": 30.0,
+      "MinNetUpdateFrequency": 20.0,
+      "RootComponent": {
+        "ObjectName": "SBDungeonClearConditionWatcher2'Default__BP_GameState_DungeonScoreAttack_C:SBDungeonCaptureObserver2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.16"
+      }
+    }
+  },
+  {
+    "Type": "BP_ScoreAttackManager_C",
+    "Name": "BP_ScoreAttackManager_GEN_VARIABLE",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/BP_ScoreAttackManager.BP_ScoreAttackManager_C'",
+    "Template": {
+      "ObjectName": "BP_ScoreAttackManager_C'Default__BP_ScoreAttackManager_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/BP_ScoreAttackManager.14"
+    }
+  },
+  {
+    "Type": "SBArenaMissionWatcher",
+    "Name": "SBMissionCaptureObserver",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBArenaMissionWatcher'"
+  },
+  {
+    "Type": "SBDungeonClearConditionWatcher",
+    "Name": "SBDungeonCaptureObserver",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBDungeonClearConditionWatcher'"
+  },
+  {
+    "Type": "SBDungeonClearConditionWatcher2",
+    "Name": "SBDungeonCaptureObserver2",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBDungeonClearConditionWatcher2'"
+  },
+  {
+    "Type": "SBFrameTimeComponent",
+    "Name": "FrameTimeWatcher",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBFrameTimeComponent'"
+  },
+  {
+    "Type": "SBLevelBuddyVoiceComponent",
+    "Name": "SBLevelBuddyVoiceComponent",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBLevelBuddyVoiceComponent'"
+  },
+  {
+    "Type": "SBTowerChallengeWatcher",
+    "Name": "SBTowerChallengeWatcher",
+    "Outer": "Default__BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SBTowerChallengeWatcher'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GameState_DungeonScoreAttack_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.20"
+      },
+      "VariableGuid": "29D20D6F-4A119B9B-7009E5AA-BC857AC3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ScoreAttackManager_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ScoreAttack/BP_ScoreAttackManager.13"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_ScoreAttackManager_C'BP_GameState_DungeonScoreAttack_C:BP_ScoreAttackManager_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.13"
+      },
+      "VariableGuid": "7F32B23C-4D35C2B3-54A3408B-3BFAAB42",
+      "InternalVariableName": "BP_ScoreAttackManager"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_GameState_DungeonScoreAttack_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GameState_DungeonScoreAttack_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GameState_DungeonScoreAttack_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_GameState_DungeonScoreAttack_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BP_GameState_DungeonScoreAttack.21"
+      }
+    }
+  }
+]

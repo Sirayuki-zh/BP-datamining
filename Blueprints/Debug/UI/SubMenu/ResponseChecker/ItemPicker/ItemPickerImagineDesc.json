@@ -1,0 +1,637 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetImagineData",
+    "Outer": "ItemPickerImagineDesc_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ImagineData",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindAbilityEffectMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindAbilityEffectMaster_AbilityEffectMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 36,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBAbilityEffectMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetWeaponPerkText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetStackBNum_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetStackBMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ItemPickerImagineDesc_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'ItemPickerImagineDesc_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.24"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ItemPickerImagineDesc_C:SetImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_PerkId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_PerkName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_StackB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetImagineData": {
+        "ObjectName": "Function'ItemPickerImagineDesc_C:SetImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ItemPickerImagineDesc_C'Default__ItemPickerImagineDesc_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.2"
+    }
+  },
+  {
+    "Type": "ItemPickerImagineDesc_C",
+    "Name": "Default__ItemPickerImagineDesc_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.ItemPickerImagineDesc_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ItemPickerImagineDesc_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 1108.0,
+          "Bottom": 792.8572
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ItemPickerImagineDesc_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.3"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.20"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.8"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.21"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.10"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.22"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.12"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.23"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "Value": 0.4,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.TextBlock'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.Txt_PerkId'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "Value": 0.4,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.TextBlock_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_1",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.Txt_PerkName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.18"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "Value": 0.4,
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.TextBlock_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.16"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_2",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.7"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ItemPickerImagineDesc_C:WidgetTree.Txt_StackB'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.19"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "35465D134C155F47925A3796758A22A8",
+        "SourceString": "Special Perk Id",
+        "LocalizedString": "Special Perk Id"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.8"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D6C5B513449197F29B1BDB9084B90330",
+        "SourceString": "Special Perk Name",
+        "LocalizedString": "Special Perk Name"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.10"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E1EDA45543DAF49DA7DA75BD563B7966",
+        "SourceString": "Stack Boost Num",
+        "LocalizedString": "Stack Boost Num"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.12"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Txt_PerkId",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.9"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Txt_PerkName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.11"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Txt_StackB",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_30",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.21"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.22"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ItemPickerImagineDesc_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.4"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_30",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.20"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.5"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_30",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.20"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.6"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_30",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'ItemPickerImagineDesc_C:WidgetTree.VerticalBox_30'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.20"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'ItemPickerImagineDesc_C:WidgetTree.HorizontalBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ItemPickerImagineDesc_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'ItemPickerImagineDesc_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/ResponseChecker/ItemPicker/ItemPickerImagineDesc.3"
+      }
+    }
+  }
+]

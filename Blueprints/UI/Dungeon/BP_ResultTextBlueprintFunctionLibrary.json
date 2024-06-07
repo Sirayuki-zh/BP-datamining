@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "Function",
+    "Name": "GetRaidAwardName",
+    "Outer": "BP_ResultTextBlueprintFunctionLibrary_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InAwardType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'RAID_BATTLE_SCORE'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "OutAwardName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TextID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "TextID",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetDxBattleAwardName",
+    "Outer": "BP_ResultTextBlueprintFunctionLibrary_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "InAwardType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESBDxBattleScore'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "OutAwardName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TextID",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "TextID",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ResultTextBlueprintFunctionLibrary_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'BlueprintFunctionLibrary'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_ResultTextBlueprintFunctionLibrary_C:GetDxBattleAwardName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.1"
+      },
+      {
+        "ObjectName": "Function'BP_ResultTextBlueprintFunctionLibrary_C:GetRaidAwardName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.0"
+      }
+    ],
+    "FuncMap": {
+      "GetRaidAwardName": {
+        "ObjectName": "Function'BP_ResultTextBlueprintFunctionLibrary_C:GetRaidAwardName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.0"
+      },
+      "GetDxBattleAwardName": {
+        "ObjectName": "Function'BP_ResultTextBlueprintFunctionLibrary_C:GetDxBattleAwardName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ResultTextBlueprintFunctionLibrary_C'Default__BP_ResultTextBlueprintFunctionLibrary_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.3"
+    }
+  },
+  {
+    "Type": "BP_ResultTextBlueprintFunctionLibrary_C",
+    "Name": "Default__BP_ResultTextBlueprintFunctionLibrary_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Dungeon/BP_ResultTextBlueprintFunctionLibrary.BP_ResultTextBlueprintFunctionLibrary_C'"
+  }
+]

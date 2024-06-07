@@ -1,0 +1,3243 @@
+[
+  {
+    "Type": "Function",
+    "Name": "OnWeaponIconClicked__DelegateSignature",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WeaponInfoForBattleSetTop",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_SelectItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ItemIconBtn_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ItemIconBtn/ItemIconBtn.66"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__ItemIconBtn_141_K2Node_ComponentBoundEvent_2_OnSelect__DelegateSignature",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelectItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ItemIconBtn_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ItemIconBtn/ItemIconBtn.66"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Setup",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "LocalStackBWeaponParam",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBStackBWeaponParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "LocalAPStackB",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "LocalStackBEnableType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'ESBStackBEnableType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalAttributePower",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalWeaponAP",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "LocalIsLevelSync",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocalOwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocalWeaponData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponItemData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "LocalSPEffectValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "LocalSPEffectName",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocalWeaponMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LocalWeaponManager",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBWeaponManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetStackBNum_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetStackBWeaponParamByWeaponId_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStackBWeaponParamByWeaponId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBStackBWeaponParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetStackBEnableColor_OutIsStackBEnableFull",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetStackBEnableType_OutStackBEnableType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBStackBEnableType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindWeaponMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindWeaponMaster_WeaponMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetClassLevel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetCommonIcon_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCommonIcon_OutCommonIcon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'CommonIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/CommonIcon/CommonIcon.101"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetWeaponLevelStatusByUniqueID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetLevelSyncTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLevelSyncApplied_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_CreateInventoryData_InventoryData",
+        "Flags": "RF_Public",
+        "ElementSize": 152,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'InventoryData'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Inventory/SubWidget/InventoryData.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CreateInventoryData_IsSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBWeaponItemData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponItemData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetWeaponText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetWeaponManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetWeaponManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBWeaponManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ChangeWeaponLevelSync_bIsLevelSync_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetWeaponLevelStatusByUniqueID_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetEquipItemInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'CharaEquipItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetEquipmentBag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBOwnItemListContainer'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BP_FindItem_ByUniqueId_bOutExist",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BP_FindItem_ByUniqueId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetStackBIconByOwnItemInfo",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InOwnItemInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "LocalStackBNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Set_Stack_BIcon_One_Item_Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WeaponInfoForBattleSetTop_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.104"
+      },
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'WeaponInfoForBattleSetTop_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.28"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:ExecuteUbergraph_WeaponInfoForBattleSetTop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:SetStackBIconByOwnItemInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.5"
+      },
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:Setup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.4"
+      },
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.3"
+      },
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:BndEvt__ItemIconBtn_141_K2Node_ComponentBoundEvent_2_OnSelect__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.2"
+      },
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:ExecuteUbergraph_WeaponInfoForBattleSetTop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.1"
+      },
+      {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:OnWeaponIconClicked__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttackValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'AttributeIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributePowerValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LevelHeadingTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LevelValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SPEffectDescTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SPEffectValueTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_StackB_M_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ItemIconBtn_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ItemIconBtn/ItemIconBtn.66"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponNameTxt",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WeaponSkinIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'CmnWeaponSkinIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/CmnWeaponSkinIcon.2"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "WeaponUniqueId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "OnWeaponIconClicked",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'WeaponInfoForBattleSetTop_C:OnWeaponIconClicked__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsStackB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "OnWeaponIconClicked__DelegateSignature": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:OnWeaponIconClicked__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.0"
+      },
+      "ExecuteUbergraph_WeaponInfoForBattleSetTop": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:ExecuteUbergraph_WeaponInfoForBattleSetTop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.1"
+      },
+      "BndEvt__ItemIconBtn_141_K2Node_ComponentBoundEvent_2_OnSelect__DelegateSignature": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:BndEvt__ItemIconBtn_141_K2Node_ComponentBoundEvent_2_OnSelect__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.2"
+      },
+      "Construct": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.3"
+      },
+      "Setup": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:Setup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.4"
+      },
+      "SetStackBIconByOwnItemInfo": {
+        "ObjectName": "Function'WeaponInfoForBattleSetTop_C:SetStackBIconByOwnItemInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.5"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeaponInfoForBattleSetTop_C'Default__WeaponInfoForBattleSetTop_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.7"
+    }
+  },
+  {
+    "Type": "WeaponInfoForBattleSetTop_C",
+    "Name": "Default__WeaponInfoForBattleSetTop_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.WeaponInfoForBattleSetTop_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "AttributeIcon_C",
+    "Name": "AttributeIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.AttributeIcon_C'",
+    "Template": {
+      "ObjectName": "AttributeIcon_C'Default__AttributeIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/AttributeIcon/AttributeIcon.2"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributeIcon.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.76"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.14"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.22"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.21"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "SPEffectTitle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.97"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WeaponAttackAttritbuteSPEffectGrp",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponAttackAttritbuteSPEffectGrp.CanvasPanelSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_15'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WeaponLevelGrp",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponLevelGrp.CanvasPanelSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.101"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WeaponSPEffectGrp",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.99"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 34.0,
+          "Right": 800.0,
+          "Bottom": 184.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WeaponInfoForBattleSetTop_C:WidgetTree.Bg01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 34.0,
+          "Right": 800.0,
+          "Bottom": 4.0
+        },
+        "Alignment": {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WeaponInfoForBattleSetTop_C:WidgetTree.Line'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 260.0,
+          "Top": 60.0,
+          "Right": 446.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 260.0,
+          "Top": 114.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponAttackAttritbuteSPEffectGrp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 600.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.InfoTitleTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 240.0,
+          "Top": 48.0,
+          "Right": 544.0,
+          "Bottom": 58.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponNameBg'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 240.0,
+          "Top": 106.0,
+          "Right": 6.0,
+          "Bottom": 98.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponHeadingBg'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 714.0,
+          "Top": 56.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "CmnWeaponSkinIcon_C'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponSkinIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 80.0,
+          "Top": 70.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.92"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "SPEffectTitle",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.10"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.70"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "SPEffectTitle",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.10"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBox_1943'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_11",
+    "Outer": "WeaponAttackAttritbuteSPEffectGrp",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 500.0,
+          "Bottom": 90.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponAttackAttritbuteSPEffectGrp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.11"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.33"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "WeaponLevelGrp",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 80.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponLevelGrp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.12"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.59"
+      }
+    }
+  },
+  {
+    "Type": "CmnWeaponSkinIcon_C",
+    "Name": "WeaponSkinIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Common/CmnWeaponSkinIcon.CmnWeaponSkinIcon_C'",
+    "Template": {
+      "ObjectName": "CmnWeaponSkinIcon_C'Default__CmnWeaponSkinIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/CmnWeaponSkinIcon.3"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.21"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "WeaponIcon",
+          "DelegatePropertyName": "OnSelect",
+          "FunctionNameToBind": "BndEvt__ItemIconBtn_141_K2Node_ComponentBoundEvent_2_OnSelect__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HBoxForAtrributePower",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.35"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125.VerticalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.94"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HBoxForAttribute",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute.HorizontalBoxSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.38"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute.HorizontalBoxSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.96"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HBoxForSPEffect",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect.HorizontalBoxSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.40"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect.HorizontalBoxSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.100"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_538",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.41"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_922",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922.HorizontalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponAttackAttritbuteSPEffectGrp.CanvasPanelSlot_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_Level",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.45"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_Level.ScaleBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.61"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HBoxForAtrributePower",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.29"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.67"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HBoxForAtrributePower",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.29"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.68"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_11",
+    "Outer": "HBoxForAttribute",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 30.0,
+        "Right": 30.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.30"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributeIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.66"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_12",
+    "Outer": "HBoxForAttribute",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.30"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxAttributeHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.63"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_10",
+    "Outer": "HBoxForSPEffect",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 20.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.31"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxFOrSPEffectValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.71"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "HBoxForSPEffect",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.31"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectDesc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_538",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.32"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponNameTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.88"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_538",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 8.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.32"
+      },
+      "Content": {
+        "ObjectName": "WBP_StackB_M_C'WeaponInfoForBattleSetTop_C:WidgetTree.StackBIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.103"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_922",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.33"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.90"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_922",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.33"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.91"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_Level",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.34"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.LevelHeadingTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.56"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_Level",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.34"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.LevelValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.84"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg01",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.25,
+        "Hex": "3F000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.14"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_CmnGlowLine1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/MI_UI_CmnGlowLine1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.15"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "WeaponHeadingBg",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 544.0,
+          "Y": 58.0
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 0.5,
+        "Hex": "7F000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "WeaponNameBg",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 544.0,
+          "Y": 58.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_MyCharaMenuWeaponBg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/MyCharaMenu/UI_MyCharaMenuWeaponBg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.19"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "ItemIconBtn_C",
+    "Name": "WeaponIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ItemIconBtn/ItemIconBtn.ItemIconBtn_C'",
+    "Template": {
+      "ObjectName": "ItemIconBtn_C'Default__ItemIconBtn_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ItemIconBtn/ItemIconBtn.67"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.102"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "AttackTitleTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 274,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackTitle.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.74"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "AttributeHeadingTxt_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 13,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxAttributeHeading.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.73"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "AttributePowerHeadingTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 32,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerHeading.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.77"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "InfoTitleTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'MyCharacterMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/MyCharacterMenu.0"
+      },
+      "TextId": 1121,
+      "Text": {
+        "Namespace": "",
+        "Key": "5BF783644824654F5AD8AFB1B4C3E759",
+        "SourceString": "クラス／武器",
+        "LocalizedString": "クラス／武器"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 0.6,
+          "Hex": "99000000"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.18"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "LevelHeadingTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 10,
+      "Text": {
+        "Namespace": "",
+        "Key": "E1C849A7493C9FE42F5006BA7B72718B",
+        "SourceString": "Lv.12",
+        "LocalizedString": "Lv.12"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.45"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SPEffectHeadingTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'CommonIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/CommonIcon.0"
+      },
+      "TextId": 33,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectHeading.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.80"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Stretch": "EStretch::ScaleToFitX",
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.60"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_13'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.16"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_Level",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Properties": {
+      "Stretch": "EStretch::ScaleToFitX",
+      "StretchDirection": "EStretchDirection::DownOnly",
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_Level.ScaleBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.61"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponLevelGrp.CanvasPanelSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.26"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_0",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "ScaleBox'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.58"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.32"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_0",
+    "Outer": "ScaleBox_Level",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'WeaponInfoForBattleSetTop_C:WidgetTree.ScaleBox_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.59"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.34"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1943",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 10.0,
+      "HeightOverride": 30.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBox_1943.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.72"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.24"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxAttributeHeading",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 80.0,
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxAttributeHeading.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.73"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute.HorizontalBoxSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.38"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForAttackTitle",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 250.0,
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackTitle.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.74"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.95"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForAttackValue",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 90.0,
+      "HeightOverride": 30.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackValue.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.75"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125.VerticalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.93"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForAttributeIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 28.0,
+      "HeightOverride": 28.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributeIcon.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.76"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute.HorizontalBoxSlot_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.37"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForAttributePowerHeading",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 110.0,
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerHeading.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.77"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.35"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForAttributePowerValue",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 80.0,
+      "HeightOverride": 30.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerValue.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.78"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.36"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForSPEffectDesc",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 210.0,
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectDesc.SizeBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.79"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect.HorizontalBoxSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.40"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxForSPEffectHeading",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 125.0,
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectHeading.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.80"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.23"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBoxFOrSPEffectValue",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 90.0,
+      "HeightOverride": 28.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxFOrSPEffectValue.SizeBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.81"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect.HorizontalBoxSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.39"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1943",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": -2.0
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBox_1943'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.62"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectColumnTxt_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.85"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxAttributeHeading",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxAttributeHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.63"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.AttributeHeadingTxt_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.53"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForAttackTitle",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.64"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.AttackTitleTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.52"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForAttackValue",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.65"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.AttackValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.82"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForAttributeIcon",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributeIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.66"
+      },
+      "Content": {
+        "ObjectName": "AttributeIcon_C'WeaponInfoForBattleSetTop_C:WidgetTree.AttributeIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.8"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForAttributePowerHeading",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.67"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.AttributePowerHeadingTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.54"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForAttributePowerValue",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 1.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.68"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.AttributePowerValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.83"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_3",
+    "Outer": "SizeBoxForSPEffectDesc",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectDesc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.69"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectDescTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.86"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBoxForSPEffectHeading",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectHeading'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.70"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectHeadingTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.57"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_4",
+    "Outer": "SizeBoxFOrSPEffectValue",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxFOrSPEffectValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.71"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectValueTxt'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.87"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "AttackValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "73C89BA24D43925705E2289C7A73146A",
+        "SourceString": "99999",
+        "LocalizedString": "99999"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 17
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackValue.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.75"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "AttributePowerValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "BDE3EC5F4D95A3486A410C8C22B37121",
+        "SourceString": "123",
+        "LocalizedString": "123"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 17
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttributePowerValue.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.78"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LevelValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D7D406944A06B78159C712928011217F",
+        "SourceString": "0000",
+        "LocalizedString": "0000"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 17
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_Level.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.46"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SPEffectColumnTxt_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "65D1AA894E249AE81DD2299EA4DDE7DB",
+        "SourceString": ":",
+        "LocalizedString": ":"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBox_1943.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.72"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SPEffectDescTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AA29480E49B31CAEAA5D29B0725E8C46",
+        "SourceString": "ゴブリンにプラスダメージ",
+        "LocalizedString": "ゴブリンにプラスダメージ"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForSPEffectDesc.SizeBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.79"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "SPEffectValueTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "56D09970415289C01B0F04B446D2FB4B",
+        "SourceString": "+1000%",
+        "LocalizedString": "+1000%"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 17
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxFOrSPEffectValue.SizeBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.81"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "WeaponNameTxt",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B712698F43D8F4D8C50DB1941DDBF409",
+        "SourceString": "武器の名前ああああああああああ",
+        "LocalizedString": "武器の名前ああああああああああ"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 17
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.41"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_125",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.93"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125.VerticalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.94"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.98"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_307",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.95"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.96"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307.VerticalBoxSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.97"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.43"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_483",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.98"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.99"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483.VerticalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.100"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_922.HorizontalBoxSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.44"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_79",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.101"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.102"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.22"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_125",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.89"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackValue'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.65"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_125",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.89"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAtrributePower'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.29"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_307",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.90"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WeaponInfoForBattleSetTop_C:WidgetTree.SizeBoxForAttackTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.64"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_3",
+    "Outer": "VerticalBox_307",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.90"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForAttribute'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.30"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_7",
+    "Outer": "VerticalBox_307",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_307'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.90"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.SPEffectTitle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.10"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_483",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.91"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_125'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.89"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_483",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.91"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponSPEffectGrp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_483",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_483'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.91"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'WeaponInfoForBattleSetTop_C:WidgetTree.HBoxForSPEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.31"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_79",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Top": 5.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.92"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponLevelGrp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_79",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'WeaponInfoForBattleSetTop_C:WidgetTree.VerticalBox_79'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.92"
+      },
+      "Content": {
+        "ObjectName": "ItemIconBtn_C'WeaponInfoForBattleSetTop_C:WidgetTree.WeaponIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.51"
+      }
+    }
+  },
+  {
+    "Type": "WBP_StackB_M_C",
+    "Name": "StackBIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.WBP_StackB_M_C'",
+    "Template": {
+      "ObjectName": "WBP_StackB_M_C'Default__WBP_StackB_M_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'WeaponInfoForBattleSetTop_C:WidgetTree.HorizontalBox_538.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.42"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WeaponInfoForBattleSetTop_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WeaponInfoForBattleSetTop_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/MyCharaMenu/SubWidgets/BattleSet/WeaponInfoForBattleSetTop.9"
+      }
+    }
+  }
+]

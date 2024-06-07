@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "DungeonWall",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 400.0,
+            "Y": 1.0,
+            "Z": 200.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "EngineTraceChannel1",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBDamage",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBPlayerPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBEnemyPawn",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBCharacterBody",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBTrigger",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBPhotoModeCamera",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBWater",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBAk",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "EA64669B4A744FBB2F5CA0B668C0DAAD",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 25,
+        "SizeOnDisk": 25,
+        "OffsetInFile": "0x6684"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "DungeonWall",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_X": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x66E5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "DungeonWall",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material'WorldGridMaterial'",
+            "ObjectPath": "Engine/Content/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0033,
+            "LocalUVDensities": 435.87064,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 100.0033,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 200.0,
+          "Y": 0.5,
+          "Z": 100.0
+        },
+        "SphereRadius": 223.60736
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'DungeonWall:BodySetup_0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/Mesh/DungeonWall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'DungeonWall:NavCollision_0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/Mesh/DungeonWall.1"
+    },
+    "LightingGuid": "5C568A4E-41B66545-15FAB4AA-63D3E206",
+    "RenderData": null
+  }
+]

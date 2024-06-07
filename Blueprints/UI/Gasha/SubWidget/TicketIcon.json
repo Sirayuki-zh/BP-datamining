@@ -1,0 +1,337 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_TicketIcon",
+    "Outer": "TicketIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Loaded",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'KismetSystemLibrary:OnAssetLoaded__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsTexture_2D",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_TokenId",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_GetTokenIconTexture_Texture",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidSoftObjectReference_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIconTexture",
+    "Outer": "TicketIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "TokenId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnLoaded_A0D3ECB840463817BECA28956E6A785D",
+    "Outer": "TicketIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Loaded",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "TicketIcon_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'TicketIcon_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'TicketIcon_C:ExecuteUbergraph_TicketIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'TicketIcon_C:OnLoaded_A0D3ECB840463817BECA28956E6A785D'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.2"
+      },
+      {
+        "ObjectName": "Function'TicketIcon_C:SetIconTexture'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.1"
+      },
+      {
+        "ObjectName": "Function'TicketIcon_C:ExecuteUbergraph_TicketIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ImgTicket",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBoxTicket",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SizeBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_TicketIcon": {
+        "ObjectName": "Function'TicketIcon_C:ExecuteUbergraph_TicketIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.0"
+      },
+      "SetIconTexture": {
+        "ObjectName": "Function'TicketIcon_C:SetIconTexture'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.1"
+      },
+      "OnLoaded_A0D3ECB840463817BECA28956E6A785D": {
+        "ObjectName": "Function'TicketIcon_C:OnLoaded_A0D3ECB840463817BECA28956E6A785D'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TicketIcon_C'Default__TicketIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.4"
+    }
+  },
+  {
+    "Type": "TicketIcon_C",
+    "Name": "Default__TicketIcon_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.TicketIcon_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'TicketIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.5"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'TicketIcon_C:WidgetTree.SBoxTicket'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.8"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "ImgTicket",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 64.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Icon_100000101'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Token/UI_Icon_100000101.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'TicketIcon_C:WidgetTree.SBoxTicket.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.9"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SBoxTicket",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'TicketIcon_C:WidgetTree.SBoxTicket.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.6"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SBoxTicket",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'TicketIcon_C:WidgetTree.SBoxTicket'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.8"
+      },
+      "Content": {
+        "ObjectName": "Image'TicketIcon_C:WidgetTree.ImgTicket'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.7"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "TicketIcon_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'TicketIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/SubWidget/TicketIcon.5"
+      }
+    }
+  }
+]

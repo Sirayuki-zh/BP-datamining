@@ -1,0 +1,3749 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_FireGolem",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomFlag",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomFlag'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDead",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:ReceiveDead'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Resuscitation",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomAction",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomAction'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Golem_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_Golem_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.1"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHitCollision",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBShieldGuardInterface:GetHitCollision'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HitComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_FireGolem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+    },
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_FireGolem_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.22"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_FireGolem_C:SimpleConstructionScript_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.104"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_FireGolem_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_FireGolem_C:ExecuteUbergraph_BP_FireGolem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_FireGolem_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.7"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.6"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.5"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:Resuscitation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.4"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.3"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.2"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.1"
+      },
+      {
+        "ObjectName": "Function'BP_FireGolem_C:ExecuteUbergraph_BP_FireGolem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBP_E500_02_00_Fire_Spine2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBP_E500_02_00_Fire_RForearm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBP_E500_02_00_Fire_RArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBP_E500_02_00_Fire_LForearm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBP_E500_02_00_Fire_LArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBTargetable_RArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTargetableComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBTargetable_LArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTargetableComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyGuard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyGuardComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ActionName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "BreakCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Action_Name",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_FireGolem": {
+        "ObjectName": "Function'BP_FireGolem_C:ExecuteUbergraph_BP_FireGolem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.0"
+      },
+      "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_FireGolem_C:BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.1"
+      },
+      "RecvExecCustomFlag": {
+        "ObjectName": "Function'BP_FireGolem_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.2"
+      },
+      "ReceiveDead": {
+        "ObjectName": "Function'BP_FireGolem_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.3"
+      },
+      "Resuscitation": {
+        "ObjectName": "Function'BP_FireGolem_C:Resuscitation'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.4"
+      },
+      "RecvExecCustomAction": {
+        "ObjectName": "Function'BP_FireGolem_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_FireGolem_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.6"
+      },
+      "GetHitCollision": {
+        "ObjectName": "Function'BP_FireGolem_C:GetHitCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_FireGolem_C'Default__BP_FireGolem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.9"
+    }
+  },
+  {
+    "Type": "BP_FireGolem_C",
+    "Name": "Default__BP_FireGolem_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.BP_FireGolem_C'",
+    "Template": {
+      "ObjectName": "BP_Golem_C'Default__BP_Golem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.4"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "ActionName": "Resuscitation",
+      "Action_Name": "Resuscitation",
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_FireGolem_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.55"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_FireGolem_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.74"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_FireGolem_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.58"
+      },
+      "EnemyId": "E500_06_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_FireGolem_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.47"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_FireGolem_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.66"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_FireGolem_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.60"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_FireGolem_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.46"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_FireGolem_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.48"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_FireGolem_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.49"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_FireGolem_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.65"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_FireGolem_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.73"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_FireGolem_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.25"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_FireGolem_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.70"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_FireGolem_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.72"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_FireGolem_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.51"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_FireGolem_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.68"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_FireGolem_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.56"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_FireGolem_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.43"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_FireGolem_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.35"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_FireGolem_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.90"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_FireGolem_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.53"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_FireGolem_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.36"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_FireGolem_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.57"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_FireGolem_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.45"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_FireGolem_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.54"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_FireGolem_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.75"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_FireGolem_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.50"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_FireGolem_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.71"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_FireGolem_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.37"
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E500/AST_E500_SND.AST_E500_SND",
+        "SubPathString": ""
+      },
+      "CustomFlagInfos": [
+        {
+          "Name": "LArmBreak"
+        },
+        {
+          "Name": "RArmBreak"
+        },
+        {
+          "Name": "Resuscitation"
+        }
+      ],
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_FireGolem_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.38"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_FireGolem_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.34"
+      },
+      "CollisionGroupInfo": [
+        {
+          "GroupName": "None",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "Weak",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "LArm",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.15,
+          "NextHitPointRate": [
+            0.175,
+            0.2,
+            0.225,
+            0.25,
+            0.275,
+            0.3
+          ],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "RArm",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.15,
+          "NextHitPointRate": [
+            0.175,
+            0.2,
+            0.225,
+            0.25,
+            0.275,
+            0.3
+          ],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        }
+      ],
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_FireGolem_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.85"
+      },
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_FireGolem_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.88"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_FireGolem_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.28"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_FireGolem_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.87"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_FireGolem_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.86"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_FireGolem_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.89"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_FireGolem_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.27"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_FireGolem_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.44"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_FireGolem_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.10"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_FireGolem_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.77"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_FireGolem_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.26"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_FireGolem_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.79"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_FireGolem_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.24"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_FireGolem_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.41"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_FireGolem_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.21"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_FireGolem_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.69"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_FireGolem_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.52"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_FireGolem_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.67"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIFireGolem_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E500_06/BP_AIFireGolem.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_FireGolem_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.67"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_Golem_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.5"
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_Body_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.6"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 130.0,
+      "CapsuleRadius": 65.0,
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": -15.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_LArm_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.7"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 150.0,
+      "CapsuleRadius": 80.0,
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": 0.0,
+        "Z": 5.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LLeg_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_LLeg_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.8"
+    },
+    "Properties": {
+      "CapsuleRadius": 30.0
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LShoulder_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_LShoulder_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.9"
+    },
+    "Properties": {
+      "CapsuleRadius": 40.0,
+      "RelativeLocation": {
+        "X": -30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LUpLeg_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_LUpLeg_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.10"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 80.0,
+      "CapsuleRadius": 40.0
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_RArm_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.11"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 150.0,
+      "CapsuleRadius": 80.0,
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": 0.0,
+        "Z": -5.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RLeg_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_RLeg_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.12"
+    },
+    "Properties": {
+      "CapsuleRadius": 30.0
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RShoulder_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_RShoulder_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.13"
+    },
+    "Properties": {
+      "CapsuleRadius": 40.0,
+      "RelativeLocation": {
+        "X": -30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RUpLeg_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Golem_C:DamageCollision_RUpLeg_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.14"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 80.0,
+      "CapsuleRadius": 40.0
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_Head_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'BP_Golem_C:DamageCollision_Head_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.15"
+    },
+    "Properties": {
+      "RelativeLocation": {
+        "X": -90.0,
+        "Y": -50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_Golem_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.16"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_FireGolem_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.41"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BattleConditionComp",
+          "DelegatePropertyName": "ToNormalMode",
+          "FunctionNameToBind": "BndEvt__BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_FireGolem_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.78"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_FireGolem_C:SBCharaBodyCapsule_RShoulder_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.32"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule_RShoulder",
+            "AssociatedGuid": "87552578-408462B2-04465794-265B0798"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_FireGolem_C:SBCharaBodyCapsule_LShoulder_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.31"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule_LShoulder",
+            "AssociatedGuid": "D32435D8-479A7AE8-EE059FA8-803B50CE"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_FireGolem_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.30"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule_Body",
+            "AssociatedGuid": "4C13F5A1-493D8BF7-BA2A8680-5FA483EF"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_RLeg_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.17"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_RLeg",
+            "AssociatedGuid": "A326C2A0-4E4DB8EC-D3085496-0D497337"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.11"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_Body",
+            "AssociatedGuid": "4E5B40A5-46F6D12D-C2BDC695-69973477"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_LLeg_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.13"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_LLeg",
+            "AssociatedGuid": "62094C7E-479FD063-06EF1E8A-8DBBC0B5"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_RShoulder_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.18"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_RShoulder",
+            "AssociatedGuid": "E2D5989E-4AD8EBEC-A2928B8E-9A7866C4"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_LShoulder_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.14"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_LShoulder",
+            "AssociatedGuid": "20CD56A3-478924E4-2EF3F6B6-664776CE"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_RArm_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.16"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_RArm",
+            "AssociatedGuid": "F503F3E1-42EFE48D-08775BBB-E336821A"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_LArm_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.12"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_LArm",
+            "AssociatedGuid": "211FE192-4995AAFA-E736D882-85D1F62E"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionSphereComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionSphereComponent'BP_FireGolem_C:DamageCollision_Head_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.20"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_Head",
+            "AssociatedGuid": "65E13A96-4277033D-8FDA18A0-1FBCFA20"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_RUpLeg_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.19"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_RUpLeg",
+            "AssociatedGuid": "9B307349-49C12577-05714A90-6C98F971"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_FireGolem_C:DamageCollision_LUpLeg_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.15"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Golem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.3"
+            },
+            "SCSVariableName": "DamageCollision_LUpLeg",
+            "AssociatedGuid": "FA6DFDB7-42E25785-12CE85AD-BD440978"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_Golem_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.18"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_Golem_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.19"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_Golem_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.20"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_Golem_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.21"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_Golem_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.22"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_FireGolem_C'Default__BP_FireGolem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.9"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_FireGolem_C'Default__BP_FireGolem_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.9"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_Golem_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.23"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_Body_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_Golem_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.24"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 200.0,
+      "CapsuleRadius": 100.0,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_LShoulder_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_Golem_C:SBCharaBodyCapsule_LShoulder_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.26"
+    },
+    "Properties": {
+      "CapsuleRadius": 75.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_RShoulder_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_Golem_C:SBCharaBodyCapsule_RShoulder_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.28"
+    },
+    "Properties": {
+      "CapsuleRadius": 75.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_Golem_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.29"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_Golem_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.30"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E500_06'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E500_06.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_Golem_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.31"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_SandGolem'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AnimationSampleData/ASA_SandGolem.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_Golem_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.32"
+    },
+    "Properties": {
+      "ChanceTimeTablePartsBreak": {
+        "ChanceTimeMap": [
+          {
+            "LArm": 10.0
+          },
+          {
+            "RArm": 10.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_Golem_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.34"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_Golem_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.35"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_FireGolem_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.69"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Golem_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.36"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Golem_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.37"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_Golem_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.41"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_FireGolem_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.67"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_Golem_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.42"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_Golem_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.43"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_Golem_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.44"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_Golem_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.45"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 448
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_Golem_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.46"
+    },
+    "Properties": {
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_FireGolemActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/DT_FireGolemActionTable_Battle.0"
+      },
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_FireGolemExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/DT_FireGolemExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_Golem_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.47"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_Golem_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.48"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_Golem_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.49"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_Golem_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.50"
+    }
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_Golem_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.52"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_Golem_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.53"
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_Golem_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.54"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_Golem_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.55"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_Golem_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.56"
+    },
+    "Properties": {
+      "DeathEffects": [
+        {
+          "ESBAttribute::None": {
+            "EffectAttachPointName": "Root_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Stone'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Stone.135"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "NonElem"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Earth": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Stone'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Stone.176"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Earth"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Fire": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Fire'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Fire.184"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Fire"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Ice": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Ice'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Ice.164"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Ice"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Thunder": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Thunder'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Thunder.159"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Thunder"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Light": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Light'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Light.193"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Light"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Darkness": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Dark'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Dark.169"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Mons_Vanish'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Mons_Vanish.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Darkness"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_Golem_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.57"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_Golem_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.58"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_Golem_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.59"
+    }
+  },
+  {
+    "Type": "SBEnemyGuardComponent",
+    "Name": "SBEnemyGuard_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyGuardComponent'",
+    "Properties": {
+      "bBarrierGuard": true,
+      "MaxBarrierLifeTime": 3.0,
+      "DurabilityHPScale": 2.0,
+      "DefenceConfig": {
+        "GuardBitMask": 3,
+        "GuardableAngle": 180.0
+      },
+      "m_GuardEffectSettingList": [
+        {
+          "NeedDurabilityRate": 0.0,
+          "GuardActiveEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardSuccessEffect": {
+            "Particle": {
+              "AssetPathName": "/Game/Effect/Particle/Enemy/E003/Particle/PS_E003_Shield_Hit.PS_E003_Shield_Hit",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "/Game/WwiseAudio/Events/Enemy/E024_00_IceCorePod/Animation/Play_E024_DefencePod_Guard.Play_E024_DefencePod_Guard",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardBreakEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          },
+          "GuardEndEffect": {
+            "Particle": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "NiagaraSystem": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActor": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EffectActorList": [],
+            "Sound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "SoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EndSound": {
+              "AssetPathName": "None",
+              "SubPathString": ""
+            },
+            "EndSoundParam": {
+              "Event": null,
+              "Switch": [],
+              "AttachName": "None",
+              "AutoDestroy": true,
+              "StopWhenOwnerDestroyed": true,
+              "LOD": "ESBAkEventLOD::LOD_Default",
+              "RTPC": [],
+              "DelayTime": 0.0,
+              "bCanReuseAkComponent": true
+            },
+            "EffectTarget": "EffectTarget_ActorRoot",
+            "ParticleScale": 1.0,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "bAttach": true,
+            "bAbsoluteRotation": false,
+            "bDetachWhenDeactivate": false,
+            "bVisibleByHiddenSourceActor": false,
+            "AttachPointName": "None",
+            "ActorParameterName": "None",
+            "bOverrideLightingChannels": false,
+            "OverrideLightingChannels": {
+              "bChannel0": true,
+              "bChannel1": false,
+              "bChannel2": false
+            },
+            "bOverrideElementType": false,
+            "ElementType": "ESBAttribute::None",
+            "VisibleType": "ESBEffectVisibleType::Default",
+            "EffectType": "ESBEffectType::Default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_Golem_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.60"
+    },
+    "Properties": {
+      "ModifierMap": [
+        {
+          "PartsBreakAll": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_FireGolem_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.61"
+            }
+          }
+        },
+        {
+          "LArmBreak": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_FireGolem_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_2'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.63"
+            }
+          }
+        },
+        {
+          "RArmBreak": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_FireGolem_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_3'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.64"
+            }
+          }
+        },
+        {
+          "Resuscitation": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_FireGolem_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_1'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.62"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_0",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "bEnableRemoveAICustom": true,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_PartsBreakAll_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_PartsBreakAll.0"
+        }
+      ],
+      "RemoveAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_LArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_LArmBreak.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_RArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_RArmBreak.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_1",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "bEnableRemoveAICustom": true,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_ArmResuscitation_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_ArmResuscitation.0"
+        }
+      ],
+      "RemoveAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_PartsBreakAll_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_PartsBreakAll.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_LArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_LArmBreak.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_RArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_RArmBreak.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_2",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_LArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_LArmBreak.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_3",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_SandGolem_RArmBreak_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_02_SandGolem/AICustom/BP_AIC_SandGolem_RArmBreak.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_Golem_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.61"
+    },
+    "Properties": {
+      "PartsBreakInfo": [
+        {
+          "CollisionGroupName": "LArm",
+          "Steps": [
+            {
+              "HpPer": 0.0,
+              "SpawnParts": [],
+              "OnMaterialIndexes": [],
+              "OffMaterialIndexes": [
+                3
+              ],
+              "Effects": [
+                {
+                  "PSTemplate": {
+                    "ObjectName": "ParticleSystem'PS_ECMN_PartsBreak'",
+                    "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Break/PS_ECMN_PartsBreak.274"
+                  },
+                  "SocketName": "L_Arm_J",
+                  "LocationOffset": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "RotationOffset": {
+                    "Pitch": 0.0,
+                    "Yaw": 0.0,
+                    "Roll": 0.0
+                  },
+                  "Scale": 1.5,
+                  "bAttached": true,
+                  "bCastShadow": false,
+                  "EffectId": "EEffectId::None",
+                  "EffectSE": {
+                    "AssetPathName": "/Game/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Enm_parts_Break.Play_Enm_parts_Break",
+                    "SubPathString": ""
+                  }
+                }
+              ],
+              "OffTargetableComponents": [
+                "SBTargetable_LArm"
+              ],
+              "OffCollisionComponents": [
+                "DamageCollision_LArm"
+              ],
+              "AICustoms": [],
+              "ModifierNames": [
+                "LArmBreak"
+              ],
+              "Delay": 0.0,
+              "IgnoreBoneNames": [
+                "L_Arm_J",
+                "L_ForeArm_J",
+                "HLP_L_ForeArm_Mid",
+                "L_Wrist_J",
+                "L_Hand_J",
+                "L_FingerBase_J",
+                "L_Thumb1_J",
+                "L_Thumb2_J",
+                "L_Thumb3_J",
+                "L_Middle_J",
+                "L_Ring_J",
+                "L_Pinky_J",
+                "L_Pinky1_J",
+                "L_Pinky2_J",
+                "L_Pinky3_J",
+                "L_Ring1_J",
+                "L_Ring2_J",
+                "L_Ring3_J",
+                "L_Middle1_J",
+                "L_Middle2_J",
+                "L_Middle3_J",
+                "L_Index1_J",
+                "L_Index2_J",
+                "L_Index3_J",
+                "L_Grip_J",
+                "HLP_L_ForeArm_Btm",
+                "HLP_L_ForeArm_Slide",
+                "HLP_L_Arm_Mid",
+                "HLP_L_Arm_Top",
+                "HLP_L_Elbow",
+                "HLP_L_Arm_Slide",
+                "HLP_L_ShldrBlade"
+              ]
+            }
+          ]
+        },
+        {
+          "CollisionGroupName": "RArm",
+          "Steps": [
+            {
+              "HpPer": 0.0,
+              "SpawnParts": [],
+              "OnMaterialIndexes": [],
+              "OffMaterialIndexes": [
+                2
+              ],
+              "Effects": [
+                {
+                  "PSTemplate": {
+                    "ObjectName": "ParticleSystem'PS_ECMN_PartsBreak'",
+                    "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Break/PS_ECMN_PartsBreak.274"
+                  },
+                  "SocketName": "R_Arm_J",
+                  "LocationOffset": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "RotationOffset": {
+                    "Pitch": 0.0,
+                    "Yaw": 0.0,
+                    "Roll": 0.0
+                  },
+                  "Scale": 1.5,
+                  "bAttached": true,
+                  "bCastShadow": false,
+                  "EffectId": "EEffectId::None",
+                  "EffectSE": {
+                    "AssetPathName": "/Game/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Enm_parts_Break.Play_Enm_parts_Break",
+                    "SubPathString": ""
+                  }
+                }
+              ],
+              "OffTargetableComponents": [
+                "SBTargetable_RArm"
+              ],
+              "OffCollisionComponents": [
+                "DamageCollision_RArm"
+              ],
+              "AICustoms": [],
+              "ModifierNames": [
+                "RArmBreak"
+              ],
+              "Delay": 0.0,
+              "IgnoreBoneNames": [
+                "R_Arm_J",
+                "R_ForeArm_J",
+                "HLP_R_ForeArm_Mid",
+                "R_Wrist_J",
+                "R_Hand_J",
+                "R_FingerBase_J",
+                "R_Thumb1_J",
+                "R_Thumb2_J",
+                "R_Thumb3_J",
+                "R_Index1_J",
+                "R_Index2_J",
+                "R_Index3_J",
+                "R_Middle_J",
+                "R_Middle1_J",
+                "R_Middle2_J",
+                "R_Middle3_J",
+                "R_Ring_J",
+                "R_Ring1_J",
+                "R_Ring2_J",
+                "R_Ring3_J",
+                "R_Pinky_J",
+                "R_Pinky1_J",
+                "R_Pinky2_J",
+                "R_Pinky3_J",
+                "R_Grip_J",
+                "HLP_R_ForeArm_Btm",
+                "HLP_R_ForeArm_Slide",
+                "HLP_R_Arm_Mid",
+                "HLP_R_Arm_Top",
+                "HLP_R_Elbow",
+                "HLP_R_Arm_Slide",
+                "HLP_R_ShldrBlade"
+              ]
+            }
+          ]
+        }
+      ],
+      "CompoundPartsBreakInfos": [
+        {
+          "PartsConditionLogic": "ESBPartsConditonLogic::AND",
+          "PartsConditions": [
+            {
+              "CollisionGroupName": "LArm",
+              "BreakStep": 0,
+              "ComparisonOperator": "ESBComparisonOperator::OrMore"
+            },
+            {
+              "CollisionGroupName": "RArm",
+              "BreakStep": 0,
+              "ComparisonOperator": "ESBComparisonOperator::OrMore"
+            }
+          ],
+          "ModifierNames": [
+            "PartsBreakAll"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_Golem_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.62"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_Golem_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.63"
+    },
+    "Properties": {
+      "CapsuleRadius": 125.0
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_Golem_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.64"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_Golem_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.65"
+    },
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E500_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E500_02/Model/SK_CH_E500_02.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_CH_E500_02_UV1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E500_02/Material/M_CH_E500_02_UV1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_CH_E500_02_UV2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E500_02/Material/M_CH_E500_02_UV2.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_CH_E500_02_Rarm'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E500_02/Material/M_CH_E500_02_Rarm.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_CH_E500_02_Larm'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E500_02/Material/M_CH_E500_02_Larm.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_FireGolem_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.67"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_Golem_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.66"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_Golem_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.67"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_Golem_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.68"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_Golem_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.69"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_Golem_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.70"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_Golem_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.71"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_Golem_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.72"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_Golem_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.73"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_Golem_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.74"
+    },
+    "Properties": {
+      "m_DecalSize": 22.0,
+      "SurfaceFootprintSettingList": {
+        "m_FPWalkStart": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_WalkStart.BP_FP_E500_02_WalkStart_C",
+          "SubPathString": ""
+        },
+        "m_FPWalk": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Walk.BP_FP_E500_02_Walk_C",
+          "SubPathString": ""
+        },
+        "m_FPRun": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Run.BP_FP_E500_02_Run_C",
+          "SubPathString": ""
+        },
+        "m_FPDash": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Dash.BP_FP_E500_02_Dash_C",
+          "SubPathString": ""
+        },
+        "m_FPJump": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Jump.BP_FP_E500_02_Jump_C",
+          "SubPathString": ""
+        },
+        "m_FPLandingS": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Landing_S.BP_FP_E500_02_Landing_S_C",
+          "SubPathString": ""
+        },
+        "m_FPLandingM": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Landing_M.BP_FP_E500_02_Landing_M_C",
+          "SubPathString": ""
+        },
+        "m_FPDown": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Down_S.BP_FP_E500_02_Down_S_C",
+          "SubPathString": ""
+        },
+        "m_FPDownM": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Down_M.BP_FP_E500_02_Down_M_C",
+          "SubPathString": ""
+        },
+        "m_FPHeavyAttack": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_HeavyAttack.BP_FP_E500_02_HeavyAttack_C",
+          "SubPathString": ""
+        },
+        "m_FPStep": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E500/BP_FP_E500_02_Step.BP_FP_E500_02_Step_C",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_Golem_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.75"
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBP_E500_02_00_Fire_LArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E500_Sandgolem_01_fall_Fire'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E500/Particle/PS_E500_Sandgolem_01_fall_Fire.185"
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBP_E500_02_00_Fire_LForearm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E500_Sandgolem_01_fall_Fire'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E500/Particle/PS_E500_Sandgolem_01_fall_Fire.185"
+      },
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBP_E500_02_00_Fire_RArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E500_Sandgolem_01_fall_Fire'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E500/Particle/PS_E500_Sandgolem_01_fall_Fire.185"
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBP_E500_02_00_Fire_RForearm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E500_Sandgolem_01_fall_Fire'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E500/Particle/PS_E500_Sandgolem_01_fall_Fire.185"
+      },
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBP_E500_02_00_Fire_Spine2_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PlayAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_E500_06_Foley_Fire_Loop'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E500_00_Golem/E500_06_00_StoneGolem_Fire/Play_E500_06_Foley_Fire_Loop.1"
+        }
+      },
+      "StopAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Stop_E500_06_Foley_Fire_Loop'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E500_00_Golem/E500_06_00_StoneGolem_Fire/Stop_E500_06_Foley_Fire_Loop.1"
+        },
+        "LOD": "ESBAkEventLOD::LOD_Infinity"
+      },
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E500_Sandgolem_02_fall_Fire'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E500/Particle/PS_E500_Sandgolem_02_fall_Fire.186"
+      },
+      "RelativeScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_Golem_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.76"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_Golem_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.77"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_Golem_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.78"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_Golem_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.79"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E500_06_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E500_00_GadoruGolem/E500_06_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E500_06_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E500_00_GadoruGolem/E500_06_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_Golem_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.80"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_Golem_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.81"
+    }
+  },
+  {
+    "Type": "SBTargetableComponent",
+    "Name": "SBTargetable_LArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBTargetableComponent'"
+  },
+  {
+    "Type": "SBTargetableComponent",
+    "Name": "SBTargetable_RArm_GEN_VARIABLE",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SBTargetableComponent'"
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_FireGolem_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_Golem_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_01_Golem/BP_Golem.83"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_FireGolem_C:SceneComponent_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.94"
+      },
+      "VariableGuid": "481FDECE-42E86168-5F9E81A2-EAB7C2B7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_FireGolem_C:SBP_E500_02_00_Fire_LArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.80"
+      },
+      "AttachToName": "L_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5E91A98E-48BD40C4-072CC695-01C59F57",
+      "InternalVariableName": "SBP_E500_02_00_Fire_LArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_FireGolem_C:SBP_E500_02_00_Fire_LForearm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.81"
+      },
+      "AttachToName": "L_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E4504297-414C67C8-9E204FB9-9D5E2387",
+      "InternalVariableName": "SBP_E500_02_00_Fire_LForearm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_FireGolem_C:SBP_E500_02_00_Fire_RArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.82"
+      },
+      "AttachToName": "R_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3DDAA8B9-472D1021-1C9A91A3-2A6AE119",
+      "InternalVariableName": "SBP_E500_02_00_Fire_RArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_FireGolem_C:SBP_E500_02_00_Fire_RForearm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.83"
+      },
+      "AttachToName": "R_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "9C3D6E48-4E0A0058-658DA5B8-591DC562",
+      "InternalVariableName": "SBP_E500_02_00_Fire_RForearm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_FireGolem_C:SBP_E500_02_00_Fire_Spine2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.84"
+      },
+      "AttachToName": "Spine2_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D6834153-485C4FEE-BF6048A7-02447F0E",
+      "InternalVariableName": "SBP_E500_02_00_Fire_Spine2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyGuardComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyGuardComponent'BP_FireGolem_C:SBEnemyGuard_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.59"
+      },
+      "VariableGuid": "610FB4D4-43D3F4DA-1C707AB0-358902A1",
+      "InternalVariableName": "SBEnemyGuard"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBTargetableComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBTargetableComponent'BP_FireGolem_C:SBTargetable_LArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.91"
+      },
+      "AttachToName": "HLP_L_ForeArm_Mid",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FB1FEC43-4B896174-8A01C789-456465C8",
+      "InternalVariableName": "SBTargetable_LArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBTargetableComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBTargetableComponent'BP_FireGolem_C:SBTargetable_RArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.92"
+      },
+      "AttachToName": "HLP_R_ForeArm_Mid",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "974A12F0-4C4F20AB-9F6A4288-132E3A6F",
+      "InternalVariableName": "SBTargetable_RArm"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "BP_FireGolem_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.101"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.103"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.96"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.97"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.98"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.100"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.101"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.103"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.96"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.97"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.98"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.100"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_FireGolem_C:SimpleConstructionScript_1.SCS_Node_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E500_06_FireGolem/BP_FireGolem.95"
+      }
+    }
+  }
+]

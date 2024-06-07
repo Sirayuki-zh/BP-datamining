@@ -1,0 +1,3966 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GolemTP",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsMaterialEmissiveColorChanged_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_EnemyCharacter_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.5"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_EnemyCharacter_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.5"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLockOnCameraID",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBLockOnTargetInterface:GetLockOnCameraID'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Lock on CameraID",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GolemTP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_MachineBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_GolemTP_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.113"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_GolemTP_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GolemTP_C:ExecuteUbergraph_BP_GolemTP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_MachineBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GolemTP_C:GetLockOnCameraID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.2"
+      },
+      {
+        "ObjectName": "Function'BP_GolemTP_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.1"
+      },
+      {
+        "ObjectName": "Function'BP_GolemTP_C:ExecuteUbergraph_BP_GolemTP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_LThruster",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_RThruster",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_Head",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_UpperBody",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_UnderBody",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_RThruster",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_LThruster",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBMoveSpeedSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBMoveSpeedSoundComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_RDArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_RUArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_LDArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_LUArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_RCannon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_LCannon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DamageCollision_Eye",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_RCannon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_LCannon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_RArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_LArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_Weak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCharaBodyCapsule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBTargetable",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTargetableComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChant",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyChantComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChangeEmissiveColor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCharacterChangeEmissiveColorComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GolemTP": {
+        "ObjectName": "Function'BP_GolemTP_C:ExecuteUbergraph_BP_GolemTP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.0"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GolemTP_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.1"
+      },
+      "GetLockOnCameraID": {
+        "ObjectName": "Function'BP_GolemTP_C:GetLockOnCameraID'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GolemTP_C'Default__BP_GolemTP_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.4"
+    }
+  },
+  {
+    "Type": "BP_GolemTP_C",
+    "Name": "Default__BP_GolemTP_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.BP_GolemTP_C'",
+    "Template": {
+      "ObjectName": "BP_EnemyCharacter_MachineBase_C'Default__BP_EnemyCharacter_MachineBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_GolemTP_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.58"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_GolemTP_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.72"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_GolemTP_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.61"
+      },
+      "EnemyId": "E505_00_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_GolemTP_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.49"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_GolemTP_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.64"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_GolemTP_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.62"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_GolemTP_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.48"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_GolemTP_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.50"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_GolemTP_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.51"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_GolemTP_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.63"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_GolemTP_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.71"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_GolemTP_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.21"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_GolemTP_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.68"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_GolemTP_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.70"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_GolemTP_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.54"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_GolemTP_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.66"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_GolemTP_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.59"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_GolemTP_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.45"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_GolemTP_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.29"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_GolemTP_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.84"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_GolemTP_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.56"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_GolemTP_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.30"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_GolemTP_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.60"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_GolemTP_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.47"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_GolemTP_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.57"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_GolemTP_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.73"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_GolemTP_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.52"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_GolemTP_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.69"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_GolemTP_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.32"
+      },
+      "SpawnEffectSocketName": "Spine2_J",
+      "SpawnEffectScale": {
+        "X": 1.6,
+        "Y": 1.6,
+        "Z": 1.6
+      },
+      "StateMachine": {
+        "AssetPathName": "/Game/Animations/Enemy/Common/SM_EnemyCommon_Main.SM_EnemyCommon_Main",
+        "SubPathString": ""
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E505/AST_E505.AST_E505",
+        "SubPathString": ""
+      },
+      "DefaultDodgeLevel": "ESBPerceiveLevel::Level3",
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_GolemTP_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.33"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_GolemTP_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.28"
+      },
+      "Weight": 2000.0,
+      "CollisionGroupInfo": [
+        {
+          "GroupName": "None",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "Weak",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "LArm",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "RArm",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "LCannon",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "RCannon",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "LThruster",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "RThruster",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        }
+      ],
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_GolemTP_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.79"
+      },
+      "m_DamageReactionPattern": {
+        "RowName": "SuperHeavy"
+      },
+      "ElementStatusEffectSizeScale": 0.75,
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_GolemTP_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.82"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_GolemTP_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.24"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_GolemTP_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.81"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_GolemTP_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.80"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_GolemTP_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.83"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_GolemTP_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.23"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_GolemTP_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.46"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_GolemTP_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.5"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_GolemTP_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.75"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_GolemTP_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.22"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_GolemTP_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.77"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_GolemTP_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.20"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_GolemTP_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.43"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_GolemTP_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.18"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_GolemTP_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.67"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_GolemTP_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.55"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_GolemTP_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.65"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIGolemTP_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E505_00/BP_AIGolemTP.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_GolemTP_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.65"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_EnemyCharacter_MachineBase_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.2"
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_Head_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 60.0,
+      "CapsuleRadius": 20.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 60.0,
+        "Y": 20.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": -45.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LCannon_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 150.0,
+      "CapsuleRadius": 30.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 35.0,
+        "Y": 50.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": -5.0,
+        "Roll": -55.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LDArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 120.0,
+      "CapsuleRadius": 45.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -90.0,
+        "Y": 0.0,
+        "Z": 30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_LThruster_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 100.0,
+      "CapsuleRadius": 60.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 85.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RCannon_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 150.0,
+      "CapsuleRadius": 30.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 35.0,
+        "Y": 50.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": -5.0,
+        "Roll": -55.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RDArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 120.0,
+      "CapsuleRadius": 45.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -90.0,
+        "Y": 0.0,
+        "Z": -30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "DamageCollision_RThruster_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 100.0,
+      "CapsuleRadius": 60.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 85.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_Eye_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 40.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 20.0,
+        "Y": 25.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_LUArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 50.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -5.0,
+        "Y": -5.0,
+        "Z": 5.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_RUArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 50.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -5.0,
+        "Y": -5.0,
+        "Z": -5.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_UnderBody_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 130.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": -20.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision_UpperBody_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 110.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -30.0,
+        "Y": -15.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_EnemyCharacter_MachineBase_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_GolemTP_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.43"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_GolemTP_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.76"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_EnemyCharacter_MachineBase_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.5"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_EnemyCharacter_MachineBase_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.6"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_EnemyCharacter_MachineBase_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.7"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_EnemyCharacter_MachineBase_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.8"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_EnemyCharacter_MachineBase_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.9"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_GolemTP_C'Default__BP_GolemTP_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.4"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_GolemTP_C'Default__BP_GolemTP_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.4"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_EnemyCharacter_MachineBase_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.10"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 275.0,
+      "CapsuleRadius": 140.0,
+      "RelativeLocation": {
+        "X": -35.0,
+        "Y": -25.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 20.0
+      }
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_EnemyCharacter_MachineBase_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.11"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_EnemyCharacter_MachineBase_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.12"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E505_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E505_00.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.13"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_GolemTP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/AnimationSampleData/ASA_GolemTP.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_EnemyCharacter_MachineBase_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.14"
+    },
+    "Properties": {
+      "bUseElementalBurstChanceTimeDown": true
+    }
+  },
+  {
+    "Type": "SBCharacterChangeEmissiveColorComponent",
+    "Name": "SBEnemyChangeEmissiveColor_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharacterChangeEmissiveColorComponent'",
+    "Properties": {
+      "EmissiveColorList": [
+        {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.8,
+          "A": 1.0,
+          "Hex": "FF00FFE8"
+        },
+        {
+          "R": 1.0,
+          "G": 0.2,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF7C00"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_EnemyCharacter_MachineBase_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.15"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_EnemyCharacter_MachineBase_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.16"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_GolemTP_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.67"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_EnemyCharacter_MachineBase_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.17"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_EnemyCharacter_MachineBase_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.18"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_LArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 2
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_LCannon_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 4
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_LThruster_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 6
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_RArm_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 3,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -260.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.999985,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_RCannon_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 5,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -260.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.999985,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_RThruster_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 7
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_Weak_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 1
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_EnemyCharacter_MachineBase_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.19"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_GolemTP_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.65"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_EnemyCharacter_MachineBase_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.20"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_EnemyCharacter_MachineBase_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.21"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_EnemyCharacter_MachineBase_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.22"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_EnemyCharacter_MachineBase_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.23"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 1,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 2,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 3,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 4,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 5,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 6,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 7,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 8,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 9,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 10,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 11,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 12,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 13,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 14,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 15,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 16,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 17,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 18,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 19,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 20,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 21,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 22,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 23,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 24,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 25,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 26,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 27,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 28,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 29,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 30,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 31,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": 32,
+            "ReplicationKey": 0,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 32
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.24"
+    },
+    "Properties": {
+      "ActionTableNormalMode": {
+        "ObjectName": "DataTable'DT_GolemTPActionTable_Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/DT_GolemTPActionTable_Normal.0"
+      },
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_GolemTPActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/DT_GolemTPActionTable_Battle.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.25"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.26"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.27"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_EnemyCharacter_MachineBase_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.28"
+    }
+  },
+  {
+    "Type": "SBEnemyChantComponent",
+    "Name": "SBEnemyChant_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyChantComponent'"
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_EnemyCharacter_MachineBase_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.29"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_EnemyCharacter_MachineBase_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.30"
+    },
+    "Properties": {
+      "MaxRunSpeed": 550.0,
+      "MaxDashSpeed": 600.0,
+      "MaxStepHeight": 125.0
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.31"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_EnemyCharacter_MachineBase_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.32"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.33"
+    },
+    "Properties": {
+      "DeathEffects": [
+        {
+          "ESBAttribute::None": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina.192"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "NonElem"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Earth": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Stone'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Stone.176"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Earth"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Fire": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Fire'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Fire.184"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Fire"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Ice": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Ice'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Ice.164"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Ice"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Thunder": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Thunder'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Thunder.159"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Thunder"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Light": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Light'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Light.193"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Light"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        },
+        {
+          "ESBAttribute::Darkness": {
+            "EffectAttachPointName": "Spine1_J",
+            "EffectActorScale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "ParticleEffects": [
+              {
+                "ObjectName": "ParticleSystem'PS_GAM_DeadVanish_Makina_Dark'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/00_Common/Dead/PS_GAM_DeadVanish_Makina_Dark.169"
+              }
+            ],
+            "EffectActors": [],
+            "DeathAkEvents": [
+              {
+                "Event": {
+                  "ObjectName": "AkAudioEvent'Play_Machine_Enem_Death_Explo_L'",
+                  "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Ambient_Machine/Play_Machine_Enem_Death_Explo_L.1"
+                },
+                "Switch": [
+                  {
+                    "SwitchGroup": "Elements",
+                    "SwitchState": "Darkness"
+                  }
+                ],
+                "AttachName": "Head_J",
+                "AutoDestroy": true,
+                "StopWhenOwnerDestroyed": false,
+                "LOD": "ESBAkEventLOD::LOD_Default",
+                "RTPC": [],
+                "DelayTime": 0.0,
+                "bCanReuseAkComponent": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.34"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.35"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.36"
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.37"
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.38"
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.39"
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_EnemyCharacter_MachineBase_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.40"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 260.0,
+      "CapsuleRadius": 125.0
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_EnemyCharacter_MachineBase_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.41"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_EnemyCharacter_MachineBase_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.42"
+    },
+    "Properties": {
+      "bDisableServerRefreshBones": false,
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'AB_GolemTP_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Animations/Enemy/E505/AB_GolemTP.3"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E505_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E505_00/Model/SK_CH_E505_00.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_GolemTP_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.65"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -260.0
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_EnemyCharacter_MachineBase_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.43"
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_EnemyCharacter_MachineBase_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.44"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_EnemyCharacter_MachineBase_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.45"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.46"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_EnemyCharacter_MachineBase_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.47"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_EnemyCharacter_MachineBase_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.48"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_EnemyCharacter_MachineBase_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.49"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_EnemyCharacter_MachineBase_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.50"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_EnemyCharacter_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.76"
+    },
+    "Properties": {
+      "SurfaceFootprintSettingList": {
+        "m_FPWalkStart": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "m_FPWalk": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "m_FPRun": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "m_FPDash": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "m_FPJump": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "m_FPLandingS": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E505/BP_FP_E505_00_Landing_S.BP_FP_E505_00_Landing_S_C",
+          "SubPathString": ""
+        },
+        "m_FPLandingM": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E505/BP_FP_E505_00_Landing_M.BP_FP_E505_00_Landing_M_C",
+          "SubPathString": ""
+        },
+        "m_FPDown": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E505/BP_FP_E505_00_Down_S.BP_FP_E505_00_Down_S_C",
+          "SubPathString": ""
+        },
+        "m_FPDownM": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E505/BP_FP_E505_00_Down_M.BP_FP_E505_00_Down_M_C",
+          "SubPathString": ""
+        },
+        "m_FPHeavyAttack": {
+          "AssetPathName": "/Game/Effect/Blueprint/Footprint/Enemy/E505/BP_FP_E505_00_HeavyAttack.BP_FP_E505_00_HeavyAttack_C",
+          "SubPathString": ""
+        },
+        "m_FPStep": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_EnemyCharacter_MachineBase_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.51"
+    }
+  },
+  {
+    "Type": "SBMoveSpeedSoundComponent",
+    "Name": "SBMoveSpeedSound_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBMoveSpeedSoundComponent'",
+    "Properties": {
+      "MoveStartEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_E505_mvmt_Start'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E505_GolemTP/Play_E505_mvmt_Start.1"
+        }
+      },
+      "MoveEndEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_E505_mvmt_Stop_Vol_Low'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E505_GolemTP/Play_E505_mvmt_Stop_Vol_Low.1"
+        }
+      },
+      "MaxSpeedStartEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_E505_MaxSpeed'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E505_GolemTP/Play_E505_MaxSpeed.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_EnemyCharacter_MachineBase_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.52"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_EnemyCharacter_MachineBase_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.53"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_EnemyCharacter_MachineBase_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.54"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_EnemyCharacter_MachineBase_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.55"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E505_00_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E505_00_GolemTP/E505_00_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E505_00_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E505_00_GolemTP/E505_00_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_EnemyCharacter_MachineBase_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.56"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_EnemyCharacter_MachineBase_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.57"
+    }
+  },
+  {
+    "Type": "SBTargetableComponent",
+    "Name": "SBTargetable_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SBTargetableComponent'"
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_GolemTP_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_EnemyCharacter_MachineBase_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter_MachineBase.58"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GolemTP_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.87"
+      },
+      "VariableGuid": "C2FEFDF5-417BECB3-1DB46BB7-7A813B96",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBMoveSpeedSoundComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBMoveSpeedSoundComponent'BP_GolemTP_C:SBMoveSpeedSound_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.78"
+      },
+      "ParentComponentOrVariableName": "CollisionCylinder",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "C83DED51-4F129AB2-BE055CB9-AFAF068F",
+      "InternalVariableName": "SBMoveSpeedSound"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_RArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.39"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.103"
+        }
+      ],
+      "VariableGuid": "61CE8BA9-4B953618-293593AE-57765BEE",
+      "InternalVariableName": "SBCollisionGroup_RArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_LCannon_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.37"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.97"
+        }
+      ],
+      "VariableGuid": "F529D73C-40BCAE6F-F986DA83-8A5E414B",
+      "InternalVariableName": "SBCollisionGroup_LCannon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_RCannon_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.40"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.98"
+        }
+      ],
+      "VariableGuid": "AC638E8E-48525EAC-347C58A6-9DBE9340",
+      "InternalVariableName": "SBCollisionGroup_RCannon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_GolemTP_C:DamageCollision_UnderBody_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.16"
+      },
+      "AttachToName": "Hip_J",
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "5A29720D-41AB74A7-9113D9A0-AB080B2D",
+      "InternalVariableName": "DamageCollision_UnderBody"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_GolemTP_C:DamageCollision_UpperBody_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.17"
+      },
+      "AttachToName": "Spine3_J",
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "91E5D169-4B7033D2-7B8196AA-E898E269",
+      "InternalVariableName": "DamageCollision_UpperBody"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_Head_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.6"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "E7DA1B3C-4FCE20A7-2C8ACF8F-2B6DD521",
+      "InternalVariableName": "DamageCollision_Head"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_GolemTP_C:DamageCollision_Eye_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.13"
+      },
+      "AttachToName": "Head_J",
+      "VariableGuid": "19919B05-442E9704-E0BF2E88-7F6D84E3",
+      "InternalVariableName": "DamageCollision_Eye"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_LCannon_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.7"
+      },
+      "AttachToName": "L_Cannon04_J",
+      "VariableGuid": "C01E42BD-4DB1A2AE-66B6F6A6-D38B0A67",
+      "InternalVariableName": "DamageCollision_LCannon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_RCannon_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.10"
+      },
+      "AttachToName": "R_Cannon04_J",
+      "VariableGuid": "D076B0A7-4CE38637-633B90AF-0F14354C",
+      "InternalVariableName": "DamageCollision_RCannon"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_19",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_GolemTP_C:DamageCollision_LUArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.14"
+      },
+      "AttachToName": "HLP_L_Arm_Mid",
+      "VariableGuid": "CD263E8F-4BAF0F9F-3E183783-EAD776D2",
+      "InternalVariableName": "DamageCollision_LUArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCharacterChangeEmissiveColorComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCharacterChangeEmissiveColorComponent'BP_GolemTP_C:SBEnemyChangeEmissiveColor_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.31"
+      },
+      "VariableGuid": "33238009-40A32053-636E8FBE-819AB1DA",
+      "InternalVariableName": "SBEnemyChangeEmissiveColor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_20",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_LDArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.8"
+      },
+      "AttachToName": "L_Wrist_J",
+      "VariableGuid": "DEB3B6BC-41FC9F02-A3C873AF-4D9BAB1A",
+      "InternalVariableName": "DamageCollision_LDArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_GolemTP_C:DamageCollision_RUArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.15"
+      },
+      "AttachToName": "HLP_R_Arm_Mid",
+      "VariableGuid": "908065C5-48DCD223-2DCF5D85-66FBD57B",
+      "InternalVariableName": "DamageCollision_RUArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_22",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_RDArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.11"
+      },
+      "AttachToName": "R_Wrist_J",
+      "VariableGuid": "31979442-4248133A-C7BB0DB5-83595CB9",
+      "InternalVariableName": "DamageCollision_RDArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_23",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_RThruster_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.41"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.105"
+        }
+      ],
+      "VariableGuid": "8C448A6F-4740C01A-36E84C8F-329F5233",
+      "InternalVariableName": "SBCollisionGroup_RThruster"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_RThruster_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.12"
+      },
+      "AttachToName": "R_Thruster01_J",
+      "VariableGuid": "FFBAA6D9-441A1836-14DF739B-9A6316A1",
+      "InternalVariableName": "DamageCollision_RThruster"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_26",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_GolemTP_C:DamageCollision_LThruster_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.9"
+      },
+      "AttachToName": "L_Thruster01_J",
+      "VariableGuid": "3141AC2C-4522EF61-3560FE96-5B9B3813",
+      "InternalVariableName": "DamageCollision_LThruster"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyChantComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyChantComponent'BP_GolemTP_C:SBEnemyChant_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.53"
+      },
+      "VariableGuid": "98F79E7B-404616ED-08FA1AB4-78ECFC82",
+      "InternalVariableName": "SBEnemyChant"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBTargetableComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBTargetableComponent'BP_GolemTP_C:SBTargetable_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.85"
+      },
+      "AttachToName": "Spine1_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "1AE144F7-4F0DA2CA-DBADED9A-F1F95652",
+      "InternalVariableName": "SBTargetable"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_LThruster_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.38"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.106"
+        }
+      ],
+      "VariableGuid": "2EA285B1-45FCDAA1-2C7BC198-916F9006",
+      "InternalVariableName": "SBCollisionGroup_LThruster"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCharaBodyCapsuleComponent'BP_GolemTP_C:SBCharaBodyCapsule_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.26"
+      },
+      "AttachToName": "Spine2_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A2A2A44D-49B47C1E-1CA9B588-36D117F0",
+      "InternalVariableName": "SBCharaBodyCapsule"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_Weak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.42"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.96"
+        }
+      ],
+      "VariableGuid": "7A3D78EA-48A07256-213EC18E-345779E9",
+      "InternalVariableName": "SBCollisionGroup_Weak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_GolemTP_C:SBCollisionGroup_LArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.36"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.101"
+        }
+      ],
+      "VariableGuid": "383D1C8C-40F0AF2A-CE90D99A-42BDC09B",
+      "InternalVariableName": "SBCollisionGroup_LArm"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_GolemTP_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.100"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.111"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.90"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.91"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.92"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.89"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.104"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.93"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.94"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.95"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.100"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.111"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.90"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.91"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.92"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.96"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.97"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.98"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.101"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.103"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.89"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.104"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.93"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.94"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.95"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.105"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.106"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_GolemTP_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E505_00_GolemTP/BP_GolemTP.88"
+      }
+    }
+  }
+]

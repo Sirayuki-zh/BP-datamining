@@ -1,0 +1,1526 @@
+[
+  {
+    "Type": "Function",
+    "Name": "GetAttackUpRank",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Rank",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerSkillActionComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerSkillActionComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttackUpRank",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSkillActionComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerSkillActionComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESkillActionPosition'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetAttackUpRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimForwardInOut",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:PlayAnimForwardInOut'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimationForward_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayAnimReverseInOut",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:PlayAnimReverseInOut'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBP020_CountIcon_PartsWidget'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetAttackUpRank_Rank",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimationReverse_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnBind",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:OnBind'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnUnbind",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:OnUnbind'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialize",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:OnInitialize'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "Class'SBP020_CountIcon_PartsWidget'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTerminate",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:OnTerminate'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSetEditMode",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUD:OnSetEditMode'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InIsEdit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnChangeVisibleSetting",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBClassHUDP020:OnChangeVisibleSetting'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InIsVisibleSetting",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "P020HUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'P020HUD_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.45"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'P020HUD_C:AnimInOut_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.41"
+        }
+      ]
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBClassHUDP020'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'P020HUD_C:OnChangeVisibleSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.8"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:OnSetEditMode'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.7"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:OnTerminate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.6"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:OnInitialize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.5"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:OnUnbind'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.4"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:OnBind'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.3"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:PlayAnimReverseInOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.2"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:PlayAnimForwardInOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.1"
+      },
+      {
+        "ObjectName": "Function'P020HUD_C:GetAttackUpRank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CPVisibleSetting",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HBRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'P020_CountIcon_Parts_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'P020_CountIcon_Parts_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'P020_CountIcon_Parts_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'P020_CountIcon_Parts_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.5"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SkillPositions",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "SkillPositions",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESkillActionPosition'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "GetAttackUpRank": {
+        "ObjectName": "Function'P020HUD_C:GetAttackUpRank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.0"
+      },
+      "PlayAnimForwardInOut": {
+        "ObjectName": "Function'P020HUD_C:PlayAnimForwardInOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.1"
+      },
+      "PlayAnimReverseInOut": {
+        "ObjectName": "Function'P020HUD_C:PlayAnimReverseInOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.2"
+      },
+      "OnBind": {
+        "ObjectName": "Function'P020HUD_C:OnBind'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.3"
+      },
+      "OnUnbind": {
+        "ObjectName": "Function'P020HUD_C:OnUnbind'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.4"
+      },
+      "OnInitialize": {
+        "ObjectName": "Function'P020HUD_C:OnInitialize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.5"
+      },
+      "OnTerminate": {
+        "ObjectName": "Function'P020HUD_C:OnTerminate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.6"
+      },
+      "OnSetEditMode": {
+        "ObjectName": "Function'P020HUD_C:OnSetEditMode'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.7"
+      },
+      "OnChangeVisibleSetting": {
+        "ObjectName": "Function'P020HUD_C:OnChangeVisibleSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.8"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "P020HUD_C'Default__P020HUD_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.10"
+    }
+  },
+  {
+    "Type": "P020HUD_C",
+    "Name": "Default__P020HUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.P020HUD_C'",
+    "Properties": {
+      "SkillPositions": [
+        "ESkillActionPosition::SAP_Skill1",
+        "ESkillActionPosition::SAP_Skill2",
+        "ESkillActionPosition::SAP_Skill3",
+        "ESkillActionPosition::SAP_Skill4"
+      ],
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CPEdit",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CPEdit.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.15"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'P020HUD_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CPVisibleSetting",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CPVisibleSetting.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'P020HUD_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.43"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.11"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'P020HUD_C:WidgetTree.WidgetSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CPEdit",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CPEdit'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.12"
+      },
+      "Content": {
+        "ObjectName": "Spacer'P020HUD_C:WidgetTree.Spacer_50'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CPVisibleSetting",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CPVisibleSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.13"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'P020HUD_C:WidgetTree.HBRoot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.17"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HBRoot",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.19"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.20"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.21"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CPVisibleSetting.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.16"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_10",
+    "Outer": "HBRoot",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'P020HUD_C:WidgetTree.HBRoot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.35"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HBRoot",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'P020HUD_C:WidgetTree.HBRoot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.33"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HBRoot",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'P020HUD_C:WidgetTree.HBRoot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.34"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "HBRoot",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'P020HUD_C:WidgetTree.HBRoot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.17"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.32"
+      }
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "AnimInOut",
+    "Outer": "AnimInOut_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "74646658-42C55338-2169709C-A74603AE",
+          "Name": "CPRoot",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'CanvasPanel'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "74646658-42C55338-2169709C-A74603AE",
+          "BindingName": "CanvasPanel_95",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.27"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "D8F0C023-4B3D18BA-CB36A290-6FA830BD"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "AnimInOut_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 15000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.26"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "74646658-42C55338-2169709C-A74603AE"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 15000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "0C3B172A-48C751D8-76A95F94-DEAE4D28",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          },
+          {
+            "Value": 15000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 8.3E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 8.3E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.016667,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 1,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.23"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.24"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 15000
+            }
+          }
+        }
+      },
+      "Signature": "27D859BB-436F5061-B4E88893-B186F693"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "AnimInOut",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.26"
+        }
+      ],
+      "EvaluationFieldGuid": "BC8F3ED5-4AD72D7C-17FE37B5-0A3A7D7C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'P020HUD_C:AnimInOut_INST.AnimInOut.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.26"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 15000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "BC8F3ED5-4AD72D7C-17FE37B5-0A3A7D7C"
+    }
+  },
+  {
+    "Type": "P020_CountIcon_Parts_C",
+    "Name": "Icon1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.P020_CountIcon_Parts_C'",
+    "Template": {
+      "ObjectName": "P020_CountIcon_Parts_C'Default__P020_CountIcon_Parts_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_2.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.39"
+      }
+    }
+  },
+  {
+    "Type": "P020_CountIcon_Parts_C",
+    "Name": "Icon2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.P020_CountIcon_Parts_C'",
+    "Template": {
+      "ObjectName": "P020_CountIcon_Parts_C'Default__P020_CountIcon_Parts_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.36"
+      }
+    }
+  },
+  {
+    "Type": "P020_CountIcon_Parts_C",
+    "Name": "Icon3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.P020_CountIcon_Parts_C'",
+    "Template": {
+      "ObjectName": "P020_CountIcon_Parts_C'Default__P020_CountIcon_Parts_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.38"
+      }
+    }
+  },
+  {
+    "Type": "P020_CountIcon_Parts_C",
+    "Name": "Icon4",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.P020_CountIcon_Parts_C'",
+    "Template": {
+      "ObjectName": "P020_CountIcon_Parts_C'Default__P020_CountIcon_Parts_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/SubWidget/P020_CountIcon_Parts.6"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.37"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 40.0,
+      "HeightOverride": 40.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.21"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 40.0,
+      "HeightOverride": 40.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.19"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 40.0,
+      "HeightOverride": 40.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_1.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.20"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 40.0,
+      "HeightOverride": 40.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'P020HUD_C:WidgetTree.SizeBox_2.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.39"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'P020HUD_C:WidgetTree.HBRoot.HorizontalBoxSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.18"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.32"
+      },
+      "Content": {
+        "ObjectName": "P020_CountIcon_Parts_C'P020HUD_C:WidgetTree.Icon2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.29"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.33"
+      },
+      "Content": {
+        "ObjectName": "P020_CountIcon_Parts_C'P020HUD_C:WidgetTree.Icon4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.31"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_1",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.34"
+      },
+      "Content": {
+        "ObjectName": "P020_CountIcon_Parts_C'P020HUD_C:WidgetTree.Icon3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.30"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_2",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'P020HUD_C:WidgetTree.SizeBox_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.35"
+      },
+      "Content": {
+        "ObjectName": "P020_CountIcon_Parts_C'P020HUD_C:WidgetTree.Icon1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.28"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_50",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Size": {
+        "X": 180.0,
+        "Y": 55.0
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CPEdit.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "AnimInOut_INST",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'P020HUD_C:AnimInOut_INST.AnimInOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.22"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "HBRoot",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "74646658-42C55338-2169709C-A74603AE",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "AnimInOut",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'P020HUD_C:AnimInOut_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.25"
+      },
+      "Signature": "0C3B172A-48C751D8-76A95F94-DEAE4D28"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'P020HUD_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.43"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'P020HUD_C:WidgetTree.WidgetSwitcher.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.44"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'P020HUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'P020HUD_C:WidgetTree.WidgetSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.42"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CPVisibleSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'P020HUD_C:WidgetTree.WidgetSwitcher'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.42"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CPEdit'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "P020HUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'P020HUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ClassHUD/P020/P020HUD.11"
+      }
+    }
+  }
+]

@@ -1,0 +1,493 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetInfo",
+    "Outer": "TicketSpecialDisp_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Info",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetItemLevel_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_SetSpecialEffectText_SpecialValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetChangeColor",
+    "Outer": "TicketSpecialDisp_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bChangeColor",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SlateColor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "TicketSpecialDisp_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'TicketSpecialDisp_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'TicketSpecialDisp_C:SetChangeColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.1"
+      },
+      {
+        "ObjectName": "Function'TicketSpecialDisp_C:SetInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Name",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Txt_Ratio",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetInfo": {
+        "ObjectName": "Function'TicketSpecialDisp_C:SetInfo'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.0"
+      },
+      "SetChangeColor": {
+        "ObjectName": "Function'TicketSpecialDisp_C:SetChangeColor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TicketSpecialDisp_C'Default__TicketSpecialDisp_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.3"
+    }
+  },
+  {
+    "Type": "TicketSpecialDisp_C",
+    "Name": "Default__TicketSpecialDisp_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.TicketSpecialDisp_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_260",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.9"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.6"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 340.0,
+          "Bottom": 115.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.4"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_260",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 340.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSpecialDisp_C:WidgetTree.SBRuntimeTextBlock_71'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_260",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 48.0,
+          "Right": 258.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSpecialDisp_C:WidgetTree.Txt_Name'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_260",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 48.0,
+          "Right": 80.0
+        },
+        "Anchors": {
+          "Minimum": {
+            "X": 1.0,
+            "Y": 0.0
+          },
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.5"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'TicketSpecialDisp_C:WidgetTree.Txt_Ratio'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_260",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 110.0,
+          "Right": 340.0,
+          "Bottom": 2.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.5"
+      },
+      "Content": {
+        "ObjectName": "Image'TicketSpecialDisp_C:WidgetTree.imgLineH01'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "imgLineH01",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 380.0,
+          "Y": 1.0
+        },
+        "Margin": {
+          "Left": 0.25,
+          "Top": 0.25,
+          "Right": 0.25,
+          "Bottom": 0.25
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackB_Line01'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackB/UI_StackB_Line01.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.10"
+      },
+      "bIsVariable": false,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_71",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'StackB_TicketSelect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/StackB_TicketSelect.0"
+      },
+      "TextId": 6,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.7"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Name",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C8E56A5A4ACE57B547F9ADAE993BEA0D",
+        "SourceString": "テキストブロックテキストブロッ",
+        "LocalizedString": "テキストブロックテキストブロッ"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.8"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "Txt_Ratio",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "AC629F13499DD73F5677B0A6410E01B7",
+        "SourceString": "+00000",
+        "LocalizedString": "+00000"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'TicketSpecialDisp_C:WidgetTree.CanvasPanel_260.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.9"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "TicketSpecialDisp_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'TicketSpecialDisp_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/TicketSelect/TicketSpecialDisp.4"
+      }
+    }
+  }
+]

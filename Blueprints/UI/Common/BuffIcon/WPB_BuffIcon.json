@@ -1,0 +1,357 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WPB_BuffIcon",
+    "Outer": "WPB_BuffIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_BuffName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BuffIconAssetData'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/DataTable/BuffIconAssetData.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBuffIcon",
+    "Outer": "WPB_BuffIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "BuffName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Get_BuffIcon_1_ToolTipWidget_0",
+    "Outer": "WPB_BuffIcon_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ValidBuffToolTip_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAssetByName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAssetByName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WPB_BuffIcon_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WPB_BuffIcon_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.8"
+      },
+      "Bindings": [
+        {
+          "ObjectName": "BuffIcon_1",
+          "PropertyName": "ToolTipWidget",
+          "FunctionName": "Get_BuffIcon_1_ToolTipWidget_0",
+          "SourcePath": {
+            "Segments": [
+              {
+                "Name": "Get_BuffIcon_1_ToolTipWidget_0",
+                "ArrayIndex": -1
+              }
+            ],
+            "CachedFunction": null
+          },
+          "Kind": "EBindingKind::Function"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WPB_BuffIcon_C:ExecuteUbergraph_WPB_BuffIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WPB_BuffIcon_C:Get_BuffIcon_1_ToolTipWidget_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.2"
+      },
+      {
+        "ObjectName": "Function'WPB_BuffIcon_C:SetBuffIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.1"
+      },
+      {
+        "ObjectName": "Function'WPB_BuffIcon_C:ExecuteUbergraph_WPB_BuffIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BuffIcon_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ToolTip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Data",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BuffIconAssetData'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BuffIcon/DataTable/BuffIconAssetData.0"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "BuffName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WPB_BuffIcon": {
+        "ObjectName": "Function'WPB_BuffIcon_C:ExecuteUbergraph_WPB_BuffIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.0"
+      },
+      "SetBuffIcon": {
+        "ObjectName": "Function'WPB_BuffIcon_C:SetBuffIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.1"
+      },
+      "Get_BuffIcon_1_ToolTipWidget_0": {
+        "ObjectName": "Function'WPB_BuffIcon_C:Get_BuffIcon_1_ToolTipWidget_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WPB_BuffIcon_C'Default__WPB_BuffIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.4"
+    }
+  },
+  {
+    "Type": "WPB_BuffIcon_C",
+    "Name": "Default__WPB_BuffIcon_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.WPB_BuffIcon_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Data": {
+        "IconType_2_84E7DFA14947119953B80C80A0776A57": "ESBStatusAilmentIconType::None",
+        "No_9_B326E02F42BAD99F8DE0CE9E6573CB77": 0,
+        "Texture_5_34B491B44DC57DC82AF78B834FAAF910": null,
+        "TextureL_12_69541FDB4F829D578E2AD5846343D66C": null,
+        "TextID_17_B0DFA299449DD49AD3C699AF463F5D0B": "None",
+        "bBuff_21_465C83F343F038CA105AF39387B2620D": false,
+        "Plate_24_E11652614ACE36CF2B33B6A1C16468A4": "ESBStatusAilmentPlateType::Buff"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WPB_BuffIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WPB_BuffIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WPB_BuffIcon_C:WidgetTree.BuffIcon_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BuffIcon_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 26.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StatusAilment_1000'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/StatusAilment/UI_StatusAilment_1000.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WPB_BuffIcon_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WPB_BuffIcon_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WPB_BuffIcon_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Common/BuffIcon/WPB_BuffIcon.5"
+      }
+    }
+  }
+]

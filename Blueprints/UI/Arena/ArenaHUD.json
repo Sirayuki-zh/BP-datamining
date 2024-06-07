@@ -1,0 +1,3394 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ArenaHUD",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBArenaMissionWatcher:OnClearDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBArenaMissionWatcher:OnTimeOutDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_ArenaEnemyWaveCounter_C:RushTimeTelop__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/LevelDesign/Blueprint/BP_WaveEnemys/BP_ArenaEnemyWaveCounter.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'ArenaChallengeDisplay_C:EventAnimeInDisplay3__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_4",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'ArenaChallengeDisplay_C:EventAnimeOutDisplay3__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_InMissionName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSBTelopManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBTelopManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTelopManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_InMissionName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActiveMission_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_CustomEvent_InMissionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSBTelopManager_IsValid_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBTelopManager_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTelopManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSBTelopManager_IsValid_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBTelopManager_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTelopManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBTelopPlayParam",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBTelopPlayParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSBTelopManager_IsValid_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBTelopManager_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTelopManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_5",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBArenaMissionWatcher:OnMissionInfoSetDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBTelopPlayParam_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBTelopPlayParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_GetArenaMissionStartTelopSubStr_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOfClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ArenaEnemyWaveCounter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/LevelDesign/Blueprint/BP_WaveEnemys/BP_ArenaEnemyWaveCounter.26"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBTelopPlayParam_2",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBTelopPlayParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMissionInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 72,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ArenaMissionInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SBTelopPlayParam_3",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBTelopPlayParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_StringToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "BindArenaEvents",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Out",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "In",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Construct",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Construct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RushTime",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFailed",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "InMissionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnClear",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "InMissionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnMissionSet",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "InMissionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UnBindArenaTelop",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BindArenaTelop",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetArenaMissionStartTelopSubStr",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "Result",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActiveMission_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMissionInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 72,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ArenaMissionInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_2",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_3",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_4",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_2",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "Struct": {
+          "ObjectName": "ScriptStruct'EnemyParamMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_5",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_3",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetEnemyName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_9",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_6",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_7",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_4",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_4",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_5",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_5",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_8",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_9",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_6",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_6",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_7",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_7",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetArenaMissionSuccessTelopSubStr",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "TextProperty",
+        "Name": "Result",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_State_Dungeon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameState_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetArenaMissionWatcher_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBArenaMissionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActiveMission_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetMissionInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 72,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'ArenaMissionInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_StringToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ArenaChallengeAnimIn",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ArenaChallengeAnimOut",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetArenaHUDVisibility",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "TrueIsVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "ArenaHUD_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'ArenaHUD_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.72"
+      },
+      "bClassRequiresNativeTick": true,
+      "Bindings": [
+        {
+          "ObjectName": "NowCount",
+          "PropertyName": "Text",
+          "FunctionName": "None",
+          "SourcePath": {
+            "Segments": [
+              {
+                "Name": "EnemyWaveCounter",
+                "ArrayIndex": -1
+              },
+              {
+                "Name": "EnemyDeathCount",
+                "ArrayIndex": -1
+              }
+            ],
+            "CachedFunction": null
+          },
+          "Kind": "EBindingKind::Property"
+        }
+      ],
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'ArenaHUD_C:ArenaChallengeIn_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.71"
+        },
+        {
+          "ObjectName": "WidgetAnimation'ArenaHUD_C:AreanaChallengeOut_INST'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.70"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ArenaHUD_C:ExecuteUbergraph_ArenaHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBArenaHUD'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ArenaHUD_C:SetArenaHUDVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.16"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:ArenaChallengeAnimOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.15"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:ArenaChallengeAnimIn'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.14"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:GetArenaMissionSuccessTelopSubStr'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.13"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:GetArenaMissionStartTelopSubStr'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.12"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:BindArenaTelop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.11"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:UnBindArenaTelop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.10"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:OnMissionSet'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.9"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:OnClear'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.8"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:OnFailed'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.7"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:RushTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.6"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.5"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.4"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:In'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.3"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:Out'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.2"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:BindArenaEvents'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.1"
+      },
+      {
+        "ObjectName": "Function'ArenaHUD_C:ExecuteUbergraph_ArenaHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AreanaChallengeOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ArenaChallengeIn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ArenaChallengeDisplay",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'ArenaChallengeDisplay_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.14"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Dummy_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyCountPanel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Grp_AR",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NowCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "QuestTimer_MilliSecLess_AR",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'QuestTimer_MilliSecLess_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/QuestTimer_MilliSecLess.6"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RespawnCounter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'RespawnCounter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyWaveCounter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ArenaEnemyWaveCounter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/LevelDesign/Blueprint/BP_WaveEnemys/BP_ArenaEnemyWaveCounter.26"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "RewardText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ArenaHUD": {
+        "ObjectName": "Function'ArenaHUD_C:ExecuteUbergraph_ArenaHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.0"
+      },
+      "BindArenaEvents": {
+        "ObjectName": "Function'ArenaHUD_C:BindArenaEvents'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.1"
+      },
+      "Out": {
+        "ObjectName": "Function'ArenaHUD_C:Out'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.2"
+      },
+      "In": {
+        "ObjectName": "Function'ArenaHUD_C:In'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.3"
+      },
+      "Destruct": {
+        "ObjectName": "Function'ArenaHUD_C:Destruct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.4"
+      },
+      "Construct": {
+        "ObjectName": "Function'ArenaHUD_C:Construct'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.5"
+      },
+      "RushTime": {
+        "ObjectName": "Function'ArenaHUD_C:RushTime'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.6"
+      },
+      "OnFailed": {
+        "ObjectName": "Function'ArenaHUD_C:OnFailed'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.7"
+      },
+      "OnClear": {
+        "ObjectName": "Function'ArenaHUD_C:OnClear'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.8"
+      },
+      "OnMissionSet": {
+        "ObjectName": "Function'ArenaHUD_C:OnMissionSet'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.9"
+      },
+      "UnBindArenaTelop": {
+        "ObjectName": "Function'ArenaHUD_C:UnBindArenaTelop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.10"
+      },
+      "BindArenaTelop": {
+        "ObjectName": "Function'ArenaHUD_C:BindArenaTelop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.11"
+      },
+      "GetArenaMissionStartTelopSubStr": {
+        "ObjectName": "Function'ArenaHUD_C:GetArenaMissionStartTelopSubStr'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.12"
+      },
+      "GetArenaMissionSuccessTelopSubStr": {
+        "ObjectName": "Function'ArenaHUD_C:GetArenaMissionSuccessTelopSubStr'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.13"
+      },
+      "ArenaChallengeAnimIn": {
+        "ObjectName": "Function'ArenaHUD_C:ArenaChallengeAnimIn'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.14"
+      },
+      "ArenaChallengeAnimOut": {
+        "ObjectName": "Function'ArenaHUD_C:ArenaChallengeAnimOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.15"
+      },
+      "SetArenaHUDVisibility": {
+        "ObjectName": "Function'ArenaHUD_C:SetArenaHUDVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.16"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ArenaHUD_C'Default__ArenaHUD_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.18"
+    }
+  },
+  {
+    "Type": "ArenaHUD_C",
+    "Name": "Default__ArenaHUD_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.ArenaHUD_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "ArenaChallengeDisplay_C",
+    "Name": "ArenaChallengeDisplay",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.ArenaChallengeDisplay_C'",
+    "Template": {
+      "ObjectName": "ArenaChallengeDisplay_C'Default__ArenaChallengeDisplay_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.15"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "EnemyCountPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.EnemyCountPanel.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.25"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.32"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Grp_AR",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_28'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_83'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_85'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_87'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_24'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.37"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.24"
+      },
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Timer_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Timer_3.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Timer_3.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_18'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.20"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "EnemyCountPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.EnemyCountPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.21"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'ArenaHUD_C:WidgetTree.HorizontalBox_182'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_18",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1745.0,
+          "Top": 158.0,
+          "Right": 124.0,
+          "Bottom": 40.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Timer_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.23"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_24",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1528.0,
+          "Top": 278.0,
+          "Right": 360.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_11'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_25",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1528.0,
+          "Top": 324.0,
+          "Right": 360.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_28",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1462.0,
+          "Top": 102.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1528.0,
+          "Top": 368.0,
+          "Right": 360.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_14'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1480.0,
+          "Top": 206.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "RespawnCounter_C'ArenaHUD_C:WidgetTree.RespawnCounter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1870.0,
+          "Top": 112.0,
+          "Right": 400.0,
+          "Bottom": 50.0
+        },
+        "Alignment": {
+          "X": 1.0,
+          "Y": 0.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.EnemyCountPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1480.0,
+          "Top": 72.0,
+          "Right": 390.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ArenaHUD_C:WidgetTree.Dummy_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.68"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_83",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1464.0,
+          "Top": 150.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_85",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1464.0,
+          "Top": 194.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_87",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1464.0,
+          "Top": 234.0,
+          "Right": 426.0,
+          "Bottom": 12.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.Line_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_9",
+    "Outer": "Grp_AR",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 1550.0,
+          "Top": 252.0,
+          "Right": 342.0,
+          "Bottom": 75.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Grp_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.22"
+      },
+      "Content": {
+        "ObjectName": "ArenaChallengeDisplay_C'ArenaHUD_C:WidgetTree.ArenaChallengeDisplay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Timer_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 16.0,
+          "Top": 13.0,
+          "Right": 16.5,
+          "Bottom": 16.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Timer_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.23"
+      },
+      "Content": {
+        "ObjectName": "Image'ArenaHUD_C:WidgetTree.TimeIcon_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "Timer_3",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": -36.0,
+          "Top": -36.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.Timer_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.23"
+      },
+      "Content": {
+        "ObjectName": "QuestTimer_MilliSecLess_C'ArenaHUD_C:WidgetTree.QuestTimer_MilliSecLess_AR'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.64"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_182",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.42"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.43"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.EnemyCountPanel.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_182",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'ArenaHUD_C:WidgetTree.HorizontalBox_182'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.40"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'ArenaHUD_C:WidgetTree.NowCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_182",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'ArenaHUD_C:WidgetTree.HorizontalBox_182'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.40"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'ArenaHUD_C:WidgetTree.EnemyCount'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.66"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_182",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 4.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'ArenaHUD_C:WidgetTree.HorizontalBox_182'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.40"
+      },
+      "Content": {
+        "ObjectName": "Spacer'ArenaHUD_C:WidgetTree.Spacer_313'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.67"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_10",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_87'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.36"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_11",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_24'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.27"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_12",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_25'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.28"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_14",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.30"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_6",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_28'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.29"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_8",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_83'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.34"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line_9",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 12.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnScroll2Bg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll2Bg.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_85'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.35"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TimeIcon_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 24.0,
+          "Y": 24.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_BattleContentsHUDTimeIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/BattleContentsHUD/UI_BattleContentsHUDTimeIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Timer_3.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.38"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "AreanaChallengeOut",
+    "Outer": "AreanaChallengeOut_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "20C63441-4FBD91B4-F668DE90-44428ED5",
+          "Name": "ArenaChallengeDisplay",
+          "PossessedObjectClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'ArenaChallengeDisplay_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.14"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "20C63441-4FBD91B4-F668DE90-44428ED5",
+          "BindingName": "ArenaChallengeDisplay",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.62"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 24000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "C178B37E-4C16F67F-150487BD-5AC481CA"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "ArenaChallengeIn",
+    "Outer": "ArenaChallengeIn_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "7A1D22C4-4FDFA8C6-B241F199-C6901D75",
+          "Name": "ArenaChallengeDisplay",
+          "PossessedObjectClass": {
+            "ObjectName": "WidgetBlueprintGeneratedClass'ArenaChallengeDisplay_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/ArenaChallengeDisplay.14"
+          },
+          "ParentGuid": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "7A1D22C4-4FDFA8C6-B241F199-C6901D75",
+          "BindingName": "ArenaChallengeDisplay",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.63"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 24000
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "481ABA75-48F44A0D-A07DE5BD-9C3309E4"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "AreanaChallengeOut_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 24000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.60"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "20C63441-4FBD91B4-F668DE90-44428ED5"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 24000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "8B29C4D7-4138DA44-D7717B9C-1AAA4AFC",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "ArenaChallengeIn_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 24000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.61"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "7A1D22C4-4FDFA8C6-B241F199-C6901D75"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 24000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "46144CFA-4F60EFFA-E426E882-3B1A582E",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 24000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.54"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.55"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 24000
+            }
+          }
+        }
+      },
+      "Signature": "9130A415-4ACB0AF7-F18C63A8-FAC35F30"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 24000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.56"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.57"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 24000
+            }
+          }
+        }
+      },
+      "Signature": "F8E9D268-40C78219-47963FA5-53107F63"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "AreanaChallengeOut",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.60"
+        }
+      ],
+      "EvaluationFieldGuid": "22C02714-41DA3045-D8F0E6AC-154CBD3D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.60"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 24000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "22C02714-41DA3045-D8F0E6AC-154CBD3D"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "ArenaChallengeIn",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.61"
+        }
+      ],
+      "EvaluationFieldGuid": "B75AE944-4A1129FB-2115CAAD-DED70F98",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.61"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 24000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B75AE944-4A1129FB-2115CAAD-DED70F98"
+    }
+  },
+  {
+    "Type": "QuestTimer_MilliSecLess_C",
+    "Name": "QuestTimer_MilliSecLess_AR",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/QuestTimer_MilliSecLess.QuestTimer_MilliSecLess_C'",
+    "Template": {
+      "ObjectName": "QuestTimer_MilliSecLess_C'Default__QuestTimer_MilliSecLess_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/QuestTimer_MilliSecLess.7"
+    },
+    "Properties": {
+      "TimeLimitSecond": 10,
+      "TimeLimitTextColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FFFF0000"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Timer_3.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.39"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.35,
+          "Y": 0.35
+        }
+      }
+    }
+  },
+  {
+    "Type": "RespawnCounter_C",
+    "Name": "RespawnCounter",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.RespawnCounter_C'",
+    "Template": {
+      "ObjectName": "RespawnCounter_C'Default__RespawnCounter_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/BattleContentsHUD/RespawnCounter.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.31"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "EnemyCount",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'BattleContentsHUD'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/BattleContentsHUD.0"
+      },
+      "TextId": 1,
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block",
+        "LocalizedString": "Text Block"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.42"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_313",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.43"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Dummy_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D1C88715403D86613C3CAEB58608D97D",
+        "SourceString": "闘技場",
+        "LocalizedString": "闘技場"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 16
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'ArenaHUD_C:WidgetTree.Grp_AR.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.33"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NowCount",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "7B3D0CAC4D1908E98F340DB728CB2916",
+        "SourceString": "24",
+        "LocalizedString": "24"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 26
+      },
+      "Justification": "ETextJustify::Right",
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'ArenaHUD_C:WidgetTree.HorizontalBox_182.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.41"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "AreanaChallengeOut_INST",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'ArenaHUD_C:AreanaChallengeOut_INST.AreanaChallengeOut'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.52"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "ArenaChallengeDisplay",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "20C63441-4FBD91B4-F668DE90-44428ED5",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "AreanaChallengeOut",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'ArenaHUD_C:AreanaChallengeOut_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.58"
+      },
+      "Signature": "8B29C4D7-4138DA44-D7717B9C-1AAA4AFC"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "ArenaChallengeIn_INST",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'ArenaHUD_C:ArenaChallengeIn_INST.ArenaChallengeIn'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.53"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "ArenaChallengeDisplay",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "7A1D22C4-4FDFA8C6-B241F199-C6901D75",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "ArenaChallengeIn",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'ArenaHUD_C:ArenaChallengeIn_INST.CompiledData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.59"
+      },
+      "Signature": "46144CFA-4F60EFFA-E426E882-3B1A582E"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "ArenaHUD_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'ArenaHUD_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Arena/ArenaHUD.20"
+      }
+    }
+  }
+]

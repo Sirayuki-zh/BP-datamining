@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ReceiveGetInterpSpeed",
+    "Outer": "SS_TurnActor_Target_Interp_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBCustomState_TurnActorBase:ReceiveGetInterpSpeed'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveCanFinishInterp",
+    "Outer": "SS_TurnActor_Target_Interp_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBCustomState_TurnActorBase:ReceiveCanFinishInterp'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SS_TurnActor_Target_Interp_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'SBCustomState_TurnActorBase'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SS_TurnActor_Target_Interp_C:ReceiveCanFinishInterp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.1"
+      },
+      {
+        "ObjectName": "Function'SS_TurnActor_Target_Interp_C:ReceiveGetInterpSpeed'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InterpSpeed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bCanFinishInterp",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ReceiveGetInterpSpeed": {
+        "ObjectName": "Function'SS_TurnActor_Target_Interp_C:ReceiveGetInterpSpeed'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.0"
+      },
+      "ReceiveCanFinishInterp": {
+        "ObjectName": "Function'SS_TurnActor_Target_Interp_C:ReceiveCanFinishInterp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SS_TurnActor_Target_Interp_C'Default__SS_TurnActor_Target_Interp_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.3"
+    }
+  },
+  {
+    "Type": "SS_TurnActor_Target_Interp_C",
+    "Name": "Default__SS_TurnActor_Target_Interp_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Animation/TurnActor/SS_TurnActor_Target_Interp.SS_TurnActor_Target_Interp_C'",
+    "Properties": {
+      "InterpSpeed": 720.0,
+      "bCanFinishInterp": true,
+      "TurnType": "ESBTurnPlayerActorType::TargetComponent"
+    }
+  }
+]

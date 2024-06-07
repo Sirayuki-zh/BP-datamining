@@ -1,0 +1,741 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DebugEffectMenu_VisibleMenu",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'SBDebugParameter'",
+        "ObjectPath": "/Script/SkyBlue"
+      }
+    },
+    "Rows": {
+      "HideEffect": {
+        "ParameterName": "エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffect",
+        "ToolTipTextId": "TOOLTIP_HideEffect",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "エフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_1": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DisableHideEffect": {
+        "ParameterName": "エフェクト非表示機能無効(全て)",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_DisableHideEffect",
+        "ToolTipTextId": "TOOLTIP_DisableHideEffect",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "全てのエフェクトに対して非表示機能を無効にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DisableHideEffectBattle": {
+        "ParameterName": "エフェクト非表示機能無効(「戦闘」エフェクト)",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_DisableHideEffectBattle",
+        "ToolTipTextId": "TOOLTIP_DisableHideEffectBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:●●●」のエフェクトに対して非表示機能を無効にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_2": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": " ",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattle": {
+        "ParameterName": "「戦闘」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:●●●」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleProduction": {
+        "ParameterName": "「戦闘:演出」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleProduction",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleProduction",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:演出」「戦闘:演出＋ULT」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleStatusAliment": {
+        "ParameterName": "「戦闘:ステータス効果演出」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleStatusAliment",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleStatusAliment",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:ステータス効果演出」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleMarkerAttack": {
+        "ParameterName": "「戦闘:設置攻撃」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleMarkerAttack",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleMarkerAttack",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:設置攻撃」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleMarkerHeal": {
+        "ParameterName": "「戦闘:設置回復」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleMarkerHeal",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleMarkerHeal",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:設置回復」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleProjectile": {
+        "ParameterName": "「戦闘:プロジェクタイル」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleProjectile",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleProjectile",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:プロジェクタイル」「戦闘:プロジェクタイル＋ULT」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleImagine": {
+        "ParameterName": "「戦闘:バトルイマジン」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleImagine",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleImagine",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:バトルイマジン」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleULTProduction": {
+        "ParameterName": "「戦闘:ULT演出」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleULTProduction",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleULTProduction",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:ULT演出」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleULTProjectile": {
+        "ParameterName": "「戦闘:ULTプロジェクタイル」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleULTProjectile",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleULTProjectile",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:ULTプロジェクタイル」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleWeapon": {
+        "ParameterName": "「戦闘:プレイヤー武器」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleWeapon",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleWeapon",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:プレイヤー武器」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleGimmickProjectile": {
+        "ParameterName": "「戦闘:ギミック用プロジェクタイル」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleGimmickProjectile",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleGimmickProjectile",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「戦闘:ギミック用プロジェクタイル」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectNoBattle": {
+        "ParameterName": "「非戦闘:デモ非表示」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectNoBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectNoBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleTypeが「非戦闘:デモ非表示」のエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_3": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": " ",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectSourcePlayerSelf": {
+        "ParameterName": "「操作プレイヤー発生源」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectSourcePlayerSelf",
+        "ToolTipTextId": "TOOLTIP_HideEffectSourcePlayerSelf",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleSourceTypeが「Player_Self」のエフェクトを非表示にする",
+        "Enable": false,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectSourcePlayerParty": {
+        "ParameterName": "「パーティプレイヤー発生源」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectSourcePlayerParty",
+        "ToolTipTextId": "TOOLTIP_HideEffectSourcePlayerParty",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleSourceTypeが「Player_Party」のエフェクトを非表示にする",
+        "Enable": false,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectSourcePlayerOther": {
+        "ParameterName": "「その他プレイヤー発生源」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectSourcePlayerOther",
+        "ToolTipTextId": "TOOLTIP_HideEffectSourcePlayerOther",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "ESBEffectVisibleSourceTypeが「Player_Other」のエフェクトを非表示にする",
+        "Enable": false,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_4": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": " ",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectAttackDirecting": {
+        "ParameterName": "オプション「攻撃や回復による」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectAttackDirecting",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectAttackDirecting",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「攻撃や回復によるエフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectAreaAttack": {
+        "ParameterName": "オプション「攻撃の設置」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectAreaAttack",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectAreaAttack",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「攻撃の設置エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectAreaHeal": {
+        "ParameterName": "オプション「回復の設置」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectAreaHeal",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectAreaHeal",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「回復の設置エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectRangeAttack": {
+        "ParameterName": "オプション「飛弾」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectRangeAttack",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectRangeAttack",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「飛弾エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectBattleImagine": {
+        "ParameterName": "オプション「バトルイマジン」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectBattleImagine",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectBattleImagine",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「バトルイマジン」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectULT": {
+        "ParameterName": "オプション「ULT」エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectULT",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectULT",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「ULT」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_5": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": " ",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectMyBattle": {
+        "ParameterName": "オプション「自分」の戦闘エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectMyBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectMyBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「自分の戦闘エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectPartyMemberBattle": {
+        "ParameterName": "オプション「パーティメンバー」の戦闘エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectPartyMemberBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectPartyMemberBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「パーティメンバーの戦闘エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectOtherMemberBattle": {
+        "ParameterName": "オプション「パーティメンバー以外」の戦闘エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectOtherMemberBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectOtherMemberBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「パーティメンバー以外の戦闘エフェクト」を非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectActiveEnemyBattle": {
+        "ParameterName": "オプション「戦闘中エネミー」の戦闘エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectActiveEnemyBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectActiveEnemyBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「戦闘中エネミーの戦闘エフェクト」を非表示にする",
+        "Enable": false,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideEffectBattleEffectPassiveEnemyBattle": {
+        "ParameterName": "オプション「非戦闘中エネミー」の戦闘エフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideEffectBattleEffectPassiveEnemyBattle",
+        "ToolTipTextId": "TOOLTIP_HideEffectBattleEffectPassiveEnemyBattle",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "オプション設定の「非戦闘中エネミーの戦闘エフェクト」を非表示にする",
+        "Enable": false,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "DEVIDE_6": {
+        "ParameterName": "--------------------",
+        "TextTableAsset": null,
+        "TitleTextId": "None",
+        "ToolTipTextId": "None",
+        "Type": "SB_DEBUG_MENU_TEXT",
+        "InitialValue": [],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": " ",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      },
+      "HideHitEffect": {
+        "ParameterName": "他のヒットエフェクト非表示",
+        "TextTableAsset": {
+          "ObjectName": "SBTextTableAsset'DebugEffectMenuText'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Text/Debug/DebugEffectMenuText.0"
+        },
+        "TitleTextId": "TITLE_HideHitEffect",
+        "ToolTipTextId": "TOOLTIP_HideHitEffect",
+        "Type": "SB_DEBUG_MENU_CHECK_BOX",
+        "InitialValue": [
+          "false"
+        ],
+        "WidgetClass": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ToolTip": "攻撃者・被撃者がプレイヤー自身ではない攻撃のヒットエフェクトを非表示にする",
+        "Enable": true,
+        "bEditorOnly": false,
+        "bReadOnly": false
+      }
+    }
+  }
+]

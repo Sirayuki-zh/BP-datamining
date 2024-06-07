@@ -1,0 +1,590 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetText",
+    "Outer": "DxBattleTopic_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "text",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTextCorlor",
+    "Outer": "DxBattleTopic_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "color",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SlateColor'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateFontSize",
+    "Outer": "DxBattleTopic_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetConfigSaveManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetConfigSaveManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBConfigureSaveManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetChatLogTextSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "DxBattleTopic_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'DxBattleTopic_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.24"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DxBattleTopic_C:UpdateFontSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.2"
+      },
+      {
+        "ObjectName": "Function'DxBattleTopic_C:SetTextCorlor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.1"
+      },
+      {
+        "ObjectName": "Function'DxBattleTopic_C:SetText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "IconImage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_57",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextBg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetText": {
+        "ObjectName": "Function'DxBattleTopic_C:SetText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.0"
+      },
+      "SetTextCorlor": {
+        "ObjectName": "Function'DxBattleTopic_C:SetTextCorlor'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.1"
+      },
+      "UpdateFontSize": {
+        "ObjectName": "Function'DxBattleTopic_C:UpdateFontSize'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DxBattleTopic_C'Default__DxBattleTopic_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.4"
+    }
+  },
+  {
+    "Type": "DxBattleTopic_C",
+    "Name": "Default__DxBattleTopic_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.DxBattleTopic_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_230",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_230.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.9"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'DxBattleTopic_C:WidgetTree.Overlay_113.OverlaySlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 1.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleTopic_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.5"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleTopic_C:WidgetTree.IconImage'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 28.0,
+          "Top": 1.0,
+          "Right": 273.0,
+          "Bottom": 18.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleTopic_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.5"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'DxBattleTopic_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.20"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_230",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'DxBattleTopic_C:WidgetTree.CanvasPanel_230'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.6"
+      },
+      "Content": {
+        "ObjectName": "Image'DxBattleTopic_C:WidgetTree.TextBg'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "IconImage",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_DxBattleLogIcon'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/DxBattle/UI_DxBattleLogIcon.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.7"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TextBg",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 64.0,
+          "Y": 32.0
+        },
+        "Margin": {
+          "Left": 0.1,
+          "Top": 0.2,
+          "Right": 0.1,
+          "Bottom": 0.2
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_ChatMessageBg2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Chat/UI_ChatMessageBg2.0"
+        },
+        "DrawAs": "ESlateBrushDrawType::Box"
+      },
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_230.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.9"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_113",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'DxBattleTopic_C:WidgetTree.Overlay_113.OverlaySlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.14"
+        },
+        {
+          "ObjectName": "OverlaySlot'DxBattleTopic_C:WidgetTree.Overlay_113.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.13"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.22"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_113",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay'DxBattleTopic_C:WidgetTree.Overlay_113'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.12"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'DxBattleTopic_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.19"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_113",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'DxBattleTopic_C:WidgetTree.Overlay_113'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.12"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'DxBattleTopic_C:WidgetTree.CanvasPanel_230'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.6"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_57",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "6653E47745827D5F6DF42FBAB1E5ED44",
+        "SourceString": "仮のテキスト",
+        "LocalizedString": "仮のテキスト"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-UDKakugo_LargePr6-M'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-UDKakugo_LargePr6-M.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 8
+      },
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'DxBattleTopic_C:WidgetTree.SizeBox_51.SizeBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.17"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_51",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Properties": {
+      "WidthOverride": 273.0,
+      "bOverride_WidthOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'DxBattleTopic_C:WidgetTree.SizeBox_51.SizeBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.21"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_51",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 6.0
+      },
+      "Parent": {
+        "ObjectName": "SizeBox'DxBattleTopic_C:WidgetTree.SizeBox_51'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.16"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'DxBattleTopic_C:WidgetTree.SBRuntimeTextBlock_57'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.15"
+      }
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_395",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Size": {
+        "X": 1.0,
+        "Y": 4.0
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.23"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'DxBattleTopic_C:WidgetTree.Overlay_113.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.22"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'DxBattleTopic_C:WidgetTree.VerticalBox_1.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'DxBattleTopic_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.8"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'DxBattleTopic_C:WidgetTree.VerticalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.19"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'DxBattleTopic_C:WidgetTree.SizeBox_51'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.16"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'DxBattleTopic_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.20"
+      },
+      "Content": {
+        "ObjectName": "Overlay'DxBattleTopic_C:WidgetTree.Overlay_113'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.12"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_1",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "VerticalBox'DxBattleTopic_C:WidgetTree.VerticalBox_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.20"
+      },
+      "Content": {
+        "ObjectName": "Spacer'DxBattleTopic_C:WidgetTree.Spacer_395'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.18"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "DxBattleTopic_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'DxBattleTopic_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/DxBattleHUD/DxBattleTopic.5"
+      }
+    }
+  }
+]

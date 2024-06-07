@@ -1,0 +1,2235 @@
+[
+  {
+    "Type": "Function",
+    "Name": "Set Stack BIcon MBase",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "StackNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBStackBEnableType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCurrentMapInfo_OutMapInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 528,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBMapInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetCurrentMapInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetStackBIconEffect",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set Stack BIcon One Item",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Info",
+        "Flags": "RF_Public",
+        "ElementSize": 280,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'OwnItemInfo'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetStackBNum_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetStackBMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetStackBIconOneItemBase_Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set Stack BIcon One ItembyWeaponData",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Info",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponItemData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "EffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindWeaponMaster_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindWeaponMaster_WeaponMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BP_GetStackBMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetVisibility_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetStackBIconOneItemBase",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InStackBNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InStackBMax",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "InIsEffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bLocalEffectiveDisplay",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_GetVisibility_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_StackB_M_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_StackB_M_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.66"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_StackB_M_C:SetStackBIconOneItemBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.4"
+      },
+      {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon One ItembyWeaponData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.3"
+      },
+      {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon One Item'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.2"
+      },
+      {
+        "ObjectName": "Function'WBP_StackB_M_C:SetStackBIconEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.1"
+      },
+      {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon MBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CanvasPanel_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CanvasPanel'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_M1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_M2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_M3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_N1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_N2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRuntimeTextBlock_N3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRuntimeTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_M",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_N",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_Status",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "StackNum",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Stack BMax",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "Set Stack BIcon MBase": {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon MBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.0"
+      },
+      "SetStackBIconEffect": {
+        "ObjectName": "Function'WBP_StackB_M_C:SetStackBIconEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.1"
+      },
+      "Set Stack BIcon One Item": {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon One Item'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.2"
+      },
+      "Set Stack BIcon One ItembyWeaponData": {
+        "ObjectName": "Function'WBP_StackB_M_C:Set Stack BIcon One ItembyWeaponData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.3"
+      },
+      "SetStackBIconOneItemBase": {
+        "ObjectName": "Function'WBP_StackB_M_C:SetStackBIconOneItemBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.4"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_StackB_M_C'Default__WBP_StackB_M_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.6"
+    }
+  },
+  {
+    "Type": "WBP_StackB_M_C",
+    "Name": "Default__WBP_StackB_M_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.WBP_StackB_M_C'",
+    "Properties": {
+      "ForegroundColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.17"
+        }
+      ],
+      "bIsVariable": true,
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Max",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.64"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_None",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_None.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.20"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_Normal",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.22"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GreatEffect",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.GreatEffect.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "GreatEffect_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.GreatEffect_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.24"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Invalid",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.61"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "Invalid_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.30"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WeakEffect",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.32"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.62"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "WeakEffect_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.35"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.7"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Max",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.8"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.Image_BG_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_Max",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.8"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_None",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_None'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.9"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.Image_BG_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_Normal",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.10"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.Image_BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_Normal",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.10"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GreatEffect",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.GreatEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.11"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_N1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "GreatEffect_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.GreatEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.12"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_M1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Invalid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.13"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.line_Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Invalid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.13"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_N3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Invalid",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.13"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.add_line_Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.37"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "Invalid_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.14"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.line_Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "Invalid_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.14"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_M3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "Invalid_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.14"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.add_line_Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.38"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "WeakEffect",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.15"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.line_weak'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "WeakEffect",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.15"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.add_line_weak'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.39"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "WeakEffect",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.15"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_N2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "WeakEffect_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.16"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.line_weak_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "WeakEffect_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 48.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.16"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_StackB_M_C:WidgetTree.add_line_weak_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.40"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "WeakEffect_1",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 17.0,
+          "Top": 7.0,
+          "Right": 22.0,
+          "Bottom": 22.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.16"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'WBP_StackB_M_C:WidgetTree.SBRuntimeTextBlock_M2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.49"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "add_line_Invalid",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'M_StackBlcon_M_InvalidLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/M_StackBlcon_M_InvalidLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.2,
+        "Hex": "33FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.27"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "add_line_Invalid_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'M_StackBlcon_Mmax_InvalidLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/M_StackBlcon_Mmax_InvalidLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.2,
+        "Hex": "33FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.30"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "add_line_weak",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'M_StackBlcon_M_WeakLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/M_StackBlcon_M_WeakLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.2,
+        "Hex": "33FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.32"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "add_line_weak_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'M_StackBlcon_Mmax_WeakLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/M_StackBlcon_Mmax_WeakLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.2,
+        "Hex": "33FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.35"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_M_Base'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_M_Base.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.21"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BG_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_Mmax_Base'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_Mmax_Base.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.18"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_BG_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_Mnone_Base'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_Mnone_Base.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 0.4,
+        "Hex": "66FFFFFF"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_None.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.20"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "line_Invalid",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_M_InvalidLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_M_InvalidLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.6,
+        "Hex": "99FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.25"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "line_Invalid_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_Mmax_InvalidLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_Mmax_InvalidLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.6,
+        "Hex": "99FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.28"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "line_weak",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_M_WeakLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_M_WeakLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.6,
+        "Hex": "99FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.31"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "line_weak_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 48.0,
+          "Y": 32.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_StackBlcon_Mmax_WeakLine'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/StackBIcon/UI_StackBlcon_Mmax_WeakLine.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.102242,
+        "B": 0.040915,
+        "A": 0.6,
+        "Hex": "99FF5A39"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.34"
+      },
+      "bIsVariable": false
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_M1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C75546E74C64E0743A8BAD942915B213",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.GreatEffect_1.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.24"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_M2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D4386807400A296A82F2B586865A1630",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect_1.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.36"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_M3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D58E24E240B924084DC1459E314A8A7E",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid_1.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.29"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_N1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C75546E74C64E0743A8BAD942915B213",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.GreatEffect.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.23"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_N2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D4386807400A296A82F2B586865A1630",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.WeakEffect.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.33"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_N3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D58E24E240B924084DC1459E314A8A7E",
+        "SourceString": "20",
+        "LocalizedString": "20"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 0.65,
+          "Hex": "A6FFFFFF"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'CenturyGothicPro-Bold_Original'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/CenturyGothicPro-Bold_Original.0"
+        },
+        "TypefaceFontName": "Font",
+        "Size": 15
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.Invalid.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.26"
+      },
+      "RenderTransform": {
+        "Shear": {
+          "X": -16.5,
+          "Y": 0.0
+        }
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_M",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.57"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.59"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M.WidgetSwitcherSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.58"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.19"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_N",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.60"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.62"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N.WidgetSwitcherSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.61"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.22"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_Status",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.63"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.64"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.65"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_StackB_M_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.17"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "WidgetSwitcher_M",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.54"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.GreatEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.12"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "WidgetSwitcher_M",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.54"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.14"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "WidgetSwitcher_M",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_M'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.54"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.16"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_3",
+    "Outer": "WidgetSwitcher_N",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.GreatEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_5",
+    "Outer": "WidgetSwitcher_N",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.Invalid'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.13"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_6",
+    "Outer": "WidgetSwitcher_N",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_N'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.55"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.WeakEffect'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.15"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher_Status",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.56"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Normal'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.10"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher_Status",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.56"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_Max'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.8"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "WidgetSwitcher_Status",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'WBP_StackB_M_C:WidgetTree.WidgetSwitcher_Status'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.56"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_None'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_StackB_M_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_StackB_M_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackBIcon/WBP_StackB_M.7"
+      }
+    }
+  }
+]

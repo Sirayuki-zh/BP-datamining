@@ -1,0 +1,504 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_StackBPerkRarityView",
+    "Outer": "StackBPerkRarityView_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetChildrenCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetChildAt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Widget'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsStack_BPerk_Rarity_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_InRarity",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRarity",
+    "Outer": "StackBPerkRarityView_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InRarity",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "StackBPerkRarityView_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'StackBPerkRarityView_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.17"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'StackBPerkRarityView_C:ExecuteUbergraph_StackBPerkRarityView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'StackBPerkRarityView_C:SetRarity'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.1"
+      },
+      {
+        "ObjectName": "Function'StackBPerkRarityView_C:ExecuteUbergraph_StackBPerkRarityView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HB_PerkRarities",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBPerkRarityItem1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBPerkRarityItem2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBPerkRarityItem3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBPerkRarityItem4",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StackBPerkRarityItem5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'StackBPerkRarityItem_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.3"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_StackBPerkRarityView": {
+        "ObjectName": "Function'StackBPerkRarityView_C:ExecuteUbergraph_StackBPerkRarityView'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.0"
+      },
+      "SetRarity": {
+        "ObjectName": "Function'StackBPerkRarityView_C:SetRarity'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "StackBPerkRarityView_C'Default__StackBPerkRarityView_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.3"
+    }
+  },
+  {
+    "Type": "StackBPerkRarityView_C",
+    "Name": "Default__StackBPerkRarityView_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.StackBPerkRarityView_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'StackBPerkRarityView_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Bottom": 40.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'StackBPerkRarityView_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.4"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HB_PerkRarities",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.7"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.8"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.9"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.10"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'StackBPerkRarityView_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.5"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HB_PerkRarities",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      },
+      "Content": {
+        "ObjectName": "StackBPerkRarityItem_C'StackBPerkRarityView_C:WidgetTree.StackBPerkRarityItem1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.12"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HB_PerkRarities",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      },
+      "Content": {
+        "ObjectName": "StackBPerkRarityItem_C'StackBPerkRarityView_C:WidgetTree.StackBPerkRarityItem2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.13"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HB_PerkRarities",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      },
+      "Content": {
+        "ObjectName": "StackBPerkRarityItem_C'StackBPerkRarityView_C:WidgetTree.StackBPerkRarityItem3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.14"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_8",
+    "Outer": "HB_PerkRarities",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      },
+      "Content": {
+        "ObjectName": "StackBPerkRarityItem_C'StackBPerkRarityView_C:WidgetTree.StackBPerkRarityItem4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.15"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_9",
+    "Outer": "HB_PerkRarities",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.6"
+      },
+      "Content": {
+        "ObjectName": "StackBPerkRarityItem_C'StackBPerkRarityView_C:WidgetTree.StackBPerkRarityItem5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.16"
+      }
+    }
+  },
+  {
+    "Type": "StackBPerkRarityItem_C",
+    "Name": "StackBPerkRarityItem1",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.StackBPerkRarityItem_C'",
+    "Template": {
+      "ObjectName": "StackBPerkRarityItem_C'Default__StackBPerkRarityItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.7"
+      }
+    }
+  },
+  {
+    "Type": "StackBPerkRarityItem_C",
+    "Name": "StackBPerkRarityItem2",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.StackBPerkRarityItem_C'",
+    "Template": {
+      "ObjectName": "StackBPerkRarityItem_C'Default__StackBPerkRarityItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.8"
+      }
+    }
+  },
+  {
+    "Type": "StackBPerkRarityItem_C",
+    "Name": "StackBPerkRarityItem3",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.StackBPerkRarityItem_C'",
+    "Template": {
+      "ObjectName": "StackBPerkRarityItem_C'Default__StackBPerkRarityItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.9"
+      }
+    }
+  },
+  {
+    "Type": "StackBPerkRarityItem_C",
+    "Name": "StackBPerkRarityItem4",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.StackBPerkRarityItem_C'",
+    "Template": {
+      "ObjectName": "StackBPerkRarityItem_C'Default__StackBPerkRarityItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.10"
+      }
+    }
+  },
+  {
+    "Type": "StackBPerkRarityItem_C",
+    "Name": "StackBPerkRarityItem5",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.StackBPerkRarityItem_C'",
+    "Template": {
+      "ObjectName": "StackBPerkRarityItem_C'Default__StackBPerkRarityItem_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityItem.4"
+    },
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'StackBPerkRarityView_C:WidgetTree.HB_PerkRarities.HorizontalBoxSlot_9'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "StackBPerkRarityView_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'StackBPerkRarityView_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/StackB/Parts/PerkRarity/StackBPerkRarityView.4"
+      }
+    }
+  }
+]

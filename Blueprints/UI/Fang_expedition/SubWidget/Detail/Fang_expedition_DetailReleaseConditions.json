@@ -1,0 +1,695 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetData",
+    "Outer": "Fang_expedition_DetailReleaseConditions_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "LimitData",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBFang_expeditionLimitData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MasterManager",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_StringToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetAchievementMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetAchievementMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 120,
+        "Struct": {
+          "ObjectName": "ScriptStruct'AchievementMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetQuestName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetAchievementName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "Fang_expedition_DetailReleaseConditions_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'Fang_expedition_DetailReleaseConditions_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.20"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Fang_expedition_DetailReleaseConditions_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CheckIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'QuestDetail_CheckIcon_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/QuestDetail/SubWidgets/QuestDetail_CheckIcon.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Conditions_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Conditions_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Text_Conditions_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WidgetSwitcher_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextTable",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBTextTableAsset'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetData": {
+        "ObjectName": "Function'Fang_expedition_DetailReleaseConditions_C:SetData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.0"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Fang_expedition_DetailReleaseConditions_C'Default__Fang_expedition_DetailReleaseConditions_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.2"
+    }
+  },
+  {
+    "Type": "Fang_expedition_DetailReleaseConditions_C",
+    "Name": "Default__Fang_expedition_DetailReleaseConditions_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.Fang_expedition_DetailReleaseConditions_C'",
+    "Properties": {
+      "TextTable": {
+        "ObjectName": "SBTextTableAsset'Fang_expedition'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/Fang_expedition.0"
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "AdventureRank",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.AdventureRank.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.7"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.8"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "QuestName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.QuestName.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.10"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.18"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TitleName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.TitleName.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.11"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.19"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "AdventureRank",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 480.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.AdventureRank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.3"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_DetailReleaseConditions_C:WidgetTree.Text_Conditions_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 30.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.4"
+      },
+      "Content": {
+        "ObjectName": "QuestDetail_CheckIcon_C'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CheckIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 32.0,
+          "Top": 1.0,
+          "Right": 480.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.4"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.16"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "QuestName",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 480.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.QuestName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.5"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_DetailReleaseConditions_C:WidgetTree.Text_Conditions_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.14"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TitleName",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 480.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.TitleName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.6"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'Fang_expedition_DetailReleaseConditions_C:WidgetTree.Text_Conditions_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.15"
+      }
+    }
+  },
+  {
+    "Type": "QuestDetail_CheckIcon_C",
+    "Name": "CheckIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/QuestDetail/SubWidgets/QuestDetail_CheckIcon.QuestDetail_CheckIcon_C'",
+    "Template": {
+      "ObjectName": "QuestDetail_CheckIcon_C'Default__QuestDetail_CheckIcon_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/QuestDetail/SubWidgets/QuestDetail_CheckIcon.2"
+    },
+    "Properties": {
+      "ForegroundColor": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.8"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Conditions_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4DB0970248C7F28DEE7BD98D2756C97C",
+        "SourceString": "必要な冒険者ランク 999",
+        "LocalizedString": "必要な冒険者ランク 999"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 1.0,
+          "B": 0.745404,
+          "A": 1.0,
+          "Hex": "FFFFFFE0"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.AdventureRank.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.7"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Conditions_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B32E0247452908E2FE7F2198961CE03D",
+        "SourceString": "「クエスト名最大１７文字２３４５６７」をクリア",
+        "LocalizedString": "「クエスト名最大１７文字２３４５６７」をクリア"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.QuestName.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.10"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Text_Conditions_3",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B92AAEDC4A784DCF643396AB6D16B61A",
+        "SourceString": "称号「称号名最大１２文字０１２」を獲得",
+        "LocalizedString": "称号「称号名最大１２文字０１２」を獲得"
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.TitleName.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.11"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "WidgetSwitcher_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.17"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.18"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0.WidgetSwitcherSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.9"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "WidgetSwitcher_0",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.16"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.AdventureRank'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "WidgetSwitcher_0",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.16"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.QuestName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.5"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_2",
+    "Outer": "WidgetSwitcher_0",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'Fang_expedition_DetailReleaseConditions_C:WidgetTree.WidgetSwitcher_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.16"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.TitleName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.6"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "Fang_expedition_DetailReleaseConditions_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'Fang_expedition_DetailReleaseConditions_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Fang_expedition/SubWidget/Detail/Fang_expedition_DetailReleaseConditions.4"
+      }
+    }
+  }
+]

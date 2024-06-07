@@ -1,0 +1,3735 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_KingGoblin",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCurrentStanceName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_Event_ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchString_CmpSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCurrentStanceName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClient_ReturnParam_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomFlag",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomFlag'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "FlagName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_1_ModeChangeSignature__DelegateSignature",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDead",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:ReceiveDead'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RecvExecCustomAction",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBEnemyCharacter:RecvExecCustomAction'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ActionName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_KingGoblin_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+    },
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_KingGoblin_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.16"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_KingGoblin_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.119"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_KingGoblin_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.17"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_KingGoblin_C:ExecuteUbergraph_BP_KingGoblin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.5"
+      },
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.4"
+      },
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.3"
+      },
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_1_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.2"
+      },
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.1"
+      },
+      {
+        "ObjectName": "Function'BP_KingGoblin_C:ExecuteUbergraph_BP_KingGoblin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Phase_LeftEye",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Phase_RightEye",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Spine2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Tail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_Leg",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Hip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_ForeArm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_R_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_L_Arm",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2_Head",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RoarPhase2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_ChestWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_Chest",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_HeadWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionSphereComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_HeadWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ASDamage_BodyWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ASCollisionCapsuleComponent'",
+          "ObjectPath": "/Script/ActionSystem"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBCollisionGroup_BodyWeak",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBCollisionGroupComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBParticleSystem_Fire",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBParticleSystem_Ice",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBParticleSystem_Thunder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBParticleSystemComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemyChant",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemyChantComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "StanceEffectActiveTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_KingGoblin": {
+        "ObjectName": "Function'BP_KingGoblin_C:ExecuteUbergraph_BP_KingGoblin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.0"
+      },
+      "RecvExecCustomFlag": {
+        "ObjectName": "Function'BP_KingGoblin_C:RecvExecCustomFlag'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.1"
+      },
+      "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_1_ModeChangeSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_KingGoblin_C:BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_1_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.2"
+      },
+      "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_KingGoblin_C:BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.3"
+      },
+      "ReceiveDead": {
+        "ObjectName": "Function'BP_KingGoblin_C:ReceiveDead'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.4"
+      },
+      "RecvExecCustomAction": {
+        "ObjectName": "Function'BP_KingGoblin_C:RecvExecCustomAction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_KingGoblin_C'Default__BP_KingGoblin_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.7"
+    }
+  },
+  {
+    "Type": "BP_KingGoblin_C",
+    "Name": "Default__BP_KingGoblin_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.BP_KingGoblin_C'",
+    "Template": {
+      "ObjectName": "BP_Goblin_C'Default__BP_Goblin_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.2"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "StanceEffectActiveTime": 1.0,
+      "BP_MeshScaleOffset": 1.5,
+      "DeathEffectComp": {
+        "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_KingGoblin_C:EnemyDeathEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.50"
+      },
+      "TideComp": {
+        "ObjectName": "SBEnemyTideComponent'Default__BP_KingGoblin_C:EnemyTideComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.65"
+      },
+      "ExitEffectComp": {
+        "ObjectName": "SBEnemyExitEffectComponent'Default__BP_KingGoblin_C:EnemyExitEffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.53"
+      },
+      "EnemyId": "E000_32_00_00000",
+      "BadZoneAvoidanceComp": {
+        "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_KingGoblin_C:EnemyBadZoneAvoidanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.41"
+      },
+      "PhaseComp": {
+        "ObjectName": "SBEnemyPhaseComponent'Default__BP_KingGoblin_C:EnemyPhaseComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.57"
+      },
+      "ModifierComp": {
+        "ObjectName": "SBEnemyModifierComponent'Default__BP_KingGoblin_C:EnemyModifierComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.54"
+      },
+      "ActionParamComp": {
+        "ObjectName": "SBEnemyActionParamComponent'Default__BP_KingGoblin_C:EnemyActionParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.40"
+      },
+      "BattleConditionComp": {
+        "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_KingGoblin_C:EnemyBattleConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.42"
+      },
+      "BlendSpaceInputComp": {
+        "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_KingGoblin_C:EnemyBlendSpaceInputComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.43"
+      },
+      "PartsManagerComp": {
+        "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_KingGoblin_C:EnemyPartsBreakComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.56"
+      },
+      "TargetingComp": {
+        "ObjectName": "SBEnemyTargetingComponent'Default__BP_KingGoblin_C:EnemyTargetingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.64"
+      },
+      "AdjustRootMotionComp": {
+        "ObjectName": "SBAdjustRootMotionComponent'Default__BP_KingGoblin_C:AdjustRootMotionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.19"
+      },
+      "StanceComp": {
+        "ObjectName": "SBEnemyStanceComponent'Default__BP_KingGoblin_C:StanceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.61"
+      },
+      "SummonComponent": {
+        "ObjectName": "SBEnemySummonComponent'Default__BP_KingGoblin_C:SummonComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.63"
+      },
+      "MarkerManagerComp": {
+        "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_KingGoblin_C:MarkerManagerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.46"
+      },
+      "SenseChangerComp": {
+        "ObjectName": "SBEnemySenseChangerComponent'Default__BP_KingGoblin_C:SenseChangerComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.59"
+      },
+      "EnemyDropComp": {
+        "ObjectName": "SBEnemyDropComponent'Default__BP_KingGoblin_C:EnemyDropComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.51"
+      },
+      "DelegateHitAuthComp": {
+        "ObjectName": "SBDelegateHitAuthComponent'Default__BP_KingGoblin_C:DelegateHitAuthComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.37"
+      },
+      "AnimationSamplingComp": {
+        "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_KingGoblin_C:EnemyAnimationSamplingComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.27"
+      },
+      "StateInitializerComponent": {
+        "ObjectName": "SBStateInitializerComponent'Default__BP_KingGoblin_C:StateInitializerComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.92"
+      },
+      "CollisionHitComp": {
+        "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_KingGoblin_C:EnemyCollisionHitComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.48"
+      },
+      "ChanceTimeDownComp": {
+        "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_KingGoblin_C:ChanceTimeDownComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.28"
+      },
+      "EnemyDxBattleComp": {
+        "ObjectName": "SBEnemyDxBattleComponent'Default__BP_KingGoblin_C:EnemyDxBattleComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.52"
+      },
+      "AbilitySystemComp": {
+        "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_KingGoblin_C:AbilitySystemComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.39"
+      },
+      "ConditionalVoiceComp": {
+        "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_KingGoblin_C:ConditionalVoiceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.49"
+      },
+      "ExecDelegateWithConditionComp": {
+        "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_KingGoblin_C:ExecDelegateWithConditionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.66"
+      },
+      "BuddyRevivalComp": {
+        "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_KingGoblin_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.44"
+      },
+      "StateMachineReplayComp": {
+        "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_KingGoblin_C:StateMachineReplayComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.62"
+      },
+      "ActionUniqueCounterComp": {
+        "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_KingGoblin_C:ActionUniqueCounterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.29"
+      },
+      "SpawnEffectScale": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      },
+      "AnimationSet": {
+        "AssetPathName": "/Game/Animations/Enemy/E000/AST_E000_KGG.AST_E000_KGG",
+        "SubPathString": ""
+      },
+      "CustomFlagInfos": [
+        {
+          "Name": "Standard"
+        },
+        {
+          "Name": "Thunder"
+        },
+        {
+          "Name": "Ice"
+        },
+        {
+          "Name": "PhaseChange"
+        },
+        {
+          "Name": "OffEffect"
+        }
+      ],
+      "DefaultDodgeLevel": "ESBPerceiveLevel::Level0",
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_KingGoblin_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.30"
+      },
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_KingGoblin_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.26"
+      },
+      "CharacterName": "KingGoblin",
+      "Weight": 5000.0,
+      "CollisionGroupInfo": [
+        {
+          "GroupName": "None",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "Weak",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "WeakBody",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.1,
+          "NextHitPointRate": [
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2
+          ],
+          "PartsDamageEffects": [],
+          "Weakness": false,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": []
+        },
+        {
+          "GroupName": "WeakBodyHead",
+          "DamageScale": 1.0,
+          "HitPointRate": 0.0,
+          "NextHitPointRate": [],
+          "PartsDamageEffects": [],
+          "Weakness": true,
+          "PartsResistElementList": [],
+          "ResistElementDamage": false,
+          "GroupNameToShareDamage": [
+            "WeakBody"
+          ]
+        }
+      ],
+      "PartsDamageAnimParamter": {
+        "ObjectName": "SBPartsDamageAnimParamter'Default__BP_KingGoblin_C:PartsDamageAnimParamter'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.87"
+      },
+      "m_DamageReactionPattern": {
+        "RowName": "SuperHeavy"
+      },
+      "ElementStatusEffectSizeScale": 0.7,
+      "InventoryWeapons": [
+        {
+          "EquipType": "WeaponEquipType_Main",
+          "DefaultAssetName": "WE01_06_01",
+          "SheatheAttach": {
+            "AttachSocket": "WA_Invalid",
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "UnsheatheAttach": {
+            "AttachSocket": "WA_Right",
+            "Location": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CurrentWeapon": null
+        }
+      ],
+      "SpawnComp": {
+        "ObjectName": "SBProjectileSpawnComponent'Default__BP_KingGoblin_C:ProjectileSpawnComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.90"
+      },
+      "BattleStatusComp": {
+        "ObjectName": "SBBattleStatusComponent'Default__BP_KingGoblin_C:BattleStatusComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.22"
+      },
+      "ProjectileShareHitComp": {
+        "ObjectName": "SBProjectileShareHitComponent'Default__BP_KingGoblin_C:ProjectileShareHitComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.89"
+      },
+      "SendNetDataComp": {
+        "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_KingGoblin_C:ProjectileSendNetDataComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.88"
+      },
+      "StateManageComp": {
+        "ObjectName": "SBProjectileStateManageComponent'Default__BP_KingGoblin_C:ProjectileStateManageComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.91"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_KingGoblin_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.21"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_KingGoblin_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.38"
+      },
+      "FactionComponent": {
+        "ObjectName": "AIFwFactionComponent'Default__BP_KingGoblin_C:FactionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.8"
+      },
+      "FactionInfluenceComponent": {
+        "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_KingGoblin_C:FactionInfluenceComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.68"
+      },
+      "AISharedInfoComponent": {
+        "ObjectName": "SBAISharedInfoComponent'Default__BP_KingGoblin_C:AISharedInfoComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.20"
+      },
+      "MovePredictComponent": {
+        "ObjectName": "SBMovementPredictComponent'Default__BP_KingGoblin_C:MovementPredictComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.70"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_KingGoblin_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.18"
+      },
+      "CollisionGroup": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_KingGoblin_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.35"
+      },
+      "DamageCollision": {
+        "ObjectName": "ASCollisionSphereComponent'Default__BP_KingGoblin_C:DamageCollision'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.15"
+      },
+      "Mesh": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_KingGoblin_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.60"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_KingGoblin_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.47"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingGoblin_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.58"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AIKingGoblin_C'",
+        "ObjectPath": "BLUEPROTOCOL/Content/AI/Enemy/E000_32/BP_AIKingGoblin.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingGoblin_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.58"
+      }
+    }
+  },
+  {
+    "Type": "AIFwFactionComponent",
+    "Name": "FactionComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'AIFwFactionComponent'",
+    "Template": {
+      "ObjectName": "AIFwFactionComponent'Default__BP_Goblin_C:FactionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.3"
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Body_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionCapsuleComponent'BP_Goblin_C:ASDamage_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.5"
+    },
+    "Properties": {
+      "CapsuleRadius": 70.0,
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": 30.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_BodyWeak_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 95.0,
+      "CapsuleRadius": 75.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -20.0,
+        "Y": 30.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_Chest_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 90.0,
+      "CapsuleRadius": 70.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 80.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionCapsuleComponent",
+    "Name": "ASDamage_ChestWeak_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionCapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 95.0,
+      "CapsuleRadius": 75.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 80.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "Dmg_Body"
+      ]
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "ASDamage_Head_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'BP_Goblin_C:ASDamage_Head_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.6"
+    },
+    "Properties": {
+      "SphereRadius": 40.0,
+      "RelativeLocation": {
+        "X": 5.000001,
+        "Y": 70.0,
+        "Z": 4.7683716E-06
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "ASDamage_HeadWeak_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Properties": {
+      "SphereRadius": 45.0,
+      "bGenerateOverlapEvents": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "SBDamage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "SBAttack",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectile",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBProjectileAttackDamage",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SBReticle",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 5.000001,
+        "Y": 70.0,
+        "Z": 5E-06
+      }
+    }
+  },
+  {
+    "Type": "ASCollisionSphereComponent",
+    "Name": "DamageCollision",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'ASCollisionSphereComponent'",
+    "Template": {
+      "ObjectName": "ASCollisionSphereComponent'Default__BP_Goblin_C:DamageCollision'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCollisionGroupComponent'Default__BP_KingGoblin_C:CollisionGroup'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.35"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BattleConditionComp",
+          "DelegatePropertyName": "ToBattleMode",
+          "FunctionNameToBind": "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_1_ModeChangeSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "BattleConditionComp",
+          "DelegatePropertyName": "ToNormalMode",
+          "FunctionNameToBind": "BndEvt__BP_KingGoblin_BattleConditionComp_K2Node_ComponentBoundEvent_0_ModeChangeSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBFootprintComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBFootprintComponent'BP_KingGoblin_C:SBFootprint_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.69"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+            },
+            "SCSVariableName": "SBFootprint",
+            "AssociatedGuid": "372D1563-4B1107AF-71ACBB9D-615B9B9C"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBCharaBodyCapsuleComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBCharaBodyCapsuleComponent'BP_KingGoblin_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.24"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "SBCharaBodyCapsule_Body",
+            "AssociatedGuid": "76E8080A-49E90556-2819BF97-C772F7D8"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionCapsuleComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionCapsuleComponent'BP_KingGoblin_C:ASDamage_Body_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.9"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "ASDamage_Body",
+            "AssociatedGuid": "03544730-4995E3AF-AECDC9A5-4D9AE029"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ASCollisionSphereComponent'",
+            "ObjectPath": "/Script/ActionSystem"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ASCollisionSphereComponent'BP_KingGoblin_C:ASDamage_Head_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.13"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Goblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.1"
+            },
+            "SCSVariableName": "ASDamage_Head",
+            "AssociatedGuid": "F6B53DA2-4B713703-98649B9B-AFB52FFD"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_Goblin_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.9"
+    }
+  },
+  {
+    "Type": "SBAdjustRootMotionComponent",
+    "Name": "AdjustRootMotionComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBAdjustRootMotionComponent'",
+    "Template": {
+      "ObjectName": "SBAdjustRootMotionComponent'Default__BP_Goblin_C:AdjustRootMotionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.10"
+    }
+  },
+  {
+    "Type": "SBAISharedInfoComponent",
+    "Name": "AISharedInfoComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBAISharedInfoComponent'",
+    "Template": {
+      "ObjectName": "SBAISharedInfoComponent'Default__BP_Goblin_C:AISharedInfoComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.11"
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_Goblin_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.12"
+    }
+  },
+  {
+    "Type": "SBBattleStatusComponent",
+    "Name": "BattleStatusComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBBattleStatusComponent'",
+    "Template": {
+      "ObjectName": "SBBattleStatusComponent'Default__BP_Goblin_C:BattleStatusComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.13"
+    },
+    "Properties": {
+      "OnClientSendEffectiveBattleStatusParamDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_KingGoblin_C'Default__BP_KingGoblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.7"
+            },
+            "FunctionName": "OnClientSendEffectiveBattleStatusParam"
+          }
+        ]
+      },
+      "OnClientSendImportantBattleEffectiveDelegete": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_KingGoblin_C'Default__BP_KingGoblin_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.7"
+            },
+            "FunctionName": "OnClientSendImportantBattleEffective"
+          }
+        ]
+      },
+      "BattleStatusBuildResourceLists": [
+        {
+          "ObjectName": "DataTable'DT_EnemyStatusAilmentDB'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Manager/DT_EnemyStatusAilmentDB.0"
+        },
+        {
+          "ObjectName": "DataTable'E000_32_Status'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_32_Status.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_Goblin_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.14"
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleComponent",
+    "Name": "SBCharaBodyCapsule_Body_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleComponent'BP_Goblin_C:SBCharaBodyCapsule_Body_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.15"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 170.0,
+      "CapsuleRadius": 60.0
+    }
+  },
+  {
+    "Type": "SBCharaBodyCapsuleGroupComponent",
+    "Name": "CharaBodyCapsuleGroupComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharaBodyCapsuleGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCharaBodyCapsuleGroupComponent'Default__BP_Goblin_C:CharaBodyCapsuleGroupComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.16"
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_Goblin_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.17"
+    },
+    "Properties": {
+      "DefaultCharaCreateData": {
+        "ObjectName": "SBCharaCreateData'CCD_Enemy_E000_32'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/CreateData/Enemy/CCD_Enemy_E000_32.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterAnimationSamplingComponent",
+    "Name": "EnemyAnimationSamplingComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharacterAnimationSamplingComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_Goblin_C:EnemyAnimationSamplingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.18"
+    },
+    "Properties": {
+      "AnimationSamplingAsset": {
+        "ObjectName": "SBCharacterAnimationSamplingAsset'ASA_KingGoblin'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/AnimationSampleData/ASA_KingGoblin.0"
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterChanceTimeDownComponent",
+    "Name": "ChanceTimeDownComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharacterChanceTimeDownComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_Goblin_C:ChanceTimeDownComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.19"
+    },
+    "Properties": {
+      "ChanceTimeTablePartsBreak": {
+        "ChanceTimeMap": [
+          {
+            "WeakBody": 6.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBCharacterLoopCounterComponent",
+    "Name": "ActionUniqueCounterComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharacterLoopCounterComponent'",
+    "Template": {
+      "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_Goblin_C:ActionUniqueCounterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.20"
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_Goblin_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.21"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_KingGoblin_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.60"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Goblin_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.22"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Goblin_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.23"
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_BodyWeak_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 2,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -127.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.999985,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "SBCollisionGroup_HeadWeak_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Properties": {
+      "GroupId": 3
+    }
+  },
+  {
+    "Type": "SBCollisionGroupComponent",
+    "Name": "CollisionGroup",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBCollisionGroupComponent'",
+    "Template": {
+      "ObjectName": "SBCollisionGroupComponent'Default__BP_Goblin_C:CollisionGroup'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.25"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingGoblin_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.58"
+      }
+    }
+  },
+  {
+    "Type": "SBDebugFunctionComponent",
+    "Name": "DebugFunctionComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBDebugFunctionComponent'",
+    "Template": {
+      "ObjectName": "SBDebugFunctionComponent'Default__BP_Goblin_C:DebugFunctionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.26"
+    }
+  },
+  {
+    "Type": "SBDelegateHitAuthComponent",
+    "Name": "DelegateHitAuthComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBDelegateHitAuthComponent'",
+    "Template": {
+      "ObjectName": "SBDelegateHitAuthComponent'Default__BP_Goblin_C:DelegateHitAuthComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.27"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_Goblin_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.28"
+    }
+  },
+  {
+    "Type": "SBEnemyAbilitySystemComponent",
+    "Name": "AbilitySystemComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_Goblin_C:AbilitySystemComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.29"
+    },
+    "Properties": {
+      "ReplicatedPredictionKeyMap": {
+        "PredictionKeys": [
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          },
+          {
+            "PredictionKey": {
+              "PredictiveConnection": null,
+              "Current": 0,
+              "Base": 0,
+              "bIsStale": false,
+              "bIsServerInitiated": false
+            },
+            "ReplicationID": -1,
+            "ReplicationKey": -1,
+            "MostRecentArrayReplicationKey": -1
+          }
+        ],
+        "ArrayReplicationKey": 192
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyActionParamComponent",
+    "Name": "EnemyActionParamComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyActionParamComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyActionParamComponent'Default__BP_Goblin_C:EnemyActionParamComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.30"
+    },
+    "Properties": {
+      "ActionTableBattleMode": {
+        "ObjectName": "DataTable'DT_KingGoblinActionTable_Battle'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/DT_KingGoblinActionTable_Battle.0"
+      },
+      "ActionTableExtra": {
+        "ObjectName": "DataTable'DT_KingGoblinExtraActionTable'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/DT_KingGoblinExtraActionTable.0"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyBadZoneAvoidanceComponent",
+    "Name": "EnemyBadZoneAvoidanceComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyBadZoneAvoidanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_Goblin_C:EnemyBadZoneAvoidanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.31"
+    }
+  },
+  {
+    "Type": "SBEnemyBattleConditionComponent",
+    "Name": "EnemyBattleConditionComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyBattleConditionComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_Goblin_C:EnemyBattleConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.32"
+    }
+  },
+  {
+    "Type": "SBEnemyBlendSpaceInputComponent",
+    "Name": "EnemyBlendSpaceInputComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyBlendSpaceInputComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_Goblin_C:EnemyBlendSpaceInputComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.33"
+    }
+  },
+  {
+    "Type": "SBEnemyBuddyRevivalComponent",
+    "Name": "BuddyRevivalComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_Goblin_C:BuddyRevivalComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.34"
+    }
+  },
+  {
+    "Type": "SBEnemyChantComponent",
+    "Name": "SBEnemyChant_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyChantComponent'"
+  },
+  {
+    "Type": "SBEnemyChantMarkerManagerComponent",
+    "Name": "MarkerManagerComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_Goblin_C:MarkerManagerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.35"
+    }
+  },
+  {
+    "Type": "SBEnemyCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_Goblin_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.36"
+    },
+    "Properties": {
+      "MaxStepHeight": 40.0
+    }
+  },
+  {
+    "Type": "SBEnemyCollisionHitComponent",
+    "Name": "EnemyCollisionHitComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_Goblin_C:EnemyCollisionHitComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.37"
+    }
+  },
+  {
+    "Type": "SBEnemyConditionalVoiceComponent",
+    "Name": "ConditionalVoiceComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_Goblin_C:ConditionalVoiceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.38"
+    }
+  },
+  {
+    "Type": "SBEnemyDeathEffectComponent",
+    "Name": "EnemyDeathEffectComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_Goblin_C:EnemyDeathEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.39"
+    }
+  },
+  {
+    "Type": "SBEnemyDropComponent",
+    "Name": "EnemyDropComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyDropComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDropComponent'Default__BP_Goblin_C:EnemyDropComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.40"
+    }
+  },
+  {
+    "Type": "SBEnemyDxBattleComponent",
+    "Name": "EnemyDxBattleComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyDxBattleComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyDxBattleComponent'Default__BP_Goblin_C:EnemyDxBattleComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.41"
+    }
+  },
+  {
+    "Type": "SBEnemyExitEffectComponent",
+    "Name": "EnemyExitEffectComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyExitEffectComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyExitEffectComponent'Default__BP_Goblin_C:EnemyExitEffectComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.42"
+    }
+  },
+  {
+    "Type": "SBEnemyModifierComponent",
+    "Name": "EnemyModifierComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyModifierComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyModifierComponent'Default__BP_Goblin_C:EnemyModifierComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.44"
+    },
+    "Properties": {
+      "ModifierMap": [
+        {
+          "Phase2": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_KingGoblin_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.55"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyModifierTemplate_BlueprintBase",
+    "Name": "SBEnemyModifierTemplate_BlueprintBase_0",
+    "Outer": "EnemyModifierComp",
+    "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
+    "Properties": {
+      "bEnableAddAICustom": true,
+      "bEnableAIMessage": true,
+      "AddAICustoms": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AIC_Phase2_KingGoblin_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/AICustom/BP_AIC_Phase2_KingGoblin.0"
+        }
+      ],
+      "AIMessages": [
+        "PhaseChange"
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyPartsManagerComponent",
+    "Name": "EnemyPartsBreakComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_Goblin_C:EnemyPartsBreakComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.45"
+    },
+    "Properties": {
+      "PartsBreakInfo": [
+        {
+          "CollisionGroupName": "WeakBody",
+          "Steps": [
+            {
+              "HpPer": 0.0,
+              "SpawnParts": [],
+              "OnMaterialIndexes": [],
+              "OffMaterialIndexes": [],
+              "Effects": [
+                {
+                  "PSTemplate": {
+                    "ObjectName": "ParticleSystem'PS_ECMN_Internal_PartsBreak_Non'",
+                    "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Break/PS_ECMN_Internal_PartsBreak_Non.292"
+                  },
+                  "SocketName": "Spine1_J",
+                  "LocationOffset": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "RotationOffset": {
+                    "Pitch": 0.0,
+                    "Yaw": 0.0,
+                    "Roll": 0.0
+                  },
+                  "Scale": 1.0,
+                  "bAttached": false,
+                  "bCastShadow": false,
+                  "EffectId": "EEffectId::None",
+                  "EffectSE": {
+                    "AssetPathName": "/Game/WwiseAudio/Events/Default_Work_Unit/SE/Action_Common/Play_Enm_parts_Break.Play_Enm_parts_Break",
+                    "SubPathString": ""
+                  }
+                }
+              ],
+              "OffTargetableComponents": [],
+              "OffCollisionComponents": [
+                "ASDamage_BodyWeak",
+                "ASDamage_ChestWeak",
+                "ASDamage_HeadWeak"
+              ],
+              "AICustoms": [],
+              "ModifierNames": [],
+              "Delay": 0.0,
+              "IgnoreBoneNames": []
+            }
+          ]
+        }
+      ],
+      "DamageCollisionStates": [
+        {
+          "ASDamage_BodyWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_ChestWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_HeadWeak": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": false
+          }
+        },
+        {
+          "ASDamage_Body": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        },
+        {
+          "ASDamage_Head": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        },
+        {
+          "ASDamage_Chest": {
+            "bIsActivatedWithPartsBreak": true,
+            "bIsActivatedWithAction": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyPhaseComponent",
+    "Name": "EnemyPhaseComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyPhaseComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyPhaseComponent'Default__BP_Goblin_C:EnemyPhaseComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.46"
+    },
+    "Properties": {
+      "PhaseRegister": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_KingGoblin_PhaseChange_Phase2_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/Phase/BP_KingGoblin_PhaseChange_Phase2.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemySceneComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemySceneComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySceneComponent'Default__BP_Goblin_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 150.0,
+      "CapsuleRadius": 60.0
+    }
+  },
+  {
+    "Type": "SBEnemySenseChangerComponent",
+    "Name": "SenseChangerComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemySenseChangerComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySenseChangerComponent'Default__BP_Goblin_C:SenseChangerComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
+    }
+  },
+  {
+    "Type": "SBEnemySkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_Goblin_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.49"
+    },
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_CH_E000_32'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E000_32/Model/SK_CH_E000_32.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SBEnemySceneComponent'Default__BP_KingGoblin_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.58"
+      }
+    }
+  },
+  {
+    "Type": "SBEnemyStanceComponent",
+    "Name": "StanceComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyStanceComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStanceComponent'Default__BP_Goblin_C:StanceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.50"
+    },
+    "Properties": {
+      "StanceSettings": [
+        {
+          "StanceName": "Standard",
+          "ActivateModifierNames": []
+        },
+        {
+          "StanceName": "Thunder",
+          "ActivateModifierNames": []
+        },
+        {
+          "StanceName": "Ice",
+          "ActivateModifierNames": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBEnemyStateMachineReplayComponent",
+    "Name": "StateMachineReplayComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_Goblin_C:StateMachineReplayComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.51"
+    }
+  },
+  {
+    "Type": "SBEnemySummonComponent",
+    "Name": "SummonComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemySummonComponent'",
+    "Template": {
+      "ObjectName": "SBEnemySummonComponent'Default__BP_Goblin_C:SummonComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.52"
+    }
+  },
+  {
+    "Type": "SBEnemyTargetingComponent",
+    "Name": "EnemyTargetingComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyTargetingComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTargetingComponent'Default__BP_Goblin_C:EnemyTargetingComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.53"
+    }
+  },
+  {
+    "Type": "SBEnemyTideComponent",
+    "Name": "EnemyTideComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBEnemyTideComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyTideComponent'Default__BP_Goblin_C:EnemyTideComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.54"
+    }
+  },
+  {
+    "Type": "SBExecDelegateWithConditionComponent",
+    "Name": "ExecDelegateWithConditionComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
+    "Template": {
+      "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_Goblin_C:ExecDelegateWithConditionComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.55"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_Goblin_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.56"
+    }
+  },
+  {
+    "Type": "SBFactionInfluenceSourceComponent",
+    "Name": "FactionInfluenceComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_Goblin_C:FactionInfluenceComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.57"
+    }
+  },
+  {
+    "Type": "SBFootprintComponent",
+    "Name": "SBFootprint_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBFootprintComponent'",
+    "Template": {
+      "ObjectName": "SBFootprintComponent'BP_Goblin_C:SBFootprint_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.58"
+    },
+    "Properties": {
+      "m_ParticleScale": 1.4
+    }
+  },
+  {
+    "Type": "SBMovementPredictComponent",
+    "Name": "MovementPredictComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBMovementPredictComponent'",
+    "Template": {
+      "ObjectName": "SBMovementPredictComponent'Default__BP_Goblin_C:MovementPredictComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.59"
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "Phase_LeftEye_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_ECMN_Anger_Eye'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Anger/PS_ECMN_Anger_Eye.57"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 63.0,
+        "Z": -17.0
+      },
+      "RelativeScale3D": {
+        "X": 1.15,
+        "Y": 1.15,
+        "Z": 1.15
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "Phase_RightEye_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_ECMN_Anger_Eye'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/00_ECommon/Anger/PS_ECMN_Anger_Eye.57"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 63.0,
+        "Z": 17.0
+      },
+      "RelativeScale3D": {
+        "X": 1.15,
+        "Y": 1.15,
+        "Z": 1.15
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Head_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 40.0,
+        "Y": -20.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Hip_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_L_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_Arm_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_ForeArm_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_R_Leg_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_Aura_Phase_00'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_Aura_Phase_00.240"
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Spine2_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "RoarPhase2_Tail_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 8.0,
+        "Y": -20.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBParticleSystem_Fire_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PlayAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_Elem_Fire_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Play_Elem_Fire_LOOP_KingGoblin.1"
+        }
+      },
+      "StopAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Stop_Elem_Fire_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Stop_Elem_Fire_LOOP_KingGoblin.1"
+        }
+      },
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_StanceChange_Fire_loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_StanceChange_Fire_loop.90"
+      },
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBParticleSystem_Ice_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PlayAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_Elem_Ice_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Play_Elem_Ice_LOOP_KingGoblin.1"
+        }
+      },
+      "StopAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Stop_Elem_Ice_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Stop_Elem_Ice_LOOP_KingGoblin.1"
+        }
+      },
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_StanceChange_Ice_loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_StanceChange_Ice_loop.77"
+      },
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBParticleSystemComponent",
+    "Name": "SBParticleSystem_Thunder_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SBParticleSystemComponent'",
+    "Properties": {
+      "PlayAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Play_Elem_Elec_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Play_Elem_Elec_LOOP_KingGoblin.1"
+        }
+      },
+      "StopAkEvent": {
+        "Event": {
+          "ObjectName": "AkAudioEvent'Stop_Elem_Elec_LOOP_KingGoblin'",
+          "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/CommonEff_Elem/Stop_Elem_Elec_LOOP_KingGoblin.1"
+        }
+      },
+      "Template": {
+        "ObjectName": "ParticleSystem'PS_E000_KGG_StanceChange_Thunder_loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E000/Particle/PS_E000_KGG_StanceChange_Thunder_loop.62"
+      },
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SBPartsDamageAnimParamter",
+    "Name": "PartsDamageAnimParamter",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBPartsDamageAnimParamter'",
+    "Template": {
+      "ObjectName": "SBPartsDamageAnimParamter'Default__BP_Goblin_C:PartsDamageAnimParamter'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.60"
+    }
+  },
+  {
+    "Type": "SBProjectileSendNetDataComponent",
+    "Name": "ProjectileSendNetDataComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_Goblin_C:ProjectileSendNetDataComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.61"
+    }
+  },
+  {
+    "Type": "SBProjectileShareHitComponent",
+    "Name": "ProjectileShareHitComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBProjectileShareHitComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileShareHitComponent'Default__BP_Goblin_C:ProjectileShareHitComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.62"
+    }
+  },
+  {
+    "Type": "SBProjectileSpawnComponent",
+    "Name": "ProjectileSpawnComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBProjectileSpawnComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileSpawnComponent'Default__BP_Goblin_C:ProjectileSpawnComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.63"
+    },
+    "Properties": {
+      "ProjectileBuildResource": [
+        {
+          "ConfigInfo": {
+            "ObjectName": "DataTable'E000_32_Config'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_32_Config.0"
+          },
+          "EffectInfo": {
+            "ObjectName": "DataTable'E000_32_Effect'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/E000_00_Goblin/E000_32_Effect.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SBProjectileStateManageComponent",
+    "Name": "ProjectileStateManageComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBProjectileStateManageComponent'",
+    "Template": {
+      "ObjectName": "SBProjectileStateManageComponent'Default__BP_Goblin_C:ProjectileStateManageComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.64"
+    }
+  },
+  {
+    "Type": "SBStateInitializerComponent",
+    "Name": "StateInitializerComp",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBStateInitializerComponent'",
+    "Template": {
+      "ObjectName": "SBStateInitializerComponent'Default__BP_Goblin_C:StateInitializerComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.65"
+    }
+  },
+  {
+    "Type": "SBWeaponVisibilityComponent",
+    "Name": "WeaponVisibilityComponent",
+    "Outer": "Default__BP_KingGoblin_C",
+    "Class": "UScriptClass'SBWeaponVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBWeaponVisibilityComponent'Default__BP_Goblin_C:WeaponVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.67"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_KingGoblin_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.94"
+      },
+      "VariableGuid": "49C65F1E-47D9C89A-944396B5-B0D0B23B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemyChantComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemyChantComponent'BP_KingGoblin_C:SBEnemyChant_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.45"
+      },
+      "VariableGuid": "0C89D25E-40AA94EB-B8C6649A-42667D43",
+      "InternalVariableName": "SBEnemyChant"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionSphereComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionSphereComponent'BP_KingGoblin_C:ASDamage_HeadWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.14"
+      },
+      "AttachToName": "Head_J",
+      "VariableGuid": "DD94C2CD-427A44F2-69254D82-DF4483EF",
+      "InternalVariableName": "ASDamage_HeadWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingGoblin_C:ASDamage_Chest_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.11"
+      },
+      "AttachToName": "Spine1_J",
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "66B9A3E4-420BC040-6C0151B8-059339DF",
+      "InternalVariableName": "ASDamage_Chest"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_Head_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.74"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "55E648DB-494C25B8-6DCA1C9C-321E9EF2",
+      "InternalVariableName": "RoarPhase2_Head"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingGoblin_C:ASDamage_ChestWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.12"
+      },
+      "AttachToName": "Spine1_J",
+      "VariableGuid": "81993EDB-48EE0B73-79D01282-B3C86306",
+      "InternalVariableName": "ASDamage_ChestWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_14",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_L_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.76"
+      },
+      "AttachToName": "L_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "765FE031-42538AC7-757B108A-1FD1280B",
+      "InternalVariableName": "RoarPhase2_L_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_15",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_R_Arm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.79"
+      },
+      "AttachToName": "R_Arm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "84C53A4A-41C8C30F-8FA929BE-95F7574A",
+      "InternalVariableName": "RoarPhase2_R_Arm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_16",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_L_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.77"
+      },
+      "AttachToName": "L_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6AEB22C3-45CE1767-0794799A-D3FD2231",
+      "InternalVariableName": "RoarPhase2_L_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_17",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_R_ForeArm_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.80"
+      },
+      "AttachToName": "R_ForeArm_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3BC8B30C-4480CCD6-CC8146A1-19E34D18",
+      "InternalVariableName": "RoarPhase2_R_ForeArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_Hip_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.75"
+      },
+      "AttachToName": "Hip_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "78A93499-4472FAA4-DE8CA08E-8597CD49",
+      "InternalVariableName": "RoarPhase2_Hip"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_19",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_L_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.78"
+      },
+      "AttachToName": "L_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "669653BB-4753741D-386691BD-4F010745",
+      "InternalVariableName": "RoarPhase2_L_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:Phase_RightEye_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.72"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CAFBE4BB-4720F0AC-6DD0CE93-A2101E91",
+      "InternalVariableName": "Phase_RightEye"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_20",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_R_Leg_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.81"
+      },
+      "AttachToName": "R_Leg_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A14F06AB-478BF0B3-1A9DF3A0-B58828C3",
+      "InternalVariableName": "RoarPhase2_R_Leg"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_Tail_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.83"
+      },
+      "AttachToName": "Tail1_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FE23B43E-4C35A0DF-69FBC390-99E5C74D",
+      "InternalVariableName": "RoarPhase2_Tail"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_22",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_Spine2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.82"
+      },
+      "AttachToName": "Spine2_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D5009B56-4AF886D6-1775E3A3-F401CBDE",
+      "InternalVariableName": "RoarPhase2_Spine2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_23",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:Phase_LeftEye_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.71"
+      },
+      "AttachToName": "Head_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0892F494-4C95B73A-4E19A4B7-C07BDFA4",
+      "InternalVariableName": "Phase_LeftEye"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_KingGoblin_C:SBCollisionGroup_BodyWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.33"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.113"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.100"
+        }
+      ],
+      "VariableGuid": "C4717829-494D55F6-889AEFAE-976BE26C",
+      "InternalVariableName": "SBCollisionGroup_BodyWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ASCollisionCapsuleComponent'",
+        "ObjectPath": "/Script/ActionSystem"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASCollisionCapsuleComponent'BP_KingGoblin_C:ASDamage_BodyWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.10"
+      },
+      "AttachToName": "Hip_J",
+      "VariableGuid": "29171B81-41240F45-22E04CB7-6E12BB77",
+      "InternalVariableName": "ASDamage_BodyWeak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:SBParticleSystem_Thunder_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.86"
+      },
+      "AttachToName": "R_Grip_Gobrin_Top",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "D38BCBAA-426C875E-0A2A6CA2-83F0B7FC",
+      "InternalVariableName": "SBParticleSystem_Thunder"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:RoarPhase2_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.73"
+      },
+      "AttachToName": "Rot_J",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CC51E700-44D8F8FC-BFBE1A8B-11E346AC",
+      "InternalVariableName": "RoarPhase2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:SBParticleSystem_Ice_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.85"
+      },
+      "AttachToName": "R_Grip_Gobrin_Top",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CA9359A1-4E1AFA7D-BEA49792-0E6FE57B",
+      "InternalVariableName": "SBParticleSystem_Ice"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBParticleSystemComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBParticleSystemComponent'BP_KingGoblin_C:SBParticleSystem_Fire_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.84"
+      },
+      "AttachToName": "R_Grip_Gobrin_Top",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6E4390D4-4097A8DC-D47D968F-C4848541",
+      "InternalVariableName": "SBParticleSystem_Fire"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBCollisionGroupComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBCollisionGroupComponent'BP_KingGoblin_C:SBCollisionGroup_HeadWeak_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.34"
+      },
+      "ParentComponentOrVariableName": "CollisionGroup",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.97"
+        }
+      ],
+      "VariableGuid": "0F5DCB43-4685D8B0-263ECA81-96CFDA30",
+      "InternalVariableName": "SBCollisionGroup_HeadWeak"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_KingGoblin_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.96"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.114"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.116"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.117"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.118"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.98"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.115"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.101"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.103"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.104"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.105"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.106"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.111"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.96"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.114"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.116"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.117"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.113"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.118"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.97"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.98"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.100"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.115"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.99"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.101"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.102"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.103"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.104"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.105"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.106"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.108"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.107"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.111"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_KingGoblin_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_32_KingGoblin/BP_KingGoblin.95"
+      }
+    }
+  }
+]
