@@ -1,0 +1,655 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GashaEnvControlComponent",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOfClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DynamicSky_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/BP/SkySphere/BP_DynamicSky.33"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ActorComponent:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ActorComponent:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'ActorComponent:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyRimLight",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InSetting",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'GashaRimLightSetting'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/GashaRimLightSetting.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StoreRimLight",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitSunFlare",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_AddOrUpdateBlendable_InBlendableObject_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'BlendableInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_AddOrUpdateBlendable_InBlendableObject_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'BlendableInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetSunFlare",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_AddOrUpdateBlendable_InBlendableObject_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'BlendableInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_AddOrUpdateBlendable_InBlendableObject_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'BlendableInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitDirectionalLight",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "LightColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_ENV_Cmn_Lootboxroom_002",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_ENV_cmn_lootboxroom002_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/CommonAssets/cmn_lootboxroom/cmn_lootboxroom002/BP/BP_ENV_cmn_lootboxroom002.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_ColorToLinearColor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "ScriptStruct'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetDirectionalLight",
+    "Outer": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GashaEnvControlComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ExecuteUbergraph_BP_GashaEnvControlComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ResetDirectionalLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.9"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:InitDirectionalLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.8"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ResetSunFlare'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.7"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:InitSunFlare'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.6"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:StoreRimLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.5"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ApplyRimLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.4"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.3"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.2"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.1"
+      },
+      {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ExecuteUbergraph_BP_GashaEnvControlComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DynamicSky",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_DynamicSky_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/BP/SkySphere/BP_DynamicSky.33"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RimLight",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'GashaRimLightSetting'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/GashaRimLightSetting.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "RimLightStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'GashaRimLightSetting'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/GashaRimLightSetting.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Noon_SunFlare_Material",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Noon_SunFlare_MaterialStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Vanish",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'CurveFloat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VanishStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CurveFloat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimedParaCurve",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'CurveLinearColor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TimedParaCurveStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'CurveLinearColor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TimeZoneChangeStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Noon_SunFlare_MaterialDynamic",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DirectionalLightStored",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'DirectionalLight'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GashaEnvControlComponent": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ExecuteUbergraph_BP_GashaEnvControlComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.0"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveTick'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.1"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.3"
+      },
+      "ApplyRimLight": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ApplyRimLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.4"
+      },
+      "StoreRimLight": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:StoreRimLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.5"
+      },
+      "InitSunFlare": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:InitSunFlare'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.6"
+      },
+      "ResetSunFlare": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ResetSunFlare'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.7"
+      },
+      "InitDirectionalLight": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:InitDirectionalLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.8"
+      },
+      "ResetDirectionalLight": {
+        "ObjectName": "Function'BP_GashaEnvControlComponent_C:ResetDirectionalLight'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GashaEnvControlComponent_C'Default__BP_GashaEnvControlComponent_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.11"
+    }
+  },
+  {
+    "Type": "BP_GashaEnvControlComponent_C",
+    "Name": "Default__BP_GashaEnvControlComponent_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/Gasha/Demo/BP_GashaEnvControlComponent.BP_GashaEnvControlComponent_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "RimLight": {
+        "RL_GroundAttenuation_2_E7C836FC496387148F33D89E7D09DFE3": 10.0,
+        "RL_Threshold_10_963D7D8949A0BEC8980CAE9CD22C891F": 0.0,
+        "RL_Intensity_11_F27FFA5441845875ED478FBB354DFD53": 0.5,
+        "RL_BaseReflectFraction_12_B7DAC3604B4F2DB4DCB2A79B31A05ACC": 0.04,
+        "RL_BacklightAttenuation_13_1062E8AF4DB5FEBFAFE6F6B7864FF57A": 1.0,
+        "RL_Exponent_17_676F7E354933AC358EF424860314380E": 5.0,
+        "RL_ZenithAttenuation_14_68B4AE6240233FB80F3CD5ADB0E3997A": 0.0,
+        "RL_LightColor_18_32368AA24D9192DD55585B99D4AFAACC": {
+          "B": 255,
+          "G": 255,
+          "R": 255,
+          "A": 255,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "RimLightStored": {
+        "RL_GroundAttenuation_2_E7C836FC496387148F33D89E7D09DFE3": 10.0,
+        "RL_Threshold_10_963D7D8949A0BEC8980CAE9CD22C891F": 0.0,
+        "RL_Intensity_11_F27FFA5441845875ED478FBB354DFD53": 0.5,
+        "RL_BaseReflectFraction_12_B7DAC3604B4F2DB4DCB2A79B31A05ACC": 0.04,
+        "RL_BacklightAttenuation_13_1062E8AF4DB5FEBFAFE6F6B7864FF57A": 1.0,
+        "RL_Exponent_17_676F7E354933AC358EF424860314380E": 5.0,
+        "RL_ZenithAttenuation_14_68B4AE6240233FB80F3CD5ADB0E3997A": 0.0,
+        "RL_LightColor_18_32368AA24D9192DD55585B99D4AFAACC": {
+          "B": 255,
+          "G": 255,
+          "R": 255,
+          "A": 255,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "Noon_SunFlare_Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_EF_Post_SunFlare_fld01_Noon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Material/Material_Instance/PostProcess/MI_EF_Post_SunFlare_fld01_Noon.0"
+      },
+      "Vanish": {
+        "ObjectName": "CurveFloat'SunVanish'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Blueprint/ENV/SunVanish.0"
+      },
+      "TimedParaCurve": {
+        "ObjectName": "CurveLinearColor'Post_ParaCurve4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Material/Material_Base/PostProcess/Post_ParaCurve4.0"
+      },
+      "PrimaryComponentTick": {
+        "bCanEverTick": true
+      }
+    }
+  }
+]
