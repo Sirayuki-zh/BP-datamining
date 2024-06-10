@@ -1,0 +1,1111 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetEnemyData",
+    "Outer": "LibraryMenu_Monster_NameWindow_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "InName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "InType",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "NamedType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "BossType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeTypeText",
+    "Outer": "LibraryMenu_Monster_NameWindow_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "Type",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeTypeVisibility",
+    "Outer": "LibraryMenu_Monster_NameWindow_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "InVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESlateVisibility'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "LibraryMenu_Monster_NameWindow_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'LibraryMenu_Monster_NameWindow_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.32"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:ChangeTypeVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.2"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:ChangeTypeText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.1"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:SetEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Boss_Box",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Boss_Text",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon_Boss",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Icon_Named",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Named_Box",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HorizontalBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Named_Text",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FuncMap": {
+      "SetEnemyData": {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:SetEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.0"
+      },
+      "ChangeTypeText": {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:ChangeTypeText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.1"
+      },
+      "ChangeTypeVisibility": {
+        "ObjectName": "Function'LibraryMenu_Monster_NameWindow_C:ChangeTypeVisibility'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.2"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LibraryMenu_Monster_NameWindow_C'Default__LibraryMenu_Monster_NameWindow_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.4"
+    }
+  },
+  {
+    "Type": "LibraryMenu_Monster_NameWindow_C",
+    "Name": "Default__LibraryMenu_Monster_NameWindow_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.LibraryMenu_Monster_NameWindow_C'",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.7"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 36.0,
+          "Right": 0.0,
+          "Bottom": 84.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.5"
+      },
+      "Content": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 38.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.5"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.9"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Boss_Box",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.11"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.12"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.14"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_109",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.13"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.7"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "Named_Box",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.15"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.16"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.17"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.13"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Boss_Box",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_NameWindow_C:WidgetTree.Icon_Boss'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.19"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Boss_Box",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.8"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Text'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.24"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_109",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.9"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.10"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_109",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.HorizontalBox_109'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.9"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.8"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "Named_Box",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.10"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_NameWindow_C:WidgetTree.Icon_Named'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.20"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "Named_Box",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.10"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Text'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "Named_Box",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.10"
+      },
+      "Content": {
+        "ObjectName": "Spacer'LibraryMenu_Monster_NameWindow_C:WidgetTree.Spacer_152'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.26"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 624.0,
+          "Y": 84.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_LibraryMenuMonsterNameBg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuMonsterNameBg.0"
+        },
+        "Tiling": "ESlateBrushTileType::Horizontal"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.22"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon_Boss",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 38.0,
+          "Y": 38.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_17.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Icon_Named",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 38.0,
+          "Y": 38.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_Map_04'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_04.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.15"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_78",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.22"
+        },
+        {
+          "ObjectName": "OverlaySlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78.OverlaySlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.23"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.6"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_78",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.21"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_NameWindow_C:WidgetTree.BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.18"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_78",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "Padding": {
+        "Bottom": 14.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.21"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.29"
+      }
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "Boss_Text",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 702,
+      "Text": {
+        "Namespace": "",
+        "Key": "30666D3340FA5BC7E0ADE398200FDC23",
+        "SourceString": "Boss",
+        "LocalizedString": "Boss"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Color": {
+        "R": 0.104616,
+        "G": 0.023153,
+        "B": 0.048172,
+        "A": 1.0,
+        "Hex": "FF5B2A3E"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Boss_Box.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.12"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "Named_Text",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 701,
+      "Text": {
+        "Namespace": "",
+        "Key": "1D6D9A154DC354564C88DD9B37C47CC2",
+        "SourceString": "Named",
+        "LocalizedString": "Named"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Color": {
+        "R": 0.104616,
+        "G": 0.023153,
+        "B": 0.048172,
+        "A": 1.0,
+        "Hex": "FF5B2A3E"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.16"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "Spacer",
+    "Name": "Spacer_152",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Spacer'",
+    "Properties": {
+      "Size": {
+        "X": 10.0,
+        "Y": 1.0
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Named_Box.HorizontalBoxSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.17"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "EnemyName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "EF1FE78D45912488F1CBBAA724970C88",
+        "SourceString": "エネミー名称",
+        "LocalizedString": "エネミー名称"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.104616,
+          "G": 0.023153,
+          "B": 0.048172,
+          "A": 1.0,
+          "Hex": "FF5B2A3E"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox.VerticalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.30"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds",
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TypeName",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "CE1C3B1F4A5B35CFEF6E15BB9359C72C",
+        "SourceString": "タイプ",
+        "LocalizedString": "タイプ"
+      },
+      "bEnableWidthFitting": true,
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.104616,
+          "G": 0.023153,
+          "B": 0.048172,
+          "A": 1.0,
+          "Hex": "FF5B2A3E"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 13
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox.VerticalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.31"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "EnemyNameBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'VerticalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox.VerticalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.30"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox.VerticalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.31"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'LibraryMenu_Monster_NameWindow_C:WidgetTree.Overlay_78.OverlaySlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.23"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "EnemyNameBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Padding": {
+        "Top": 2.0
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.29"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.27"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "EnemyNameBox",
+    "Class": "UScriptClass'VerticalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox'LibraryMenu_Monster_NameWindow_C:WidgetTree.EnemyNameBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.29"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_NameWindow_C:WidgetTree.TypeName'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.28"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "LibraryMenu_Monster_NameWindow_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_NameWindow_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_NameWindow.5"
+      }
+    }
+  }
+]

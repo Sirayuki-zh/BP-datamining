@@ -1,0 +1,3752 @@
+[
+  {
+    "Type": "Function",
+    "Name": "SetEnemyData",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "EnemyData",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemyData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetLibrarySaveManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLibrarySaveManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBLibrarySaveManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetLibraryEnemyKillCount_OutTargetCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetLibraryEnemyKillCount_OutSumCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetReadMonsterDataCount_Count",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeEnemyData",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Type",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttrTextStartIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "AttrDummyString",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "AttrDummyString",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "BaseAttrString",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "AttrList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "AttrList",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MasterEnemyData",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'EnemyParamMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MasterDataManager",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "FindData",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemySetting'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "TargetEnemyId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyHPRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyAttackRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Left_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAssetByName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetEnemyRaceIdName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemySetting'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetLibraryEnemyAttribute_OutList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_GetLibraryEnemyAttribute_OutList",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "Struct": {
+          "ObjectName": "ScriptStruct'EnemyParamMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateDetailOpenSetting",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "CheckType",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemyDetailOpenSetting'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemyDetailOpenSetting'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set Info Tooltip",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetIcon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TipWidget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | InstancedReference | ReferenceParm",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TotalCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NowCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_IntToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Replace_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeEnemyDataFromId",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "EnemyId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttrTextStartIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "BaseAttrString",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "AttrList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "AttrList",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MasterEnemyData",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'EnemyParamMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MasterDataManager",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "TargetEnemyId",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Left_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyHPRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAssetByName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_NameToString_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyAttackRank_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetEnemyRaceIdName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTextFromAsset_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetLibraryEnemyAttribute_OutList",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_GetLibraryEnemyAttribute_OutList",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetEnemyParamMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "Struct": {
+          "ObjectName": "ScriptStruct'EnemyParamMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.80"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:ChangeEnemyDataFromId'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.4"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:Set Info Tooltip'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.3"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:UpdateDetailOpenSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.2"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:ChangeEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.1"
+      },
+      {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:SetEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttackText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttackValueText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeBG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeInfoIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeNewIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributePanelLine",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeSwitcher_150",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetSwitcher'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeValueText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommentBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ScrollBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommentInfoIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommentNewIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommentValueText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DisableAttrText5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Line",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PhysicalText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PhysicalValueText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBRichTextBlock_555",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusBG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusInfoIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusNewIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusPanelLine_H",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusPanelLine_V1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusPanelLine_V2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeBG",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeInfoIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeNewIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypePanelLine",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'SBRichTextBlock'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TypeValueText",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TextBlock'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ViewEnemyData",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemyData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SelectEnemyType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "SelectEnemyIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DetailOpenSetting",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBLibraryEnemyDetailOpenSetting'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttributeTooltip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StatusTooltip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CommentTooltip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RaceTooltip",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_CommonToolTipDetail_Variable_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/ToolTip/WBP_CommonToolTipDetail_Variable.12"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "EnemyKillCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NewIconCheckCount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "SetEnemyData": {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:SetEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.0"
+      },
+      "ChangeEnemyData": {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:ChangeEnemyData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.1"
+      },
+      "UpdateDetailOpenSetting": {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:UpdateDetailOpenSetting'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.2"
+      },
+      "Set Info Tooltip": {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:Set Info Tooltip'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.3"
+      },
+      "ChangeEnemyDataFromId": {
+        "ObjectName": "Function'LibraryMenu_Monster_ExplainTabMenu_C:ChangeEnemyDataFromId'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.4"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LibraryMenu_Monster_ExplainTabMenu_C'Default__LibraryMenu_Monster_ExplainTabMenu_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.6"
+    }
+  },
+  {
+    "Type": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Name": "Default__LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.LibraryMenu_Monster_ExplainTabMenu_C'",
+    "Properties": {
+      "ViewEnemyData": {
+        "BaseEnemyId": "None",
+        "RaceId": {
+          "TextId": 0
+        },
+        "NameId": {
+          "TextId": 0
+        },
+        "List": [],
+        "ViewSetting": "ESBLibraryEnemyViewSetting::Default",
+        "WeaponSetting": "ESBLibraryEnemyWeaponSetting::Main"
+      },
+      "SelectEnemyType": -1,
+      "SelectEnemyIndex": -1,
+      "DetailOpenSetting": {
+        "Element": 0,
+        "Race": 0,
+        "Attribute": 0,
+        "Status": 0,
+        "Comment": 0
+      },
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "AttributePanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.11"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.13"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.12"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.14"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.26"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.15"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.24"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.25"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.26"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.27"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.16"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.17"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.19"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.18"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.20"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.23"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.21"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "StatusPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.30"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.34"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.25"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TypePanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.37"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.39"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.38"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.40"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.24"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "AttributePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.7"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeBG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.41"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "AttributePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Top": 38.0,
+          "Right": 56.0,
+          "Bottom": 20.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.7"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.SBRichTextBlock_555'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.66"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "AttributePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 76.0,
+          "Top": 5.0,
+          "Right": 8.0,
+          "Bottom": 90.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.7"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanelLine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "AttributePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 97.0,
+          "Top": 7.0,
+          "Right": 228.0,
+          "Bottom": 86.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.7"
+      },
+      "Content": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeListPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.59"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 622.0,
+          "Bottom": 400.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.BG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 68.0,
+          "Top": 185.0,
+          "Right": 528.0,
+          "Bottom": 166.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.60"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 54.0,
+          "Right": 16.0,
+          "Bottom": 16.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusNewIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.51"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 42.0,
+          "Top": 188.0,
+          "Right": 16.0,
+          "Bottom": 16.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentNewIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.47"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_13",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 253.0,
+          "Top": 54.0,
+          "Right": 16.0,
+          "Bottom": 16.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeNewIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.43"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_14",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 2.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypeInfoIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.56"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_15",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 246.0,
+          "Top": 48.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeInfoIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.42"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_16",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 34.0,
+          "Top": 180.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentInfoIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_17",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 48.0,
+          "Right": 32.0,
+          "Bottom": 32.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusInfoIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.50"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 14.0,
+          "Top": 14.0,
+          "Right": 584.0,
+          "Bottom": 34.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.10"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 14.0,
+          "Top": 60.0,
+          "Right": 230.0,
+          "Bottom": 100.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 258.0,
+          "Top": 60.0,
+          "Right": 340.0,
+          "Bottom": 100.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.7"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 14.0,
+          "Top": 170.0,
+          "Right": 580.0,
+          "Bottom": 4.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.Line'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.48"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_8",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 8.0,
+          "Top": 8.0,
+          "Right": 16.0,
+          "Bottom": 16.0
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypeNewIcon'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.57"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusBG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.49"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 90.0,
+          "Top": 5.0,
+          "Right": 8.0,
+          "Bottom": 38.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanelLine_V1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.53"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 90.0,
+          "Top": 57.0,
+          "Right": 8.0,
+          "Bottom": 38.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanelLine_V2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.54"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 5.0,
+          "Top": 48.0,
+          "Right": 218.0,
+          "Bottom": 4.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanelLine_H'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.52"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Top": 14.0,
+          "Right": 70.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttackText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.63"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_5",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 110.0,
+          "Top": 14.0,
+          "Right": 110.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttackValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.72"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_6",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Top": 65.0,
+          "Right": 70.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.PhysicalText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.65"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_7",
+    "Outer": "StatusPanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 110.0,
+          "Top": 65.0,
+          "Right": 110.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.9"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.PhysicalValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.75"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "TypePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.10"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypeBG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.55"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "TypePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 13.0,
+          "Top": 5.0,
+          "Right": 70.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.10"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypeText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.67"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "TypePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 90.0,
+          "Top": 5.0,
+          "Right": 8.0,
+          "Bottom": 24.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.10"
+      },
+      "Content": {
+        "ObjectName": "Image'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanelLine'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.58"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "TypePanel",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 110.0,
+          "Top": 5.0,
+          "Right": 456.0,
+          "Bottom": 26.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.10"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypeValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.76"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AttributeBG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.104616,
+            "G": 0.023153,
+            "B": 0.048172,
+            "A": 0.4,
+            "Hex": "665B2A3E"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.11"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AttributeInfoIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconInfo'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnIconInfo.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_15'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.21"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AttributeNewIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnNew1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnNew1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_13'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.19"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "AttributePanelLine",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 8.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.13"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "BG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 622.0,
+          "Y": 400.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_LibraryMenuMonsterInformationBg'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuMonsterInformationBg.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.15"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CommentInfoIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconInfo'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnIconInfo.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_16'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.22"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "CommentNewIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnNew1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnNew1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_12'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.18"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Line",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 540.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_LibraryMenuLine3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuLine3.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.104616,
+        "G": 0.023153,
+        "B": 0.048172,
+        "A": 1.0,
+        "Hex": "FF5B2A3E"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.27"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusBG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.104616,
+            "G": 0.023153,
+            "B": 0.048172,
+            "A": 0.4,
+            "Hex": "665B2A3E"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.29"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusInfoIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconInfo'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnIconInfo.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_17'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.23"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusNewIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnNew1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnNew1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.17"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusPanelLine_H",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 540.0,
+          "Y": 4.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_LibraryMenuLine3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuLine3.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_3'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.32"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusPanelLine_V1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 8.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.30"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "StatusPanelLine_V2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 8.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.31"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TypeBG",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.104616,
+            "G": 0.023153,
+            "B": 0.048172,
+            "A": 0.4,
+            "Hex": "665B2A3E"
+          }
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.37"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TypeInfoIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnIconInfo'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnIconInfo.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_14'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.20"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TypeNewIcon",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnNew1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnNew1.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.28"
+      },
+      "Visibility": "ESlateVisibility::Collapsed"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "TypePanelLine",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 8.0,
+          "Y": 8.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'UI_CmnLineV2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnLineV2.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.39"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "AttributeListPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeListPanel.OverlaySlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.61"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.14"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "CommentPanel",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentPanel.OverlaySlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.62"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.16"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "AttributeListPanel",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeListPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.59"
+      },
+      "Content": {
+        "ObjectName": "WidgetSwitcher'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.77"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "CommentPanel",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentPanel'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.60"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.68"
+      }
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "AttackText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 715,
+      "Text": {
+        "Namespace": "",
+        "Key": "6977D31F49D00ED58D777A882430A0BE",
+        "SourceString": "攻撃力",
+        "LocalizedString": "攻撃力"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.33"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "DisableAttrText5",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 748,
+      "Text": {
+        "Namespace": "",
+        "Key": "AF6284A14F0B69B61DF09FB0F9108E15",
+        "SourceString": "？？？",
+        "LocalizedString": "？？？"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150.WidgetSwitcherSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.79"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "PhysicalText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 716,
+      "Text": {
+        "Namespace": "",
+        "Key": "54AA07EB4CCD32306D32308200FD3AD8",
+        "SourceString": "体力",
+        "LocalizedString": "体力"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_6'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.35"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "SBRichTextBlock_555",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 717,
+      "Text": {
+        "Namespace": "",
+        "Key": "4B658BAE412F2F022D3CD2928D533AF3",
+        "SourceString": "特性",
+        "LocalizedString": "特性"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributePanel.CanvasPanelSlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.12"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "SBRichTextBlock",
+    "Name": "TypeText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRichTextBlock'",
+    "Properties": {
+      "TextTableAsset": {
+        "ObjectName": "SBTextTableAsset'LibraryMenu'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Text/LibraryMenu.0"
+      },
+      "TextId": 714,
+      "Text": {
+        "Namespace": "",
+        "Key": "2679B46B4E33F35780ABFCAF55D03E72",
+        "SourceString": "系統",
+        "LocalizedString": "系統"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.38"
+      },
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "CommentBox",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScrollBox'",
+    "Properties": {
+      "WidgetStyle": {
+        "TopShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BottomShadowBrush": {
+          "Margin": {
+            "Top": 1.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "LeftShadowBrush": {
+          "ImageSize": {
+            "X": 16.0,
+            "Y": 8.0
+          },
+          "Margin": {
+            "Left": 0.5,
+            "Top": 1.0,
+            "Right": 0.5,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "RightShadowBrush": {
+          "ImageSize": {
+            "X": 16.0,
+            "Y": 8.0
+          },
+          "Margin": {
+            "Left": 0.5,
+            "Top": 1.0,
+            "Right": 0.5,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "WidgetBarStyle": {
+        "VerticalBackgroundImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.104616,
+              "G": 0.023153,
+              "B": 0.048172,
+              "A": 1.0,
+              "Hex": "FF5B2A3E"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_CmnScroll1Bg'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll1Bg.0"
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        },
+        "VerticalTopSlotImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "HorizontalTopSlotImage": {
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "VerticalBottomSlotImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "HorizontalBottomSlotImage": {
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_LibraryMenuScroll1ThumbNormal'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuScroll1ThumbNormal.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_LibraryMenuScroll1ThumbNormal'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuScroll1ThumbNormal.0"
+          }
+        },
+        "DraggedThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_CmnScroll1ThumbDragged'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll1ThumbDragged.0"
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentBox.ScrollBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.70"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentPanel.OverlaySlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.62"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "ScrollBox",
+    "Name": "ScrollBox_180",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScrollBox'",
+    "Properties": {
+      "WidgetStyle": {
+        "TopShadowBrush": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BottomShadowBrush": {
+          "Margin": {
+            "Top": 1.0,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "LeftShadowBrush": {
+          "ImageSize": {
+            "X": 16.0,
+            "Y": 8.0
+          },
+          "Margin": {
+            "Left": 0.5,
+            "Top": 1.0,
+            "Right": 0.5,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "RightShadowBrush": {
+          "ImageSize": {
+            "X": 16.0,
+            "Y": 8.0
+          },
+          "Margin": {
+            "Left": 0.5,
+            "Top": 1.0,
+            "Right": 0.5,
+            "Bottom": 0.0
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/ScrollBoxShadowTop.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        }
+      },
+      "WidgetBarStyle": {
+        "VerticalBackgroundImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.104616,
+              "G": 0.023153,
+              "B": 0.048172,
+              "A": 1.0,
+              "Hex": "FF5B2A3E"
+            }
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_CmnScroll1Bg'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll1Bg.0"
+          },
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::Image",
+          "ImageType": "ESlateBrushImageType::FullColor"
+        },
+        "VerticalTopSlotImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "HorizontalTopSlotImage": {
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "VerticalBottomSlotImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "HorizontalBottomSlotImage": {
+          "ResourceName": "../../../Engine/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "NormalThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_LibraryMenuScroll1ThumbNormal'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuScroll1ThumbNormal.0"
+          }
+        },
+        "HoveredThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_LibraryMenuScroll1ThumbNormal'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/LibraryMenu/UI_LibraryMenuScroll1ThumbNormal.0"
+          }
+        },
+        "DraggedThumbImage": {
+          "ImageSize": {
+            "X": 12.0,
+            "Y": 20.0
+          },
+          "Margin": {
+            "Left": 0.0,
+            "Right": 0.0
+          },
+          "ResourceObject": {
+            "ObjectName": "Texture2D'UI_CmnScroll1ThumbDragged'",
+            "ObjectPath": "BLUEPROTOCOL/Content/UI/Common/UI_CmnScroll1ThumbDragged.0"
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ScrollBoxSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.ScrollBox_180.ScrollBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.71"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "WidgetSwitcherSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150.WidgetSwitcherSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.78"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_0",
+    "Outer": "CommentBox",
+    "Class": "UScriptClass'ScrollBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 22.0
+      },
+      "Parent": {
+        "ObjectName": "ScrollBox'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentBox'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.68"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.74"
+      }
+    }
+  },
+  {
+    "Type": "ScrollBoxSlot",
+    "Name": "ScrollBoxSlot_1",
+    "Outer": "ScrollBox_180",
+    "Class": "UScriptClass'ScrollBoxSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "ScrollBox'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.ScrollBox_180'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.69"
+      },
+      "Content": {
+        "ObjectName": "TextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeValueText'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.73"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "AttackValueText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "20F0FA9F47C6E31FF9007A87C45C3608",
+        "SourceString": "あいうえお",
+        "LocalizedString": "あいうえお"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.34"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "AttributeValueText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "0EF2D0724BA6FF098A8571BBA610FE73",
+        "SourceString": "特性１\r\n特性２\r\n特性３\r\n特性4",
+        "LocalizedString": "特性１\r\n特性２\r\n特性３\r\n特性4"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.ScrollBox_180.ScrollBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.71"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "CommentValueText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "78C1B1884C8D1EA4973DD289A3F258AB",
+        "SourceString": "敵についての説明９０１２３４５６７８９０１２３４５６７８９０\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7",
+        "LocalizedString": "敵についての説明９０１２３４５６７８９０１２３４５６７８９０\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.104616,
+          "G": 0.023153,
+          "B": 0.048172,
+          "A": 1.0,
+          "Hex": "FF5B2A3E"
+        }
+      },
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "AutoWrapText": true,
+      "LineHeightPercentage": 1.3,
+      "Slot": {
+        "ObjectName": "ScrollBoxSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CommentBox.ScrollBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.70"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "PhysicalValueText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "3C9E7D6742C1C13B90A1E892CEC85832",
+        "SourceString": "かきくけこ",
+        "LocalizedString": "かきくけこ"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.StatusPanel.CanvasPanelSlot_7'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.36"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TypeValueText",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'TextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "662250884845D2AE154AA383B56E4814",
+        "SourceString": "系統名",
+        "LocalizedString": "系統名"
+      },
+      "bEnableWidthFitting": true,
+      "Font": {
+        "FontObject": {
+          "ObjectName": "Font'UI_FOT-SkipStd-B'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Font/UI_FOT-SkipStd-B.0"
+        },
+        "TypefaceFontName": "Default",
+        "Size": 12
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.TypePanel.CanvasPanelSlot_4'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.40"
+      },
+      "bIsVariable": true,
+      "Clipping": "EWidgetClipping::ClipToBounds"
+    }
+  },
+  {
+    "Type": "WidgetSwitcher",
+    "Name": "AttributeSwitcher_150",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'WidgetSwitcher'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "WidgetSwitcherSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150.WidgetSwitcherSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.78"
+        },
+        {
+          "ObjectName": "WidgetSwitcherSlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150.WidgetSwitcherSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.79"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeListPanel.OverlaySlot_2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.61"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_0",
+    "Outer": "AttributeSwitcher_150",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.77"
+      },
+      "Content": {
+        "ObjectName": "ScrollBox'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.ScrollBox_180'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.69"
+      }
+    }
+  },
+  {
+    "Type": "WidgetSwitcherSlot",
+    "Name": "WidgetSwitcherSlot_1",
+    "Outer": "AttributeSwitcher_150",
+    "Class": "UScriptClass'WidgetSwitcherSlot'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "WidgetSwitcher'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.AttributeSwitcher_150'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.77"
+      },
+      "Content": {
+        "ObjectName": "SBRichTextBlock'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.DisableAttrText5'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.64"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "LibraryMenu_Monster_ExplainTabMenu_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'LibraryMenu_Monster_ExplainTabMenu_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/LibraryMenu/SubWidget/Monster/LibraryMenu_Monster_ExplainTabMenu.8"
+      }
+    }
+  }
+]
