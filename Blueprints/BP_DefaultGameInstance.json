@@ -130,18 +130,20 @@
         }
       },
       {
-        "Type": "ClassProperty",
-        "Name": "K2Node_CustomEvent_Loaded",
+        "Type": "EnumProperty",
+        "Name": "K2Node_CustomEvent_Result",
         "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "UObjectWrapper",
-        "PropertyClass": {
-          "ObjectName": "Class'Class'",
-          "ObjectPath": "/Script/CoreUObject"
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EDialogResult'",
+          "ObjectPath": "/Script/SkyBlue"
         },
-        "MetaClass": {
-          "ObjectName": "Class'Object'",
-          "ObjectPath": "/Script/CoreUObject"
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
         }
       },
       {
@@ -182,27 +184,16 @@
         }
       },
       {
-        "Type": "EnumProperty",
-        "Name": "K2Node_CustomEvent_Result",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "Enum": {
-          "ObjectName": "Enum'EDialogResult'",
-          "ObjectPath": "/Script/SkyBlue"
-        },
-        "UnderlyingProp": {
-          "Type": "ByteProperty",
-          "Name": "UnderlyingType",
-          "Flags": "RF_Public",
-          "ElementSize": 1,
-          "Enum": null
-        }
-      },
-      {
         "Type": "StrProperty",
         "Name": "CallFunc_GetTextFromAssetByName_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
       },
       {
         "Type": "ObjectProperty",
@@ -213,12 +204,6 @@
           "ObjectName": "Class'SBPartyGameState'",
           "ObjectPath": "/Script/SkyBlue"
         }
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 24
       },
       {
         "Type": "StrProperty",
@@ -257,12 +242,6 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
         "Name": "K2Node_Event_SenderId",
         "Flags": "RF_Public",
         "ElementSize": 16
@@ -293,7 +272,7 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "K2Node_Event_ResultCode",
+        "Name": "K2Node_Event_ResultCode_1",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"
@@ -314,6 +293,12 @@
           "ElementSize": 1,
           "Enum": null
         }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
       },
       {
         "Type": "TextProperty",
@@ -358,6 +343,12 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
         "Type": "IntProperty",
         "Name": "CallFunc_Len_ReturnValue",
         "Flags": "RF_Public",
@@ -365,7 +356,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Name": "CallFunc_GetXboxPrivacyText_Text",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -382,12 +373,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_GetXboxPrivacyText_Text",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
         "Type": "StructProperty",
         "Name": "K2Node_MakeStruct_FormatArgumentData",
         "Flags": "RF_Public",
@@ -396,12 +381,6 @@
           "ObjectName": "ScriptStruct'FormatArgumentData'",
           "ObjectPath": "/Script/Engine"
         }
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
       },
       {
         "Type": "ArrayProperty",
@@ -421,8 +400,23 @@
         }
       },
       {
+        "Type": "ClassProperty",
+        "Name": "K2Node_CustomEvent_Loaded",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Name": "CallFunc_Format_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -461,86 +455,20 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_2",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
         "Name": "CallFunc_GetXboxPrivacyText_ByPartyMemberState_Text",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
-        "Flags": "RF_Public",
-        "ElementSize": 64,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FormatArgumentData'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_2",
-        "Flags": "RF_Public",
-        "ElementSize": 64,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FormatArgumentData'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ArrayProperty",
-        "Name": "K2Node_MakeArray_Array_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "StructProperty",
-          "Name": "K2Node_MakeArray_Array_1",
-          "Flags": "RF_Public",
-          "ElementSize": 64,
-          "Struct": {
-            "ObjectName": "ScriptStruct'FormatArgumentData'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
-        "Type": "ArrayProperty",
-        "Name": "K2Node_MakeArray_Array_2",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "StructProperty",
-          "Name": "K2Node_MakeArray_Array_2",
-          "Flags": "RF_Public",
-          "ElementSize": 64,
-          "Struct": {
-            "ObjectName": "ScriptStruct'FormatArgumentData'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -567,46 +495,53 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_3",
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
         "Flags": "RF_Public",
-        "ElementSize": 16
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Name": "CallFunc_Format_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 24
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsNeedRejoin_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
       },
       {
         "Type": "TextProperty",
         "Name": "CallFunc_GetXboxPrivacyText_ByPartyMemberState_Text_1",
         "Flags": "RF_Public",
         "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_2",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
       },
       {
         "Type": "StructProperty",
@@ -619,13 +554,20 @@
         }
       },
       {
-        "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_4",
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_2",
         "Flags": "RF_Public",
-        "ElementSize": 64,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FormatArgumentData'",
-          "ObjectPath": "/Script/Engine"
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_2",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
         }
       },
       {
@@ -646,6 +588,28 @@
         }
       },
       {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_4",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsNeedRejoin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "ArrayProperty",
         "Name": "K2Node_MakeArray_Array_4",
         "Flags": "RF_Public",
@@ -663,10 +627,16 @@
         }
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_2",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_2",
         "Flags": "RF_Public",
-        "ElementSize": 24
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "StructProperty",
@@ -697,9 +667,39 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_4",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_2",
         "Flags": "RF_Public",
         "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24
       },
       {
         "Type": "ObjectProperty",
@@ -712,14 +712,14 @@
         }
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_6",
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_4",
         "Flags": "RF_Public",
-        "ElementSize": 24
+        "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_3",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_6",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -728,6 +728,16 @@
         "Name": "CallFunc_GetXboxPrivacyText_ByPartyMemberState_Text_2",
         "Flags": "RF_Public",
         "ElementSize": 24
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPartyGameState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
       },
       {
         "Type": "StructProperty",
@@ -740,14 +750,16 @@
         }
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetParty_ReturnValue",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSolo_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPartyGameState'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "ArrayProperty",
@@ -767,16 +779,10 @@
         }
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsSolo_ReturnValue",
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_4",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 24
       },
       {
         "Type": "BoolProperty",
@@ -797,26 +803,8 @@
         "ElementSize": 16
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_6",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
         "Type": "TextProperty",
         "Name": "CallFunc_Conv_StringToText_ReturnValue_7",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_8",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_4",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -838,6 +826,18 @@
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "EnumProperty",
@@ -876,6 +876,13 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_ResultCode",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
         "Type": "StrProperty",
         "Name": "K2Node_Event_CharacterId",
         "Flags": "RF_Public",
@@ -899,14 +906,38 @@
         }
       },
       {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_9",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_8",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_7",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_6",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -918,7 +949,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_10",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_9",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -933,8 +964,18 @@
         }
       },
       {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_PartyState_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPartyGameState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue_3",
+        "Name": "K2Node_Event_bIsKicked",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -969,52 +1010,6 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "K2Node_Event_PartyState_6",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPartyGameState'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_Event_bIsKicked",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_8",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_9",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_11",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_12",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "ObjectProperty",
         "Name": "K2Node_Event_PartyState_5",
         "Flags": "RF_Public",
         "ElementSize": 8,
@@ -1034,18 +1029,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_10",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_13",
-        "Flags": "RF_Public",
-        "ElementSize": 24
       },
       {
         "Type": "EnumProperty",
@@ -1090,7 +1073,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue_4",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_5",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -1114,13 +1097,13 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_11",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_7",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_14",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_10",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -1219,7 +1202,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_15",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_11",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -1336,13 +1319,13 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_16",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_12",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_17",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_13",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -1369,16 +1352,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_10",
-        "Flags": "RF_Public",
-        "ElementSize": 64,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FormatArgumentData'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
         "Type": "BoolProperty",
         "Name": "CallFunc_IsFadeingScreen_ReturnValue",
         "Flags": "RF_Public",
@@ -1389,62 +1362,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "ArrayProperty",
-        "Name": "K2Node_MakeArray_Array_9",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "StructProperty",
-          "Name": "K2Node_MakeArray_Array_9",
-          "Flags": "RF_Public",
-          "ElementSize": 64,
-          "Struct": {
-            "ObjectName": "ScriptStruct'FormatArgumentData'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_7",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_TextToString_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_11",
-        "Flags": "RF_Public",
-        "ElementSize": 64,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FormatArgumentData'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ArrayProperty",
-        "Name": "K2Node_MakeArray_Array_10",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "StructProperty",
-          "Name": "K2Node_MakeArray_Array_10",
-          "Flags": "RF_Public",
-          "ElementSize": 64,
-          "Struct": {
-            "ObjectName": "ScriptStruct'FormatArgumentData'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
       },
       {
         "Type": "ObjectProperty",
@@ -1572,7 +1489,7 @@
       },
       {
         "Type": "StructProperty",
-        "Name": "K2Node_MakeStruct_FormatArgumentData_12",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_10",
         "Flags": "RF_Public",
         "ElementSize": 64,
         "Struct": {
@@ -1603,20 +1520,13 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "ArrayProperty",
-        "Name": "K2Node_MakeArray_Array_11",
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBPlayerController_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "StructProperty",
-          "Name": "K2Node_MakeArray_Array_11",
-          "Flags": "RF_Public",
-          "ElementSize": 64,
-          "Struct": {
-            "ObjectName": "ScriptStruct'FormatArgumentData'",
-            "ObjectPath": "/Script/Engine"
-          }
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerController'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -1642,59 +1552,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Format_ReturnValue_8",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_TextToString_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetPartyLeaderMember_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPartyMemberState'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetSBPlayerController_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerController'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Character'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetComponentByClass_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "InstancedReference",
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerWarpComponent'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "K2Node_DynamicCast_AsSBPlayer_State_1",
         "Flags": "RF_Public",
@@ -1717,29 +1574,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "InterfaceProperty",
-        "Name": "CallFunc_RequestTravelToOnlinePlayerSessionByWarpType_TargetPlayer_CastInput",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "UObjectWrapper",
-        "InterfaceClass": {
-          "ObjectName": "Class'SBOnlinePlayerState'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_RequestTravelToOnlinePlayerSessionByWarpType_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_GetCurrentPartyMemberState_ReturnValue",
         "Flags": "RF_Public",
@@ -1748,6 +1582,18 @@
           "ObjectName": "Class'SBPartyMemberState'",
           "ObjectPath": "/Script/SkyBlue"
         }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsCurrentPartyLeader_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "ObjectProperty",
@@ -1773,18 +1619,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_IsCurrentPartyLeader_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_HasAgreeToMigration_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -1796,6 +1630,99 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPartyLeaderMember_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPartyMemberState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerWarpComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_11",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_RequestTravelToOnlinePlayerSessionByWarpType_TargetPlayer_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "UObjectWrapper",
+        "InterfaceClass": {
+          "ObjectName": "Class'SBOnlinePlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_RequestTravelToOnlinePlayerSessionByWarpType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_9",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_9",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
         "Type": "IntProperty",
         "Name": "K2Node_Event_RetCode",
         "Flags": "RF_Public",
@@ -1803,7 +1730,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_12",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_8",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -1815,7 +1742,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_18",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_14",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2072,16 +1999,14 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_13",
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_12",
         "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_19",
-        "Flags": "RF_Public",
-        "ElementSize": 24
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
       },
       {
         "Type": "BoolProperty",
@@ -2094,6 +2019,64 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_10",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_10",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_11",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_11",
+          "Flags": "RF_Public",
+          "ElementSize": 64,
+          "Struct": {
+            "ObjectName": "ScriptStruct'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_9",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_15",
+        "Flags": "RF_Public",
+        "ElementSize": 24
       },
       {
         "Type": "EnumProperty",
@@ -2240,25 +2223,25 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_14",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_10",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_20",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_16",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_15",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_11",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_21",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_17",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2308,7 +2291,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_16",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_12",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -2326,13 +2309,13 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_22",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_18",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue_5",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_6",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -2344,25 +2327,25 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_17",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_13",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_18",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_14",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_23",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_19",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_24",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_20",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2380,25 +2363,25 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_19",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_15",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_25",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_21",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_20",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_16",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_26",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_22",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2448,7 +2431,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_21",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_17",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -2461,7 +2444,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_27",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_23",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2498,7 +2481,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_22",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_18",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -2514,7 +2497,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_28",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_24",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2542,7 +2525,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_23",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_19",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -2560,7 +2543,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_29",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_25",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2582,7 +2565,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_30",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_26",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2634,7 +2617,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue_6",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_7",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -2646,7 +2629,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetPartySystemText_ReturnValue_24",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_20",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -2658,13 +2641,13 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_31",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_27",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_32",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_28",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2787,7 +2770,43 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_33",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_29",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_21",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_30",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_22",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_31",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_23",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_32",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2875,7 +2894,7 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_34",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_33",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -2894,28 +2913,6 @@
           "ObjectName": "ScriptStruct'FormatArgumentData'",
           "ObjectPath": "/Script/Engine"
         }
-      },
-      {
-        "Type": "ByteProperty",
-        "Name": "K2Node_Event_FailureType_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "Enum": {
-          "ObjectName": "Enum'ENetworkFailure'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_Event_bIsServer",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
       },
       {
         "Type": "ArrayProperty",
@@ -2939,6 +2936,40 @@
         "Name": "CallFunc_Format_ReturnValue_13",
         "Flags": "RF_Public",
         "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetPartySystemText_ReturnValue_24",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_34",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_FailureType_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ENetworkFailure'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bIsServer",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "ByteProperty",
@@ -3670,6 +3701,13 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "IntProperty",
+        "Name": "ResultCode",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
         "Type": "StrProperty",
         "Name": "CharacterId",
         "Flags": "RF_Public",
@@ -4085,16 +4123,11 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
-        "Type": "BoolProperty",
-        "Name": "Temp_bool_Variable",
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
       },
       {
         "Type": "StructProperty",
@@ -4125,14 +4158,33 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "Temp_int_Variable",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"
       },
       {
         "Type": "IntProperty",
-        "Name": "Temp_int_Variable_1",
+        "Name": "Temp_int_Variable_3",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"
@@ -4157,20 +4209,6 @@
       {
         "Type": "IntProperty",
         "Name": "K2Node_Select_Default",
-        "Flags": "RF_Public",
-        "ElementSize": 4,
-        "PropertyFlags": "ConstParm"
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Variable_2",
-        "Flags": "RF_Public",
-        "ElementSize": 4,
-        "PropertyFlags": "ConstParm"
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Variable_3",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"
@@ -4310,7 +4348,45 @@
       },
       {
         "Type": "IntProperty",
+        "Name": "Temp_int_Variable_23",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ValidVariationMission_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
         "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Select_Default_2",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "ConstParm"

@@ -244,7 +244,7 @@
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_NpcCharacter_C:SimpleConstructionScript_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.37"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_NpcCharacter_C:ExecuteUbergraph_BP_NpcCharacter'",
@@ -291,6 +291,17 @@
         "Struct": {
           "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
           "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBBreath",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBBreathComponent'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -466,11 +477,11 @@
       ],
       "CharaCreateComponent": {
         "ObjectName": "SBCharaCreateComponent'Default__BP_NpcCharacter_C:CharaCreate'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.15"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.16"
       },
       "DemoParameterComp": {
         "ObjectName": "SBDemoParameterComponent'Default__BP_NpcCharacter_C:DemoParameterComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.19"
       },
       "F100WaitParamTable": {
         "ObjectName": "DataTable'DT_NF10Wait'",
@@ -514,7 +525,7 @@
       },
       "CameraTransparentComponent": {
         "ObjectName": "SBCameraTransparentCapsuleComponent'Default__BP_NpcCharacter_C:CameraTransparentComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.14"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.15"
       },
       "FadeInCurve": {
         "ObjectName": "CurveFloat'MobNpcSpawnFadeIn'",
@@ -526,19 +537,19 @@
       },
       "NamePlateComp": {
         "ObjectName": "SBNamePlateComponent2D'Default__BP_NpcCharacter_C:NamePlateComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.24"
       },
       "InteractionTargetComp": {
         "ObjectName": "SBNpcInteractionTargetComponent'Default__BP_NpcCharacter_C:InteractionTargetComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.26"
       },
       "WandererDensitySourceComp": {
         "ObjectName": "SBInfluenceSourceComponent'Default__BP_NpcCharacter_C:WandererDensitySourceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.23"
       },
       "PerfOptComp": {
         "ObjectName": "SBNpcPerformanceOptimizationComponent'Default__BP_NpcCharacter_C:PerfOptComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.27"
       },
       "GameplayTasksComp": {
         "ObjectName": "GameplayTasksComponent'Default__BP_NpcCharacter_C:GameplayTasksComp'",
@@ -550,24 +561,24 @@
       },
       "FieldStatusComponent": {
         "ObjectName": "SBFieldStatusComponent'Default__BP_NpcCharacter_C:FieldStatusComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.21"
       },
       "WaitParamComp": {
         "ObjectName": "SBNpcWaitParamComponent'Default__BP_NpcCharacter_C:NpcWaitParamComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.29"
       },
       "TalkActionComp": {
         "ObjectName": "SBNpcTalkActionComponent'Default__BP_NpcCharacter_C:NpcTalkActionComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.28"
       },
       "CameraTransparentComponentEnableLength": 1000.0,
       "Mesh": {
         "ObjectName": "SBCharaPartsBodyComponent'Default__BP_NpcCharacter_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.17"
       },
       "CharacterMovement": {
         "ObjectName": "SBNpcCharacterMovementComponent'Default__BP_NpcCharacter_C:CharMoveComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.25"
       },
       "CapsuleComponent": {
         "ObjectName": "CapsuleComponent'Default__BP_NpcCharacter_C:CollisionCylinder'",
@@ -632,6 +643,22 @@
     "Name": "BoneScaleChacheData",
     "Outer": "CharaCreate",
     "Class": "UScriptClass'SBBoneScaleCacheData'"
+  },
+  {
+    "Type": "SBBreathComponent",
+    "Name": "SBBreath_GEN_VARIABLE",
+    "Outer": "BP_NpcCharacter_C",
+    "Class": "UScriptClass'SBBreathComponent'",
+    "Properties": {
+      "m_DefaultSocketName": "Sheath_Flute",
+      "m_AutoplayBreathType": "ESBBreathType::Cold",
+      "m_BreathSettingList": {
+        "ParticleEffect": {
+          "AssetPathName": "/Game/Effect/Particle/00_Common/Breath/PS_CMN_Breath_00.PS_CMN_Breath_00",
+          "SubPathString": ""
+        }
+      }
+    }
   },
   {
     "Type": "SBCameraTransparentCapsuleComponent",
@@ -799,11 +826,12 @@
     "Properties": {
       "WidgetClass": {
         "ObjectName": "WidgetBlueprintGeneratedClass'NpcNamePlate_C'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/NamePlate/NpcNamePlate.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/UI/NamePlate/NpcNamePlate.38"
       },
+      "ZOrderType": "EUIZOrder::TargetCursor",
       "AttachParent": {
         "ObjectName": "SBCharaPartsBodyComponent'Default__BP_NpcCharacter_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.17"
       }
     }
   },
@@ -833,7 +861,7 @@
       "InteractionActionDeltaTime": 2.0,
       "AttachParent": {
         "ObjectName": "SBCharaPartsBodyComponent'Default__BP_NpcCharacter_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.17"
       },
       "RelativeRotation": {
         "Pitch": 0.0,
@@ -922,7 +950,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_NpcCharacter_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.30"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.31"
       },
       "VariableGuid": "51B39799-4AD7DD0F-88A93F84-985AA19C",
       "InternalVariableName": "DefaultSceneRoot"
@@ -940,10 +968,28 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBFootprintComponent'BP_NpcCharacter_C:SBFootprint_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.22"
       },
       "VariableGuid": "10646FC6-4F03A8E6-7C49C390-4DDC22A5",
       "InternalVariableName": "SBFootprint"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBBreathComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBBreathComponent'BP_NpcCharacter_C:SBBreath_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.14"
+      },
+      "VariableGuid": "62FAF830-4FC151C4-55992596-36A768BF",
+      "InternalVariableName": "SBBreath"
     }
   },
   {
@@ -958,7 +1004,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBStateInitializerComponent'BP_NpcCharacter_C:SBStateInitializer_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.30"
       },
       "VariableGuid": "82A872B9-475DFFBA-EDA4CD88-DEDD1090",
       "InternalVariableName": "SBStateInitializer"
@@ -973,34 +1019,42 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.31"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.32"
         },
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.33"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.34"
         },
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.34"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.36"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.35"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.31"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.32"
         },
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.33"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.34"
         },
         {
           "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.34"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.36"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.35"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_NpcCharacter_C:SimpleConstructionScript_1.SCS_Node_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/BP_NpcCharacter.33"
       }
     }
   }

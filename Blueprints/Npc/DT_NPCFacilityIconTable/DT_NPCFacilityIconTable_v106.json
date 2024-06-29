@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_NPCFacilityIconTable_v106",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "UserDefinedStruct'NPCFacilityIconData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/DT_NPCFacilityIconTable/NPCFacilityIconData.0"
+      }
+    },
+    "Rows": {
+      "Ornament": {
+        "FacilityType_9_877CA17B46F9F4D1E747E1AD3078C172": "ESBFacilityType::Ornament",
+        "IconTexture_5_9E3BC24346B532D989EC97BC2B15CA90": {
+          "ObjectName": "Texture2D'UI_Map_150'",
+          "ObjectPath": "BLUEPROTOCOL/Content/UI/Icon/Map/UI_Map_150.0"
+        },
+        "StatusSetting_21_7E4C525E4F4AAB856EB4CABC7C747FED": {
+          "DefaultStatus": "EFacilityIconStatus::Disable",
+          "ConditionSettings": [
+            {
+              "Status": "EFacilityIconStatus::Enable",
+              "ConditionItems": [
+                {
+                  "ConditionType": "ESBFieldStatusConditionType::QuestStatus",
+                  "QuestStatus": {
+                    "QuestId": "MQ101_030",
+                    "QuestStatus": "EQuestStatus::QuestStatus_Close",
+                    "bSetProgress": false,
+                    "QuestStep": ""
+                  },
+                  "ScenarioFlag": {
+                    "FlagHandle": {
+                      "DataTable": null,
+                      "RowName": "None"
+                    },
+                    "bFlagValue": false
+                  },
+                  "ResearchTeam": {
+                    "Id": ""
+                  },
+                  "EventTerm": {
+                    "Id": "None"
+                  },
+                  "EventTermStatus": {
+                    "Id": "None",
+                    "Status": "ESBEventTermCheckNormalStatus::OutofTerm"
+                  },
+                  "ChallengeQuest": {
+                    "QuestId": "None",
+                    "Setting": "ESBFieldStatusChallengeQuestSettingType::StartConditionPop"
+                  },
+                  "QuestConditionItem": {
+                    "QuestId": "None",
+                    "ConditionItemId": 0,
+                    "bIsCompleted": false
+                  },
+                  "DungeonActivateFlag": {
+                    "DungeonId": "None",
+                    "bFlagValue": false
+                  },
+                  "DungeonCompleteFlag": {
+                    "DungeonId": "None",
+                    "bFlagValue": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+]

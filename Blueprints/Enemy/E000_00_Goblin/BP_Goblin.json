@@ -37,7 +37,7 @@
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_Goblin_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.77"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.79"
       },
       "InheritableComponentHandler": {
         "ObjectName": "InheritableComponentHandler'BP_Goblin_C:InheritableComponentHandler'",
@@ -55,6 +55,17 @@
       }
     ],
     "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemySAB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemySABComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
       {
         "Type": "ObjectProperty",
         "Name": "SBEnemyMaterialManager",
@@ -217,7 +228,7 @@
       },
       "TideComp": {
         "ObjectName": "SBEnemyTideComponent'Default__BP_Goblin_C:EnemyTideComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.54"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.55"
       },
       "ExitEffectComp": {
         "ObjectName": "SBEnemyExitEffectComponent'Default__BP_Goblin_C:EnemyExitEffectComp'",
@@ -254,7 +265,7 @@
       },
       "TargetingComp": {
         "ObjectName": "SBEnemyTargetingComponent'Default__BP_Goblin_C:EnemyTargetingComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.53"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.54"
       },
       "AdjustRootMotionComp": {
         "ObjectName": "SBAdjustRootMotionComponent'Default__BP_Goblin_C:AdjustRootMotionComp'",
@@ -262,11 +273,11 @@
       },
       "StanceComp": {
         "ObjectName": "SBEnemyStanceComponent'Default__BP_Goblin_C:StanceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.50"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.51"
       },
       "SummonComponent": {
         "ObjectName": "SBEnemySummonComponent'Default__BP_Goblin_C:SummonComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.52"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.53"
       },
       "MarkerManagerComp": {
         "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_Goblin_C:MarkerManagerComponent'",
@@ -274,7 +285,7 @@
       },
       "SenseChangerComp": {
         "ObjectName": "SBEnemySenseChangerComponent'Default__BP_Goblin_C:SenseChangerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.49"
       },
       "EnemyDropComp": {
         "ObjectName": "SBEnemyDropComponent'Default__BP_Goblin_C:EnemyDropComp'",
@@ -290,7 +301,7 @@
       },
       "StateInitializerComponent": {
         "ObjectName": "SBStateInitializerComponent'Default__BP_Goblin_C:StateInitializerComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.65"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.66"
       },
       "CollisionHitComp": {
         "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_Goblin_C:EnemyCollisionHitComponent'",
@@ -314,7 +325,7 @@
       },
       "ExecDelegateWithConditionComp": {
         "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_Goblin_C:ExecDelegateWithConditionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.55"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.56"
       },
       "BuddyRevivalComp": {
         "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_Goblin_C:BuddyRevivalComp'",
@@ -322,7 +333,7 @@
       },
       "StateMachineReplayComp": {
         "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_Goblin_C:StateMachineReplayComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.51"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.52"
       },
       "ActionUniqueCounterComp": {
         "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_Goblin_C:ActionUniqueCounterComp'",
@@ -379,7 +390,7 @@
       "ResistAbsorbValue": 240.0,
       "PartsDamageAnimParamter": {
         "ObjectName": "SBPartsDamageAnimParamter'Default__BP_Goblin_C:PartsDamageAnimParamter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.60"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.61"
       },
       "ElementStatusEffectSizeScale": 0.8,
       "InventoryWeapons": [
@@ -426,9 +437,13 @@
         }
       ],
       "WeaponAttachPoint": "R_Grip_Melee",
+      "WeaponVisibilityComponent": {
+        "ObjectName": "SBWeaponVisibilityComponent'Default__BP_Goblin_C:WeaponVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.68"
+      },
       "SpawnComp": {
         "ObjectName": "SBProjectileSpawnComponent'Default__BP_Goblin_C:ProjectileSpawnComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.63"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.64"
       },
       "BattleStatusComp": {
         "ObjectName": "SBBattleStatusComponent'Default__BP_Goblin_C:BattleStatusComp'",
@@ -436,15 +451,15 @@
       },
       "ProjectileShareHitComp": {
         "ObjectName": "SBProjectileShareHitComponent'Default__BP_Goblin_C:ProjectileShareHitComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.62"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.63"
       },
       "SendNetDataComp": {
         "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_Goblin_C:ProjectileSendNetDataComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.61"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.62"
       },
       "StateManageComp": {
         "ObjectName": "SBProjectileStateManageComponent'Default__BP_Goblin_C:ProjectileStateManageComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.64"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.65"
       },
       "AnimationControlComp": {
         "ObjectName": "SBAnimationControlComponent'Default__BP_Goblin_C:AnimationControlComp'",
@@ -460,7 +475,7 @@
       },
       "FactionInfluenceComponent": {
         "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_Goblin_C:FactionInfluenceComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.57"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.58"
       },
       "AISharedInfoComponent": {
         "ObjectName": "SBAISharedInfoComponent'Default__BP_Goblin_C:AISharedInfoComponent'",
@@ -468,11 +483,15 @@
       },
       "MovePredictComponent": {
         "ObjectName": "SBMovementPredictComponent'Default__BP_Goblin_C:MovementPredictComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.59"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.60"
       },
       "ActorVisibilityComponent": {
         "ObjectName": "SBActorVisibilityComponent'Default__BP_Goblin_C:ActorVisibilityComponent'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.9"
+      },
+      "DebugFunctionComponent": {
+        "ObjectName": "SBDebugFunctionComponent'Default__BP_Goblin_C:DebugFunctionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.26"
       },
       "CollisionGroup": {
         "ObjectName": "SBCollisionGroupComponent'Default__BP_Goblin_C:CollisionGroup'",
@@ -484,7 +503,7 @@
       },
       "Mesh": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_Goblin_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.49"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.50"
       },
       "CharacterMovement": {
         "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_Goblin_C:CharMoveComp'",
@@ -492,7 +511,7 @@
       },
       "CapsuleComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_Goblin_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
       },
       "JumpMaxHoldTime": 0.1,
       "AIControllerClass": {
@@ -501,7 +520,7 @@
       },
       "RootComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_Goblin_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
       },
       "Tags": [
         "Enemy",
@@ -715,7 +734,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBFootprintComponent'BP_Goblin_C:SBFootprint_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.58"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.59"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -914,7 +933,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_Goblin_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.49"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.50"
       }
     }
   },
@@ -959,7 +978,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_Goblin_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
       }
     }
   },
@@ -1604,6 +1623,24 @@
     }
   },
   {
+    "Type": "SBEnemySABComponent",
+    "Name": "SBEnemySAB_GEN_VARIABLE",
+    "Outer": "BP_Goblin_C",
+    "Class": "UScriptClass'SBEnemySABComponent'",
+    "Properties": {
+      "BreakEffectSetting": {
+        "Particle": {
+          "AssetPathName": "/Game/Effect/Particle/Enemy/00_ECommon/Reinforce/PS_ECMN_Content_Attack.PS_ECMN_Content_Attack",
+          "SubPathString": ""
+        },
+        "Sound": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon_Class/ContentAction/Play_ContentAction_Break_Success.Play_ContentAction_Break_Success",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
     "Type": "SBEnemySceneComponent",
     "Name": "CollisionCylinder",
     "Outer": "Default__BP_Goblin_C",
@@ -1648,7 +1685,7 @@
       "bRenderCustomDepth": true,
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_Goblin_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.48"
       },
       "RelativeLocation": {
         "X": 0.0,
@@ -1938,7 +1975,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_Goblin_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.68"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.69"
       },
       "VariableGuid": "C879DA05-4D252CDD-BC30C087-8BCC0368",
       "InternalVariableName": "DefaultSceneRoot"
@@ -1974,13 +2011,31 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBTargetableComponent'BP_Goblin_C:SBTargetable_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.66"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.67"
       },
       "AttachToName": "Hip_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
       "bIsParentComponentNative": true,
       "VariableGuid": "53BEBF7D-484FC94B-85364496-D1142716",
       "InternalVariableName": "SBTargetable"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemySABComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemySABComponent'BP_Goblin_C:SBEnemySAB_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.47"
+      },
+      "VariableGuid": "5C9EB903-47CCB334-20E688A2-CA14AE50",
+      "InternalVariableName": "SBEnemySAB"
     }
   },
   {
@@ -2023,7 +2078,7 @@
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.74"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.76"
         }
       ],
       "VariableGuid": "9AF65D4A-459BB316-E4353CA9-7F2FE6DF",
@@ -2097,62 +2152,70 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.71"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_9'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.76"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_4'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.72"
         },
         {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.78"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.74"
+        },
+        {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.70"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.71"
         },
         {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.73"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.75"
         },
         {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_7'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.75"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.77"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.73"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.71"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_9'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.76"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_4'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.72"
         },
         {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.70"
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.78"
         },
         {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.73"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_4'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.74"
         },
         {
-          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.71"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_5'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.75"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.76"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.77"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.73"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_Goblin_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.69"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E000_00_Goblin/BP_Goblin.70"
       }
     }
   }

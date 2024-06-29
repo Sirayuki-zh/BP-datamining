@@ -94,8 +94,8 @@
       },
       "Npc_ImagineShop_01": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'Npc_ImagineShop'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop.0"
+          "ObjectName": "SBScriptAsset'Npc_ImagineShop_Pre'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop_Pre.0"
         },
         "Conditions": [
           {
@@ -113,8 +113,8 @@
       },
       "Npc_ImagineShop_02": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'Npc_ImagineShop'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop.0"
+          "ObjectName": "SBScriptAsset'Npc_ImagineShop_Pre'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop_Pre.0"
         },
         "Conditions": [
           {
@@ -132,8 +132,8 @@
       },
       "Npc_ImagineShop_03": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'Npc_ImagineShop'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop.0"
+          "ObjectName": "SBScriptAsset'Npc_ImagineShop_Pre'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/Npc/Cty01_Asterleeds/Npc_ImagineShop_Pre.0"
         },
         "Conditions": [
           {
@@ -979,6 +979,38 @@
         "Conditions": [],
         "CloseConditions": []
       },
+      "CoinTei_Private1F_ST": {
+        "ScriptAsset": null,
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ101_020",
+            "Value2": "Proceeding"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ101_020",
+            "Value2": "step0"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "CoinTei_Private1F_EN": {
+        "ScriptAsset": null,
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ101_020",
+            "Value2": "Proceeding"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ101_020",
+            "Value2": "step1"
+          }
+        ],
+        "CloseConditions": []
+      },
       "Temple_insidedoor": {
         "ScriptAsset": {
           "ObjectName": "SBScriptAsset'IP_Temple_insidedoor'",
@@ -1080,6 +1112,30 @@
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ101_020",
             "Value2": "step0"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "MQ101_020_step0_help": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'MQ101_020_step0_help'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_020/MQ101_020_step0_help.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ101_020",
+            "Value2": "Proceeding"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ101_020",
+            "Value2": "step0"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::ScenarioFlag",
+            "Value1": "Tutorial_Help_0093_flag",
+            "Value2": "false"
           }
         ],
         "CloseConditions": []
@@ -1268,10 +1324,10 @@
         ],
         "CloseConditions": []
       },
-      "MQ101_030_step1": {
+      "MQ101_030_step0": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step1.0"
+          "ObjectName": "SBScriptAsset'MQ101_030_step0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step0.0"
         },
         "Conditions": [
           {
@@ -1282,26 +1338,7 @@
           {
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ101_030",
-            "Value2": "step1"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step2": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step2.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step2"
+            "Value2": "step0"
           }
         ],
         "CloseConditions": []
@@ -1330,10 +1367,10 @@
         "Conditions": [],
         "CloseConditions": []
       },
-      "MQ101_030_step4": {
+      "MQ101_030_step2": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step4.0"
+          "ObjectName": "SBScriptAsset'MQ101_030_step2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step2.0"
         },
         "Conditions": [
           {
@@ -1344,102 +1381,7 @@
           {
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ101_030",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step5": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step5.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step5"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step6": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step6.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step6"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step8": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step8'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step8.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step8"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step9": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step9'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step9.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step9"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "MQ101_030_step11": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'MQ101_030_step11'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/MNA/Chapter01/MQ101_030/MQ101_030_step11.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step11"
+            "Value2": "step2"
           }
         ],
         "CloseConditions": []
@@ -3875,10 +3817,10 @@
         ],
         "CloseConditions": []
       },
-      "EST_MQ101_030_step2_Npc_Jake_01": {
+      "EST_MQ101_030_step0_Npc_Jake_03": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step2_Npc_Jake.0"
+          "ObjectName": "SBScriptAsset'EST_MQ101_030_step0_Npc_Jake'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step0_Npc_Jake.0"
         },
         "Conditions": [
           {
@@ -3890,177 +3832,6 @@
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ101_030",
             "Value2": "step2"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step2_Npc_Jake_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step2_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step3"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step2_Npc_Jake_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step2_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step5_Npc_Jake": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step5_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step5_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step5"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step6_Npc_Jake_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step6_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step6_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step6"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step6_Npc_Jake_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step6_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step6_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step7"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step6_Npc_Jake_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step6_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step6_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step8"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Jake_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step9_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step9"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Jake_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step9_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step10"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Jake_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Jake'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Jake/EST_MQ101_030_step9_Npc_Jake.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step11"
           }
         ],
         "CloseConditions": []
@@ -4079,7 +3850,7 @@
         ],
         "CloseConditions": []
       },
-      "EST_MQ101_030_step0_Npc_Murrie": {
+      "EST_MQ101_030_step0_Npc_Murrie_01": {
         "ScriptAsset": {
           "ObjectName": "SBScriptAsset'EST_MQ101_030_step0_Npc_Murrie'",
           "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step0_Npc_Murrie.0"
@@ -4098,10 +3869,29 @@
         ],
         "CloseConditions": []
       },
-      "EST_MQ101_030_step2_Npc_Murrie_01": {
+      "EST_MQ101_030_step0_Npc_Murrie_02": {
         "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step2_Npc_Murrie.0"
+          "ObjectName": "SBScriptAsset'EST_MQ101_030_step0_Npc_Murrie'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step0_Npc_Murrie.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ101_030",
+            "Value2": "Proceeding"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "MQ101_030",
+            "Value2": "step1"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "EST_MQ101_030_step0_Npc_Murrie_03": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'EST_MQ101_030_step0_Npc_Murrie'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step0_Npc_Murrie.0"
         },
         "Conditions": [
           {
@@ -4113,172 +3903,6 @@
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ101_030",
             "Value2": "step2"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step2_Npc_Murrie_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step2_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step3"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step2_Npc_Murrie_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step2_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step2_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step6_Npc_Murrie_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step6_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step6_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step6"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step6_Npc_Murrie_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step6_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step6_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step7"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step8_Npc_Murrie": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step8_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step8_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step8"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Murrie_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step9_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step9"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Murrie_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step9_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step10"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step11_Npc_Murrie": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step11_Npc_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST_MQ101_030_step11_Npc_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step11"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST101_030_Close_Murrie": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_030_Close_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST101_030_Close_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Close"
           }
         ],
         "CloseConditions": []
@@ -4905,20 +4529,6 @@
         ],
         "CloseConditions": []
       },
-      "EST101_030_Proceeding_Murrie": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_030_Close_Murrie'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Murrie/EST101_030_Close_Murrie.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          }
-        ],
-        "CloseConditions": []
-      },
       "EST101_060_Close_Tyris": {
         "ScriptAsset": {
           "ObjectName": "SBScriptAsset'EST101_060_Close_Tyris'",
@@ -4928,92 +4538,6 @@
           {
             "Type": "ESBEventTriggerConditionType::QuestStatus",
             "Value1": "MQ101_060",
-            "Value2": "Close"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST101_020_step0_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_020_step0_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST101_020_step0_Huovi.0"
-        },
-        "Conditions": [],
-        "CloseConditions": []
-      },
-      "EST101_035_step1_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_035_step1_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST101_035_step1_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_035",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_035",
-            "Value2": "step1"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST101_035_step2_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_035_step1_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST101_035_step1_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_035",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_035",
-            "Value2": "step2"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST101_035_step4_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_035_step4_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST101_035_step4_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_035",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_035",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": [
-          {
-            "Type": "ESBEventTriggerCloseConditionType::QuestStep",
-            "QuestId": "None",
-            "Step": 0,
-            "Status": "EQuestStatus::QuestStatus_Close"
-          }
-        ]
-      },
-      "EST101_035_Close_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST101_035_step4_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST101_035_step4_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_035",
             "Value2": "Close"
           }
         ],
@@ -6263,513 +5787,6 @@
             "Type": "ESBEventTriggerConditionType::QuestStatus",
             "Value1": "MQ103_030",
             "Value2": "Locked"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Locked"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_020",
-            "Value2": "Close"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "NotReceived"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step0"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_04": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step1"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_05": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step2"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_06": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step3"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_07": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Huovi_08": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_020_step0_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step5"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step7_Npc_Huovi": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step7_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_step7_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step7"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Huovi_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_step9_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step9"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Huovi_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_step9_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step10"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step9_Npc_Huovi_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step9_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_step9_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step11"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_done_Npc_Huovi_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_done_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_done_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Done"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_done_Npc_Huovi_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_done_Npc_Huovi'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Huovi/EST_MQ101_030_done_Npc_Huovi.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Close"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Locked"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_02": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_020",
-            "Value2": "Close"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "NotReceived"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_03": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step0"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_04": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step1"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_05": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step2"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_06": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step3"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_07": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step4"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_08": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step5"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_09": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step6"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_10": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step7"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_020_step0_Npc_Poirier_11": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_020_step0_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_020_step0_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step8"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step1_Npc_Poirier": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step1_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_030_step1_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step1"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_step10_Npc_Poirier": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_step10_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_030_step10_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Proceeding"
-          },
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStep",
-            "Value1": "MQ101_030",
-            "Value2": "step10"
-          }
-        ],
-        "CloseConditions": []
-      },
-      "EST_MQ101_030_done_Npc_Poirier_01": {
-        "ScriptAsset": {
-          "ObjectName": "SBScriptAsset'EST_MQ101_030_done_Npc_Poirier'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Script/EST/Chapter01/Poirier/EST_MQ101_030_done_Npc_Poirier.0"
-        },
-        "Conditions": [
-          {
-            "Type": "ESBEventTriggerConditionType::QuestStatus",
-            "Value1": "MQ101_030",
-            "Value2": "Done"
           }
         ],
         "CloseConditions": []

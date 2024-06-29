@@ -14,33 +14,15 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "Temp_string_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "Temp_bool_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "Temp_string_Variable_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
         "Name": "CallFunc_GetNameText_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_ItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4
       },
       {
         "Type": "TextProperty",
@@ -72,48 +54,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "Temp_bool_Variable_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsEventTermActive_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_BoolToText_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "K2Node_CustomEvent_ItemId",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_GetItemMasterData_IsExists",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -133,16 +73,167 @@
           "ObjectName": "ScriptStruct'ItemMasterData'",
           "ObjectPath": "/Script/SkyBlue"
         }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ItemId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTokenData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TokenMaster",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "ScriptStruct'MasterToken'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BP_FindMasterToken_bIsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BP_FindMasterToken_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 88,
+        "Struct": {
+          "ObjectName": "ScriptStruct'MasterToken'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_GetTermEndDateString_OutString",
+        "Name": "CallFunc_GetMasterTokenText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTermDates",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "event_term",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEventTermActive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_BoolToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "Temp_string_Variable",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_GetTermEndDateString_ReturnValue",
+        "Name": "Temp_bool_Variable_1",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -154,6 +245,12 @@
       },
       {
         "Type": "StrProperty",
+        "Name": "Temp_string_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
         "Name": "CallFunc_GetTermStartDateString_OutString",
         "Flags": "RF_Public",
         "ElementSize": 16
@@ -161,6 +258,24 @@
       {
         "Type": "BoolProperty",
         "Name": "CallFunc_GetTermStartDateString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetTermEndDateString_OutString",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTermEndDateString_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -184,34 +299,313 @@
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_3",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_2",
         "Flags": "RF_Public",
         "ElementSize": 24
       }
     ],
-    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+    "FunctionFlags": "FUNC_Private | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
-    "Name": "SetData",
+    "Name": "SetWeaponData",
     "Outer": "RecepiLimit_MaterialViewItem_C",
     "Class": "UScriptClass'Function'",
     "ChildProperties": [
       {
         "Type": "IntProperty",
-        "Name": "ItemId",
+        "Name": "Index",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetWeaponMasterData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWeaponMasterData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 208,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBWeaponMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetWeaponText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
       }
     ],
-    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetImagineData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindMasterImagineData_IsExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindMasterImagineData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBMasterImagine'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetMasterImagineText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetMountImagineData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BP_FindMasterMountImagineData_bOutExist",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BP_FindMasterMountImagineData_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBMasterMountImagine'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetMasterMountImagineText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCostumeData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BP_FindCostumeMaster_IsExist",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BP_FindCostumeMaster_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBMasterCostume'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetCostumeText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetInvalidData",
+    "Outer": "RecepiLimit_MaterialViewItem_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "WidgetBlueprintGeneratedClass",
@@ -220,7 +614,7 @@
     "Properties": {
       "WidgetTree": {
         "ObjectName": "WidgetTree'RecepiLimit_MaterialViewItem_C:WidgetTree'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.34"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:ExecuteUbergraph_RecepiLimit_MaterialViewItem'",
@@ -232,6 +626,34 @@
       "ObjectPath": "/Script/UMG"
     },
     "Children": [
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetInvalidData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.8"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetCostumeData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.7"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetMountImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.6"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.5"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetWeaponData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.4"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetTermDates'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.3"
+      },
+      {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetTokenData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.2"
+      },
       {
         "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetData'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.1"
@@ -328,6 +750,34 @@
       "SetData": {
         "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetData'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.1"
+      },
+      "SetTokenData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetTokenData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.2"
+      },
+      "SetTermDates": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetTermDates'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.3"
+      },
+      "SetWeaponData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetWeaponData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.4"
+      },
+      "SetImagineData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.5"
+      },
+      "SetMountImagineData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetMountImagineData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.6"
+      },
+      "SetCostumeData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetCostumeData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.7"
+      },
+      "SetInvalidData": {
+        "ObjectName": "Function'RecepiLimit_MaterialViewItem_C:SetInvalidData'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.8"
       }
     },
     "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
@@ -339,7 +789,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "RecepiLimit_MaterialViewItem_C'Default__RecepiLimit_MaterialViewItem_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.3"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.10"
     }
   },
   {
@@ -432,7 +882,7 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.5"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.12"
         }
       ]
     }
@@ -451,11 +901,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiLimit_MaterialViewItem_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.11"
       },
       "Content": {
         "ObjectName": "VerticalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.29"
       }
     }
   },
@@ -468,16 +918,16 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.9"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.16"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.10"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.17"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.30"
       }
     }
   },
@@ -490,16 +940,16 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.12"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.19"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.11"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.18"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.32"
       }
     }
   },
@@ -512,16 +962,16 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.14"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.21"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.13"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.20"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.33"
       }
     }
   },
@@ -536,11 +986,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.13"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.txt_EVTId'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.26"
       }
     }
   },
@@ -552,11 +1002,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.13"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.Txt_Active'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.17"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.24"
       }
     }
   },
@@ -568,11 +1018,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.14"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.txt_Start'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.28"
       }
     }
   },
@@ -584,11 +1034,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.14"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.TextBlock_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.23"
       }
     }
   },
@@ -600,11 +1050,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.15"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.Txt_End'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.25"
       }
     }
   },
@@ -616,11 +1066,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.15"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.TextBlock_166'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.15"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
       }
     }
   },
@@ -638,7 +1088,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.14"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.21"
       }
     }
   },
@@ -656,7 +1106,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.19"
       }
     }
   },
@@ -674,7 +1124,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.17"
       },
       "bIsVariable": true
     }
@@ -693,7 +1143,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222.HorizontalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.20"
       },
       "bIsVariable": true
     }
@@ -712,7 +1162,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146.HorizontalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.16"
       },
       "bIsVariable": true
     }
@@ -731,7 +1181,7 @@
       },
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.31"
       },
       "bIsVariable": true
     }
@@ -750,7 +1200,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220.HorizontalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.18"
       },
       "bIsVariable": true
     }
@@ -764,24 +1214,24 @@
       "Slots": [
         {
           "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.24"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.31"
         },
         {
           "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.23"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.30"
         },
         {
           "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.25"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.32"
         },
         {
           "ObjectName": "VerticalBoxSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.26"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.33"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiLimit_MaterialViewItem_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_6'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.12"
       }
     }
   },
@@ -793,11 +1243,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.29"
       },
       "Content": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_146'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.13"
       }
     }
   },
@@ -809,11 +1259,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.29"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiLimit_MaterialViewItem_C:WidgetTree.Txt_Name'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.27"
       }
     }
   },
@@ -825,11 +1275,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.29"
       },
       "Content": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_220'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.14"
       }
     }
   },
@@ -841,11 +1291,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.29"
       },
       "Content": {
         "ObjectName": "HorizontalBox'RecepiLimit_MaterialViewItem_C:WidgetTree.HorizontalBox_222'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.15"
       }
     }
   },
@@ -857,7 +1307,7 @@
     "Properties": {
       "RootWidget": {
         "ObjectName": "CanvasPanel'RecepiLimit_MaterialViewItem_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiLimit_MaterialViewItem.11"
       }
     }
   }

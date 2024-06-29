@@ -20,27 +20,6 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "K2Node_Event_AnimInstance_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'AnimInstance'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_Event_AnimationSet_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "ConstParm",
-        "PropertyClass": {
-          "ObjectName": "Class'ASAnimationSet'",
-          "ObjectPath": "/Script/ActionSystem"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
         "Name": "K2Node_Event_AnimInstance",
         "Flags": "RF_Public",
         "ElementSize": 8,
@@ -59,126 +38,9 @@
           "ObjectName": "Class'ASAnimationSet'",
           "ObjectPath": "/Script/ActionSystem"
         }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetOwningActor_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetOwningActor_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBPlayer_Character_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "CallFunc_GetAnimTimeLength_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "CallFunc_GetAnimTime_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "CallFunc_GetPlayRateForAnimationSync_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
-  },
-  {
-    "Type": "Function",
-    "Name": "ReceiveBeginPlay",
-    "Outer": "SS_SyncAnimation_C",
-    "Class": "UScriptClass'Function'",
-    "SuperStruct": {
-      "ObjectName": "Function'ASState_BlueprintBase:ReceiveBeginPlay'",
-      "ObjectPath": "/Script/ActionSystem"
-    },
-    "ChildProperties": [
-      {
-        "Type": "ObjectProperty",
-        "Name": "AnimInstance",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
-        "PropertyClass": {
-          "ObjectName": "Class'AnimInstance'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "AnimationSet",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
-        "PropertyClass": {
-          "ObjectName": "Class'ASAnimationSet'",
-          "ObjectPath": "/Script/ActionSystem"
-        }
-      }
-    ],
-    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent | FUNC_Const"
   },
   {
     "Type": "Function",
@@ -279,6 +141,164 @@
     "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
   },
   {
+    "Type": "Function",
+    "Name": "NotifySyncAnimationStart",
+    "Outer": "SS_SyncAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSyncAnimActive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetAnimTimeLength_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetSyncPlayRate",
+    "Outer": "SS_SyncAnimation_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetAnimTime_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetPlayRateForAnimationSync_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
     "Type": "BlueprintGeneratedClass",
     "Name": "SS_SyncAnimation_C",
     "Class": "UScriptClass'BlueprintGeneratedClass'",
@@ -294,15 +314,19 @@
     },
     "Children": [
       {
-        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveEndPlay'",
+        "ObjectName": "Function'SS_SyncAnimation_C:SetSyncPlayRate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.4"
+      },
+      {
+        "ObjectName": "Function'SS_SyncAnimation_C:NotifySyncAnimationStart'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.3"
       },
       {
-        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveTick'",
+        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveEndPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.2"
       },
       {
-        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveBeginPlay'",
+        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveTick'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.1"
       },
       {
@@ -374,17 +398,21 @@
         "ObjectName": "Function'SS_SyncAnimation_C:ExecuteUbergraph_SS_SyncAnimation'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.0"
       },
-      "ReceiveBeginPlay": {
-        "ObjectName": "Function'SS_SyncAnimation_C:ReceiveBeginPlay'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.1"
-      },
       "ReceiveTick": {
         "ObjectName": "Function'SS_SyncAnimation_C:ReceiveTick'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.1"
       },
       "ReceiveEndPlay": {
         "ObjectName": "Function'SS_SyncAnimation_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.2"
+      },
+      "NotifySyncAnimationStart": {
+        "ObjectName": "Function'SS_SyncAnimation_C:NotifySyncAnimationStart'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.3"
+      },
+      "SetSyncPlayRate": {
+        "ObjectName": "Function'SS_SyncAnimation_C:SetSyncPlayRate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.4"
       }
     },
     "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
@@ -396,7 +424,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "SS_SyncAnimation_C'Default__SS_SyncAnimation_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.5"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Animation/Emote/SS_SyncAnimation.6"
     }
   },
   {

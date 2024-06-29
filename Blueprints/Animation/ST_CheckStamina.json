@@ -66,6 +66,17 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSkillActionBySkillName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'SBSkillInfoClass'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
         "Type": "BoolProperty",
         "Name": "CallFunc_IsLocallyControlled_ReturnValue",
         "Flags": "RF_Public",
@@ -126,6 +137,31 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "StaminaAdjustType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Enum'EStaminaAdjustType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "SkillName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
       }
     ],
     "FuncMap": {

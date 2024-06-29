@@ -14,13 +14,19 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "K2Node_Event_OtherActor",
+        "Name": "K2Node_Event_OtherActor_1",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
           "ObjectName": "Class'Actor'",
           "ObjectPath": "/Script/Engine"
         }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
       },
       {
         "Type": "ObjectProperty",
@@ -45,14 +51,10 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'GameStateBase'",
-          "ObjectPath": "/Script/Engine"
-        }
+        "ElementSize": 4
       },
       {
         "Type": "ObjectProperty",
@@ -83,12 +85,6 @@
         "ElementSize": 4
       },
       {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
         "Type": "BoolProperty",
         "Name": "CallFunc_OverlapAll_ReturnValue",
         "Flags": "RF_Public",
@@ -114,7 +110,7 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "K2Node_Event_OtherActor_1",
+        "Name": "K2Node_Event_OtherActor",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
@@ -124,7 +120,7 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Name": "CallFunc_Array_Length_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -141,6 +137,18 @@
       {
         "Type": "BoolProperty",
         "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -173,14 +181,18 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Loop_Counter_Variable",
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -191,32 +203,24 @@
         "ElementSize": 4
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 4
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameMode_Dungeon:OnStartGame__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Name": "Temp_int_Array_Index_Variable_1",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -234,87 +238,9 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "Temp_int_Array_Index_Variable_1",
+        "Name": "Temp_int_Loop_Counter_Variable_2",
         "Flags": "RF_Public",
         "ElementSize": 4
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_HasAuthority_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "SoftObjectProperty",
-        "Name": "CallFunc_Array_Get_Item",
-        "Flags": "RF_Public",
-        "ElementSize": 48,
-        "PropertyClass": {
-          "ObjectName": "Class'SBDungeonWall'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Object'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBDungeon_Wall",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBDungeonWall'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_4",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_HasAuthority_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
       },
       {
         "Type": "EnumProperty",
@@ -334,8 +260,26 @@
         }
       },
       {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
         "Type": "BoolProperty",
         "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -379,7 +323,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_5",
+        "Name": "K2Node_DynamicCast_bSuccess_4",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -397,7 +341,7 @@
       },
       {
         "Type": "DelegateProperty",
-        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
         "Flags": "RF_Public",
         "ElementSize": 20,
         "SignatureFunction": {
@@ -429,7 +373,7 @@
       },
       {
         "Type": "DelegateProperty",
-        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
         "Flags": "RF_Public",
         "ElementSize": 20,
         "SignatureFunction": {
@@ -470,7 +414,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_6",
+        "Name": "K2Node_DynamicCast_bSuccess_5",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -502,7 +446,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_HasAuthority_ReturnValue_3",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -535,28 +479,6 @@
         }
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBGame_Mode_Dungeon_2",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBGameMode_Dungeon'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_7",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "BoolProperty",
         "Name": "K2Node_SwitchEnum_CmpSuccess_1",
         "Flags": "RF_Public",
@@ -569,10 +491,26 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "FloatProperty",
-        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_Mode_Dungeon_2",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameMode_Dungeon'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "EnumProperty",
@@ -593,7 +531,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_HasAuthority_ReturnValue_4",
+        "Name": "CallFunc_HasAuthority_ReturnValue_2",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -615,7 +553,7 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_1",
+        "Name": "CallFunc_Array_Get_Item",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
@@ -641,7 +579,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_8",
+        "Name": "K2Node_DynamicCast_bSuccess_7",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -676,6 +614,18 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_GetGameMode_ReturnValue_3",
         "Flags": "RF_Public",
@@ -697,7 +647,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_9",
+        "Name": "K2Node_DynamicCast_bSuccess_8",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -709,7 +659,61 @@
       },
       {
         "Type": "BoolProperty",
+        "Name": "CallFunc_SomeoneAlive_Sw",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SomeoneAlive_AliveNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_AddUnique_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
         "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SomeoneAlive_Sw_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SomeoneAlive_AliveNum_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -755,30 +759,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_SomeoneAlive_Sw",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_SomeoneAlive_AliveNum",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_AddUnique_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_IsDemoPlaying_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -791,7 +771,7 @@
       },
       {
         "Type": "DelegateProperty",
-        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
         "Flags": "RF_Public",
         "ElementSize": 20,
         "SignatureFunction": {
@@ -802,6 +782,216 @@
       {
         "Type": "BoolProperty",
         "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_BoolToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyClass": {
+          "ObjectName": "Class'SBDungeonWall'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBDungeon_Wall",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBDungeonWall'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_9",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "PropertyClass": {
+          "ObjectName": "Class'SBDungeonWall'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBDungeon_Wall_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBDungeonWall'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_10",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetStatus_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayInEditor_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -825,126 +1015,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_SomeoneAlive_Sw_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_SomeoneAlive_AliveNum_1",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_BoolToString_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_BoolToString_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_BoolToString_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_3",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsPlayInEditor_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsDemoPlaying_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_BooleanAND_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -957,6 +1027,13 @@
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "AreaAvailableOnStart",
+    "Outer": "BP_DungeonStandbyArea_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -1158,30 +1235,6 @@
   },
   {
     "Type": "Function",
-    "Name": "ReceiveActorEndOverlap",
-    "Outer": "BP_DungeonStandbyArea_C",
-    "Class": "UScriptClass'Function'",
-    "SuperStruct": {
-      "ObjectName": "Function'Actor:ReceiveActorEndOverlap'",
-      "ObjectPath": "/Script/Engine"
-    },
-    "ChildProperties": [
-      {
-        "Type": "ObjectProperty",
-        "Name": "OtherActor",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
-      }
-    ],
-    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
     "Name": "ChangeWall",
     "Outer": "BP_DungeonStandbyArea_C",
     "Class": "UScriptClass'Function'",
@@ -1227,6 +1280,30 @@
     "Outer": "BP_DungeonStandbyArea_C",
     "Class": "UScriptClass'Function'",
     "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorEndOverlap",
+    "Outer": "BP_DungeonStandbyArea_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveActorEndOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -1556,18 +1633,18 @@
       "DynamicBindingObjects": [
         {
           "ObjectName": "ComponentDelegateBinding'BP_DungeonStandbyArea_C:ComponentDelegateBinding_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.31"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.32"
         }
       ],
       "Timelines": [
         {
           "ObjectName": "TimelineTemplate'BP_DungeonStandbyArea_C:StandbyCountDown_Template'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.43"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.44"
         }
       ],
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_DungeonStandbyArea_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.42"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.43"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:ExecuteUbergraph_BP_DungeonStandbyArea'",
@@ -1581,26 +1658,30 @@
     "Children": [
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_DebugMsg'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.26"
       },
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:CleanupStandbyPlayers'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.25"
       },
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:SomeoneAlive'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.24"
       },
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_StandbyCountdownTimer'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.23"
       },
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:StandbyCountDown__FinishedFunc'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.22"
       },
       {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:StandbyCountDown__UpdateFunc'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.21"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorEndOverlap'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.20"
       },
       {
@@ -1620,63 +1701,63 @@
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.16"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorEndOverlap'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorBeginOverlap'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.15"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorBeginOverlap'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveBeginPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.14"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveBeginPlay'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEnd'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.13"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEnd'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownStart'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.12"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownStart'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownAbort'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.11"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownAbort'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:RecycleArea'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.10"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:RecycleArea'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerDead'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.9"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerDead'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerResurrect'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.8"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerResurrect'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:TeleportGodMode'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.7"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:TeleportGodMode'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEndAll'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.6"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEndAll'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:DemoWaitFadeIn'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.5"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:DemoWaitFadeIn'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:EnemyBehaviorStop'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.4"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:EnemyBehaviorStop'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_Available'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.3"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_Available'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:NoScript TereportEnd'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.2"
       },
       {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:NoScript TereportEnd'",
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:AreaAvailableOnStart'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.1"
       },
       {
@@ -1987,6 +2068,32 @@
         "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
         "RepIndex": 13,
         "RepNotifyFunc": "OnRep_DebugMsg"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "WallSpawn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "AvailableOnStartGame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       }
     ],
     "FuncMap": {
@@ -1994,64 +2101,64 @@
         "ObjectName": "Function'BP_DungeonStandbyArea_C:ExecuteUbergraph_BP_DungeonStandbyArea'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.0"
       },
+      "AreaAvailableOnStart": {
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:AreaAvailableOnStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.1"
+      },
       "NoScript TereportEnd": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:NoScript TereportEnd'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.1"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.2"
       },
       "OnRep_Available": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_Available'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.3"
       },
       "EnemyBehaviorStop": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:EnemyBehaviorStop'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.4"
       },
       "DemoWaitFadeIn": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:DemoWaitFadeIn'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.5"
       },
       "OnClearConditionScriptEndAll": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEndAll'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.6"
       },
       "TeleportGodMode": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:TeleportGodMode'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.7"
       },
       "OnPlayerResurrect": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerResurrect'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.8"
       },
       "OnPlayerDead": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnPlayerDead'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.9"
       },
       "RecycleArea": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:RecycleArea'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.10"
       },
       "CountDownAbort": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownAbort'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.11"
       },
       "CountDownStart": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:CountDownStart'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.12"
       },
       "OnClearConditionScriptEnd": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnClearConditionScriptEnd'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.13"
       },
       "ReceiveBeginPlay": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveBeginPlay'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.14"
       },
       "ReceiveActorBeginOverlap": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorBeginOverlap'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.14"
-      },
-      "ReceiveActorEndOverlap": {
-        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorEndOverlap'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.15"
       },
       "ChangeWall": {
@@ -2070,29 +2177,33 @@
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnDungeonPlayerNumChanged'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.19"
       },
+      "ReceiveActorEndOverlap": {
+        "ObjectName": "Function'BP_DungeonStandbyArea_C:ReceiveActorEndOverlap'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.20"
+      },
       "StandbyCountDown__UpdateFunc": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:StandbyCountDown__UpdateFunc'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.21"
       },
       "StandbyCountDown__FinishedFunc": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:StandbyCountDown__FinishedFunc'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.22"
       },
       "OnRep_StandbyCountdownTimer": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_StandbyCountdownTimer'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.23"
       },
       "SomeoneAlive": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:SomeoneAlive'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.24"
       },
       "CleanupStandbyPlayers": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:CleanupStandbyPlayers'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.25"
       },
       "OnRep_DebugMsg": {
         "ObjectName": "Function'BP_DungeonStandbyArea_C:OnRep_DebugMsg'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.26"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -2104,7 +2215,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_DungeonStandbyArea_C'Default__BP_DungeonStandbyArea_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.27"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.28"
     }
   },
   {
@@ -2366,20 +2477,20 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_DungeonStandbyArea_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.36"
       },
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.38"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_3'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.39"
         },
         {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_3'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.40"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.41"
         }
       ],
       "VariableGuid": "A795B02B-4EECCFF6-46CC2FBF-798535E4",
@@ -2398,7 +2509,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBFieldStatusComponent'BP_DungeonStandbyArea_C:SBFieldStatus_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.34"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.35"
       },
       "VariableGuid": "26E6BA81-4ABEEF62-C70A0F94-6F1F0962",
       "InternalVariableName": "SBFieldStatus"
@@ -2416,7 +2527,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "CapsuleComponent'BP_DungeonStandbyArea_C:Capsule_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.30"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.31"
       },
       "VariableGuid": "8784ADF5-496B0F5E-9137A19B-F2F23ECC",
       "InternalVariableName": "Capsule"
@@ -2434,12 +2545,12 @@
       },
       "ComponentTemplate": {
         "ObjectName": "BoxComponent'BP_DungeonStandbyArea_C:Box_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.29"
       },
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.41"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.42"
         }
       ],
       "VariableGuid": "0569F78F-47898D5B-780F1580-AE32017C",
@@ -2458,7 +2569,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "BP_EF_FieldWall_Component_C'BP_DungeonStandbyArea_C:BP_EF_FieldWall_Component_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.30"
       },
       "VariableGuid": "E99145D7-48E309C0-175CC3A1-FBE475A1",
       "InternalVariableName": "BP_EF_FieldWall_Component"
@@ -2476,7 +2587,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "DecalComponent'BP_DungeonStandbyArea_C:Decal_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.33"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.34"
       },
       "VariableGuid": "BAB4C1DC-484D4447-C98922BD-98FF2EE0",
       "InternalVariableName": "Decal"
@@ -2491,42 +2602,42 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.36"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.37"
         },
         {
           "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.37"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.38"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.36"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.37"
         },
         {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.38"
         },
         {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_2'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.39"
         },
         {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_3'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.40"
         },
         {
-          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_4'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.41"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.42"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_DungeonStandbyArea_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.36"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.37"
       }
     }
   },
@@ -2541,7 +2652,7 @@
         {
           "CurveFloat": {
             "ObjectName": "CurveFloat'BP_DungeonStandbyArea_C:CurveFloat_0'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.32"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonStandbyArea.33"
           },
           "PropertyName": "StandbyCountDown_TimerRate_2AC3F9C54600A31916328B911DC2E91A",
           "TrackName": "TimerRate",

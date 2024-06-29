@@ -1,0 +1,188 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_MSN_ForceMipMaterials",
+    "Outer": "MSN_ForceMipMaterials_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetTimeSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivStoreState",
+    "Outer": "MSN_ForceMipMaterials_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBMovieSceneNotify:ReceivStoreState'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Object",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "MSN_ForceMipMaterials_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'MSN_ForceMipMaterials_C:ExecuteUbergraph_MSN_ForceMipMaterials'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBMovieSceneNotify'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'MSN_ForceMipMaterials_C:ReceivStoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.1"
+      },
+      {
+        "ObjectName": "Function'MSN_ForceMipMaterials_C:ExecuteUbergraph_MSN_ForceMipMaterials'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "MaterialAssets",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "MaterialAssets",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'MaterialInterface'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_MSN_ForceMipMaterials": {
+        "ObjectName": "Function'MSN_ForceMipMaterials_C:ExecuteUbergraph_MSN_ForceMipMaterials'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.0"
+      },
+      "ReceivStoreState": {
+        "ObjectName": "Function'MSN_ForceMipMaterials_C:ReceivStoreState'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.1"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CollapseCategories | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MSN_ForceMipMaterials_C'Default__MSN_ForceMipMaterials_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.3"
+    }
+  },
+  {
+    "Type": "MSN_ForceMipMaterials_C",
+    "Name": "Default__MSN_ForceMipMaterials_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Demo/BPnotify/MSN_ForceMipMaterials.MSN_ForceMipMaterials_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]
