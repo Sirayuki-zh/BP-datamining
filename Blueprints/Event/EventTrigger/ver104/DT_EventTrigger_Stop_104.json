@@ -50,6 +50,11 @@
         },
         "Conditions": [
           {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ106_020",
+            "Value2": "Proceeding"
+          },
+          {
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ106_020",
             "Value2": "step0"
@@ -64,9 +69,19 @@
         },
         "Conditions": [
           {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "MQ106_020",
+            "Value2": "Proceeding"
+          },
+          {
             "Type": "ESBEventTriggerConditionType::QuestStep",
             "Value1": "MQ106_020",
             "Value2": "step1"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::ScenarioFlag",
+            "Value1": "fld007_Open",
+            "Value2": "false"
           }
         ],
         "CloseConditions": []

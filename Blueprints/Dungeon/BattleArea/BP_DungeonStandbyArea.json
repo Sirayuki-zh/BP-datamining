@@ -24,7 +24,7 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "Temp_int_Loop_Counter_Variable",
+        "Name": "Temp_int_Array_Index_Variable",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -51,12 +51,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "K2Node_DynamicCast_AsSBPlayer_State_Dungeon",
         "Flags": "RF_Public",
@@ -77,12 +71,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Array_Index_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 4
       },
       {
         "Type": "BoolProperty",
@@ -109,6 +97,18 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
         "Type": "ObjectProperty",
         "Name": "K2Node_Event_OtherActor",
         "Flags": "RF_Public",
@@ -119,10 +119,16 @@
         }
       },
       {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "ObjectProperty",
@@ -147,16 +153,10 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 4
       },
       {
         "Type": "ObjectProperty",
@@ -179,22 +179,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetGameState_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'GameStateBase'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 4
       },
       {
         "Type": "IntProperty",
@@ -225,6 +209,16 @@
         "ElementSize": 4
       },
       {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
         "Type": "BoolProperty",
         "Name": "CallFunc_HasAuthority_ReturnValue",
         "Flags": "RF_Public",
@@ -235,6 +229,12 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
       },
       {
         "Type": "IntProperty",
@@ -479,18 +479,6 @@
         }
       },
       {
-        "Type": "BoolProperty",
-        "Name": "K2Node_SwitchEnum_CmpSuccess_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "K2Node_DynamicCast_AsSBGame_Mode_Dungeon_2",
         "Flags": "RF_Public",
@@ -503,6 +491,18 @@
       {
         "Type": "BoolProperty",
         "Name": "K2Node_DynamicCast_bSuccess_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess_1",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -695,36 +695,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_SomeoneAlive_Sw_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_SomeoneAlive_AliveNum_1",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_GetDemoManager_IsValid",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -748,6 +718,36 @@
       {
         "Type": "BoolProperty",
         "Name": "CallFunc_IsDedicatedServer_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SomeoneAlive_Sw_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SomeoneAlive_AliveNum_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,

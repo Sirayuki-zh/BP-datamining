@@ -14,34 +14,6 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "Temp_int_Loop_Counter_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetPlayerController_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'PlayerController'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Array_Index_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "IntProperty",
         "Name": "CallFunc_Min_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 4
@@ -73,6 +45,18 @@
         }
       },
       {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEditor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "StructProperty",
         "Name": "CallFunc_FindLookAtRotation_ReturnValue",
         "Flags": "RF_Public",
@@ -95,18 +79,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_IsEditor_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_BooleanAND_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -116,16 +88,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_GetSBPlayerCharacter_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
       },
       {
         "Type": "StructProperty",
@@ -138,28 +100,35 @@
         }
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_HasAnimTag_ReturnValue",
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
       },
       {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 144,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "ScriptStruct'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
       },
       {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
       },
       {
         "Type": "BoolProperty",
@@ -218,10 +187,15 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Array_Index_Variable_1",
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetClearConditionWatcher_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SBDungeonClearConditionWatcher'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
       },
       {
         "Type": "ObjectProperty",
@@ -256,6 +230,12 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
         "Type": "BoolProperty",
         "Name": "CallFunc_IsGameOver_ReturnValue",
         "Flags": "RF_Public",
@@ -268,24 +248,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Array_Index_Variable_2",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
         "Type": "NameProperty",
         "Name": "K2Node_CustomEvent_InDungeonName",
         "Flags": "RF_Public",
@@ -293,37 +255,14 @@
         "PropertyFlags": "ConstParm"
       },
       {
-        "Type": "ArrayProperty",
-        "Name": "CallFunc_GetSortedPlayerState_PlayerStates",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "ObjectProperty",
-          "Name": "CallFunc_GetSortedPlayerState_PlayerStates",
-          "Flags": "RF_Public",
-          "ElementSize": 8,
-          "PropertyClass": {
-            "ObjectName": "Class'PlayerState'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
         "Type": "DelegateProperty",
         "Name": "K2Node_CreateDelegate_OutputDelegate",
         "Flags": "RF_Public",
         "ElementSize": 20,
         "SignatureFunction": {
-          "ObjectName": "DelegateFunction'SBGameState_Dungeon:OnStartDungeonResult__DelegateSignature'",
+          "ObjectName": "DelegateFunction'SBDungeonClearConditionWatcher:OnClearConditionCompleteDelegate__DelegateSignature'",
           "ObjectPath": "/Script/SkyBlue"
         }
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
       },
       {
         "Type": "BoolProperty",
@@ -362,57 +301,36 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "ArrayProperty",
-        "Name": "CallFunc_GetSortedPlayerState_PlayerStates_1",
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
         "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "ObjectProperty",
-          "Name": "CallFunc_GetSortedPlayerState_PlayerStates_1",
-          "Flags": "RF_Public",
-          "ElementSize": 8,
-          "PropertyClass": {
-            "ObjectName": "Class'PlayerState'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'PlayerState'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetDisplayName_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameState_Dungeon:OnStartDungeonResult__DelegateSignature'",
           "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -423,47 +341,18 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "ArrayProperty",
-        "Name": "CallFunc_GetSortedPlayerState_PlayerStates_2",
-        "Flags": "RF_Public",
-        "ElementSize": 16,
-        "PropertyFlags": "ReferenceParm",
-        "Inner": {
-          "Type": "ObjectProperty",
-          "Name": "CallFunc_GetSortedPlayerState_PlayerStates_2",
-          "Flags": "RF_Public",
-          "ElementSize": 8,
-          "PropertyClass": {
-            "ObjectName": "Class'PlayerState'",
-            "ObjectPath": "/Script/Engine"
-          }
-        }
-      },
-      {
         "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_1",
+        "Name": "CallFunc_Array_Get_Item",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
-          "ObjectName": "Class'PlayerState'",
-          "ObjectPath": "/Script/Engine"
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -480,18 +369,8 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_DynamicCast_AsSBPlayer_Character_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
         "Type": "BoolProperty",
-        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Name": "CallFunc_IsValid_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -509,13 +388,23 @@
       },
       {
         "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_2",
+        "Name": "CallFunc_Array_Get_Item_1",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyFlags": "InstancedReference",
         "PropertyClass": {
           "ObjectName": "Class'ArrowComponent'",
           "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -526,16 +415,6 @@
         "Struct": {
           "ObjectName": "ScriptStruct'Transform'",
           "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_3",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -569,16 +448,6 @@
         }
       },
       {
-        "Type": "StructProperty",
-        "Name": "CallFunc_Add_VectorVector_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
         "Type": "BoolProperty",
         "Name": "CallFunc_IsLocallyControlled_ReturnValue",
         "Flags": "RF_Public",
@@ -589,6 +458,16 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
       },
       {
         "Type": "ObjectProperty",
@@ -613,22 +492,16 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_IntToString_ReturnValue",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
         "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Conv_BoolToString_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 16
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "BoolProperty",
@@ -643,12 +516,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_3",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
         "Type": "BoolProperty",
         "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_1",
         "Flags": "RF_Public",
@@ -659,12 +526,6 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_4",
-        "Flags": "RF_Public",
-        "ElementSize": 16
       },
       {
         "Type": "BoolProperty",
@@ -680,7 +541,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -692,7 +553,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -728,18 +589,6 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Not_PreBool_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
         "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
@@ -751,54 +600,8 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Add_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "Temp_int_Loop_Counter_Variable_2",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_4",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'SBPlayerCharacter'",
-          "ObjectPath": "/Script/SkyBlue"
-        }
-      },
-      {
-        "Type": "IntProperty",
-        "Name": "CallFunc_Array_Length_ReturnValue_3",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
         "Type": "BoolProperty",
-        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -810,103 +613,9 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 4
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "CallFunc_Array_Get_Item_5",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "InstancedReference",
-        "PropertyClass": {
-          "ObjectName": "Class'ArrowComponent'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_VLerp_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 48,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Transform'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
-        "Flags": "RF_Public",
-        "ElementSize": 144,
-        "PropertyFlags": "ContainsInstancedReference",
-        "Struct": {
-          "ObjectName": "ScriptStruct'HitResult'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_BreakTransform_Location_1",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_BreakTransform_Rotation_1",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Rotator'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_BreakTransform_Scale_1",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "StructProperty",
-        "Name": "CallFunc_Add_VectorVector_ReturnValue_2",
-        "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_TeleportTo_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
@@ -926,13 +635,6 @@
       }
     ],
     "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
-    "Name": "RestartResultWait",
-    "Outer": "BP_Dng_ResultCamera_C",
-    "Class": "UScriptClass'Function'",
-    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -2023,10 +1725,234 @@
   },
   {
     "Type": "Function",
-    "Name": "OnRep_AuthPlayerArray",
+    "Name": "UpdatePlayerCharacterList",
     "Outer": "BP_Dng_ResultCamera_C",
     "Class": "UScriptClass'Function'",
-    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "PlayerIdArray",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "PlayerIdArray",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_IntArraySort_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "CallFunc_IntArraySort_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerState'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameState_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameStateBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerState'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_State_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerState'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBPlayerCharacter'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "BlueprintGeneratedClass",
@@ -2037,19 +1963,20 @@
       "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera_Base.5"
     },
     "Properties": {
+      "NumReplicatedProperties": 1,
       "Timelines": [
         {
           "ObjectName": "TimelineTemplate'BP_Dng_ResultCamera_C:CamMovement_Template'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.39"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.38"
         }
       ],
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_Dng_ResultCamera_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.37"
       },
       "InheritableComponentHandler": {
         "ObjectName": "InheritableComponentHandler'BP_Dng_ResultCamera_C:InheritableComponentHandler'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.25"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:ExecuteUbergraph_BP_Dng_ResultCamera'",
@@ -2062,59 +1989,55 @@
     },
     "Children": [
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:OnRep_AuthPlayerArray'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.15"
-      },
-      {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:AdjustPreset'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:UpdatePlayerCharacterList'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.14"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:GetPlayersHeightRange'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:AdjustPreset'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.13"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:GetArrowLocAndRot'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:GetPlayersHeightRange'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.12"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:SetCamera'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:GetArrowLocAndRot'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.11"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:CleanPlayerList'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:SetCamera'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.10"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:FindPreset'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:CleanPlayerList'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.9"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:UserConstructionScript'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:FindPreset'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.8"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__FinishedFunc'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:UserConstructionScript'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.7"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__UpdateFunc'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__FinishedFunc'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.6"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:PlacePlayers'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__UpdateFunc'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.5"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:StartResultCutScene'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:PlacePlayers'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.4"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:ReceiveBeginPlay'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:StartResultCutScene'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.3"
       },
       {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:RestartResultWait'",
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:ReceiveBeginPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.2"
       },
       {
@@ -2389,33 +2312,34 @@
         }
       },
       {
-        "Type": "BoolProperty",
-        "Name": "BossCameraExists",
-        "Flags": "RF_Public | RF_LoadCompleted",
-        "ElementSize": 1,
-        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ArrayProperty",
-        "Name": "SortedPlayerCharacter",
+        "Name": "PlayerCharacter",
         "Flags": "RF_Public | RF_LoadCompleted",
         "ElementSize": 16,
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | Transient | DisableEditOnInstance",
         "Inner": {
           "Type": "ObjectProperty",
-          "Name": "SortedPlayerCharacter",
+          "Name": "PlayerCharacter",
           "Flags": "RF_Public",
           "ElementSize": 8,
           "PropertyClass": {
             "ObjectName": "Class'SBPlayerCharacter'",
             "ObjectPath": "/Script/SkyBlue"
           }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "PlayerIdList",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "RepIndex": 10,
+        "Inner": {
+          "Type": "IntProperty",
+          "Name": "PlayerIdList",
+          "Flags": "RF_Public",
+          "ElementSize": 4
         }
       }
     ],
@@ -2428,61 +2352,57 @@
         "ObjectName": "Function'BP_Dng_ResultCamera_C:DungeonCleared'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.1"
       },
-      "RestartResultWait": {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:RestartResultWait'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.2"
-      },
       "ReceiveBeginPlay": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:ReceiveBeginPlay'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.2"
       },
       "StartResultCutScene": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:StartResultCutScene'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.3"
       },
       "PlacePlayers": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:PlacePlayers'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.4"
       },
       "CamMovement__UpdateFunc": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__UpdateFunc'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.5"
       },
       "CamMovement__FinishedFunc": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:CamMovement__FinishedFunc'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.6"
       },
       "UserConstructionScript": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:UserConstructionScript'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.7"
       },
       "FindPreset": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:FindPreset'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.8"
       },
       "CleanPlayerList": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:CleanPlayerList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.9"
       },
       "SetCamera": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:SetCamera'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.10"
       },
       "GetArrowLocAndRot": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:GetArrowLocAndRot'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.11"
       },
       "GetPlayersHeightRange": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:GetPlayersHeightRange'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.12"
       },
       "AdjustPreset": {
         "ObjectName": "Function'BP_Dng_ResultCamera_C:AdjustPreset'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.14"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.13"
       },
-      "OnRep_AuthPlayerArray": {
-        "ObjectName": "Function'BP_Dng_ResultCamera_C:OnRep_AuthPlayerArray'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.15"
+      "UpdatePlayerCharacterList": {
+        "ObjectName": "Function'BP_Dng_ResultCamera_C:UpdatePlayerCharacterList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.14"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -2494,7 +2414,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_Dng_ResultCamera_C'Default__BP_Dng_ResultCamera_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.17"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.16"
     }
   },
   {
@@ -2741,7 +2661,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_Dng_ResultCamera_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.27"
       },
       "VariableGuid": "2F51F9EA-42B4D210-D84994B6-8AD6D41B",
       "InternalVariableName": "DefaultSceneRoot"
@@ -2759,14 +2679,14 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_Dng_ResultCamera_C:cameraTarget_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.26"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.37"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.36"
         }
       ],
       "VariableGuid": "639BF938-480EB6A5-E7BDEABF-974AC3F4",
@@ -2785,7 +2705,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow3_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.19"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2805,7 +2725,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow2_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.18"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2825,7 +2745,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow4_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.20"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2845,7 +2765,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow5_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.21"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2865,7 +2785,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow6_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.22"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2885,7 +2805,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "ArrowComponent'BP_Dng_ResultCamera_C:PlayerLoc_Arrow1_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.17"
       },
       "ParentComponentOrVariableName": "DefaultSceneRoot",
       "ParentComponentOwnerClassName": "BP_Dng_ResultCamera_Base_C",
@@ -2905,7 +2825,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "CameraComponent'BP_Dng_ResultCamera_C:Camera_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.23"
       },
       "VariableGuid": "056D1167-413BDF4C-FB49E78F-9AD48D7E",
       "InternalVariableName": "Camera"
@@ -2920,70 +2840,70 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.30"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.29"
         },
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_17'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.36"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.35"
         },
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_13'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.32"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_12'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.31"
         },
         {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.30"
+        },
+        {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_14'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.33"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.32"
         },
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_15'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.34"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.33"
         },
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_16'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.35"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.34"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.30"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.29"
         },
         {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_17'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.36"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_13'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.32"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_12'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.31"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_14'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.33"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_15'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.34"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_16'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.35"
         },
         {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.31"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.30"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.32"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.33"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.34"
+        },
+        {
           "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.37"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.36"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_Dng_ResultCamera_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.28"
       }
     }
   },
@@ -2998,7 +2918,7 @@
         {
           "CurveFloat": {
             "ObjectName": "CurveFloat'BP_Dng_ResultCamera_C:CurveFloat_1_2_3'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.25"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_ResultCamera/BP_Dng_ResultCamera.24"
           },
           "PropertyName": "CamMovement_AlphaCurve_B4997EA446F051716AF8D1B5AF2B1C76",
           "TrackName": "AlphaCurve",
