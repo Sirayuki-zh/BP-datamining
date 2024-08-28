@@ -19,18 +19,20 @@
         "ElementSize": 4
       },
       {
-        "Type": "DelegateProperty",
-        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
         "Flags": "RF_Public",
-        "ElementSize": 20,
-        "SignatureFunction": {
-          "ObjectName": "Function'BP_BattleAreaBase_C:BattleReset__DelegateSignature'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_BattleAreaBase.3"
-        }
+        "ElementSize": 4
       },
       {
         "Type": "IntProperty",
         "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -42,7 +44,7 @@
       },
       {
         "Type": "DelegateProperty",
-        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
         "Flags": "RF_Public",
         "ElementSize": 20,
         "SignatureFunction": {
@@ -52,7 +54,7 @@
       },
       {
         "Type": "IntProperty",
-        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -61,6 +63,16 @@
         "Name": "Temp_int_Array_Index_Variable",
         "Flags": "RF_Public",
         "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Function'BP_BattleAreaBase_C:BattleReset__DelegateSignature'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_BattleAreaBase.3"
+        }
       },
       {
         "Type": "BoolProperty",
@@ -112,12 +124,6 @@
         "Flags": "RF_Public",
         "ElementSize": 16,
         "PropertyFlags": "ConstParm"
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
       },
       {
         "Type": "BoolProperty",
@@ -224,6 +230,63 @@
       {
         "Type": "BoolProperty",
         "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors_2",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_EnemyCharacter_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.22"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_StrStr_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -786,6 +849,26 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "dng025BossRush",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "BossRushName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
       },
       {
         "Type": "BoolProperty",
