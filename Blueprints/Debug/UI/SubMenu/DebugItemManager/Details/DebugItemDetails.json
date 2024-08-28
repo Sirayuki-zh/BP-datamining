@@ -510,14 +510,38 @@
         }
       },
       {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetItemName_OutName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetItemName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_IntToText_ReturnValue_3",
+        "Name": "CallFunc_Conv_FloatToText_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
       {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_FloatToText_ReturnValue",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_3",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -540,38 +564,14 @@
         "ElementSize": 24
       },
       {
-        "Type": "TextProperty",
-        "Name": "CallFunc_Conv_IntToText_ReturnValue_7",
-        "Flags": "RF_Public",
-        "ElementSize": 24
-      },
-      {
         "Type": "StrProperty",
         "Name": "CallFunc_GetItemText_ReturnValue_1",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetItemName_OutName",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_GetItemName_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "TextProperty",
-        "Name": "CallFunc_Conv_StringToText_ReturnValue_4",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_7",
         "Flags": "RF_Public",
         "ElementSize": 24
       },
@@ -996,7 +996,6 @@
         "CanUse": false,
         "bDungeonOnly": false,
         "Index": -1,
-        "Type": "EItemType::ItemType_Invalid",
         "Rarity": "ESBRarity::Common",
         "Name": {
           "TextId": 0
@@ -1005,7 +1004,6 @@
           "TextId": 0
         },
         "ItemLevel": 0,
-        "ItemExp": 0,
         "PricePlayerSells": 0,
         "PricePlayerBuys": 0,
         "StackStorageNum": 1,

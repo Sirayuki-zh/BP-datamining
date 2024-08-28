@@ -13,28 +13,30 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
-        "Type": "StructProperty",
-        "Name": "CallFunc_GetEndFrame_ReturnValue",
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FindImageCaptureProtocol_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4,
-        "Struct": {
-          "ObjectName": "ScriptStruct'FrameNumber'",
-          "ObjectPath": "/Script/CoreUObject"
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MovieSceneImageCaptureProtocolBase'",
+          "ObjectPath": "/Script/MovieSceneCapture"
         }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "ObjectProperty",
         "Name": "K2Node_Event_Object_2",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Object'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
-      },
-      {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_Event_Object_1",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
@@ -49,7 +51,7 @@
         "ElementSize": 8,
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_seqActor_Base_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
         }
       },
       {
@@ -66,12 +68,22 @@
       },
       {
         "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Object_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
         "Name": "K2Node_DynamicCast_AsBP_Seq_Actor_Base_1",
         "Flags": "RF_Public",
         "ElementSize": 8,
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_seqActor_Base_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
         }
       },
       {
@@ -138,7 +150,7 @@
         "ElementSize": 8,
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_seqActor_Base_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
         }
       },
       {
@@ -168,6 +180,16 @@
       {
         "Type": "StructProperty",
         "Name": "CallFunc_GetStartFrame_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'FrameNumber'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetEndFrame_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 4,
         "Struct": {

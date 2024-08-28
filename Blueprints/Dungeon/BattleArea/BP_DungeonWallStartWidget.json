@@ -13,30 +13,6 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "Temp_bool_Has_Been_Initd_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
         "Flags": "RF_Public",
@@ -111,7 +87,29 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'SBGameMode_Dungeon:OnStartGame__DelegateSignature'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -123,7 +121,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Name": "CallFunc_IsValid_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -198,20 +196,53 @@
           "ObjectName": "ScriptStruct'SBTelopPlayParam'",
           "ObjectPath": "/Script/SkyBlue"
         }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSBGameMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameMode'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSBGame_Mode_Dungeon_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBGameMode_DungeonNormal'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
-  },
-  {
-    "Type": "Function",
-    "Name": "ReceiveBeginPlay",
-    "Outer": "BP_DungeonWallStartWidget_C",
-    "Class": "UScriptClass'Function'",
-    "SuperStruct": {
-      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
-      "ObjectPath": "/Script/Engine"
-    },
-    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -287,19 +318,52 @@
     "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
   },
   {
+    "Type": "Function",
+    "Name": "TriggerON",
+    "Outer": "BP_DungeonWallStartWidget_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TriggerONPlayer",
+    "Outer": "BP_DungeonWallStartWidget_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_DungeonWallStartWidget_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_GameStart",
+    "Outer": "BP_DungeonWallStartWidget_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
     "Type": "BlueprintGeneratedClass",
     "Name": "BP_DungeonWallStartWidget_C",
     "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
+      "NumReplicatedProperties": 1,
       "DynamicBindingObjects": [
         {
           "ObjectName": "ComponentDelegateBinding'BP_DungeonWallStartWidget_C:ComponentDelegateBinding_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.6"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.9"
         }
       ],
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.13"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_DungeonWallStartWidget_C:ExecuteUbergraph_BP_DungeonWallStartWidget'",
@@ -307,16 +371,28 @@
       }
     },
     "SuperStruct": {
-      "ObjectName": "Class'Actor'",
-      "ObjectPath": "/Script/Engine"
+      "ObjectName": "Class'SBReplicatedGimmick'",
+      "ObjectPath": "/Script/SkyBlue"
     },
     "Children": [
       {
-        "ObjectName": "Function'BP_DungeonWallStartWidget_C:BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.2"
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:OnRep_GameStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.5"
       },
       {
         "ObjectName": "Function'BP_DungeonWallStartWidget_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.4"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:TriggerONPlayer'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.3"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:TriggerON'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.2"
+      },
+      {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.1"
       },
       {
@@ -376,9 +452,37 @@
         "ElementSize": 8,
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
         "PropertyClass": {
-          "ObjectName": "BlueprintGeneratedClass'BP_ReplicatedOnewayWall_NavModify_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_ReplicatedOnewayWall_NavModify.21"
+          "ObjectName": "BlueprintGeneratedClass'BP_BattleAreaPlain_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_BattleAreaPlain.11"
         }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "GameStart",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepIndex": 10,
+        "RepNotifyFunc": "OnRep_GameStart",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TriggerIN",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       }
     ],
     "FuncMap": {
@@ -386,13 +490,25 @@
         "ObjectName": "Function'BP_DungeonWallStartWidget_C:ExecuteUbergraph_BP_DungeonWallStartWidget'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.0"
       },
-      "ReceiveBeginPlay": {
-        "ObjectName": "Function'BP_DungeonWallStartWidget_C:ReceiveBeginPlay'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.1"
-      },
       "BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature": {
         "ObjectName": "Function'BP_DungeonWallStartWidget_C:BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.1"
+      },
+      "TriggerON": {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:TriggerON'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.2"
+      },
+      "TriggerONPlayer": {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:TriggerONPlayer'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.4"
+      },
+      "OnRep_GameStart": {
+        "ObjectName": "Function'BP_DungeonWallStartWidget_C:OnRep_GameStart'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.5"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -404,7 +520,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_DungeonWallStartWidget_C'Default__BP_DungeonWallStartWidget_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.4"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.7"
     }
   },
   {
@@ -514,12 +630,12 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_DungeonWallStartWidget_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.10"
       },
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.9"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.12"
         }
       ],
       "VariableGuid": "1AF2711D-49064166-BDE568AB-81E50AEC",
@@ -538,7 +654,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "BoxComponent'BP_DungeonWallStartWidget_C:Box_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.8"
       },
       "VariableGuid": "B2603E45-4B21F9AA-06D36097-809E9483",
       "InternalVariableName": "Box"
@@ -553,22 +669,22 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.8"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.11"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.8"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.11"
         },
         {
           "ObjectName": "SCS_Node'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.9"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.12"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_DungeonWallStartWidget_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/BattleArea/BP_DungeonWallStartWidget.11"
       }
     }
   }

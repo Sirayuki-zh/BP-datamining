@@ -13,6 +13,90 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnMovieSceneSequencePlayerEvent__DelegateSignature'",
+          "ObjectPath": "/Script/MovieScene"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_startTime_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_endTime_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_timeSize_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_startFrame_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_endFrame_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_delta",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOfClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'LevelSequenceActor'",
+          "ObjectPath": "/Script/LevelSequence"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSequencePlayer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'LevelSequencePlayer'",
+          "ObjectPath": "/Script/LevelSequence"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "FloatProperty",
         "Name": "K2Node_CustomEvent_startTime",
         "Flags": "RF_Public",
@@ -41,21 +125,71 @@
         "Name": "K2Node_CustomEvent_endFrame",
         "Flags": "RF_Public",
         "ElementSize": 4
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "K2Node_CustomEvent_time",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "K2Node_CustomEvent_delta",
-        "Flags": "RF_Public",
-        "ElementSize": 4
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "storeBeginArgs",
+    "Outer": "BP_seqActor_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "startTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "endTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "timeSize",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "startFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "endFrame",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "カスタムイベント_0",
+    "Outer": "BP_seqActor_Base_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_seqActor_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -138,7 +272,7 @@
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_seqActor_Base_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.11"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_seqActor_Base_C:ExecuteUbergraph_BP_seqActor_Base'",
@@ -152,14 +286,26 @@
     "Children": [
       {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_begin'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.6"
       },
       {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_tick'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.5"
       },
       {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_End'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
+      },
+      {
+        "ObjectName": "Function'BP_seqActor_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+      },
+      {
+        "ObjectName": "Function'BP_seqActor_Base_C:カスタムイベント_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+      },
+      {
+        "ObjectName": "Function'BP_seqActor_Base_C:storeBeginArgs'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.1"
       },
       {
@@ -196,6 +342,54 @@
         "Flags": "RF_Public | RF_LoadCompleted",
         "ElementSize": 16,
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "isStroed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Stored Start Time",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Stored End Time",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Stored Time Size",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Stored Start Frame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Stored End Frame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
       }
     ],
     "FuncMap": {
@@ -203,17 +397,29 @@
         "ObjectName": "Function'BP_seqActor_Base_C:ExecuteUbergraph_BP_seqActor_Base'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.0"
       },
+      "storeBeginArgs": {
+        "ObjectName": "Function'BP_seqActor_Base_C:storeBeginArgs'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.1"
+      },
+      "カスタムイベント_0": {
+        "ObjectName": "Function'BP_seqActor_Base_C:カスタムイベント_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_seqActor_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+      },
       "evtMSN_End": {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_End'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.1"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.4"
       },
       "evtMSN_tick": {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_tick'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.5"
       },
       "evtMSN_begin": {
         "ObjectName": "Function'BP_seqActor_Base_C:evtMSN_begin'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.6"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -225,7 +431,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_seqActor_Base_C'Default__BP_seqActor_Base_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.5"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.8"
     }
   },
   {
@@ -254,7 +460,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_seqActor_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.9"
       },
       "VariableGuid": "F1F9466C-4848537A-2065B3B0-D4AE6E1E",
       "InternalVariableName": "DefaultSceneRoot"
@@ -269,18 +475,18 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_seqActor_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.10"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_seqActor_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.10"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_seqActor_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Demo/seqActors/BP_seqActor_Base.10"
       }
     }
   }

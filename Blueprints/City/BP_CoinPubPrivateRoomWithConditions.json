@@ -25,18 +25,6 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "BoolProperty",
-        "Name": "CallFunc_IsValid_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ByteProperty",
         "Name": "Temp_byte_Variable",
         "Flags": "RF_Public",
@@ -57,16 +45,6 @@
         }
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_Event_OtherActor_1",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
-      },
-      {
         "Type": "BoolProperty",
         "Name": "CallFunc_CheckEventTrigger_bIsEnable",
         "Flags": "RF_Public",
@@ -79,16 +57,10 @@
         "bIsNativeBool": true
       },
       {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetDisplayName_ReturnValue",
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
         "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
+        "ElementSize": 4
       },
       {
         "Type": "ByteProperty",
@@ -101,35 +73,46 @@
         }
       },
       {
-        "Type": "ObjectProperty",
-        "Name": "K2Node_Event_OtherActor",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
-        "Type": "FloatProperty",
-        "Name": "K2Node_Event_DeltaSeconds",
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsServer_ReturnValue",
         "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_GetDisplayName_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_CoinPubPrivateRoomWithConditions_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.1"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -147,62 +130,6 @@
         "Flags": "RF_Public",
         "ElementSize": 4,
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
-      }
-    ],
-    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
-    "Name": "ReceiveActorEndOverlap",
-    "Outer": "BP_CoinPubPrivateRoomWithConditions_C",
-    "Class": "UScriptClass'Function'",
-    "Super": {
-      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveActorEndOverlap'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.1"
-    },
-    "SuperStruct": {
-      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveActorEndOverlap'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.1"
-    },
-    "ChildProperties": [
-      {
-        "Type": "ObjectProperty",
-        "Name": "OtherActor",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
-      }
-    ],
-    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
-    "Name": "ReceiveActorBeginOverlap",
-    "Outer": "BP_CoinPubPrivateRoomWithConditions_C",
-    "Class": "UScriptClass'Function'",
-    "Super": {
-      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveActorBeginOverlap'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.2"
-    },
-    "SuperStruct": {
-      "ObjectName": "Function'BP_CoinPubPrivateRoomTrigger_C:ReceiveActorBeginOverlap'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.2"
-    },
-    "ChildProperties": [
-      {
-        "Type": "ObjectProperty",
-        "Name": "OtherActor",
-        "Flags": "RF_Public",
-        "ElementSize": 8,
-        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
-        "PropertyClass": {
-          "ObjectName": "Class'Actor'",
-          "ObjectPath": "/Script/Engine"
-        }
       }
     ],
     "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
@@ -311,12 +238,12 @@
     "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Super": {
       "ObjectName": "BlueprintGeneratedClass'BP_CoinPubPrivateRoomTrigger_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.3"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.4"
     },
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_CoinPubPrivateRoomWithConditions_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.9"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ExecuteUbergraph_BP_CoinPubPrivateRoomWithConditions'",
@@ -325,23 +252,19 @@
     },
     "SuperStruct": {
       "ObjectName": "BlueprintGeneratedClass'BP_CoinPubPrivateRoomTrigger_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.3"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.4"
     },
     "Children": [
       {
         "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:CheckEventTrigger'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.4"
-      },
-      {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveActorBeginOverlap'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.3"
       },
       {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveActorEndOverlap'",
+        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveTick'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.2"
       },
       {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveTick'",
+        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveBeginPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.1"
       },
       {
@@ -384,21 +307,17 @@
         "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ExecuteUbergraph_BP_CoinPubPrivateRoomWithConditions'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.0"
       },
-      "ReceiveTick": {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveTick'",
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveBeginPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.1"
       },
-      "ReceiveActorEndOverlap": {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveActorEndOverlap'",
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveTick'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.2"
-      },
-      "ReceiveActorBeginOverlap": {
-        "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:ReceiveActorBeginOverlap'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.3"
       },
       "CheckEventTrigger": {
         "ObjectName": "Function'BP_CoinPubPrivateRoomWithConditions_C:CheckEventTrigger'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.3"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -410,7 +329,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_CoinPubPrivateRoomWithConditions_C'Default__BP_CoinPubPrivateRoomWithConditions_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.6"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.5"
     }
   },
   {
@@ -419,7 +338,7 @@
     "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.BP_CoinPubPrivateRoomWithConditions_C'",
     "Template": {
       "ObjectName": "BP_CoinPubPrivateRoomTrigger_C'Default__BP_CoinPubPrivateRoomTrigger_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.4"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.5"
     },
     "Properties": {
       "UberGraphFrame": {},
@@ -431,7 +350,7 @@
       ],
       "CollisionComponent": {
         "ObjectName": "BoxComponent'Default__BP_CoinPubPrivateRoomWithConditions_C:CollisionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.6"
       },
       "PrimaryActorTick": {
         "bCanEverTick": true,
@@ -439,7 +358,7 @@
       },
       "RootComponent": {
         "ObjectName": "BoxComponent'Default__BP_CoinPubPrivateRoomWithConditions_C:CollisionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.6"
       }
     }
   },
@@ -450,7 +369,7 @@
     "Class": "UScriptClass'BoxComponent'",
     "Template": {
       "ObjectName": "BoxComponent'Default__BP_CoinPubPrivateRoomTrigger_C:CollisionComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.5"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomTrigger.6"
     }
   },
   {
@@ -471,7 +390,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_CoinPubPrivateRoomWithConditions_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.7"
       },
       "VariableGuid": "C63F7144-4A4FE0CF-BC10F9BC-9601D87B",
       "InternalVariableName": "DefaultSceneRoot"
@@ -485,7 +404,7 @@
     "Properties": {
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_CoinPubPrivateRoomWithConditions_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/City/BP_CoinPubPrivateRoomWithConditions.8"
       }
     }
   }

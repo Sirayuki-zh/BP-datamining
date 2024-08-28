@@ -10,7 +10,7 @@
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_BattleAerinse_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.64"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.66"
       },
       "InheritableComponentHandler": {
         "ObjectName": "InheritableComponentHandler'BP_BattleAerinse_C:InheritableComponentHandler'",
@@ -22,6 +22,17 @@
       "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_ExtraEnemyCharacter.5"
     },
     "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBBreath",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBBreathComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
       {
         "Type": "ObjectProperty",
         "Name": "SBEnemyChant",
@@ -61,48 +72,48 @@
       },
       "DeathEffectComp": {
         "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_BattleAerinse_C:EnemyDeathEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.34"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.35"
       },
       "TideComp": {
         "ObjectName": "SBEnemyTideComponent'Default__BP_BattleAerinse_C:EnemyTideComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.48"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.49"
       },
       "ExitEffectComp": {
         "ObjectName": "SBEnemyExitEffectComponent'Default__BP_BattleAerinse_C:EnemyExitEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.37"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.38"
       },
       "EnemyId": "E350_01_000",
       "BadZoneAvoidanceComp": {
         "ObjectName": "SBEnemyBadZoneAvoidanceComponent'Default__BP_BattleAerinse_C:EnemyBadZoneAvoidanceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.26"
       },
       "PhaseComp": {
         "ObjectName": "SBEnemyPhaseComponent'Default__BP_BattleAerinse_C:EnemyPhaseComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.41"
       },
       "ModifierComp": {
         "ObjectName": "SBEnemyModifierComponent'Default__BP_BattleAerinse_C:EnemyModifierComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.39"
       },
       "ActionParamComp": {
         "ObjectName": "SBEnemyActionParamComponent'Default__BP_BattleAerinse_C:EnemyActionParamComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.25"
       },
       "BattleConditionComp": {
         "ObjectName": "SBEnemyBattleConditionComponent'Default__BP_BattleAerinse_C:EnemyBattleConditionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.27"
       },
       "BlendSpaceInputComp": {
         "ObjectName": "SBEnemyBlendSpaceInputComponent'Default__BP_BattleAerinse_C:EnemyBlendSpaceInputComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.28"
       },
       "PartsManagerComp": {
         "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_BattleAerinse_C:EnemyPartsBreakComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.39"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.40"
       },
       "TargetingComp": {
         "ObjectName": "SBEnemyTargetingComponent'Default__BP_BattleAerinse_C:EnemyTargetingComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.48"
       },
       "AdjustRootMotionComp": {
         "ObjectName": "SBAdjustRootMotionComponent'Default__BP_BattleAerinse_C:AdjustRootMotionComp'",
@@ -110,71 +121,71 @@
       },
       "StanceComp": {
         "ObjectName": "SBEnemyStanceComponent'Default__BP_BattleAerinse_C:StanceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.44"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.45"
       },
       "SummonComponent": {
         "ObjectName": "SBEnemySummonComponent'Default__BP_BattleAerinse_C:SummonComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.46"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.47"
       },
       "MarkerManagerComp": {
         "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_BattleAerinse_C:MarkerManagerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.30"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.31"
       },
       "SenseChangerComp": {
         "ObjectName": "SBEnemySenseChangerComponent'Default__BP_BattleAerinse_C:SenseChangerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.42"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.43"
       },
       "EnemyDropComp": {
         "ObjectName": "SBEnemyDropComponent'Default__BP_BattleAerinse_C:EnemyDropComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.36"
       },
       "DelegateHitAuthComp": {
         "ObjectName": "SBDelegateHitAuthComponent'Default__BP_BattleAerinse_C:DelegateHitAuthComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.22"
       },
       "AnimationSamplingComp": {
         "ObjectName": "SBCharacterAnimationSamplingComponent'Default__BP_BattleAerinse_C:EnemyAnimationSamplingComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.14"
       },
       "StateInitializerComponent": {
         "ObjectName": "SBStateInitializerComponent'Default__BP_BattleAerinse_C:StateInitializerComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.59"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.60"
       },
       "CollisionHitComp": {
         "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_BattleAerinse_C:EnemyCollisionHitComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.33"
       },
       "ChanceTimeDownComp": {
         "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_BattleAerinse_C:ChanceTimeDownComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.14"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.15"
       },
       "EnemyDxBattleComp": {
         "ObjectName": "SBEnemyDxBattleComponent'Default__BP_BattleAerinse_C:EnemyDxBattleComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.36"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.37"
       },
       "AbilitySystemComp": {
         "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_BattleAerinse_C:AbilitySystemComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.24"
       },
       "ConditionalVoiceComp": {
         "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_BattleAerinse_C:ConditionalVoiceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.33"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.34"
       },
       "ExecDelegateWithConditionComp": {
         "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_BattleAerinse_C:ExecDelegateWithConditionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.49"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.50"
       },
       "BuddyRevivalComp": {
         "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_BattleAerinse_C:BuddyRevivalComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.29"
       },
       "StateMachineReplayComp": {
         "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_BattleAerinse_C:StateMachineReplayComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.45"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.46"
       },
       "ActionUniqueCounterComp": {
         "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_BattleAerinse_C:ActionUniqueCounterComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.15"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.16"
       },
       "HitpointToBlockDamage": 1.0,
       "SpawnEffectSocketName": "Spine1_J",
@@ -202,25 +213,25 @@
       },
       "FaceComp": {
         "ObjectName": "SBCharaPartsFaceComponent'Default__BP_BattleAerinse_C:FaceSlot'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.17"
       },
       "CharaCreateComponent": {
         "ObjectName": "SBCharaCreateComponent'Default__BP_BattleAerinse_C:CharaCreate'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.13"
       },
       "PartsDamageAnimParamter": {
         "ObjectName": "SBPartsDamageAnimParamter'Default__BP_BattleAerinse_C:PartsDamageAnimParamter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.54"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.55"
       },
       "ElementStatusEffectSpawnNumScale": 1.1,
       "ElementStatusEffectSizeScale": 0.8,
       "WeaponVisibilityComponent": {
         "ObjectName": "SBWeaponVisibilityComponent'Default__BP_BattleAerinse_C:WeaponVisibilityComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.60"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.61"
       },
       "SpawnComp": {
         "ObjectName": "SBProjectileSpawnComponent'Default__BP_BattleAerinse_C:ProjectileSpawnComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.57"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.58"
       },
       "BattleStatusComp": {
         "ObjectName": "SBBattleStatusComponent'Default__BP_BattleAerinse_C:BattleStatusComp'",
@@ -228,15 +239,15 @@
       },
       "ProjectileShareHitComp": {
         "ObjectName": "SBProjectileShareHitComponent'Default__BP_BattleAerinse_C:ProjectileShareHitComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.56"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.57"
       },
       "SendNetDataComp": {
         "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_BattleAerinse_C:ProjectileSendNetDataComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.55"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.56"
       },
       "StateManageComp": {
         "ObjectName": "SBProjectileStateManageComponent'Default__BP_BattleAerinse_C:ProjectileStateManageComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.58"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.59"
       },
       "AnimationControlComp": {
         "ObjectName": "SBAnimationControlComponent'Default__BP_BattleAerinse_C:AnimationControlComp'",
@@ -244,7 +255,7 @@
       },
       "DemoParameterComp": {
         "ObjectName": "SBDemoParameterComponent'Default__BP_BattleAerinse_C:DemoParameterComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.23"
       },
       "FactionComponent": {
         "ObjectName": "AIFwFactionComponent'Default__BP_BattleAerinse_C:FactionComponent'",
@@ -252,7 +263,7 @@
       },
       "FactionInfluenceComponent": {
         "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_BattleAerinse_C:FactionInfluenceComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.51"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.52"
       },
       "AISharedInfoComponent": {
         "ObjectName": "SBAISharedInfoComponent'Default__BP_BattleAerinse_C:AISharedInfoComponent'",
@@ -260,7 +271,7 @@
       },
       "MovePredictComponent": {
         "ObjectName": "SBMovementPredictComponent'Default__BP_BattleAerinse_C:MovementPredictComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.53"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.54"
       },
       "ActorVisibilityComponent": {
         "ObjectName": "SBActorVisibilityComponent'Default__BP_BattleAerinse_C:ActorVisibilityComponent'",
@@ -268,11 +279,11 @@
       },
       "DebugFunctionComponent": {
         "ObjectName": "SBDebugFunctionComponent'Default__BP_BattleAerinse_C:DebugFunctionComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.21"
       },
       "CollisionGroup": {
         "ObjectName": "SBCollisionGroupComponent'Default__BP_BattleAerinse_C:CollisionGroup'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.20"
       },
       "DamageCollision": {
         "ObjectName": "ASCollisionSphereComponent'Default__BP_BattleAerinse_C:DamageCollision'",
@@ -280,15 +291,15 @@
       },
       "Mesh": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_BattleAerinse_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.43"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.44"
       },
       "CharacterMovement": {
         "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_BattleAerinse_C:CharMoveComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.31"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.32"
       },
       "CapsuleComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_BattleAerinse_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.42"
       },
       "AIControllerClass": {
         "ObjectName": "BlueprintGeneratedClass'BP_AIBattleAerinse_C'",
@@ -296,7 +307,7 @@
       },
       "RootComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_BattleAerinse_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.42"
       }
     }
   },
@@ -325,7 +336,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBCollisionGroupComponent'Default__BP_BattleAerinse_C:CollisionGroup'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.20"
       }
     }
   },
@@ -343,7 +354,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBFootprintComponent'BP_BattleAerinse_C:SBFootprint_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.52"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.53"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -459,6 +470,22 @@
     }
   },
   {
+    "Type": "SBBreathComponent",
+    "Name": "SBBreath_GEN_VARIABLE",
+    "Outer": "BP_BattleAerinse_C",
+    "Class": "UScriptClass'SBBreathComponent'",
+    "Properties": {
+      "m_DefaultSocketName": "Sheath_Flute",
+      "m_AutoplayBreathType": "ESBBreathType::Cold",
+      "m_BreathSettingList": {
+        "ParticleEffect": {
+          "AssetPathName": "/Game/Effect/Particle/00_Common/Breath/PS_CMN_Breath_00.PS_CMN_Breath_00",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
     "Type": "SBCharaBodyCapsuleGroupComponent",
     "Name": "CharaBodyCapsuleGroupComp",
     "Outer": "Default__BP_BattleAerinse_C",
@@ -532,7 +559,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_BattleAerinse_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.43"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.44"
       }
     }
   },
@@ -568,7 +595,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_BattleAerinse_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.42"
       }
     }
   },
@@ -830,7 +857,7 @@
       },
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_BattleAerinse_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.42"
       },
       "RelativeLocation": {
         "X": 0.0,
@@ -1059,7 +1086,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_BattleAerinse_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.61"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.62"
       },
       "VariableGuid": "C94F89B0-4ED4E5C2-DCFEE5AF-A27834E0",
       "InternalVariableName": "DefaultSceneRoot"
@@ -1077,10 +1104,28 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBEnemyChantComponent'BP_BattleAerinse_C:SBEnemyChant_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.30"
       },
       "VariableGuid": "8CA907F7-490E69BC-9E2BD182-D7978FFC",
       "InternalVariableName": "SBEnemyChant"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBBreathComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBBreathComponent'BP_BattleAerinse_C:SBBreath_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.11"
+      },
+      "VariableGuid": "033A371E-45A7D517-52731F93-0DA6D654",
+      "InternalVariableName": "SBBreath"
     }
   },
   {
@@ -1092,18 +1137,26 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_BattleAerinse_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.63"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.64"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BattleAerinse_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.65"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_BattleAerinse_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.63"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.64"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BattleAerinse_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.65"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_BattleAerinse_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.62"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E350_01_BattleAerinse/BP_BattleAerinse.63"
       }
     }
   }

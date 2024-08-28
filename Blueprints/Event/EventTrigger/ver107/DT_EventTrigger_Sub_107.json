@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_EventTrigger_Sub_107",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'SBEventTrigger'",
+        "ObjectPath": "/Script/SkyBlue"
+      }
+    },
+    "Rows": {
+      "6章サブクエスト": {
+        "ScriptAsset": null,
+        "Conditions": [],
+        "CloseConditions": []
+      },
+      "SQ106_055_EX": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'SQ106_055_EX'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/SQ/Chapter06/SQ106_055/SQ106_055_EX.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "SQ106_055",
+            "Value2": "Locked"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "SQ106_055_start": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'SQ106_055_start'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/SQ/Chapter06/SQ106_055/SQ106_055_start.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "SQ106_055",
+            "Value2": "NotReceived"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "SQ106_055_step0_EX": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'SQ106_055_step0_EX'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/SQ/Chapter06/SQ106_055/SQ106_055_step0_EX.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "SQ106_055",
+            "Value2": "Proceeding"
+          },
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStep",
+            "Value1": "SQ106_055",
+            "Value2": "step0"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "SQ106_055_done": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'SQ106_055_done'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/SQ/Chapter06/SQ106_055/SQ106_055_done.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "SQ106_055",
+            "Value2": "Done"
+          }
+        ],
+        "CloseConditions": []
+      },
+      "SQ106_055_close": {
+        "ScriptAsset": {
+          "ObjectName": "SBScriptAsset'SQ106_055_close'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Script/SQ/Chapter06/SQ106_055/SQ106_055_close.0"
+        },
+        "Conditions": [
+          {
+            "Type": "ESBEventTriggerConditionType::QuestStatus",
+            "Value1": "SQ106_055",
+            "Value2": "Close"
+          }
+        ],
+        "CloseConditions": []
+      }
+    }
+  }
+]

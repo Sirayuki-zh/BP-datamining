@@ -11,6 +11,13 @@
         "Flags": "RF_Public",
         "ElementSize": 12,
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InMasterDataId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       }
     ],
     "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
@@ -234,7 +241,7 @@
         "PropertyFlags": "InstancedReference",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -268,13 +275,578 @@
     "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
   },
   {
+    "Type": "Function",
+    "Name": "SetProductInfoM",
+    "Outer": "BulkGetItemMenu_ProductSetEntry_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Id",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "MasterTextData",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Create_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddChildToVerticalBox_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VerticalBoxSlot'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetMasterDataManager_IsValid",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMasterDataManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SBMasterDataManager'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FindBulkGetItemMasterData_BP_bExists",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindBulkGetItemMasterData_BP_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 128,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItemMasterData'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_4",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_5",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_6",
+        "Flags": "RF_Public",
+        "ElementSize": 44,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBBulkGetItem'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_SBTextTableHashToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBTextTableHash'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
     "Type": "WidgetBlueprintGeneratedClass",
     "Name": "BulkGetItemMenu_ProductSetEntry_C",
     "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
     "Properties": {
       "WidgetTree": {
         "ObjectName": "WidgetTree'BulkGetItemMenu_ProductSetEntry_C:WidgetTree'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.47"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.48"
       },
       "Bindings": [
         {
@@ -296,7 +868,7 @@
       "DynamicBindingObjects": [
         {
           "ObjectName": "ComponentDelegateBinding'BulkGetItemMenu_ProductSetEntry_C:ComponentDelegateBinding_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.23"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.24"
         }
       ],
       "UberGraphFunction": {
@@ -309,6 +881,10 @@
       "ObjectPath": "/Script/UMG"
     },
     "Children": [
+      {
+        "ObjectName": "Function'BulkGetItemMenu_ProductSetEntry_C:SetProductInfoM'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.7"
+      },
       {
         "ObjectName": "Function'BulkGetItemMenu_ProductSetEntry_C:GetToolTipText_0'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.6"
@@ -358,7 +934,7 @@
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -369,7 +945,7 @@
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -380,7 +956,7 @@
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -391,7 +967,7 @@
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -402,7 +978,7 @@
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'BulkGetItemMenu_ProductItemEntry_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.1"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
         }
       },
       {
@@ -495,6 +1071,13 @@
         "Flags": "RF_Public | RF_LoadCompleted",
         "ElementSize": 12,
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MasterDataId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
       }
     ],
     "FuncMap": {
@@ -525,6 +1108,10 @@
       "GetToolTipText_0": {
         "ObjectName": "Function'BulkGetItemMenu_ProductSetEntry_C:GetToolTipText_0'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.6"
+      },
+      "SetProductInfoM": {
+        "ObjectName": "Function'BulkGetItemMenu_ProductSetEntry_C:SetProductInfoM'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.7"
       }
     },
     "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
@@ -536,7 +1123,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BulkGetItemMenu_ProductSetEntry_C'Default__BulkGetItemMenu_ProductSetEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.8"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.9"
     }
   },
   {
@@ -582,12 +1169,12 @@
       "Slots": [
         {
           "ObjectName": "BorderSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Border_0.BorderSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.10"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.11"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.26"
       }
     }
   },
@@ -605,11 +1192,11 @@
       },
       "Parent": {
         "ObjectName": "Border'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Border_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.10"
       },
       "Content": {
         "ObjectName": "SizeBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SizeBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.34"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.35"
       }
     }
   },
@@ -620,12 +1207,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.BulkGetItemMenu_ProductItemEntry_C'",
     "Template": {
       "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'Default__BulkGetItemMenu_ProductItemEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.3"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.41"
       }
     }
   },
@@ -636,12 +1223,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.BulkGetItemMenu_ProductItemEntry_C'",
     "Template": {
       "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'Default__BulkGetItemMenu_ProductItemEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.3"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.42"
       }
     }
   },
@@ -652,12 +1239,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.BulkGetItemMenu_ProductItemEntry_C'",
     "Template": {
       "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'Default__BulkGetItemMenu_ProductItemEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.3"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.42"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.43"
       }
     }
   },
@@ -668,12 +1255,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.BulkGetItemMenu_ProductItemEntry_C'",
     "Template": {
       "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'Default__BulkGetItemMenu_ProductItemEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.3"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.43"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.44"
       }
     }
   },
@@ -684,12 +1271,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.BulkGetItemMenu_ProductItemEntry_C'",
     "Template": {
       "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'Default__BulkGetItemMenu_ProductItemEntry_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.2"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductItemEntry.3"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_4'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.44"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.45"
       }
     }
   },
@@ -737,12 +1324,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_134.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.18"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.19"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.27"
       }
     }
   },
@@ -755,12 +1342,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_Clip.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.19"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.20"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.28"
       }
     }
   },
@@ -775,11 +1362,11 @@
       },
       "Parent": {
         "ObjectName": "Button'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_134'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.17"
       },
       "Content": {
         "ObjectName": "TextBlock'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.TextBlock_101'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.36"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.37"
       }
     }
   },
@@ -791,11 +1378,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "Button'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_Clip'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.17"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.18"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SBRuntimeTextBlock_Clip'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.33"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.34"
       }
     }
   },
@@ -813,11 +1400,11 @@
       "HorizontalAlignment": "HAlign_Left",
       "Parent": {
         "ObjectName": "SBButton_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SBButton_C_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.33"
       },
       "Content": {
         "ObjectName": "TextBlock'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.TextBlock_37'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.37"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
       }
     }
   },
@@ -830,7 +1417,7 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.22"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.23"
         }
       ]
     }
@@ -850,11 +1437,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.22"
       },
       "Content": {
         "ObjectName": "Overlay'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.30"
       }
     }
   },
@@ -892,20 +1479,20 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.26"
         },
         {
           "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.27"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.28"
         },
         {
           "ObjectName": "HorizontalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.26"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.27"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.45"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.46"
       }
     }
   },
@@ -919,11 +1506,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "HorizontalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
       },
       "Content": {
         "ObjectName": "Border'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Border_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.10"
       }
     }
   },
@@ -937,11 +1524,11 @@
       "VerticalAlignment": "VAlign_Center",
       "Parent": {
         "ObjectName": "HorizontalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
       },
       "Content": {
         "ObjectName": "Button'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_134'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.17"
       }
     }
   },
@@ -953,11 +1540,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
       },
       "Content": {
         "ObjectName": "Button'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_Clip'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.17"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.18"
       }
     }
   },
@@ -980,7 +1567,7 @@
       },
       "Slot": {
         "ObjectName": "OverlaySlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17.OverlaySlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.31"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.32"
       }
     }
   },
@@ -993,16 +1580,16 @@
       "Slots": [
         {
           "ObjectName": "OverlaySlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17.OverlaySlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.31"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.32"
         },
         {
           "ObjectName": "OverlaySlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17.OverlaySlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.30"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.31"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.23"
       }
     }
   },
@@ -1014,11 +1601,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "Overlay'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.30"
       },
       "Content": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.40"
       }
     }
   },
@@ -1032,11 +1619,11 @@
       "VerticalAlignment": "VAlign_Fill",
       "Parent": {
         "ObjectName": "Overlay'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.30"
       },
       "Content": {
         "ObjectName": "Image'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Image_509'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.29"
       }
     }
   },
@@ -1088,12 +1675,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SBButton_C_0.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.20"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.21"
         }
       ],
       "Slot": {
         "ObjectName": "SizeBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.36"
       }
     }
   },
@@ -1123,7 +1710,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_Clip.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.20"
       }
     }
   },
@@ -1140,12 +1727,12 @@
       "Slots": [
         {
           "ObjectName": "SizeBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.35"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.36"
         }
       ],
       "Slot": {
         "ObjectName": "BorderSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Border_0.BorderSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.11"
       }
     }
   },
@@ -1157,11 +1744,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "SizeBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SizeBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.34"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.35"
       },
       "Content": {
         "ObjectName": "SBButton_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SBButton_C_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.33"
       }
     }
   },
@@ -1182,7 +1769,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Button_134.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.19"
       }
     }
   },
@@ -1204,7 +1791,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.SBButton_C_0.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.21"
       },
       "bIsVariable": true,
       "Clipping": "EWidgetClipping::ClipToBounds"
@@ -1219,28 +1806,28 @@
       "Slots": [
         {
           "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.40"
-        },
-        {
-          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_1'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.41"
         },
         {
-          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_2'",
+          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_1'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.42"
         },
         {
-          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_3'",
+          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_2'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.43"
         },
         {
-          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_4'",
+          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_3'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.44"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList.VerticalBoxSlot_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.45"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.46"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.47"
       },
       "bIsVariable": true,
       "Visibility": "ESlateVisibility::Collapsed"
@@ -1255,16 +1842,16 @@
       "Slots": [
         {
           "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.45"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.46"
         },
         {
           "ObjectName": "VerticalBoxSlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.46"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.47"
         }
       ],
       "Slot": {
         "ObjectName": "OverlaySlot'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.Overlay_17.OverlaySlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.30"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.31"
       }
     }
   },
@@ -1276,11 +1863,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       },
       "Content": {
         "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.BulkGetItemMenu_ProductItemEntry'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.12"
       }
     }
   },
@@ -1292,11 +1879,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       },
       "Content": {
         "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.BulkGetItemMenu_ProductItemEntry_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.13"
       }
     }
   },
@@ -1308,11 +1895,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       },
       "Content": {
         "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.BulkGetItemMenu_ProductItemEntry_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.14"
       }
     }
   },
@@ -1324,11 +1911,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       },
       "Content": {
         "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.BulkGetItemMenu_ProductItemEntry_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.14"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.15"
       }
     }
   },
@@ -1340,11 +1927,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       },
       "Content": {
         "ObjectName": "BulkGetItemMenu_ProductItemEntry_C'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.BulkGetItemMenu_ProductItemEntry_4'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.15"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.16"
       }
     }
   },
@@ -1356,11 +1943,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.40"
       },
       "Content": {
         "ObjectName": "HorizontalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.HorizontalBox_62'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.25"
       }
     }
   },
@@ -1375,11 +1962,11 @@
       },
       "Parent": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.40"
       },
       "Content": {
         "ObjectName": "VerticalBox'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.ItemList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.39"
       }
     }
   },
@@ -1391,7 +1978,7 @@
     "Properties": {
       "RootWidget": {
         "ObjectName": "CanvasPanel'BulkGetItemMenu_ProductSetEntry_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/BulkGetItemMenu/BulkGetItemMenu_ProductSetEntry.22"
       }
     }
   }
