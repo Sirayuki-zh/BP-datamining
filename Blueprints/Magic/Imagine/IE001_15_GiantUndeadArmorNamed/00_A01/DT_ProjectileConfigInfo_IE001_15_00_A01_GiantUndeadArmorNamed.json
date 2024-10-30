@@ -20,7 +20,7 @@
         "SpawnInfo": {
           "SpawnType": "ESpawnType::TargetCompOffsetPosOnDir",
           "SpawnRotType": "ESpawnRotType::FaceTarget",
-          "DirectionType": "EProjectileDirection::BySystem",
+          "DirectionType": "EProjectileDirection::AutoSetDirection",
           "SpawnSocketName": "None",
           "SpawnOffset": {
             "X": -300.0,
@@ -250,9 +250,9 @@
         "MoveHomingConfig": {
           "bIsHoming": false,
           "HomingType": "EHomingType::HomingCorrectionHorizontalOnlyAngle",
-          "HomingAccelerationMagnitude": 0.0,
+          "HomingAccelerationMagnitude": 1.0,
           "HomingBeginTime": 0.0,
-          "HomingEndTime": 0.0,
+          "HomingEndTime": 4.1,
           "HomingOffsetPos": {
             "X": 0.0,
             "Y": 0.0,
@@ -579,7 +579,7 @@
             "bIsDisableReHitDelay": false,
             "bIsShareHit": true,
             "ShareHitConfig": {
-              "ShareHitTime": 1.0,
+              "ShareHitTime": 3.0,
               "ShareGroup": "EProjectileShareGroup::Group1",
               "bIsIndependentBySpawner": false
             },
@@ -622,7 +622,7 @@
               "Location": {
                 "X": 1500.0,
                 "Y": 0.0,
-                "Z": 150.0
+                "Z": -200.0
               },
               "Rotation": {
                 "Pitch": 0.0,
@@ -1009,7 +1009,7 @@
             "bIsDisableReHitDelay": false,
             "bIsShareHit": true,
             "ShareHitConfig": {
-              "ShareHitTime": 1.0,
+              "ShareHitTime": 3.0,
               "ShareGroup": "EProjectileShareGroup::Group1",
               "bIsIndependentBySpawner": false
             },
@@ -1052,7 +1052,7 @@
               "Location": {
                 "X": 1500.0,
                 "Y": 0.0,
-                "Z": 150.0
+                "Z": 0.0
               },
               "Rotation": {
                 "Pitch": 0.0,

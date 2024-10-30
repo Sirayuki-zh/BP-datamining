@@ -2609,26 +2609,6 @@
         "IconType": "ESBStatusAilmentIconType::ReduceSkillRecastTime",
         "UIAttribute": 2
       },
-      "ShortSkillRecastTime_SkillID_Fix": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::BuffPositive",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 1
-      },
       "ReduceStaminaDown_All": {
         "Object": {
           "ObjectName": "BlueprintGeneratedClass'BP_AB_ReduceStaminaDown_All_C'",
@@ -4285,46 +4265,6 @@
         "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 1
       },
-      "Player_SpreadRipperHitCount": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 6,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Negative",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "Player_ExtraComboMode": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 1,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
       "AllyAttack_AttackScale": {
         "Object": {
           "ObjectName": "BlueprintGeneratedClass'BP_AB_AllyAttack_AttackScale_C'",
@@ -5151,7 +5091,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "DotScaleDamage": {
         "Object": {
@@ -5220,7 +5160,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::HPRegenerate",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "DotScaleHeal": {
         "Object": {
@@ -5312,7 +5252,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::MPRegenerate",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "DotMPRateHeal_Normal": {
         "Object": {
@@ -5335,7 +5275,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::MPRegenerate",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "SpecialGaugeChargeUp": {
         "Object": {
@@ -7338,12 +7278,15 @@
         "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 2
       },
-      "FixHate": {
-        "Object": null,
+      "DeathSentence": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerStatus_DeathSentence_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_PlayerStatus_DeathSentence.0"
+        },
         "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
+        "MaxTriggers": 1,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::FirstInFirstOut",
+        "Flag": "ESBAbilityFlags::DeathSentence",
         "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
         "FeelType": "ESBBattleEffectiveFeel::Negative",
         "EffectID": {
@@ -7356,7 +7299,30 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
+        "UIAttribute": 1
+      },
+      "ResistDeathSentence": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerStatus_ResistDeathSentence_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_PlayerStatus_ResistDeathSentence.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 999,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::BuffPositive",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
+        "UIAttribute": 1
       },
       "GutsSelfDamage": {
         "Object": {
@@ -7381,14 +7347,17 @@
         "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 2
       },
-      "GutsOtherDamage": {
-        "Object": null,
+      "HPLoss": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerStatus_HPLoss_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_PlayerStatus_HPLoss.0"
+        },
         "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
         "MaxTriggers": 999,
         "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
+        "Flag": "ESBAbilityFlags::HPLoss",
         "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "FeelType": "ESBBattleEffectiveFeel::Negative",
         "EffectID": {
           "ID": "None"
         },
@@ -7445,7 +7414,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::VoltageRegen",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "DotVoltageGaugeUp_WithFeverTime": {
         "Object": {
@@ -7468,7 +7437,7 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::VoltageRegen",
-        "UIAttribute": 2
+        "UIAttribute": 6
       },
       "RateHealBelowPersentage": {
         "Object": {
@@ -7583,126 +7552,6 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::ScapeArmor",
-        "UIAttribute": 2
-      },
-      "SpreadStatusAilments_CorePoison": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 1,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::FirstInFirstOut",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Negative",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "PlayerActionPlayRateChange": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 1,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::ESBAbilityFlags_MAX",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "DotSlashGaugeUp": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "DefaultElementModify_Ice": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "SlashCancelAddSlashGaugeModify": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
-        "UIAttribute": 2
-      },
-      "AddSpecialSlashStack": {
-        "Object": null,
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 1,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 2
       }
     }

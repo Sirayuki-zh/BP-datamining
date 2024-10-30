@@ -1,0 +1,143 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_ThrowInteractionSwBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.13"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_ThrowInteractionSwBase_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_ThrowInteractionSwBase_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.13"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_ThrowInteractionSwBase_C'Default__BP_ThrowInteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.1"
+    }
+  },
+  {
+    "Type": "BP_ThrowInteractionSwBase_C",
+    "Name": "Default__BP_ThrowInteractionSwBase_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.BP_ThrowInteractionSwBase_C'",
+    "Template": {
+      "ObjectName": "BP_InteractionSwBase_C'Default__BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.14"
+    },
+    "Properties": {
+      "Replication": true,
+      "Recycle": true,
+      "CheckAlive": true,
+      "RemoteRole": "ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "BP_FieldInteractionComponent_C",
+    "Name": "InteractionComponent_GEN_VARIABLE",
+    "Outer": "BP_ThrowInteractionSwBase_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Field/BP_FieldInteractionComponent.BP_FieldInteractionComponent_C'",
+    "Template": {
+      "ObjectName": "BP_FieldInteractionComponent_C'BP_InteractionSwBase_C:InteractionComponent_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.15"
+    },
+    "Properties": {
+      "bIsInteractionActive": false,
+      "Type": "EInteractionTargetType::Gimmick",
+      "InteractNameID": 46,
+      "HoldTime": 0.0,
+      "bCanOccupied": true,
+      "bNotShouldMount": true,
+      "AnimCommand": "ThrowGimmick",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_ThrowInteractionSwBase_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_FieldInteractionComponent_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/BP_FieldInteractionComponent.0"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BP_FieldInteractionComponent_C'BP_ThrowInteractionSwBase_C:InteractionComponent_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.2"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_InteractionSwBase_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.13"
+            },
+            "SCSVariableName": "InteractionComponent",
+            "AssociatedGuid": "56F4EDC0-4D2615A7-1A4B20B2-175CAE18"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_ThrowInteractionSwBase_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_ThrowInteractionSwBase_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.4"
+      },
+      "VariableGuid": "AAE60FAB-4A4BD611-E4A7B0B9-B80730C4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_ThrowInteractionSwBase_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_ThrowInteractionSwBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_ThrowInteractionSwBase.5"
+      }
+    }
+  }
+]

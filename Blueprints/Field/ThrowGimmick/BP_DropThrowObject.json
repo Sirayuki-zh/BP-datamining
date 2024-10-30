@@ -1,0 +1,311 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_DropThrowObject",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_InOtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_ViewRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_RotatorToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetObjectName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInteraction",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_InteractionSwBase_C:OnInteraction'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.5"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_InteractionSwBase_C:OnInteraction'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InOtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ViewRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_InteractionSwBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_InteractionSwBase_C:ReceiveBeginPlay'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.2"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.13"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_DropThrowObject_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.9"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_DropThrowObject_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_DropThrowObject_C:ExecuteUbergraph_BP_DropThrowObject'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.13"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_DropThrowObject_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.2"
+      },
+      {
+        "ObjectName": "Function'BP_DropThrowObject_C:OnInteraction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.1"
+      },
+      {
+        "ObjectName": "Function'BP_DropThrowObject_C:ExecuteUbergraph_BP_DropThrowObject'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_DropThrowObject": {
+        "ObjectName": "Function'BP_DropThrowObject_C:ExecuteUbergraph_BP_DropThrowObject'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.0"
+      },
+      "OnInteraction": {
+        "ObjectName": "Function'BP_DropThrowObject_C:OnInteraction'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_DropThrowObject_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_DropThrowObject_C'Default__BP_DropThrowObject_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.4"
+    }
+  },
+  {
+    "Type": "BP_DropThrowObject_C",
+    "Name": "Default__BP_DropThrowObject_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.BP_DropThrowObject_C'",
+    "Template": {
+      "ObjectName": "BP_InteractionSwBase_C'Default__BP_InteractionSwBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/InteractionTarget/BP_InteractionSwBase.14"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "RemoteRole": "ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_DropThrowObject_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.6"
+      },
+      "VariableGuid": "2EEABF89-464A61B3-EE7787AC-C21A7634",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_DropThrowObject_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.10"
+      },
+      "ParentComponentOrVariableName": "Root",
+      "ParentComponentOwnerClassName": "BP_InteractionSwBase_C",
+      "VariableGuid": "BDC74E03-4F567407-EF08989A-87D32E9B",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DropThrowObject_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_DropThrowObject_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_DropThrowObject_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/ThrowGimmick/BP_DropThrowObject.7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "BP_DropThrowObject_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_ENV_cmn_treasurebox001_a2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Environment/Common/CommonAssets/cmn_treasurebox/cmn_treasurebox001/Mesh/SM_ENV_cmn_treasurebox001_a2.2"
+      }
+    }
+  }
+]

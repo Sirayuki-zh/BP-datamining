@@ -1,0 +1,143 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CoopActionConductor_IceDeathScythe_FinalAttack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_CoopActionConductor_IceDeathScythe_FinalAttack_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBCoopActionConductor_DeathScythe_FinalAttack'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CoopActionConductor_IceDeathScythe_FinalAttack_C'Default__BP_CoopActionConductor_IceDeathScythe_FinalAttack_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.1"
+    }
+  },
+  {
+    "Type": "BP_CoopActionConductor_IceDeathScythe_FinalAttack_C",
+    "Name": "Default__BP_CoopActionConductor_IceDeathScythe_FinalAttack_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.BP_CoopActionConductor_IceDeathScythe_FinalAttack_C'",
+    "Properties": {
+      "AnchorCenterID": 3,
+      "AnchorLocationID": 4,
+      "AnchorLocationID": 5,
+      "AnchorLocationID": 6,
+      "LoopDuration": 70.0,
+      "LapTime": 20.0,
+      "CoronaStartingTime": 35.0,
+      "ParticleSpiritBall": {
+        "ObjectName": "ParticleSystem'PS_E526_FinalAttack_00_Ice_CHG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E526/Particles/PS_E526_FinalAttack_00_Ice_CHG.175"
+      },
+      "ParticleCorona": {
+        "ObjectName": "ParticleSystem'PS_E526_FinalAttack_01_Ice_CHG'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E526/Particles/PS_E526_FinalAttack_01_Ice_CHG.224"
+      },
+      "ParticleMisfire": {
+        "ObjectName": "ParticleSystem'PS_E526_FinalAttack_01_Ice_MZL'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E526/Particles/PS_E526_FinalAttack_01_Ice_MZL.160"
+      },
+      "BaseScaleSpiritBall": 4.0,
+      "MaxScaleSpiritBall": 7.0,
+      "HeightSpiritBall": 1500.0,
+      "SoundSpiritBall": {
+        "ObjectName": "AkAudioEvent'Play_E526_00_02_FinalAttack_Ice_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E526_00_DeathScythe/E526_00_02/Play_E526_00_02_FinalAttack_Ice_Loop.1"
+      },
+      "SoundCorona": {
+        "ObjectName": "AkAudioEvent'Play_E526_00_02_FinalAttack_IcePhase2'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E526_00_DeathScythe/E526_00_02/Play_E526_00_02_FinalAttack_IcePhase2.1"
+      },
+      "SoundCrash": {
+        "ObjectName": "AkAudioEvent'Play_E526_00_00_BariaPrevention_02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E526_00_DeathScythe/Play_E526_00_00_BariaPrevention_02.1"
+      },
+      "SoundStop": {
+        "ObjectName": "AkAudioEvent'Stop_E526_00_02_FinalAttack_Ice_Loop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Enemy/E526_00_DeathScythe/E526_00_02/Stop_E526_00_02_FinalAttack_Ice_Loop.1"
+      },
+      "Command": "CoopActionFinalAttack",
+      "TargetEnemies": [
+        "E526_00"
+      ],
+      "MaxMember": 3,
+      "RequisitionRadius": 10000.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CoopActionConductor_IceDeathScythe_FinalAttack_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_CoopActionConductor_IceDeathScythe_FinalAttack_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.2"
+      },
+      "VariableGuid": "3FA1EF71-41B54078-DB31908E-B59FF645",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CoopActionConductor_IceDeathScythe_FinalAttack_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CoopActionConductor_IceDeathScythe_FinalAttack_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.3"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_CoopActionConductor_IceDeathScythe_FinalAttack_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.3"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_CoopActionConductor_IceDeathScythe_FinalAttack_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E526_00_DeathScythe/BP_CoopActionConductor_IceDeathScythe_FinalAttack.3"
+      }
+    }
+  }
+]

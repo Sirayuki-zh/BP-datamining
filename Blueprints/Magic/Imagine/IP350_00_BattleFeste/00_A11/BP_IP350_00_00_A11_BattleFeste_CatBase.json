@@ -1,0 +1,769 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_IP350_00_00_A11_BattleFeste_CatBase",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBConditionCheckParticleSystemParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBConditionCheckParticleSystemParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEffectVisibleTypeCustomBP",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBProjectileBase:GetEffectVisibleTypeCustomBP'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Enum": {
+          "ObjectName": "Enum'ESBEffectVisibleType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnEmitterConditionCheck",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ParticleConditionCheck",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'SBConditionCheckParticleSystemParam'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnEmitterAtLocation_Simple_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAllSatisfied_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.19"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_IP350_00_00_A11_BattleFeste_CatBase_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ExecuteUbergraph_BP_IP350_00_00_A11_BattleFeste_CatBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SBProjectile_AlongGround'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SpawnEmitterConditionCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.4"
+      },
+      {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:GetEffectVisibleTypeCustomBP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.3"
+      },
+      {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.2"
+      },
+      {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.1"
+      },
+      {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ExecuteUbergraph_BP_IP350_00_00_A11_BattleFeste_CatBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBSkeletalMeshProjectile",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBSkeletalMeshProjectileComponent'",
+          "ObjectPath": "/Script/SkyBlue"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "BeginEmitterParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "BeginEmitterParam",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'SBConditionCheckParticleSystemParam'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "EndEmitterParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "EndEmitterParam",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'SBConditionCheckParticleSystemParam'",
+            "ObjectPath": "/Script/SkyBlue"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_IP350_00_00_A11_BattleFeste_CatBase": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ExecuteUbergraph_BP_IP350_00_00_A11_BattleFeste_CatBase'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.0"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.1"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:ReceiveEndPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.2"
+      },
+      "GetEffectVisibleTypeCustomBP": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:GetEffectVisibleTypeCustomBP'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.3"
+      },
+      "SpawnEmitterConditionCheck": {
+        "ObjectName": "Function'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SpawnEmitterConditionCheck'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_IP350_00_00_A11_BattleFeste_CatBase_C'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.6"
+    }
+  },
+  {
+    "Type": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Name": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.BP_IP350_00_00_A11_BattleFeste_CatBase_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BeginEmitterParam": [
+        {
+          "ConditionList": [
+            {
+              "ConditionCheckType": "ESBConditionCheckType::ProjectileBImaineStackBNumCache",
+              "ActiveArtsID": {
+                "ID": 0
+              },
+              "PassiveArtsID": {
+                "ID": 0
+              },
+              "AttackID": {
+                "AttackID": 0
+              },
+              "IntValue": 4,
+              "FloatValue": 0.0,
+              "NameValue": "None",
+              "Relation": "ESBMagnitudeRelation::LessOrEqual",
+              "BattleStatusRowHandle": {
+                "DataTable": null,
+                "RowName": "None"
+              },
+              "BattleEffectiveGroup": "ESBBattleEffectiveGroup::None",
+              "AbilityFlagList": [],
+              "OnlyPlayerStatusList": [],
+              "ElementType": "ESBAttribute::None",
+              "SkillType": "ESBPlayerSkillActionType::None",
+              "ArrayLogic": "ESBArrayLogicalOperator::AND",
+              "bNot": false
+            }
+          ],
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem'PS_E350_FST_CastCheer_catin'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E350/Particle/PS_E350_FST_CastCheer_catin.68"
+          }
+        },
+        {
+          "ConditionList": [
+            {
+              "ConditionCheckType": "ESBConditionCheckType::ProjectileBImaineStackBNumCache",
+              "ActiveArtsID": {
+                "ID": 0
+              },
+              "PassiveArtsID": {
+                "ID": 0
+              },
+              "AttackID": {
+                "AttackID": 0
+              },
+              "IntValue": 5,
+              "FloatValue": 0.0,
+              "NameValue": "None",
+              "Relation": "ESBMagnitudeRelation::Equal",
+              "BattleStatusRowHandle": {
+                "DataTable": null,
+                "RowName": "None"
+              },
+              "BattleEffectiveGroup": "ESBBattleEffectiveGroup::None",
+              "AbilityFlagList": [],
+              "OnlyPlayerStatusList": [],
+              "ElementType": "ESBAttribute::None",
+              "SkillType": "ESBPlayerSkillActionType::None",
+              "ArrayLogic": "ESBArrayLogicalOperator::AND",
+              "bNot": false
+            }
+          ],
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem'PS_E350_FST_CastCheer_catin_Lv3'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E350/Particle/PS_E350_FST_CastCheer_catin_Lv3.68"
+          }
+        }
+      ],
+      "EndEmitterParam": [
+        {
+          "ConditionList": [
+            {
+              "ConditionCheckType": "ESBConditionCheckType::ProjectileBImaineStackBNumCache",
+              "ActiveArtsID": {
+                "ID": 0
+              },
+              "PassiveArtsID": {
+                "ID": 0
+              },
+              "AttackID": {
+                "AttackID": 0
+              },
+              "IntValue": 4,
+              "FloatValue": 0.0,
+              "NameValue": "None",
+              "Relation": "ESBMagnitudeRelation::LessOrEqual",
+              "BattleStatusRowHandle": {
+                "DataTable": null,
+                "RowName": "None"
+              },
+              "BattleEffectiveGroup": "ESBBattleEffectiveGroup::None",
+              "AbilityFlagList": [],
+              "OnlyPlayerStatusList": [],
+              "ElementType": "ESBAttribute::None",
+              "SkillType": "ESBPlayerSkillActionType::None",
+              "ArrayLogic": "ESBArrayLogicalOperator::AND",
+              "bNot": false
+            }
+          ],
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem'PS_E350_FST_CastCheer_catout'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E350/Particle/PS_E350_FST_CastCheer_catout.26"
+          }
+        },
+        {
+          "ConditionList": [
+            {
+              "ConditionCheckType": "ESBConditionCheckType::ProjectileBImaineStackBNumCache",
+              "ActiveArtsID": {
+                "ID": 0
+              },
+              "PassiveArtsID": {
+                "ID": 0
+              },
+              "AttackID": {
+                "AttackID": 0
+              },
+              "IntValue": 5,
+              "FloatValue": 0.0,
+              "NameValue": "None",
+              "Relation": "ESBMagnitudeRelation::Equal",
+              "BattleStatusRowHandle": {
+                "DataTable": null,
+                "RowName": "None"
+              },
+              "BattleEffectiveGroup": "ESBBattleEffectiveGroup::None",
+              "AbilityFlagList": [],
+              "OnlyPlayerStatusList": [],
+              "ElementType": "ESBAttribute::None",
+              "SkillType": "ESBPlayerSkillActionType::None",
+              "ArrayLogic": "ESBArrayLogicalOperator::AND",
+              "bNot": false
+            }
+          ],
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem'PS_E350_FST_CastCheer_catout_Lv3'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Enemy/E350/Particle/PS_E350_FST_CastCheer_catout_Lv3.31"
+          }
+        }
+      ],
+      "MoveComp": {
+        "ObjectName": "SBAlongGroundMovementComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:MoveCompAlongGround'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.8"
+      },
+      "GroundCollisionComp": {
+        "ObjectName": "SBProjectileGroundCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:GroundCollisionComp(ProjRoot)'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.13"
+      },
+      "CollisionComp": {
+        "ObjectName": "SBProjectileCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:CollisionComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.10"
+      },
+      "AttackParamComp": {
+        "ObjectName": "SBProjectileAttackParamComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:AttackParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.9"
+      },
+      "EffectComp": {
+        "ObjectName": "SBProjectileEffectComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:EffectComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.12"
+      },
+      "ParamComp": {
+        "ObjectName": "SBProjectileParamComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:ParamComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.14"
+      },
+      "DestroyCondComp": {
+        "ObjectName": "SBProjectileDestroyConditionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:DestroyCondComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.11"
+      },
+      "RemoteRole": "ROLE_None",
+      "RootComponent": {
+        "ObjectName": "SBProjectileGroundCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:GroundCollisionComp(ProjRoot)'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.13"
+      },
+      "OnEndPlay": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_IP350_00_00_A11_BattleFeste_CatBase_C'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.6"
+            },
+            "FunctionName": "OnProjectileEndPlay"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SBAlongGroundMovementComponent",
+    "Name": "MoveCompAlongGround",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBAlongGroundMovementComponent'"
+  },
+  {
+    "Type": "SBProjectileAttackParamComponent",
+    "Name": "AttackParamComp",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileAttackParamComponent'"
+  },
+  {
+    "Type": "SBProjectileCollisionComponent",
+    "Name": "CollisionComp",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileCollisionComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBProjectileGroundCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:GroundCollisionComp(ProjRoot)'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.13"
+      }
+    }
+  },
+  {
+    "Type": "SBProjectileDestroyConditionComponent",
+    "Name": "DestroyCondComp",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileDestroyConditionComponent'"
+  },
+  {
+    "Type": "SBProjectileEffectComponent",
+    "Name": "EffectComp",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileEffectComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBProjectileGroundCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:GroundCollisionComp(ProjRoot)'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.13"
+      }
+    }
+  },
+  {
+    "Type": "SBProjectileGroundCollisionComponent",
+    "Name": "GroundCollisionComp(ProjRoot)",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileGroundCollisionComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 22.0,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel7",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "SBProjectileGround",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "SBProjectileGroundCollisionComponent'Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C:GroundCollisionComp(ProjRoot)'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.13"
+            },
+            "FunctionName": "OnGroundComponentHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SBProjectileParamComponent",
+    "Name": "ParamComp",
+    "Outer": "Default__BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBProjectileParamComponent'"
+  },
+  {
+    "Type": "SBSkeletalMeshProjectileComponent",
+    "Name": "SBSkeletalMeshProjectile_GEN_VARIABLE",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SBSkeletalMeshProjectileComponent'",
+    "Properties": {
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class'ClothingSimulationFactoryNv'",
+        "ObjectPath": "/Script/ClothingSystemRuntimeNv"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -20.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.000114,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_IP350_00_00_A11_BattleFeste_CatBase_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.16"
+      },
+      "VariableGuid": "302461C3-45CFE18C-8F03CFA9-9E0A3DA7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBSkeletalMeshProjectileComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBSkeletalMeshProjectileComponent'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SBSkeletalMeshProjectile_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.15"
+      },
+      "ParentComponentOrVariableName": "GroundCollisionComp(ProjRoot)",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "FED21A47-4DE78752-79BB6B8F-D5550147",
+      "InternalVariableName": "SBSkeletalMeshProjectile"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_IP350_00_00_A11_BattleFeste_CatBase_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.18"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_IP350_00_00_A11_BattleFeste_CatBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/Imagine/IP350_00_BattleFeste/00_A11/BP_IP350_00_00_A11_BattleFeste_CatBase.17"
+      }
+    }
+  }
+]
