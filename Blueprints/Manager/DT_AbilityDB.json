@@ -329,7 +329,7 @@
         "bApplyAccumulation": false,
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::None",
+        "IconType": "ESBStatusAilmentIconType::CriticalPowerUp",
         "UIAttribute": 1
       },
       "FireResistUp": {
@@ -2563,29 +2563,6 @@
         "IconType": "ESBStatusAilmentIconType::ReduceSkillRecastTime",
         "UIAttribute": 2
       },
-      "SlowSkillCoolTime_All": {
-        "Object": {
-          "ObjectName": "BlueprintGeneratedClass'BP_AB_SlowSkillCoolTime_ALL_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Skill/BP_AB_SlowSkillCoolTime_ALL.0"
-        },
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Negative",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::IntervalSpeedDown",
-        "ReferenceResistType": "ESBBattleStatusResistType::IntervalSpeedDown",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::ExpansionSkillRecastTime",
-        "UIAttribute": 2
-      },
       "ShortSkillRecastTime_TSkillAll": {
         "Object": {
           "ObjectName": "BlueprintGeneratedClass'BP_AB_ShortSkillRecastTime_TSkillAll_C'",
@@ -3412,29 +3389,6 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::RapidChargeSpeed",
-        "UIAttribute": 2
-      },
-      "SlowSkillButtonChargeTime": {
-        "Object": {
-          "ObjectName": "BlueprintGeneratedClass'BP_AB_SlowSkillButtonChargeTIme_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Skill/BP_AB_SlowSkillButtonChargeTIme.0"
-        },
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 999,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
-        "FeelType": "ESBBattleEffectiveFeel::Negative",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::ChargeSpeedDown",
-        "ReferenceResistType": "ESBBattleStatusResistType::ChargeSpeedDown",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::SlowChargeSpeed",
         "UIAttribute": 2
       },
       "Player_CannotMove": {
@@ -4264,6 +4218,29 @@
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 1
+      },
+      "Player_DualMode": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerStatus_DualMode_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_PlayerStatus_DualMode.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 1,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::FirstInFirstOut",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
+        "UIAttribute": 2
       },
       "AllyAttack_AttackScale": {
         "Object": {
@@ -5551,29 +5528,6 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::ForceCritical",
-        "UIAttribute": 1
-      },
-      "InvalidAttackWhenReceiveDamage": {
-        "Object": {
-          "ObjectName": "BlueprintGeneratedClass'BP_AB_InvalidAttackWhenReceiveDamage_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Event/BP_AB_InvalidAttackWhenReceiveDamage.0"
-        },
-        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
-        "MaxTriggers": 1,
-        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
-        "Flag": "ESBAbilityFlags::None",
-        "EffectiveCategory": "ESBAbilityEffectiveCategory::BuffPositive",
-        "FeelType": "ESBBattleEffectiveFeel::Positive",
-        "EffectID": {
-          "ID": "None"
-        },
-        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
-        "ReferenceResistType": "ESBBattleStatusResistType::None",
-        "bExclusionLevelDifference": false,
-        "bApplyAccumulation": false,
-        "bIsImpossibleSummonMount": false,
-        "bIsFinishMount": false,
-        "IconType": "ESBStatusAilmentIconType::InvalidReceiveAttackOnce",
         "UIAttribute": 1
       },
       "StatusRecovery_Frailness": {
@@ -7347,6 +7301,52 @@
         "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 2
       },
+      "GutsOtherDamage": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_GutsOtherDamage_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/SpecialStatus/BP_AB_GutsOtherDamage.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 999,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
+        "UIAttribute": 2
+      },
+      "SuperGuts": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_SuperGuts_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/SpecialStatus/BP_AB_SuperGuts.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 999,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::SuperGuts",
+        "UIAttribute": 2
+      },
       "HPLoss": {
         "Object": {
           "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerStatus_HPLoss_C'",
@@ -7552,6 +7552,52 @@
         "bIsImpossibleSummonMount": false,
         "bIsFinishMount": false,
         "IconType": "ESBStatusAilmentIconType::ScapeArmor",
+        "UIAttribute": 2
+      },
+      "PlayerActionPlayRateChangeAttackTSkill": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_PlayerActionRateChange_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_PlayerActionRateChange.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 1,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::ActionPlayRateChangeAttackTSkill",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
+        "UIAttribute": 2
+      },
+      "HPFullGuard": {
+        "Object": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AB_HPFullGuard_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Ability/Effective/Player/BP_AB_HPFullGuard.0"
+        },
+        "ExecuteEnv": "ESBAbilityExecuteEnv::Server",
+        "MaxTriggers": 1,
+        "SimultaneousControl": "ESBAbilitySimultaneousActivationControl::Block",
+        "Flag": "ESBAbilityFlags::None",
+        "EffectiveCategory": "ESBAbilityEffectiveCategory::None",
+        "FeelType": "ESBBattleEffectiveFeel::Positive",
+        "EffectID": {
+          "ID": "None"
+        },
+        "CalcSuccessRate": "ESBAbilityCalcSuccessRate::None",
+        "ReferenceResistType": "ESBBattleStatusResistType::None",
+        "bExclusionLevelDifference": false,
+        "bApplyAccumulation": false,
+        "bIsImpossibleSummonMount": false,
+        "bIsFinishMount": false,
+        "IconType": "ESBStatusAilmentIconType::None",
         "UIAttribute": 2
       }
     }
