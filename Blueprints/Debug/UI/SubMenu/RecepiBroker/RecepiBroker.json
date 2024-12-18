@@ -19,12 +19,6 @@
         "ElementSize": 16
       },
       {
-        "Type": "StrProperty",
-        "Name": "Temp_string_Variable_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_Create_ReturnValue",
         "Flags": "RF_Public",
@@ -38,6 +32,18 @@
       {
         "Type": "BoolProperty",
         "Name": "K2Node_CustomEvent_IsImagine_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -118,26 +124,8 @@
         "ElementSize": 16
       },
       {
-        "Type": "BoolProperty",
-        "Name": "Temp_bool_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "StrProperty",
-        "Name": "K2Node_Select_Default",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Name": "Temp_string_Variable_1",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -155,19 +143,7 @@
       },
       {
         "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
         "Name": "CallFunc_Conv_BoolToString_ReturnValue",
-        "Flags": "RF_Public",
-        "ElementSize": 16
-      },
-      {
-        "Type": "StrProperty",
-        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
         "Flags": "RF_Public",
         "ElementSize": 16
       },
@@ -202,7 +178,7 @@
       },
       {
         "Type": "BoolProperty",
-        "Name": "Temp_bool_Variable_1",
+        "Name": "Temp_bool_Variable",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -225,6 +201,87 @@
         "bIsNativeBool": true
       },
       {
+        "Type": "StrProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "K2Node_ComponentBoundEvent_SelectedItem",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_ComponentBoundEvent_SelectionType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESelectInfo'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Enum'ESBRecepiItemType'",
+          "ObjectPath": "/Script/SkyBlue"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "ObjectProperty",
         "Name": "K2Node_Select_Default_1",
         "Flags": "RF_Public",
@@ -237,6 +294,33 @@
       }
     ],
     "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__RecepiBroker_Cmb_CraftOutType_K2Node_ComponentBoundEvent_9_OnSelectionChangedEvent__DelegateSignature",
+    "Outer": "RecepiBroker_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "SelectedItem",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "SelectionType",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Enum'ESelectInfo'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -439,18 +523,103 @@
     "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
   },
   {
+    "Type": "Function",
+    "Name": "InitializeFilterList",
+    "Outer": "RecepiBroker_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
     "Type": "WidgetBlueprintGeneratedClass",
     "Name": "RecepiBroker_C",
     "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
     "Properties": {
       "WidgetTree": {
         "ObjectName": "WidgetTree'RecepiBroker_C:WidgetTree'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.74"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.82"
       },
       "DynamicBindingObjects": [
         {
           "ObjectName": "ComponentDelegateBinding'RecepiBroker_C:ComponentDelegateBinding_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.36"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
         }
       ],
       "UberGraphFunction": {
@@ -464,55 +633,63 @@
     },
     "Children": [
       {
+        "ObjectName": "Function'RecepiBroker_C:InitializeFilterList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.15"
+      },
+      {
         "ObjectName": "Function'RecepiBroker_C:Construct'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.14"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:Destruct'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.13"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:Set Show List'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.12"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__Btn_Craft_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.11"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__Btn_Imaigne_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.10"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__CraftRecepiBrokerList_K2Node_ComponentBoundEvent_2_OnClickedBrokerItem__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.9"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__ImagineRecepiBrokerList_K2Node_ComponentBoundEvent_3_OnClickedBrokerItem__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.8"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:Request Recepi Unlock'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.7"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__CrossButton_K2Node_ComponentBoundEvent_4_OnSelect__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.6"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_Filter_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.5"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_ClearFilter_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.4"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_ETxt_FilterText_K2Node_ComponentBoundEvent_7_OnEditableTextBoxCommittedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.3"
       },
       {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_OpenLimitView_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.2"
+      },
+      {
+        "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Cmb_CraftOutType_K2Node_ComponentBoundEvent_9_OnSelectionChangedEvent__DelegateSignature'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.1"
       },
       {
@@ -600,13 +777,24 @@
       },
       {
         "Type": "ObjectProperty",
+        "Name": "Cmb_CraftOutType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'ComboBoxString'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
         "Name": "CraftRecepiBrokerList",
         "Flags": "RF_Public | RF_LoadCompleted",
         "ElementSize": 8,
         "PropertyFlags": "BlueprintVisible | ExportObject | InstancedReference | RepSkip | PersistentInstance",
         "PropertyClass": {
           "ObjectName": "WidgetBlueprintGeneratedClass'CraftRecepiBrokerList_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/CraftRecepiBrokerList.7"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/CraftRecepiBrokerList.8"
         }
       },
       {
@@ -707,6 +895,36 @@
           "ObjectName": "Class'SBRuntimeTextBlock'",
           "ObjectPath": "/Script/SkyBlue"
         }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CmbList_CraftOutType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "StrProperty",
+          "Name": "CmbList_CraftOutType",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        },
+        "ValueProp": {
+          "Type": "EnumProperty",
+          "Name": "CmbList_CraftOutType_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Enum'ESBRecepiItemType'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
       }
     ],
     "FuncMap": {
@@ -714,57 +932,65 @@
         "ObjectName": "Function'RecepiBroker_C:ExecuteUbergraph_RecepiBroker'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.0"
       },
+      "BndEvt__RecepiBroker_Cmb_CraftOutType_K2Node_ComponentBoundEvent_9_OnSelectionChangedEvent__DelegateSignature": {
+        "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Cmb_CraftOutType_K2Node_ComponentBoundEvent_9_OnSelectionChangedEvent__DelegateSignature'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.1"
+      },
       "BndEvt__RecepiBroker_Btn_OpenLimitView_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_OpenLimitView_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.1"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.2"
       },
       "BndEvt__RecepiBroker_ETxt_FilterText_K2Node_ComponentBoundEvent_7_OnEditableTextBoxCommittedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_ETxt_FilterText_K2Node_ComponentBoundEvent_7_OnEditableTextBoxCommittedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.2"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.3"
       },
       "BndEvt__RecepiBroker_Btn_ClearFilter_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_ClearFilter_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.3"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.4"
       },
       "BndEvt__RecepiBroker_Btn_Filter_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__RecepiBroker_Btn_Filter_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.4"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.5"
       },
       "BndEvt__CrossButton_K2Node_ComponentBoundEvent_4_OnSelect__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__CrossButton_K2Node_ComponentBoundEvent_4_OnSelect__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.5"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.6"
       },
       "Request Recepi Unlock": {
         "ObjectName": "Function'RecepiBroker_C:Request Recepi Unlock'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.6"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.7"
       },
       "BndEvt__ImagineRecepiBrokerList_K2Node_ComponentBoundEvent_3_OnClickedBrokerItem__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__ImagineRecepiBrokerList_K2Node_ComponentBoundEvent_3_OnClickedBrokerItem__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.7"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.8"
       },
       "BndEvt__CraftRecepiBrokerList_K2Node_ComponentBoundEvent_2_OnClickedBrokerItem__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__CraftRecepiBrokerList_K2Node_ComponentBoundEvent_2_OnClickedBrokerItem__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.8"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.9"
       },
       "BndEvt__Btn_Imaigne_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__Btn_Imaigne_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.10"
       },
       "BndEvt__Btn_Craft_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
         "ObjectName": "Function'RecepiBroker_C:BndEvt__Btn_Craft_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.11"
       },
       "Set Show List": {
         "ObjectName": "Function'RecepiBroker_C:Set Show List'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.12"
       },
       "Destruct": {
         "ObjectName": "Function'RecepiBroker_C:Destruct'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.12"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.13"
       },
       "Construct": {
         "ObjectName": "Function'RecepiBroker_C:Construct'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.14"
+      },
+      "InitializeFilterList": {
+        "ObjectName": "Function'RecepiBroker_C:InitializeFilterList'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.15"
       }
     },
     "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
@@ -776,7 +1002,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "RecepiBroker_C'Default__RecepiBroker_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.15"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.17"
     }
   },
   {
@@ -804,7 +1030,7 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.31"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.34"
       }
     }
   },
@@ -817,12 +1043,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_ClearFilter.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.20"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.22"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.34"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.37"
       }
     }
   },
@@ -835,12 +1061,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Filter.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.22"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.24"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.32"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.35"
       }
     }
   },
@@ -853,12 +1079,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_OpenLimitView.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.24"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.26"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.29"
       }
     }
   },
@@ -870,11 +1096,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_ClearFilter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.17"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.19"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiBroker_C:WidgetTree.TextBlock_17'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.66"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.74"
       }
     }
   },
@@ -886,11 +1112,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Craft'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.SBRuntimeTextBlock_43'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.53"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.61"
       }
     }
   },
@@ -902,11 +1128,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_Filter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.20"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiBroker_C:WidgetTree.TextBlock_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.65"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.73"
       }
     }
   },
@@ -918,11 +1144,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Imaigne'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.SBRuntimeTextBlock_81'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.55"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.63"
       }
     }
   },
@@ -934,11 +1160,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_OpenLimitView'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.21"
       },
       "Content": {
         "ObjectName": "TextBlock'RecepiBroker_C:WidgetTree.TextBlock_81'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.67"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.75"
       }
     }
   },
@@ -951,39 +1177,43 @@
       "Slots": [
         {
           "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.31"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.30"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.33"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.28"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.26"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.29"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.32"
-        },
-        {
-          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.34"
         },
         {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.33"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.36"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.31"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.28"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.32"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.35"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.37"
+        },
+        {
           "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.29"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.30"
         }
       ]
     }
@@ -1004,11 +1234,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "CheckBox'RecepiBroker_C:WidgetTree.CB_NoItem'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.38"
       }
     }
   },
@@ -1029,11 +1259,35 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_OpenLimitView'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.19"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.21"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "CanvasPanel_0",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 428.0,
+          "Top": 76.0,
+          "Right": 809.00006,
+          "Bottom": 41.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.44"
       }
     }
   },
@@ -1053,11 +1307,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "CrossButton_C'RecepiBroker_C:WidgetTree.CrossButton'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.38"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.42"
       }
     }
   },
@@ -1077,11 +1331,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "EditableTextBox'RecepiBroker_C:WidgetTree.ETxt_FilterText'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.39"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.43"
       }
     }
   },
@@ -1101,11 +1355,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "VerticalBox'RecepiBroker_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.68"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.76"
       }
     }
   },
@@ -1129,11 +1383,11 @@
       },
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "Border'RecepiBroker_C:WidgetTree.Border_28'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.16"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.18"
       }
     }
   },
@@ -1153,11 +1407,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_Filter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.18"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.20"
       }
     }
   },
@@ -1177,11 +1431,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_41'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.46"
       }
     }
   },
@@ -1201,11 +1455,11 @@
       "bAutoSize": true,
       "Parent": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       },
       "Content": {
         "ObjectName": "Button'RecepiBroker_C:WidgetTree.Btn_ClearFilter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.17"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.19"
       }
     }
   },
@@ -1218,12 +1472,24 @@
       "Slots": [
         {
           "ObjectName": "PanelSlot'RecepiBroker_C:WidgetTree.CB_NoItem.PanelSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.50"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.57"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.26"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.28"
+      }
+    }
+  },
+  {
+    "Type": "ComboBoxString",
+    "Name": "Cmb_CraftOutType",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ComboBoxString'",
+    "Properties": {
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.48"
       }
     }
   },
@@ -1234,6 +1500,11 @@
     "Class": "UScriptClass'ComponentDelegateBinding'",
     "Properties": {
       "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "Cmb_CraftOutType",
+          "DelegatePropertyName": "OnSelectionChanged",
+          "FunctionNameToBind": "BndEvt__RecepiBroker_Cmb_CraftOutType_K2Node_ComponentBoundEvent_9_OnSelectionChangedEvent__DelegateSignature"
+        },
         {
           "ComponentPropertyName": "Btn_OpenLimitView",
           "DelegatePropertyName": "OnClicked",
@@ -1289,12 +1560,12 @@
     "Class": "WidgetBlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/CraftRecepiBrokerList.CraftRecepiBrokerList_C'",
     "Template": {
       "ObjectName": "CraftRecepiBrokerList_C'Default__CraftRecepiBrokerList_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/CraftRecepiBrokerList.8"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/CraftRecepiBrokerList.9"
     },
     "Properties": {
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot'RecepiBroker_C:WidgetTree.ListSwitch.WidgetSwitcherSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.73"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.81"
       }
     }
   },
@@ -1310,7 +1581,7 @@
     "Properties": {
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_11'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.28"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.31"
       }
     }
   },
@@ -1320,6 +1591,11 @@
     "Outer": "WidgetTree",
     "Class": "UScriptClass'EditableTextBox'",
     "Properties": {
+      "WidgetStyle": {
+        "Font": {
+          "Size": 15
+        }
+      },
       "HintText": {
         "Namespace": "",
         "Key": "CCB1B3BE48FFA48550793497A33D7683",
@@ -1328,7 +1604,29 @@
       },
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.29"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.32"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'HorizontalBox'",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.47"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.48"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_10'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.30"
       }
     }
   },
@@ -1341,28 +1639,28 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.42"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.49"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.43"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.50"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.46"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.53"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.44"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiBroker_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.70"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.78"
       }
     }
   },
@@ -1375,16 +1673,54 @@
       "Slots": [
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_41.HorizontalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.47"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.54"
         },
         {
           "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_41.HorizontalBoxSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.48"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.55"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.33"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.36"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Padding": {
+        "Right": 15.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.44"
+      },
+      "Content": {
+        "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.SBRuntimeTextBlock_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.60"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Class": "UScriptClass'HorizontalBoxSlot'",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.44"
+      },
+      "Content": {
+        "ObjectName": "ComboBoxString'RecepiBroker_C:WidgetTree.Cmb_CraftOutType'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.39"
       }
     }
   },
@@ -1400,11 +1736,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.Txt_RecepiId'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.60"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.68"
       }
     }
   },
@@ -1419,11 +1755,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       },
       "Content": {
         "ObjectName": "ScaleBox'RecepiBroker_C:WidgetTree.ScaleBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.61"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.69"
       }
     }
   },
@@ -1439,11 +1775,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       },
       "Content": {
         "ObjectName": "ScaleBox'RecepiBroker_C:WidgetTree.ScaleBox_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.62"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.70"
       }
     }
   },
@@ -1459,11 +1795,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.Txt_Crafted'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.57"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.65"
       }
     }
   },
@@ -1479,11 +1815,11 @@
       },
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.Txt_Auto'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.56"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.64"
       }
     }
   },
@@ -1495,11 +1831,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_41'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.46"
       },
       "Content": {
         "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Imaigne'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
       }
     }
   },
@@ -1511,11 +1847,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_41'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.41"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.46"
       },
       "Content": {
         "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Craft'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
       }
     }
   },
@@ -1531,7 +1867,7 @@
     "Properties": {
       "Slot": {
         "ObjectName": "WidgetSwitcherSlot'RecepiBroker_C:WidgetTree.ListSwitch.WidgetSwitcherSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.72"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.80"
       }
     }
   },
@@ -1543,11 +1879,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "CheckBox'RecepiBroker_C:WidgetTree.CB_NoItem'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.35"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.38"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.SBRuntimeTextBlock_46'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.54"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.62"
       }
     }
   },
@@ -1566,7 +1902,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Craft'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
             },
             "FunctionName": "OnPostSoundEvent_ButtonClicked"
           }
@@ -1577,7 +1913,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Craft'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
             },
             "FunctionName": "OnPostSoundEvent_ButtonHovered"
           }
@@ -1588,7 +1924,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Craft'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
             },
             "FunctionName": "OnUnhoveredForSe"
           }
@@ -1597,12 +1933,12 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Craft.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.21"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.23"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_41.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.48"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.55"
       }
     }
   },
@@ -1621,7 +1957,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Imaigne'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
             },
             "FunctionName": "OnPostSoundEvent_ButtonClicked"
           }
@@ -1632,7 +1968,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Imaigne'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
             },
             "FunctionName": "OnPostSoundEvent_ButtonHovered"
           }
@@ -1643,7 +1979,7 @@
           {
             "Object": {
               "ObjectName": "SBButton_C'RecepiBroker_C:WidgetTree.Btn_Imaigne'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
             },
             "FunctionName": "OnUnhoveredForSe"
           }
@@ -1652,11 +1988,29 @@
       "Slots": [
         {
           "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Imaigne.ButtonSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.23"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_41.HorizontalBoxSlot_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.54"
+      }
+    }
+  },
+  {
+    "Type": "SBRuntimeTextBlock",
+    "Name": "SBRuntimeTextBlock_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SBRuntimeTextBlock'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "2ACB42D24EFC5AEA3B9E88A9D4385669",
+        "SourceString": "OutTypeFilter",
+        "LocalizedString": "OutTypeFilter"
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.47"
       }
     }
@@ -1675,7 +2029,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Craft.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.21"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.23"
       }
     }
   },
@@ -1693,7 +2047,7 @@
       },
       "Slot": {
         "ObjectName": "PanelSlot'RecepiBroker_C:WidgetTree.CB_NoItem.PanelSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.50"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.57"
       }
     }
   },
@@ -1711,7 +2065,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Imaigne.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.23"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
       }
     }
   },
@@ -1729,7 +2083,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_4'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.46"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.53"
       },
       "bIsVariable": true
     }
@@ -1748,7 +2102,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.52"
       },
       "bIsVariable": true
     }
@@ -1767,7 +2121,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot'RecepiBroker_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.64"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.72"
       },
       "bIsVariable": true
     }
@@ -1786,7 +2140,7 @@
       },
       "Slot": {
         "ObjectName": "ScaleBoxSlot'RecepiBroker_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.63"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.71"
       },
       "bIsVariable": true
     }
@@ -1805,7 +2159,7 @@
       },
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.42"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.49"
       },
       "bIsVariable": true
     }
@@ -1820,12 +2174,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot'RecepiBroker_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.63"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.71"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.43"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.50"
       }
     }
   },
@@ -1840,12 +2194,12 @@
       "Slots": [
         {
           "ObjectName": "ScaleBoxSlot'RecepiBroker_C:WidgetTree.ScaleBox_1.ScaleBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.64"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.72"
         }
       ],
       "Slot": {
         "ObjectName": "HorizontalBoxSlot'RecepiBroker_C:WidgetTree.HorizontalBox_12.HorizontalBoxSlot_2'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.44"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.51"
       }
     }
   },
@@ -1857,11 +2211,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox'RecepiBroker_C:WidgetTree.ScaleBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.61"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.69"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.Txt_ItemName'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.59"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.67"
       }
     }
   },
@@ -1873,11 +2227,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "ScaleBox'RecepiBroker_C:WidgetTree.ScaleBox_1'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.62"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.70"
       },
       "Content": {
         "ObjectName": "SBRuntimeTextBlock'RecepiBroker_C:WidgetTree.Txt_HasRecepi'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.58"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.66"
       }
     }
   },
@@ -1895,7 +2249,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_Filter.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.22"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.24"
       }
     }
   },
@@ -1913,7 +2267,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_ClearFilter.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.20"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.22"
       }
     }
   },
@@ -1931,7 +2285,7 @@
       },
       "Slot": {
         "ObjectName": "ButtonSlot'RecepiBroker_C:WidgetTree.Btn_OpenLimitView.ButtonSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.24"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.26"
       }
     }
   },
@@ -1944,16 +2298,16 @@
       "Slots": [
         {
           "ObjectName": "VerticalBoxSlot'RecepiBroker_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.70"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.78"
         },
         {
           "ObjectName": "VerticalBoxSlot'RecepiBroker_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.69"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.77"
         }
       ],
       "Slot": {
         "ObjectName": "CanvasPanelSlot'RecepiBroker_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.30"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.33"
       }
     }
   },
@@ -1968,11 +2322,11 @@
       },
       "Parent": {
         "ObjectName": "VerticalBox'RecepiBroker_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.68"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.76"
       },
       "Content": {
         "ObjectName": "WidgetSwitcher'RecepiBroker_C:WidgetTree.ListSwitch'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.71"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.79"
       }
     }
   },
@@ -1984,11 +2338,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "VerticalBox'RecepiBroker_C:WidgetTree.VerticalBox_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.68"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.76"
       },
       "Content": {
         "ObjectName": "HorizontalBox'RecepiBroker_C:WidgetTree.HorizontalBox_12'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.40"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.45"
       }
     }
   },
@@ -2001,16 +2355,16 @@
       "Slots": [
         {
           "ObjectName": "WidgetSwitcherSlot'RecepiBroker_C:WidgetTree.ListSwitch.WidgetSwitcherSlot_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.72"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.80"
         },
         {
           "ObjectName": "WidgetSwitcherSlot'RecepiBroker_C:WidgetTree.ListSwitch.WidgetSwitcherSlot_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.73"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.81"
         }
       ],
       "Slot": {
         "ObjectName": "VerticalBoxSlot'RecepiBroker_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.69"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.77"
       }
     }
   },
@@ -2022,11 +2376,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher'RecepiBroker_C:WidgetTree.ListSwitch'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.71"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.79"
       },
       "Content": {
         "ObjectName": "ImagineRecepiBrokerList_C'RecepiBroker_C:WidgetTree.ImagineRecepiBrokerList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.49"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.56"
       }
     }
   },
@@ -2038,11 +2392,11 @@
     "Properties": {
       "Parent": {
         "ObjectName": "WidgetSwitcher'RecepiBroker_C:WidgetTree.ListSwitch'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.71"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.79"
       },
       "Content": {
         "ObjectName": "CraftRecepiBrokerList_C'RecepiBroker_C:WidgetTree.CraftRecepiBrokerList'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.37"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.41"
       }
     }
   },
@@ -2054,7 +2408,7 @@
     "Properties": {
       "RootWidget": {
         "ObjectName": "CanvasPanel'RecepiBroker_C:WidgetTree.CanvasPanel_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.25"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Debug/UI/SubMenu/RecepiBroker/RecepiBroker.27"
       }
     }
   }

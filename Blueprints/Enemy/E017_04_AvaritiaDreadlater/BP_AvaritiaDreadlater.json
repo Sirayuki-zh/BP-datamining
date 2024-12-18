@@ -220,7 +220,7 @@
       ],
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.117"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.120"
       },
       "InheritableComponentHandler": {
         "ObjectName": "InheritableComponentHandler'BP_AvaritiaDreadlater_C:InheritableComponentHandler'",
@@ -275,6 +275,17 @@
         "Struct": {
           "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
           "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemySAB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemySABComponent'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -487,23 +498,25 @@
       "BP_MeshScaleOffset": 1.5,
       "MeshScaleMap": [
         {
-          "E017_04_00": 1.75
+          "Key": "E017_04_00",
+          "Value": 1.75
         },
         {
-          "E017_04_01": 1.75
+          "Key": "E017_04_01",
+          "Value": 1.75
         }
       ],
       "DeathEffectComp": {
         "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_AvaritiaDreadlater_C:EnemyDeathEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.66"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.67"
       },
       "TideComp": {
         "ObjectName": "SBEnemyTideComponent'Default__BP_AvaritiaDreadlater_C:EnemyTideComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.83"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.85"
       },
       "ExitEffectComp": {
         "ObjectName": "SBEnemyExitEffectComponent'Default__BP_AvaritiaDreadlater_C:EnemyExitEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.69"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.70"
       },
       "EnemyId": "E017_04_00_00000",
       "BadZoneAvoidanceComp": {
@@ -512,11 +525,11 @@
       },
       "PhaseComp": {
         "ObjectName": "SBEnemyPhaseComponent'Default__BP_AvaritiaDreadlater_C:EnemyPhaseComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.75"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.76"
       },
       "ModifierComp": {
         "ObjectName": "SBEnemyModifierComponent'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.70"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.71"
       },
       "ActionParamComp": {
         "ObjectName": "SBEnemyActionParamComponent'Default__BP_AvaritiaDreadlater_C:EnemyActionParamComp'",
@@ -532,11 +545,11 @@
       },
       "PartsManagerComp": {
         "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_AvaritiaDreadlater_C:EnemyPartsBreakComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.74"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.75"
       },
       "TargetingComp": {
         "ObjectName": "SBEnemyTargetingComponent'Default__BP_AvaritiaDreadlater_C:EnemyTargetingComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.82"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.84"
       },
       "AdjustRootMotionComp": {
         "ObjectName": "SBAdjustRootMotionComponent'Default__BP_AvaritiaDreadlater_C:AdjustRootMotionComp'",
@@ -544,23 +557,23 @@
       },
       "StanceComp": {
         "ObjectName": "SBEnemyStanceComponent'Default__BP_AvaritiaDreadlater_C:StanceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.79"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.81"
       },
       "SummonComponent": {
         "ObjectName": "SBEnemySummonComponent'Default__BP_AvaritiaDreadlater_C:SummonComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.81"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.83"
       },
       "MarkerManagerComp": {
         "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_AvaritiaDreadlater_C:MarkerManagerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.62"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.63"
       },
       "SenseChangerComp": {
         "ObjectName": "SBEnemySenseChangerComponent'Default__BP_AvaritiaDreadlater_C:SenseChangerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.77"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.79"
       },
       "EnemyDropComp": {
         "ObjectName": "SBEnemyDropComponent'Default__BP_AvaritiaDreadlater_C:EnemyDropComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.67"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.68"
       },
       "DelegateHitAuthComp": {
         "ObjectName": "SBDelegateHitAuthComponent'Default__BP_AvaritiaDreadlater_C:DelegateHitAuthComp'",
@@ -572,11 +585,11 @@
       },
       "StateInitializerComponent": {
         "ObjectName": "SBStateInitializerComponent'Default__BP_AvaritiaDreadlater_C:StateInitializerComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.99"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.101"
       },
       "CollisionHitComp": {
         "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_AvaritiaDreadlater_C:EnemyCollisionHitComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.64"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.65"
       },
       "ChanceTimeDownComp": {
         "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_AvaritiaDreadlater_C:ChanceTimeDownComponent'",
@@ -584,7 +597,7 @@
       },
       "EnemyDxBattleComp": {
         "ObjectName": "SBEnemyDxBattleComponent'Default__BP_AvaritiaDreadlater_C:EnemyDxBattleComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.68"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.69"
       },
       "AbilitySystemComp": {
         "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_AvaritiaDreadlater_C:AbilitySystemComp'",
@@ -592,19 +605,23 @@
       },
       "ConditionalVoiceComp": {
         "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_AvaritiaDreadlater_C:ConditionalVoiceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.65"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.66"
       },
       "ExecDelegateWithConditionComp": {
         "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_AvaritiaDreadlater_C:ExecDelegateWithConditionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.84"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.86"
       },
       "BuddyRevivalComp": {
         "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_AvaritiaDreadlater_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.62"
+      },
+      "BuddyAlterWarpComp": {
+        "ObjectName": "SBEnemyBuddyAlterWarpComponent'Default__BP_AvaritiaDreadlater_C:BuddyAlterWarpComp'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.61"
       },
       "StateMachineReplayComp": {
         "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_AvaritiaDreadlater_C:StateMachineReplayComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.80"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.82"
       },
       "ActionUniqueCounterComp": {
         "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_AvaritiaDreadlater_C:ActionUniqueCounterComp'",
@@ -692,7 +709,7 @@
       ],
       "PartsDamageAnimParamter": {
         "ObjectName": "SBPartsDamageAnimParamter'Default__BP_AvaritiaDreadlater_C:PartsDamageAnimParamter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.94"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.96"
       },
       "m_DamageReactionPattern": {
         "RowName": "SuperHeavy"
@@ -700,11 +717,11 @@
       "ElementStatusEffectSizeScale": 0.75,
       "WeaponVisibilityComponent": {
         "ObjectName": "SBWeaponVisibilityComponent'Default__BP_AvaritiaDreadlater_C:WeaponVisibilityComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.101"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.103"
       },
       "SpawnComp": {
         "ObjectName": "SBProjectileSpawnComponent'Default__BP_AvaritiaDreadlater_C:ProjectileSpawnComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.97"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.99"
       },
       "BattleStatusComp": {
         "ObjectName": "SBBattleStatusComponent'Default__BP_AvaritiaDreadlater_C:BattleStatusComp'",
@@ -712,15 +729,15 @@
       },
       "ProjectileShareHitComp": {
         "ObjectName": "SBProjectileShareHitComponent'Default__BP_AvaritiaDreadlater_C:ProjectileShareHitComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.96"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.98"
       },
       "SendNetDataComp": {
         "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_AvaritiaDreadlater_C:ProjectileSendNetDataComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.95"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.97"
       },
       "StateManageComp": {
         "ObjectName": "SBProjectileStateManageComponent'Default__BP_AvaritiaDreadlater_C:ProjectileStateManageComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.98"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.100"
       },
       "AnimationControlComp": {
         "ObjectName": "SBAnimationControlComponent'Default__BP_AvaritiaDreadlater_C:AnimationControlComp'",
@@ -736,7 +753,7 @@
       },
       "FactionInfluenceComponent": {
         "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_AvaritiaDreadlater_C:FactionInfluenceComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.86"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.88"
       },
       "AISharedInfoComponent": {
         "ObjectName": "SBAISharedInfoComponent'Default__BP_AvaritiaDreadlater_C:AISharedInfoComponent'",
@@ -744,7 +761,7 @@
       },
       "MovePredictComponent": {
         "ObjectName": "SBMovementPredictComponent'Default__BP_AvaritiaDreadlater_C:MovementPredictComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.88"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.90"
       },
       "ActorVisibilityComponent": {
         "ObjectName": "SBActorVisibilityComponent'Default__BP_AvaritiaDreadlater_C:ActorVisibilityComponent'",
@@ -764,15 +781,15 @@
       },
       "Mesh": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_AvaritiaDreadlater_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.80"
       },
       "CharacterMovement": {
         "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_AvaritiaDreadlater_C:CharMoveComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.63"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.64"
       },
       "CapsuleComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_AvaritiaDreadlater_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.76"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
       },
       "AIControllerClass": {
         "ObjectName": "BlueprintGeneratedClass'BP_AIAvaritiaDreadlater_C'",
@@ -780,7 +797,7 @@
       },
       "RootComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_AvaritiaDreadlater_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.76"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
       }
     }
   },
@@ -1511,7 +1528,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBFootprintComponent'BP_AvaritiaDreadlater_C:SBFootprint_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.87"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.89"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -1533,7 +1550,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBNamePlateComponent2D'BP_AvaritiaDreadlater_C:NamePlate_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.89"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.91"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -1577,7 +1594,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBTargetableComponent'BP_AvaritiaDreadlater_C:SBTargetable_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.100"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.102"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -2141,23 +2158,28 @@
       "ChanceTimeTableStartElementalBurst": {
         "ChanceTimeMap": [
           {
-            "ESBAttribute::Fire": 10.0
+            "Key": "ESBAttribute::Fire",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Thunder": 10.0
+            "Key": "ESBAttribute::Thunder",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Light": 10.0
+            "Key": "ESBAttribute::Light",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Darkness": 10.0
+            "Key": "ESBAttribute::Darkness",
+            "Value": 10.0
           }
         ]
       },
       "ChanceTimeTablePartsBreak": {
         "ChanceTimeMap": [
           {
-            "WeakBody": 5.0
+            "Key": "WeakBody",
+            "Value": 5.0
           }
         ]
       }
@@ -2185,7 +2207,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_AvaritiaDreadlater_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.80"
       }
     }
   },
@@ -2249,7 +2271,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_AvaritiaDreadlater_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.76"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
       }
     }
   },
@@ -2749,13 +2771,23 @@
     }
   },
   {
+    "Type": "SBEnemyBuddyAlterWarpComponent",
+    "Name": "BuddyAlterWarpComp",
+    "Outer": "Default__BP_AvaritiaDreadlater_C",
+    "Class": "UScriptClass'SBEnemyBuddyAlterWarpComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyAlterWarpComponent'Default__BP_ASandViper_C:BuddyAlterWarpComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.44"
+    }
+  },
+  {
     "Type": "SBEnemyBuddyRevivalComponent",
     "Name": "BuddyRevivalComp",
     "Outer": "Default__BP_AvaritiaDreadlater_C",
     "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
     "Template": {
       "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_ASandViper_C:BuddyRevivalComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.44"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.45"
     }
   },
   {
@@ -2765,7 +2797,7 @@
     "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
     "Template": {
       "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_ASandViper_C:MarkerManagerComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.45"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.46"
     }
   },
   {
@@ -2775,7 +2807,7 @@
     "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
     "Template": {
       "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_ASandViper_C:CharMoveComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.46"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.47"
     },
     "Properties": {
       "MaxWalkSpeed": 200.0,
@@ -2793,7 +2825,7 @@
     "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
     "Template": {
       "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_ASandViper_C:EnemyCollisionHitComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.47"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.48"
     }
   },
   {
@@ -2803,7 +2835,7 @@
     "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
     "Template": {
       "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_ASandViper_C:ConditionalVoiceComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.48"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.49"
     }
   },
   {
@@ -2813,12 +2845,13 @@
     "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
     "Template": {
       "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_ASandViper_C:EnemyDeathEffectComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.49"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.50"
     },
     "Properties": {
       "DeathEffects": [
         {
-          "ESBAttribute::None": {
+          "Key": "ESBAttribute::None",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -2856,7 +2889,8 @@
           }
         },
         {
-          "ESBAttribute::Earth": {
+          "Key": "ESBAttribute::Earth",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -2894,7 +2928,8 @@
           }
         },
         {
-          "ESBAttribute::Fire": {
+          "Key": "ESBAttribute::Fire",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -2932,7 +2967,8 @@
           }
         },
         {
-          "ESBAttribute::Ice": {
+          "Key": "ESBAttribute::Ice",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -2970,7 +3006,8 @@
           }
         },
         {
-          "ESBAttribute::Thunder": {
+          "Key": "ESBAttribute::Thunder",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -3008,7 +3045,8 @@
           }
         },
         {
-          "ESBAttribute::Light": {
+          "Key": "ESBAttribute::Light",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -3046,7 +3084,8 @@
           }
         },
         {
-          "ESBAttribute::Darkness": {
+          "Key": "ESBAttribute::Darkness",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.1,
@@ -3093,7 +3132,7 @@
     "Class": "UScriptClass'SBEnemyDropComponent'",
     "Template": {
       "ObjectName": "SBEnemyDropComponent'Default__BP_ASandViper_C:EnemyDropComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.50"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.51"
     }
   },
   {
@@ -3103,7 +3142,7 @@
     "Class": "UScriptClass'SBEnemyDxBattleComponent'",
     "Template": {
       "ObjectName": "SBEnemyDxBattleComponent'Default__BP_ASandViper_C:EnemyDxBattleComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.51"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.52"
     }
   },
   {
@@ -3113,7 +3152,7 @@
     "Class": "UScriptClass'SBEnemyExitEffectComponent'",
     "Template": {
       "ObjectName": "SBEnemyExitEffectComponent'Default__BP_ASandViper_C:EnemyExitEffectComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.52"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.53"
     }
   },
   {
@@ -3123,12 +3162,13 @@
     "Class": "UScriptClass'SBEnemyModifierComponent'",
     "Template": {
       "ObjectName": "SBEnemyModifierComponent'Default__BP_ASandViper_C:EnemyModifierComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.53"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.54"
     },
     "Properties": {
       "ModifierMap": [
         {
-          "Stance_Diving": {
+          "Key": "Stance_Diving",
+          "Value": {
             "OverrideParentConfigName": "None",
             "Modifier": {
               "ObjectName": "MD_Stance_Diving_C'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp.MD_Stance_Diving_C_0'",
@@ -3137,29 +3177,32 @@
           }
         },
         {
-          "Stance_Standard": {
+          "Key": "Stance_Standard",
+          "Value": {
             "OverrideParentConfigName": "None",
             "Modifier": {
               "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_2'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.74"
+            }
+          }
+        },
+        {
+          "Key": "Phase2",
+          "Value": {
+            "OverrideParentConfigName": "None",
+            "Modifier": {
+              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_1'",
               "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.73"
             }
           }
         },
         {
-          "Phase2": {
-            "OverrideParentConfigName": "None",
-            "Modifier": {
-              "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_1'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.72"
-            }
-          }
-        },
-        {
-          "Stance_HalfBody": {
+          "Key": "Stance_HalfBody",
+          "Value": {
             "OverrideParentConfigName": "None",
             "Modifier": {
               "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_AvaritiaDreadlater_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.71"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.72"
             }
           }
         }
@@ -3173,7 +3216,7 @@
     "Class": "UScriptClass'SBEnemyModifierTemplate_BlueprintBase'",
     "Template": {
       "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_ASandViper_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.54"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.55"
     },
     "Properties": {
       "bEnableNoActionInhibitionStatus": true,
@@ -3219,7 +3262,7 @@
     "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
     "Template": {
       "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_ASandViper_C:EnemyPartsBreakComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.55"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.56"
     },
     "Properties": {
       "PartsBreakInfo": [
@@ -3275,61 +3318,71 @@
       ],
       "DamageCollisionStates": [
         {
-          "DamageCollision_WeakBody0": {
+          "Key": "DamageCollision_WeakBody0",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": false
           }
         },
         {
-          "DamageCollision_WeakBody1": {
+          "Key": "DamageCollision_WeakBody1",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": false
           }
         },
         {
-          "DamageCollision_WeakBody2": {
+          "Key": "DamageCollision_WeakBody2",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": false
           }
         },
         {
-          "DamageCollision_WeakBody3": {
+          "Key": "DamageCollision_WeakBody3",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": false
           }
         },
         {
-          "DamageCollision_WeakBodyHead1": {
+          "Key": "DamageCollision_WeakBodyHead1",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": false
           }
         },
         {
-          "DamageCollision_Body0": {
+          "Key": "DamageCollision_Body0",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": true
           }
         },
         {
-          "DamageCollision_Body1": {
+          "Key": "DamageCollision_Body1",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": true
           }
         },
         {
-          "DamageCollision_Body2": {
+          "Key": "DamageCollision_Body2",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": true
           }
         },
         {
-          "DamageCollision_Body3": {
+          "Key": "DamageCollision_Body3",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": true
           }
         },
         {
-          "DamageCollision_Head": {
+          "Key": "DamageCollision_Head",
+          "Value": {
             "bIsActivatedWithPartsBreak": true,
             "bIsActivatedWithAction": true
           }
@@ -3344,7 +3397,7 @@
     "Class": "UScriptClass'SBEnemyPhaseComponent'",
     "Template": {
       "ObjectName": "SBEnemyPhaseComponent'Default__BP_ASandViper_C:EnemyPhaseComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.56"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.57"
     },
     "Properties": {
       "PhaseRegister": [
@@ -3356,13 +3409,31 @@
     }
   },
   {
+    "Type": "SBEnemySABComponent",
+    "Name": "SBEnemySAB_GEN_VARIABLE",
+    "Outer": "BP_AvaritiaDreadlater_C",
+    "Class": "UScriptClass'SBEnemySABComponent'",
+    "Properties": {
+      "BreakEffectSetting": {
+        "Particle": {
+          "AssetPathName": "/Game/Effect/Particle/Enemy/00_ECommon/Reinforce/PS_ECMN_Content_Attack.PS_ECMN_Content_Attack",
+          "SubPathString": ""
+        },
+        "Sound": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon_Class/ContentAction/Play_ContentAction_Break_Success.Play_ContentAction_Break_Success",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
     "Type": "SBEnemySceneComponent",
     "Name": "CollisionCylinder",
     "Outer": "Default__BP_AvaritiaDreadlater_C",
     "Class": "UScriptClass'SBEnemySceneComponent'",
     "Template": {
       "ObjectName": "SBEnemySceneComponent'Default__BP_ASandViper_C:CollisionCylinder'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.57"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.58"
     },
     "Properties": {
       "CapsuleHalfHeight": 180.0,
@@ -3376,7 +3447,7 @@
     "Class": "UScriptClass'SBEnemySenseChangerComponent'",
     "Template": {
       "ObjectName": "SBEnemySenseChangerComponent'Default__BP_ASandViper_C:SenseChangerComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.58"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.59"
     }
   },
   {
@@ -3386,7 +3457,7 @@
     "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
     "Template": {
       "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_ASandViper_C:CharacterMesh0'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.59"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.60"
     },
     "Properties": {
       "SubspeciesScaleRate": 1.875,
@@ -3397,7 +3468,7 @@
       "OverrideMaterials": [],
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_AvaritiaDreadlater_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.76"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.78"
       },
       "RelativeLocation": {
         "X": 0.0,
@@ -3413,7 +3484,7 @@
     "Class": "UScriptClass'SBEnemyStanceComponent'",
     "Template": {
       "ObjectName": "SBEnemyStanceComponent'Default__BP_ASandViper_C:StanceComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.60"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.61"
     },
     "Properties": {
       "StanceSettings": [
@@ -3445,7 +3516,7 @@
     "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
     "Template": {
       "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_ASandViper_C:StateMachineReplayComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.61"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.62"
     }
   },
   {
@@ -3455,7 +3526,7 @@
     "Class": "UScriptClass'SBEnemySummonComponent'",
     "Template": {
       "ObjectName": "SBEnemySummonComponent'Default__BP_ASandViper_C:SummonComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.62"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.63"
     }
   },
   {
@@ -3465,7 +3536,7 @@
     "Class": "UScriptClass'SBEnemyTargetingComponent'",
     "Template": {
       "ObjectName": "SBEnemyTargetingComponent'Default__BP_ASandViper_C:EnemyTargetingComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.63"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.64"
     }
   },
   {
@@ -3475,7 +3546,7 @@
     "Class": "UScriptClass'SBEnemyTideComponent'",
     "Template": {
       "ObjectName": "SBEnemyTideComponent'Default__BP_ASandViper_C:EnemyTideComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.64"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.65"
     }
   },
   {
@@ -3485,7 +3556,7 @@
     "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
     "Template": {
       "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_ASandViper_C:ExecDelegateWithConditionComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.65"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.66"
     }
   },
   {
@@ -3495,7 +3566,7 @@
     "Class": "UScriptClass'SBFacialAnimationDataHolder'",
     "Template": {
       "ObjectName": "SBFacialAnimationDataHolder'Default__BP_ASandViper_C:CharaCreate.FacialAnimationDataHolder'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.66"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.67"
     }
   },
   {
@@ -3505,7 +3576,7 @@
     "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
     "Template": {
       "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_ASandViper_C:FactionInfluenceComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.67"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.68"
     }
   },
   {
@@ -3515,7 +3586,7 @@
     "Class": "UScriptClass'SBFootprintComponent'",
     "Template": {
       "ObjectName": "SBFootprintComponent'BP_ASandViper_C:SBFootprint_GEN_VARIABLE'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.68"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.69"
     },
     "Properties": {
       "m_ParticleScale": 3.0,
@@ -3570,7 +3641,7 @@
     "Class": "UScriptClass'SBMovementPredictComponent'",
     "Template": {
       "ObjectName": "SBMovementPredictComponent'Default__BP_ASandViper_C:MovementPredictComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.69"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.70"
     }
   },
   {
@@ -3580,7 +3651,7 @@
     "Class": "UScriptClass'SBNamePlateComponent2D'",
     "Template": {
       "ObjectName": "SBNamePlateComponent2D'BP_EnemyCharacter_C:NamePlate_GEN_VARIABLE'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.78"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.79"
     },
     "Properties": {
       "RelativeLocation": {
@@ -3681,7 +3752,7 @@
     "Class": "UScriptClass'SBPartsDamageAnimParamter'",
     "Template": {
       "ObjectName": "SBPartsDamageAnimParamter'Default__BP_ASandViper_C:PartsDamageAnimParamter'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.70"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.71"
     }
   },
   {
@@ -3691,7 +3762,7 @@
     "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
     "Template": {
       "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_ASandViper_C:ProjectileSendNetDataComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.71"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.72"
     }
   },
   {
@@ -3701,7 +3772,7 @@
     "Class": "UScriptClass'SBProjectileShareHitComponent'",
     "Template": {
       "ObjectName": "SBProjectileShareHitComponent'Default__BP_ASandViper_C:ProjectileShareHitComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.72"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.73"
     }
   },
   {
@@ -3711,7 +3782,7 @@
     "Class": "UScriptClass'SBProjectileSpawnComponent'",
     "Template": {
       "ObjectName": "SBProjectileSpawnComponent'Default__BP_ASandViper_C:ProjectileSpawnComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.73"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.74"
     },
     "Properties": {
       "ProjectileBuildResource": [
@@ -3735,7 +3806,7 @@
     "Class": "UScriptClass'SBProjectileStateManageComponent'",
     "Template": {
       "ObjectName": "SBProjectileStateManageComponent'Default__BP_ASandViper_C:ProjectileStateManageComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.74"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.75"
     }
   },
   {
@@ -3745,7 +3816,7 @@
     "Class": "UScriptClass'SBStateInitializerComponent'",
     "Template": {
       "ObjectName": "SBStateInitializerComponent'Default__BP_ASandViper_C:StateInitializerComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.75"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.76"
     }
   },
   {
@@ -3755,7 +3826,7 @@
     "Class": "UScriptClass'SBTargetableComponent'",
     "Template": {
       "ObjectName": "SBTargetableComponent'BP_ASandViper_C:SBTargetable_GEN_VARIABLE'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.76"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.77"
     },
     "Properties": {
       "bEditableWhenInherited": false
@@ -3768,7 +3839,7 @@
     "Class": "UScriptClass'SBWeaponVisibilityComponent'",
     "Template": {
       "ObjectName": "SBWeaponVisibilityComponent'Default__BP_ASandViper_C:WeaponVisibilityComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.77"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_08_ASandViper/BP_ASandViper.78"
     }
   },
   {
@@ -3789,10 +3860,28 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_AvaritiaDreadlater_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.102"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.104"
       },
       "VariableGuid": "3CE41CFA-4C88E265-359DCA8A-88054AC3",
       "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemySABComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemySABComponent'BP_AvaritiaDreadlater_C:SBEnemySAB_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.77"
+      },
+      "VariableGuid": "7E1FA99F-4EF74AE3-EB88B393-8AF8C4B4",
+      "InternalVariableName": "SBEnemySAB"
     }
   },
   {
@@ -3814,7 +3903,7 @@
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_12'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.106"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.109"
         }
       ],
       "VariableGuid": "F994DC45-4F266198-4E7443B0-46F2C669",
@@ -3833,7 +3922,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBParticleSystemComponent'BP_AvaritiaDreadlater_C:Phase_RightRear_Eye_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.93"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.95"
       },
       "AttachToName": "Head_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -3873,7 +3962,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBParticleSystemComponent'BP_AvaritiaDreadlater_C:Phase_LeftPrevious_Eye_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.90"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.92"
       },
       "AttachToName": "Head_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -3894,7 +3983,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBParticleSystemComponent'BP_AvaritiaDreadlater_C:Phase_LeftRear_Eye_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.91"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.93"
       },
       "AttachToName": "Head_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -3942,19 +4031,19 @@
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.111"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.113"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_6'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.114"
         },
         {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.116"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.117"
+        },
+        {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_7'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.115"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.118"
         }
       ],
       "VariableGuid": "7978E338-454E571E-1F9CD299-6EBFF381",
@@ -4070,7 +4159,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBParticleSystemComponent'BP_AvaritiaDreadlater_C:Phase_RightPrevious_Eye_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.92"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.94"
       },
       "AttachToName": "Head_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -4088,94 +4177,102 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.112"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.115"
         },
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.110"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.113"
         },
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.104"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_9'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.116"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_11'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.105"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_13'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.107"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.119"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_11'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.108"
         },
         {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.111"
+        },
+        {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_15'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.109"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.106"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.112"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.110"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.111"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.113"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.114"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_7'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.115"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.104"
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.113"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_12'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.106"
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.114"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_5'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.116"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_11'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.105"
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.117"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.118"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_10'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.107"
         },
         {
-          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.109"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.119"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_11'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.108"
         },
         {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.110"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.111"
+        },
+        {
           "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_15'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.109"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.112"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.106"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_AvaritiaDreadlater_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.103"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E017_04_AvaritiaDreadlater/BP_AvaritiaDreadlater.105"
       }
     }
   }

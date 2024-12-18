@@ -3138,9 +3138,9 @@
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 2,
+                  "ParamInt1": 1,
                   "NextStep": 2,
                   "DelaySec": 0.0
                 },
@@ -3155,36 +3155,36 @@
             },
             {
               "Index": 2,
-              "EnemySetId": "ES_Arena008_Step2_01",
+              "EnemySetId": "ES_Arena008_Step1_02",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
-                  "Tag": "None",
-                  "ParamInt1": 2,
+                  "Tag": "Dng_aznap",
+                  "ParamInt1": 0,
                   "NextStep": 3,
                   "DelaySec": 0.0
                 },
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
-                  "Tag": "None",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "Dng_snnap",
                   "ParamInt1": 0,
-                  "NextStep": -1,
+                  "NextStep": 9,
                   "DelaySec": 0.0
                 }
               ]
             },
             {
               "Index": 3,
-              "EnemySetId": "ES_Arena008_Step3_01",
+              "EnemySetId": "ES_Arena008_Step2_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 0,
+                  "ParamInt1": 1,
                   "NextStep": 4,
                   "DelaySec": 0.0
                 },
@@ -3199,14 +3199,14 @@
             },
             {
               "Index": 4,
-              "EnemySetId": "ES_Arena008_Step4_01",
+              "EnemySetId": "ES_Arena008_Step2_02",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 2,
+                  "ParamInt1": 1,
                   "NextStep": 5,
                   "DelaySec": 0.0
                 },
@@ -3221,14 +3221,14 @@
             },
             {
               "Index": 5,
-              "EnemySetId": "ES_Arena008_Step5_01",
-              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Center",
-              "IdentificationTag": "BossWave1",
+              "EnemySetId": "ES_Arena008_Step2_03",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "BossWave1",
-                  "ParamInt1": 50,
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "None",
+                  "ParamInt1": 1,
                   "NextStep": 6,
                   "DelaySec": 0.0
                 },
@@ -3243,14 +3243,14 @@
             },
             {
               "Index": 6,
-              "EnemySetId": "ES_Arena008_Step6_01",
+              "EnemySetId": "ES_Arena008_Step3_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "BossWave1",
-                  "ParamInt1": 30,
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
                   "NextStep": 7,
                   "DelaySec": 0.0
                 },
@@ -3265,7 +3265,293 @@
             },
             {
               "Index": 7,
+              "EnemySetId": "ES_Arena008_Step3_02",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 8,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 8,
+              "EnemySetId": "ES_Arena008_Step3_03",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": 13,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 9,
+              "EnemySetId": "ES_Arena008_Step4_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 10,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 10,
+              "EnemySetId": "ES_Arena008_Step5_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 11,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 11,
+              "EnemySetId": "ES_Arena008_Step5_02",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 12,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 12,
+              "EnemySetId": "ES_Arena008_Step5_03",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": 13,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 13,
+              "EnemySetId": "ES_Arena008_Step6_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Center",
+              "IdentificationTag": "BossWave1",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 80,
+                  "NextStep": 14,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 14,
               "EnemySetId": "ES_Arena008_Step7_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 15,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 15,
+              "EnemySetId": "ES_Arena008_Step7_02",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 16,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 16,
+              "EnemySetId": "ES_Arena008_Step7_03",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 50,
+                  "NextStep": 17,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 17,
+              "EnemySetId": "ES_Arena008_Step8_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 18,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 18,
+              "EnemySetId": "ES_Arena008_Step8_02",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 20,
+                  "NextStep": 19,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 19,
+              "EnemySetId": "ES_Arena008_Step9_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 1,
+                  "NextStep": 20,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 20,
+              "EnemySetId": "ES_Arena008_Step9_02",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
@@ -8635,9 +8921,9 @@
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 0,
+                  "ParamInt1": 1,
                   "NextStep": 2,
                   "DelaySec": 0.0
                 },
@@ -8681,15 +8967,15 @@
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 40,
-                  "NextStep": 1,
+                  "ParamInt1": 1,
+                  "NextStep": 4,
                   "DelaySec": 0.0
                 },
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
                   "Tag": "None",
                   "ParamInt1": 0,
-                  "NextStep": 4,
+                  "NextStep": -1,
                   "DelaySec": 0.0
                 }
               ]
@@ -8717,29 +9003,29 @@
               ]
             },
             {
-              "Index": 6,
+              "Index": 5,
               "EnemySetId": "ES_ArenaEx17_Step5_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 0,
-                  "NextStep": 7,
+                  "ParamInt1": 1,
+                  "NextStep": 6,
                   "DelaySec": 0.0
                 },
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
                   "Tag": "None",
-                  "ParamInt1": 10,
-                  "NextStep": 6,
+                  "ParamInt1": 0,
+                  "NextStep": -1,
                   "DelaySec": 0.0
                 }
               ]
             },
             {
-              "Index": 7,
+              "Index": 6,
               "EnemySetId": "ES_ArenaEx17_Step6_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
@@ -8761,15 +9047,15 @@
               ]
             },
             {
-              "Index": 8,
+              "Index": 7,
               "EnemySetId": "ES_ArenaEx17_Step7_01",
-              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "None",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Center",
+              "IdentificationTag": "BossWave1",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
-                  "Tag": "None",
-                  "ParamInt1": 0,
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 75,
                   "NextStep": 8,
                   "DelaySec": 0.0
                 },
@@ -8783,7 +9069,7 @@
               ]
             },
             {
-              "Index": 9,
+              "Index": 8,
               "EnemySetId": "ES_ArenaEx17_Step8_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
@@ -8791,46 +9077,90 @@
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
                   "Tag": "None",
-                  "ParamInt1": 60,
-                  "NextStep": 6,
+                  "ParamInt1": 1,
+                  "NextStep": 9,
                   "DelaySec": 0.0
                 },
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
                   "Tag": "None",
                   "ParamInt1": 0,
-                  "NextStep": 9,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 9,
+              "EnemySetId": "ES_ArenaEx17_Step9_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 50,
+                  "NextStep": 10,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
                   "DelaySec": 0.0
                 }
               ]
             },
             {
               "Index": 10,
-              "EnemySetId": "ES_ArenaEx17_Step9_01",
+              "EnemySetId": "ES_ArenaEx17_Step10_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
               "IdentificationTag": "None",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
-                  "Tag": "Dng_Nappo",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
                   "ParamInt1": 1,
-                  "NextStep": 6,
+                  "NextStep": 11,
                   "DelaySec": 0.0
                 },
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
                   "Tag": "None",
-                  "ParamInt1": 2,
-                  "NextStep": 10,
+                  "ParamInt1": 0,
+                  "NextStep": -1,
                   "DelaySec": 0.0
                 }
               ]
             },
             {
               "Index": 11,
-              "EnemySetId": "ES_ArenaEx17_Step10_01",
+              "EnemySetId": "ES_ArenaEx17_Step11_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_ClearBoss",
+              "IdentificationTag": "None",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "BossWave1",
+                  "ParamInt1": 30,
+                  "NextStep": 12,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": -1,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 12,
+              "EnemySetId": "ES_ArenaEx17_Step12_01",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "None",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
@@ -8857,7 +9187,7 @@
               "Index": 1,
               "EnemySetId": "ES_ArenaEx18_Step1_01",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_ClearBoss",
+              "IdentificationTag": "None",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
@@ -10772,57 +11102,13 @@
               "Index": 1,
               "EnemySetId": "ES_kwm002_party_Step1",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step1",
+              "IdentificationTag": "Dng_kwm002_party_Step1",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "Dng_kwm001_party_Step1",
-                  "ParamInt1": 80,
+                  "Tag": "Dng_kwm002_party_Step1",
+                  "ParamInt1": 95,
                   "NextStep": 2,
-                  "DelaySec": 0.0
-                },
-                {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
-                  "Tag": "None",
-                  "ParamInt1": 30,
-                  "NextStep": 4,
-                  "DelaySec": 0.0
-                }
-              ]
-            },
-            {
-              "Index": 2,
-              "EnemySetId": "ES_kwm002_party_Step2",
-              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step2",
-              "Conditions": [
-                {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "Dng_Step2_Enemy",
-                  "ParamInt1": 80,
-                  "NextStep": 3,
-                  "DelaySec": 0.0
-                },
-                {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "Dng_kwm001_party_Step1",
-                  "ParamInt1": 60,
-                  "NextStep": 5,
-                  "DelaySec": 0.0
-                }
-              ]
-            },
-            {
-              "Index": 3,
-              "EnemySetId": "ES_kwm002_party_Step3",
-              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step3",
-              "Conditions": [
-                {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
-                  "Tag": "None",
-                  "ParamInt1": 0,
-                  "NextStep": 6,
                   "DelaySec": 0.0
                 },
                 {
@@ -10835,16 +11121,60 @@
               ]
             },
             {
-              "Index": 4,
-              "EnemySetId": "ES_kwm002_party_Step4",
+              "Index": 2,
+              "EnemySetId": "ES_kwm002_party_Step2",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step4",
+              "IdentificationTag": "Dng_kwm002_party_Step2",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "Dng_kwm001_party_Step1",
-                  "ParamInt1": 85,
-                  "NextStep": 2,
+                  "Tag": "Dng_kwm002_party_Step1",
+                  "ParamInt1": 75,
+                  "NextStep": 3,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_ElapsedTime",
+                  "Tag": "None",
+                  "ParamInt1": 35,
+                  "NextStep": 5,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 3,
+              "EnemySetId": "ES_kwm002_party_Step3",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "Dng_kwm002_party_Step3",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "Dng_kwm002_party_Step3",
+                  "ParamInt1": 80,
+                  "NextStep": 4,
+                  "DelaySec": 0.0
+                },
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "Dng_kwm002_party_Step1",
+                  "ParamInt1": 50,
+                  "NextStep": 6,
+                  "DelaySec": 0.0
+                }
+              ]
+            },
+            {
+              "Index": 4,
+              "EnemySetId": "ES_kwm002_party_Step4",
+              "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
+              "IdentificationTag": "Dng_kwm002_party_Step4",
+              "Conditions": [
+                {
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
+                  "Tag": "None",
+                  "ParamInt1": 0,
+                  "NextStep": 7,
                   "DelaySec": 0.0
                 },
                 {
@@ -10860,11 +11190,11 @@
               "Index": 5,
               "EnemySetId": "ES_kwm002_party_Step5",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step5",
+              "IdentificationTag": "Dng_kwm002_party_Step5",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
-                  "Tag": "Dng_Step2_Enemy",
+                  "Tag": "Dng_kwm002_party_Step1",
                   "ParamInt1": 85,
                   "NextStep": 3,
                   "DelaySec": 0.0
@@ -10882,14 +11212,14 @@
               "Index": 6,
               "EnemySetId": "ES_kwm002_party_Step6",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_kwm001_party_Step6",
+              "IdentificationTag": "Dng_kwm002_party_Step6",
               "Conditions": [
                 {
-                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyNum",
-                  "Tag": "None",
-                  "ParamInt1": 0,
-                  "NextStep": 7,
-                  "DelaySec": 3.0
+                  "Type": "ESBEnemyWaveStepConditionType::EWSCType_RemainingEnemyHpRatio",
+                  "Tag": "Dng_kwm002_party_Step3",
+                  "ParamInt1": 85,
+                  "NextStep": 4,
+                  "DelaySec": 0.0
                 },
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",
@@ -10904,7 +11234,7 @@
               "Index": 7,
               "EnemySetId": "ES_kwm002_party_Step7",
               "SpawnLocation": "ESBEnemyWaveSpawnLocation::EWSLoc_Random",
-              "IdentificationTag": "Dng_ClearBoss",
+              "IdentificationTag": "Dng_kwm002_party_Step7",
               "Conditions": [
                 {
                   "Type": "ESBEnemyWaveStepConditionType::EWSCType_None",

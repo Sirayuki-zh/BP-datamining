@@ -13,24 +13,33 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
-        "Type": "StructProperty",
-        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetLinkSupBuff_NewParam",
         "Flags": "RF_Public",
-        "ElementSize": 12,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Vector'",
-          "ObjectPath": "/Script/CoreUObject"
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_GetLinkSupBuff_NewParam",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
         }
       },
       {
-        "Type": "StructProperty",
-        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
         "Flags": "RF_Public",
-        "ElementSize": 48,
-        "Struct": {
-          "ObjectName": "ScriptStruct'Transform'",
-          "ObjectPath": "/Script/CoreUObject"
-        }
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
       },
       {
         "Type": "BoolProperty",
@@ -154,6 +163,26 @@
         }
       },
       {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
         "Type": "DelegateProperty",
         "Name": "K2Node_CreateDelegate_OutputDelegate_1",
         "Flags": "RF_Public",
@@ -162,18 +191,6 @@
           "ObjectName": "DelegateFunction'SBFieldStatusChangeSignature__DelegateSignature'",
           "ObjectPath": "/Script/SkyBlue"
         }
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "Temp_bool_IsClosed_Variable",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
       },
       {
         "Type": "DelegateProperty",
@@ -206,6 +223,18 @@
         }
       },
       {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
         "Flags": "RF_Public",
@@ -223,6 +252,23 @@
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_Dng_EnemySupplier_C'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_Dng_EnemySupplier.0"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_Select_Default",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
         }
       }
     ],
@@ -316,13 +362,160 @@
     "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
+    "Type": "Function",
+    "Name": "GetLinkSupBuff",
+    "Outer": "BP_EnemySupplierSpawnPoint_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "NewParam",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "NewParam",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Clamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "ScriptStruct'DataTableRowHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_EnemySupplierSpawnPoint_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.8"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
     "Type": "BlueprintGeneratedClass",
     "Name": "BP_EnemySupplierSpawnPoint_C",
     "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.13"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.14"
       },
       "UberGraphFunction": {
         "ObjectName": "Function'BP_EnemySupplierSpawnPoint_C:ExecuteUbergraph_BP_EnemySupplierSpawnPoint'",
@@ -334,6 +527,10 @@
       "ObjectPath": "/Script/SkyBlue"
     },
     "Children": [
+      {
+        "ObjectName": "Function'BP_EnemySupplierSpawnPoint_C:GetLinkSupBuff'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.7"
+      },
       {
         "ObjectName": "Function'BP_EnemySupplierSpawnPoint_C:SpawnEnemySupllierEvent'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.6"
@@ -537,6 +734,60 @@
         "FieldMask": 255,
         "BoolSize": 1,
         "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsLinkChangeBuff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LinkSupplier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "LinkSupplier",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_EnemySupplierSpawnPoint_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.8"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "LinkGiftEnemyBuff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "LinkGiftEnemyBuff",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "ScriptStruct'DataTableRowHandle'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "IsLinkChangeBuffIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
       }
     ],
     "FuncMap": {
@@ -567,6 +818,10 @@
       "SpawnEnemySupllierEvent": {
         "ObjectName": "Function'BP_EnemySupplierSpawnPoint_C:SpawnEnemySupllierEvent'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.6"
+      },
+      "GetLinkSupBuff": {
+        "ObjectName": "Function'BP_EnemySupplierSpawnPoint_C:GetLinkSupBuff'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.7"
       }
     },
     "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
@@ -578,7 +833,7 @@
     "bCooked": true,
     "ClassDefaultObject": {
       "ObjectName": "BP_EnemySupplierSpawnPoint_C'Default__BP_EnemySupplierSpawnPoint_C'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.8"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.9"
     }
   },
   {
@@ -623,7 +878,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_EnemySupplierSpawnPoint_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.10"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.11"
       },
       "VariableGuid": "B401A68B-4A948842-5698E5A8-8C1A1003",
       "InternalVariableName": "DefaultSceneRoot"
@@ -641,7 +896,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBFieldStatusComponent'BP_EnemySupplierSpawnPoint_C:SBFieldStatus_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.9"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.10"
       },
       "VariableGuid": "70E3CD3C-42CC59E5-8E2D6E8F-5362BAD6",
       "InternalVariableName": "SBFieldStatus"
@@ -656,26 +911,26 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.11"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.12"
         },
         {
           "ObjectName": "SCS_Node'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.12"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.13"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.11"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.12"
         },
         {
           "ObjectName": "SCS_Node'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.12"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.13"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_EnemySupplierSpawnPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.11"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/Device/BP_EnemySupplierSpawnPoint.12"
       }
     }
   }

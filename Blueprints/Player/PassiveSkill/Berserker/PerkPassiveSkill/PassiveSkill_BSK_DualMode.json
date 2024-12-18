@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PassiveSkill_BSK_DualMode_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'SBBerserkerDualModePassiveSkill'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PassiveSkill_BSK_DualMode_C'Default__PassiveSkill_BSK_DualMode_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Player/PassiveSkill/Berserker/PerkPassiveSkill/PassiveSkill_BSK_DualMode.1"
+    }
+  },
+  {
+    "Type": "PassiveSkill_BSK_DualMode_C",
+    "Name": "Default__PassiveSkill_BSK_DualMode_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Player/PassiveSkill/Berserker/PerkPassiveSkill/PassiveSkill_BSK_DualMode.PassiveSkill_BSK_DualMode_C'",
+    "Properties": {
+      "ModeSettingList": [
+        {
+          "Mode": "ESBBerserkerDualModeCondition::None",
+          "ModeStatusHandle": {
+            "DataTable": null,
+            "RowName": "None"
+          },
+          "StartTSkillStatusHandle": {
+            "DataTable": null,
+            "RowName": "None"
+          },
+          "EffectLevelOverridePartsValueMap": []
+        },
+        {
+          "Mode": "ESBBerserkerDualModeCondition::QuickMode",
+          "ModeStatusHandle": {
+            "DataTable": {
+              "ObjectName": "DataTable'BerserkerStatusAlimentConfig'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/P007_Berserker/BerserkerStatusAlimentConfig.0"
+            },
+            "RowName": "MainAbility_DualMode_QuickMode"
+          },
+          "StartTSkillStatusHandle": {
+            "DataTable": null,
+            "RowName": "None"
+          },
+          "EffectLevelOverridePartsValueMap": [
+            {
+              "Key": "15",
+              "Value": 120.0
+            },
+            {
+              "Key": "18",
+              "Value": 122.0
+            },
+            {
+              "Key": "22",
+              "Value": 125.0
+            },
+            {
+              "Key": "26",
+              "Value": 127.0
+            },
+            {
+              "Key": "30",
+              "Value": 130.0
+            }
+          ]
+        },
+        {
+          "Mode": "ESBBerserkerDualModeCondition::HealMode",
+          "ModeStatusHandle": {
+            "DataTable": {
+              "ObjectName": "DataTable'BerserkerStatusAlimentConfig'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/P007_Berserker/BerserkerStatusAlimentConfig.0"
+            },
+            "RowName": "MainAbility_DualMode_HealMode"
+          },
+          "StartTSkillStatusHandle": {
+            "DataTable": {
+              "ObjectName": "DataTable'BerserkerStatusAlimentConfig'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/P007_Berserker/BerserkerStatusAlimentConfig.0"
+            },
+            "RowName": "MainAbility_DualMode_RecoveryHP_Rate"
+          },
+          "EffectLevelOverridePartsValueMap": [
+            {
+              "Key": "15",
+              "Value": 35.0
+            },
+            {
+              "Key": "18",
+              "Value": 35.0
+            },
+            {
+              "Key": "22",
+              "Value": 35.0
+            },
+            {
+              "Key": "26",
+              "Value": 35.0
+            },
+            {
+              "Key": "30",
+              "Value": 35.0
+            }
+          ]
+        }
+      ],
+      "EffectLevelOverrideStatusList": [
+        {
+          "DataTable": {
+            "ObjectName": "DataTable'BerserkerStatusAlimentConfig'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/P007_Berserker/BerserkerStatusAlimentConfig.0"
+          },
+          "RowName": "MainAbility_DualMode_QuickMode"
+        },
+        {
+          "DataTable": {
+            "ObjectName": "DataTable'BerserkerStatusAlimentConfig'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Magic/P007_Berserker/BerserkerStatusAlimentConfig.0"
+          },
+          "RowName": "MainAbility_DualMode_RecoveryHP_Rate"
+        }
+      ]
+    }
+  }
+]

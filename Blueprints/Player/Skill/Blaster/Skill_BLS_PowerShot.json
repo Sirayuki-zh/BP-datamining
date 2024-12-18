@@ -129,6 +129,7 @@
                 "OnlyPlayerStatusList": [],
                 "ElementType": "ESBAttribute::None",
                 "SkillType": "ESBPlayerSkillActionType::None",
+                "SkillActionPosition": "ESkillActionPosition::SAP_Special",
                 "ArrayLogic": "ESBArrayLogicalOperator::AND",
                 "bNot": false
               }
@@ -413,6 +414,7 @@
                 "OnlyPlayerStatusList": [],
                 "ElementType": "ESBAttribute::None",
                 "SkillType": "ESBPlayerSkillActionType::None",
+                "SkillActionPosition": "ESkillActionPosition::SAP_Special",
                 "ArrayLogic": "ESBArrayLogicalOperator::AND",
                 "bNot": false
               }
@@ -529,6 +531,7 @@
                     "OnlyPlayerStatusList": [],
                     "ElementType": "ESBAttribute::None",
                     "SkillType": "ESBPlayerSkillActionType::None",
+                    "SkillActionPosition": "ESkillActionPosition::SAP_Special",
                     "ArrayLogic": "ESBArrayLogicalOperator::AND",
                     "bNot": false
                   }
@@ -571,6 +574,7 @@
                 "OnlyPlayerStatusList": [],
                 "ElementType": "ESBAttribute::None",
                 "SkillType": "ESBPlayerSkillActionType::None",
+                "SkillActionPosition": "ESkillActionPosition::SAP_Special",
                 "ArrayLogic": "ESBArrayLogicalOperator::AND",
                 "bNot": false
               }
@@ -603,11 +607,45 @@
                 "OnlyPlayerStatusList": [],
                 "ElementType": "ESBAttribute::None",
                 "SkillType": "ESBPlayerSkillActionType::None",
+                "SkillActionPosition": "ESkillActionPosition::SAP_Special",
                 "ArrayLogic": "ESBArrayLogicalOperator::AND",
                 "bNot": false
               }
             ],
             "IntValue": 50
+          },
+          {
+            "ConditionList": [
+              {
+                "ConditionCheckType": "ESBConditionCheckType::EquippedPassiveSkill",
+                "ActiveArtsID": {
+                  "ID": 0
+                },
+                "PassiveArtsID": {
+                  "ID": 106902
+                },
+                "AttackID": {
+                  "AttackID": 0
+                },
+                "IntValue": 0,
+                "FloatValue": 0.0,
+                "NameValue": "None",
+                "Relation": "ESBMagnitudeRelation::GreaterOrEqual",
+                "BattleStatusRowHandle": {
+                  "DataTable": null,
+                  "RowName": "None"
+                },
+                "BattleEffectiveGroup": "ESBBattleEffectiveGroup::None",
+                "AbilityFlagList": [],
+                "OnlyPlayerStatusList": [],
+                "ElementType": "ESBAttribute::None",
+                "SkillType": "ESBPlayerSkillActionType::None",
+                "SkillActionPosition": "ESkillActionPosition::SAP_Special",
+                "ArrayLogic": "ESBArrayLogicalOperator::AND",
+                "bNot": false
+              }
+            ],
+            "IntValue": 10000
           }
         ]
       },
@@ -638,6 +676,7 @@
               "OnlyPlayerStatusList": [],
               "ElementType": "ESBAttribute::None",
               "SkillType": "ESBPlayerSkillActionType::None",
+              "SkillActionPosition": "ESkillActionPosition::SAP_Special",
               "ArrayLogic": "ESBArrayLogicalOperator::AND",
               "bNot": false
             }

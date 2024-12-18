@@ -82,24 +82,6 @@
         "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
       },
       {
-        "Type": "IntProperty",
-        "Name": "K2Node_Event_CurrentSequence",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "BoolProperty",
-        "Name": "K2Node_Event_IsFullSpawn",
-        "Flags": "RF_Public",
-        "ElementSize": 1,
-        "FieldSize": 1,
-        "ByteOffset": 0,
-        "ByteMask": 1,
-        "FieldMask": 255,
-        "BoolSize": 1,
-        "bIsNativeBool": true
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
         "Flags": "RF_Public",
@@ -216,6 +198,30 @@
         }
       },
       {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_CurrentSequence",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_IsFullSpawn",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
         "Type": "BoolProperty",
         "Name": "CallFunc_HasAuthority_ReturnValue_1",
         "Flags": "RF_Public",
@@ -287,18 +293,6 @@
         }
       },
       {
-        "Type": "FloatProperty",
-        "Name": "K2Node_CustomEvent_Damage",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
-        "Type": "FloatProperty",
-        "Name": "K2Node_CustomEvent_RemainPercent",
-        "Flags": "RF_Public",
-        "ElementSize": 4
-      },
-      {
         "Type": "ObjectProperty",
         "Name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
         "Flags": "RF_Public",
@@ -311,7 +305,13 @@
       },
       {
         "Type": "FloatProperty",
-        "Name": "K2Node_Event_DeltaSeconds",
+        "Name": "K2Node_CustomEvent_Damage",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_CustomEvent_RemainPercent",
         "Flags": "RF_Public",
         "ElementSize": 4
       },
@@ -370,12 +370,24 @@
         "ElementSize": 8,
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacter_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Player/BP_PlayerCharacter.66"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Player/BP_PlayerCharacter.67"
         }
       },
       {
         "Type": "BoolProperty",
         "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
         "Flags": "RF_Public",
         "ElementSize": 1,
         "FieldSize": 1,
@@ -459,6 +471,26 @@
   },
   {
     "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_DxBattle_Device_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
     "Name": "Damaged",
     "Outer": "BP_DxBattle_Device_Base_C",
     "Class": "UScriptClass'Function'",
@@ -520,13 +552,6 @@
       }
     ],
     "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
-    "Name": "GateBreakEffect",
-    "Outer": "BP_DxBattle_Device_Base_C",
-    "Class": "UScriptClass'Function'",
-    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -603,30 +628,10 @@
   },
   {
     "Type": "Function",
-    "Name": "ReceiveTick",
+    "Name": "GateBreakEffect",
     "Outer": "BP_DxBattle_Device_Base_C",
     "Class": "UScriptClass'Function'",
-    "SuperStruct": {
-      "ObjectName": "Function'Actor:ReceiveTick'",
-      "ObjectPath": "/Script/Engine"
-    },
-    "ChildProperties": [
-      {
-        "Type": "FloatProperty",
-        "Name": "DeltaSeconds",
-        "Flags": "RF_Public",
-        "ElementSize": 4,
-        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
-      }
-    ],
-    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
-  },
-  {
-    "Type": "Function",
-    "Name": "RunOnServerEvent",
-    "Outer": "BP_DxBattle_Device_Base_C",
-    "Class": "UScriptClass'Function'",
-    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetServer | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -642,6 +647,13 @@
       "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Field/Destructible/BP_Destructible_Base.15"
     },
     "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RunOnServerEvent",
+    "Outer": "BP_DxBattle_Device_Base_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetServer | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
   },
   {
     "Type": "Function",
@@ -867,15 +879,15 @@
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.11"
       },
       {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveBeginPlay'",
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:RunOnServerEvent'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.10"
       },
       {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:RunOnServerEvent'",
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveBeginPlay'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.9"
       },
       {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveTick'",
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:GateBreakEffect'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.8"
       },
       {
@@ -883,11 +895,11 @@
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.7"
       },
       {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:GateBreakEffect'",
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:Damaged'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.6"
       },
       {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:Damaged'",
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveTick'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.5"
       },
       {
@@ -953,7 +965,7 @@
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | ExposeOnSpawn",
         "PropertyClass": {
           "ObjectName": "BlueprintGeneratedClass'BP_DxBattle_DeviceSpawner_Base_C'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.16"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_DeviceSpawner_Base.18"
         }
       },
       {
@@ -974,8 +986,8 @@
         "ElementSize": 8,
         "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
         "PropertyClass": {
-          "ObjectName": "Class'Object'",
-          "ObjectPath": "/Script/CoreUObject"
+          "ObjectName": "BlueprintGeneratedClass'BP_EngramEnergySystemManager_C'",
+          "ObjectPath": "BLUEPROTOCOL/Content/LevelDesign/Blueprint/EngramEnergy/Manage/BP_EngramEnergySystemManager.16"
         }
       }
     ],
@@ -1000,28 +1012,28 @@
         "ObjectName": "Function'BP_DxBattle_Device_Base_C:DamageReaction'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.4"
       },
-      "Damaged": {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:Damaged'",
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveTick'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.5"
       },
-      "GateBreakEffect": {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:GateBreakEffect'",
+      "Damaged": {
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:Damaged'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.6"
       },
       "BndEvt__StaticMeshComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature": {
         "ObjectName": "Function'BP_DxBattle_Device_Base_C:BndEvt__StaticMeshComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.7"
       },
-      "ReceiveTick": {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveTick'",
+      "GateBreakEffect": {
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:GateBreakEffect'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.8"
-      },
-      "RunOnServerEvent": {
-        "ObjectName": "Function'BP_DxBattle_Device_Base_C:RunOnServerEvent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.9"
       },
       "ReceiveBeginPlay": {
         "ObjectName": "Function'BP_DxBattle_Device_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.9"
+      },
+      "RunOnServerEvent": {
+        "ObjectName": "Function'BP_DxBattle_Device_Base_C:RunOnServerEvent'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Dungeon/Develop/Dungeon_DxBattle/BP/BaseClass/BP_DxBattle_Device_Base.10"
       },
       "OnSpawn": {

@@ -20,7 +20,7 @@
         "SpawnInfo": {
           "SpawnType": "ESpawnType::TargetCompOffsetPosOnDir",
           "SpawnRotType": "ESpawnRotType::FaceTarget",
-          "DirectionType": "EProjectileDirection::AutoSetDirection",
+          "DirectionType": "EProjectileDirection::BySystem",
           "SpawnSocketName": "None",
           "SpawnOffset": {
             "X": -300.0,
@@ -44,6 +44,7 @@
           "bIsDestroyInObstacle": false,
           "isObstaclePushedBackToSpawner": true,
           "bIsCheckGround": true,
+          "bIsSpawnGroundAddOffsetZ": true,
           "isDisalbeScreenViewDirectionObstacleAttackHit": false,
           "isOnNaviMeshConnedtedFromOwner": true,
           "bIsReacquireSpawnTransformOnLocal": false,
@@ -250,9 +251,9 @@
         "MoveHomingConfig": {
           "bIsHoming": false,
           "HomingType": "EHomingType::HomingCorrectionHorizontalOnlyAngle",
-          "HomingAccelerationMagnitude": 1.0,
+          "HomingAccelerationMagnitude": 0.0,
           "HomingBeginTime": 0.0,
-          "HomingEndTime": 4.1,
+          "HomingEndTime": 0.0,
           "HomingOffsetPos": {
             "X": 0.0,
             "Y": 0.0,
@@ -444,6 +445,7 @@
           "bIsDestroyInObstacle": false,
           "isObstaclePushedBackToSpawner": true,
           "bIsCheckGround": true,
+          "bIsSpawnGroundAddOffsetZ": true,
           "isDisalbeScreenViewDirectionObstacleAttackHit": false,
           "isOnNaviMeshConnedtedFromOwner": false,
           "bIsReacquireSpawnTransformOnLocal": false,
@@ -579,7 +581,7 @@
             "bIsDisableReHitDelay": false,
             "bIsShareHit": true,
             "ShareHitConfig": {
-              "ShareHitTime": 3.0,
+              "ShareHitTime": 1.0,
               "ShareGroup": "EProjectileShareGroup::Group1",
               "bIsIndependentBySpawner": false
             },
@@ -622,7 +624,7 @@
               "Location": {
                 "X": 1500.0,
                 "Y": 0.0,
-                "Z": -200.0
+                "Z": 150.0
               },
               "Rotation": {
                 "Pitch": 0.0,
@@ -874,6 +876,7 @@
           "bIsDestroyInObstacle": false,
           "isObstaclePushedBackToSpawner": true,
           "bIsCheckGround": true,
+          "bIsSpawnGroundAddOffsetZ": true,
           "isDisalbeScreenViewDirectionObstacleAttackHit": false,
           "isOnNaviMeshConnedtedFromOwner": false,
           "bIsReacquireSpawnTransformOnLocal": false,
@@ -1009,7 +1012,7 @@
             "bIsDisableReHitDelay": false,
             "bIsShareHit": true,
             "ShareHitConfig": {
-              "ShareHitTime": 3.0,
+              "ShareHitTime": 1.0,
               "ShareGroup": "EProjectileShareGroup::Group1",
               "bIsIndependentBySpawner": false
             },
@@ -1052,7 +1055,7 @@
               "Location": {
                 "X": 1500.0,
                 "Y": 0.0,
-                "Z": 0.0
+                "Z": 150.0
               },
               "Rotation": {
                 "Pitch": 0.0,

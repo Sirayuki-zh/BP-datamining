@@ -1,0 +1,694 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Npc_AvaritiaShell02",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "NotifyActivated",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'SBPoolableActorInterface:NotifyActivated'",
+      "ObjectPath": "/Script/SkyBlue"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetMaxDrawDistance",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "New Cull Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Npc_AvaritiaShell02_C:SimpleConstructionScript_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.34"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_Npc_AvaritiaShell02_C:InheritableComponentHandler'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:ExecuteUbergraph_BP_Npc_AvaritiaShell02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:SetMaxDrawDistance'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.3"
+      },
+      {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.2"
+      },
+      {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:NotifyActivated'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.1"
+      },
+      {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:ExecuteUbergraph_BP_Npc_AvaritiaShell02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Cull Distance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Npc_AvaritiaShell02": {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:ExecuteUbergraph_BP_Npc_AvaritiaShell02'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.0"
+      },
+      "NotifyActivated": {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:NotifyActivated'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:ReceiveBeginPlay'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.2"
+      },
+      "SetMaxDrawDistance": {
+        "ObjectName": "Function'BP_Npc_AvaritiaShell02_C:SetMaxDrawDistance'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Npc_AvaritiaShell02_C'Default__BP_Npc_AvaritiaShell02_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.5"
+    }
+  },
+  {
+    "Type": "BP_Npc_AvaritiaShell02_C",
+    "Name": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.BP_Npc_AvaritiaShell02_C'",
+    "Template": {
+      "ObjectName": "BP_Npc_AvaritiaShell00_C'Default__BP_Npc_AvaritiaShell00_C'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.2"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "Cull Distance": 5000.0,
+      "CharaCreateComponent": {
+        "ObjectName": "SBCharaCreateComponent'Default__BP_Npc_AvaritiaShell02_C:CharaCreate'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.17"
+      },
+      "FaceComp": {
+        "ObjectName": "SBCharaPartsFaceComponent'Default__BP_Npc_AvaritiaShell02_C:FaceSlot'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.19"
+      },
+      "DemoParameterComp": {
+        "ObjectName": "SBDemoParameterComponent'Default__BP_Npc_AvaritiaShell02_C:DemoParameterComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.22"
+      },
+      "CameraTransparentComponent": {
+        "ObjectName": "SBCameraTransparentCapsuleComponent'Default__BP_Npc_AvaritiaShell02_C:CameraTransparentComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.16"
+      },
+      "AnimationControlComp": {
+        "ObjectName": "SBAnimationControlComponent'Default__BP_Npc_AvaritiaShell02_C:AnimationControlComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.14"
+      },
+      "NamePlateComp": {
+        "ObjectName": "SBNamePlateComponent2D'Default__BP_Npc_AvaritiaShell02_C:NamePlateComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.26"
+      },
+      "InteractionTargetComp": {
+        "ObjectName": "SBNpcInteractionTargetComponent'Default__BP_Npc_AvaritiaShell02_C:InteractionTargetComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.28"
+      },
+      "WandererDensitySourceComp": {
+        "ObjectName": "SBInfluenceSourceComponent'Default__BP_Npc_AvaritiaShell02_C:WandererDensitySourceComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.25"
+      },
+      "PerfOptComp": {
+        "ObjectName": "SBNpcPerformanceOptimizationComponent'Default__BP_Npc_AvaritiaShell02_C:PerfOptComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.29"
+      },
+      "GameplayTasksComp": {
+        "ObjectName": "GameplayTasksComponent'Default__BP_Npc_AvaritiaShell02_C:GameplayTasksComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.8"
+      },
+      "ActorVisibilityComponent": {
+        "ObjectName": "SBActorVisibilityComponent'Default__BP_Npc_AvaritiaShell02_C:ActorVisibilityComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.12"
+      },
+      "FieldStatusComponent": {
+        "ObjectName": "SBFieldStatusComponent'Default__BP_Npc_AvaritiaShell02_C:FieldStatusComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.24"
+      },
+      "WaitParamComp": {
+        "ObjectName": "SBNpcWaitParamComponent'Default__BP_Npc_AvaritiaShell02_C:NpcWaitParamComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.31"
+      },
+      "TalkActionComp": {
+        "ObjectName": "SBNpcTalkActionComponent'Default__BP_Npc_AvaritiaShell02_C:NpcTalkActionComponent'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.30"
+      },
+      "Mesh": {
+        "ObjectName": "SBCharaPartsBodyComponent'Default__BP_Npc_AvaritiaShell02_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.18"
+      },
+      "CharacterMovement": {
+        "ObjectName": "SBNpcCharacterMovementComponent'Default__BP_Npc_AvaritiaShell02_C:CharMoveComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.27"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Npc_AvaritiaShell02_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.7"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Npc_AvaritiaShell02_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.7"
+      }
+    }
+  },
+  {
+    "Type": "BP_EF_Avaritelia_C",
+    "Name": "BP_EF_Avaritelia_GEN_VARIABLE",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "BlueprintGeneratedClass'BLUEPROTOCOL/Content/Effect/Blueprint/BP_EF_Avaritelia.BP_EF_Avaritelia_C'",
+    "Template": {
+      "ObjectName": "BP_EF_Avaritelia_C'BP_Npc_AvaritiaShell00_C:BP_EF_Avaritelia_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.3"
+    },
+    "Properties": {
+      "WaveAvariteliaEffect": {
+        "ObjectName": "ParticleSystem'PS_AvaAura_Shell_Calmness'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Effect/Particle/Status/Avaritelia/PS_AvaAura_Shell_Calmness.84"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_Npc_AvaritiaShell00_C:CollisionCylinder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.4"
+    }
+  },
+  {
+    "Type": "GameplayTasksComponent",
+    "Name": "GameplayTasksComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'GameplayTasksComponent'",
+    "Template": {
+      "ObjectName": "GameplayTasksComponent'Default__BP_Npc_AvaritiaShell00_C:GameplayTasksComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.5"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'ParticleSystemComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ParticleSystemComponent'BP_Npc_AvaritiaShell02_C:PS_AvaTentacle_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.10"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+            },
+            "SCSVariableName": "PS_AvaTentacle",
+            "AssociatedGuid": "B1481B53-48591A63-931BACAF-E091578B"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'PointLightComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "PointLightComponent'BP_Npc_AvaritiaShell02_C:PointLight_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.11"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+            },
+            "SCSVariableName": "PointLight",
+            "AssociatedGuid": "F9ACA895-427644EC-AAE230A7-93E58291"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_EF_Avaritelia_C'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Effect/Blueprint/BP_EF_Avaritelia.15"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BP_EF_Avaritelia_C'BP_Npc_AvaritiaShell02_C:BP_EF_Avaritelia_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+            },
+            "SCSVariableName": "BP_EF_Avaritelia",
+            "AssociatedGuid": "54CADEF0-4E0A4F41-1B162D9A-0D1563DA"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SBAmbientAkComponent'",
+            "ObjectPath": "/Script/SkyBlue"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SBAmbientAkComponent'BP_Npc_AvaritiaShell02_C:SBAmbientAk_GEN_VARIABLE'",
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.13"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Npc_AvaritiaShell00_C'",
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.1"
+            },
+            "SCSVariableName": "SBAmbientAk",
+            "AssociatedGuid": "49E6C707-482C0742-974DA0A4-1670852F"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "PS_AvaTentacle_GEN_VARIABLE",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Template": {
+      "ObjectName": "ParticleSystemComponent'BP_Npc_AvaritiaShell00_C:PS_AvaTentacle_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.7"
+    },
+    "Properties": {
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight_GEN_VARIABLE",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'PointLightComponent'",
+    "Template": {
+      "ObjectName": "PointLightComponent'BP_Npc_AvaritiaShell00_C:PointLight_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.8"
+    },
+    "Properties": {
+      "AttenuationRadius": 300.0,
+      "Intensity": 50000.0
+    }
+  },
+  {
+    "Type": "SBActorVisibilityComponent",
+    "Name": "ActorVisibilityComponent",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBActorVisibilityComponent'",
+    "Template": {
+      "ObjectName": "SBActorVisibilityComponent'Default__BP_Npc_AvaritiaShell00_C:ActorVisibilityComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.9"
+    }
+  },
+  {
+    "Type": "SBAmbientAkComponent",
+    "Name": "SBAmbientAk_GEN_VARIABLE",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBAmbientAkComponent'",
+    "Template": {
+      "ObjectName": "SBAmbientAkComponent'BP_Npc_AvaritiaShell00_C:SBAmbientAk_GEN_VARIABLE'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.10"
+    },
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'Play_SEQ_MAV107_060_020_LastLoop'",
+        "ObjectPath": "BLUEPROTOCOL/Content/WwiseAudio/Events/Default_Work_Unit/Ambience/Play_SEQ_MAV107_060_020_LastLoop.1"
+      }
+    }
+  },
+  {
+    "Type": "SBAnimationControlComponent",
+    "Name": "AnimationControlComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBAnimationControlComponent'",
+    "Template": {
+      "ObjectName": "SBAnimationControlComponent'Default__BP_Npc_AvaritiaShell00_C:AnimationControlComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.11"
+    }
+  },
+  {
+    "Type": "SBBoneScaleCacheData",
+    "Name": "BoneScaleChacheData",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBBoneScaleCacheData'",
+    "Template": {
+      "ObjectName": "SBBoneScaleCacheData'Default__BP_Npc_AvaritiaShell00_C:CharaCreate.BoneScaleChacheData'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.12"
+    }
+  },
+  {
+    "Type": "SBCameraTransparentCapsuleComponent",
+    "Name": "CameraTransparentComponent",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBCameraTransparentCapsuleComponent'",
+    "Template": {
+      "ObjectName": "SBCameraTransparentCapsuleComponent'Default__BP_Npc_AvaritiaShell00_C:CameraTransparentComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.13"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Npc_AvaritiaShell02_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.7"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaCreateComponent",
+    "Name": "CharaCreate",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBCharaCreateComponent'",
+    "Template": {
+      "ObjectName": "SBCharaCreateComponent'Default__BP_Npc_AvaritiaShell00_C:CharaCreate'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.14"
+    }
+  },
+  {
+    "Type": "SBCharaPartsBodyComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBCharaPartsBodyComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsBodyComponent'Default__BP_Npc_AvaritiaShell00_C:CharacterMesh0'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.15"
+    },
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'SK_CH_E521_00_MA_AvariteliaShell'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Character/Enemy/E521_00/Material/SK_CH_E521_00_MA_AvariteliaShell.0"
+        }
+      ],
+      "LDMaxDrawDistance": 200000.0,
+      "CachedMaxDrawDistance": 200000.0,
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Npc_AvaritiaShell02_C:CollisionCylinder'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.7"
+      }
+    }
+  },
+  {
+    "Type": "SBCharaPartsFaceComponent",
+    "Name": "FaceSlot",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBCharaPartsFaceComponent'",
+    "Template": {
+      "ObjectName": "SBCharaPartsFaceComponent'Default__BP_Npc_AvaritiaShell00_C:FaceSlot'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.16"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "CharacterMesh0",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Npc_AvaritiaShell00_C:CharacterMesh0.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.17"
+    }
+  },
+  {
+    "Type": "SBCharaPartsMaterial",
+    "Name": "CharaPartsMaterial",
+    "Outer": "FaceSlot",
+    "Class": "UScriptClass'SBCharaPartsMaterial'",
+    "Template": {
+      "ObjectName": "SBCharaPartsMaterial'Default__BP_Npc_AvaritiaShell00_C:FaceSlot.CharaPartsMaterial'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.18"
+    }
+  },
+  {
+    "Type": "SBDemoParameterComponent",
+    "Name": "DemoParameterComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBDemoParameterComponent'",
+    "Template": {
+      "ObjectName": "SBDemoParameterComponent'Default__BP_Npc_AvaritiaShell00_C:DemoParameterComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.19"
+    }
+  },
+  {
+    "Type": "SBFacialAnimationDataHolder",
+    "Name": "FacialAnimationDataHolder",
+    "Outer": "CharaCreate",
+    "Class": "UScriptClass'SBFacialAnimationDataHolder'",
+    "Template": {
+      "ObjectName": "SBFacialAnimationDataHolder'Default__BP_Npc_AvaritiaShell00_C:CharaCreate.FacialAnimationDataHolder'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.20"
+    }
+  },
+  {
+    "Type": "SBFieldStatusComponent",
+    "Name": "FieldStatusComponent",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBFieldStatusComponent'",
+    "Template": {
+      "ObjectName": "SBFieldStatusComponent'Default__BP_Npc_AvaritiaShell00_C:FieldStatusComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.21"
+    }
+  },
+  {
+    "Type": "SBInfluenceSourceComponent",
+    "Name": "WandererDensitySourceComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBInfluenceSourceComponent'",
+    "Template": {
+      "ObjectName": "SBInfluenceSourceComponent'Default__BP_Npc_AvaritiaShell00_C:WandererDensitySourceComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.22"
+    }
+  },
+  {
+    "Type": "SBNamePlateComponent2D",
+    "Name": "NamePlateComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNamePlateComponent2D'",
+    "Template": {
+      "ObjectName": "SBNamePlateComponent2D'Default__BP_Npc_AvaritiaShell00_C:NamePlateComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.23"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCharaPartsBodyComponent'Default__BP_Npc_AvaritiaShell02_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.18"
+      }
+    }
+  },
+  {
+    "Type": "SBNpcCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNpcCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "SBNpcCharacterMovementComponent'Default__BP_Npc_AvaritiaShell00_C:CharMoveComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.24"
+    }
+  },
+  {
+    "Type": "SBNpcInteractionTargetComponent",
+    "Name": "InteractionTargetComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNpcInteractionTargetComponent'",
+    "Template": {
+      "ObjectName": "SBNpcInteractionTargetComponent'Default__BP_Npc_AvaritiaShell00_C:InteractionTargetComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.25"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SBCharaPartsBodyComponent'Default__BP_Npc_AvaritiaShell02_C:CharacterMesh0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.18"
+      }
+    }
+  },
+  {
+    "Type": "SBNpcPerformanceOptimizationComponent",
+    "Name": "PerfOptComp",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNpcPerformanceOptimizationComponent'",
+    "Template": {
+      "ObjectName": "SBNpcPerformanceOptimizationComponent'Default__BP_Npc_AvaritiaShell00_C:PerfOptComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.26"
+    }
+  },
+  {
+    "Type": "SBNpcTalkActionComponent",
+    "Name": "NpcTalkActionComponent",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNpcTalkActionComponent'",
+    "Template": {
+      "ObjectName": "SBNpcTalkActionComponent'Default__BP_Npc_AvaritiaShell00_C:NpcTalkActionComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.27"
+    }
+  },
+  {
+    "Type": "SBNpcWaitParamComponent",
+    "Name": "NpcWaitParamComponent",
+    "Outer": "Default__BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SBNpcWaitParamComponent'",
+    "Template": {
+      "ObjectName": "SBNpcWaitParamComponent'Default__BP_Npc_AvaritiaShell00_C:NpcWaitParamComponent'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell00.28"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Npc_AvaritiaShell02_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.32"
+      },
+      "VariableGuid": "E406DF09-4D38ED24-02BE8998-39EE82D5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Npc_AvaritiaShell02_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Npc_AvaritiaShell02_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Npc/base/BP_Npc_AvaritiaShell02.33"
+      }
+    }
+  }
+]

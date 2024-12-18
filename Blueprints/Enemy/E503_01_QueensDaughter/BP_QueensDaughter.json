@@ -118,7 +118,7 @@
     "Properties": {
       "SimpleConstructionScript": {
         "ObjectName": "SimpleConstructionScript'BP_QueensDaughter_C:SimpleConstructionScript_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.228"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.231"
       },
       "InheritableComponentHandler": {
         "ObjectName": "InheritableComponentHandler'BP_QueensDaughter_C:InheritableComponentHandler'",
@@ -161,6 +161,17 @@
         "Struct": {
           "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
           "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SBEnemySAB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SBEnemySABComponent'",
+          "ObjectPath": "/Script/SkyBlue"
         }
       },
       {
@@ -1086,25 +1097,27 @@
       "UberGraphFrame": {},
       "MeshScaleMap": [
         {
-          "E503_01_00": 0.6
+          "Key": "E503_01_00",
+          "Value": 0.6
         },
         {
-          "E503_01_01": 0.6
+          "Key": "E503_01_01",
+          "Value": 0.6
         }
       ],
       "IsCustomBurstFinish": true,
       "IsCustomBurstFinishEnd": true,
       "DeathEffectComp": {
         "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_QueensDaughter_C:EnemyDeathEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.115"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.116"
       },
       "TideComp": {
         "ObjectName": "SBEnemyTideComponent'Default__BP_QueensDaughter_C:EnemyTideComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.131"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.133"
       },
       "ExitEffectComp": {
         "ObjectName": "SBEnemyExitEffectComponent'Default__BP_QueensDaughter_C:EnemyExitEffectComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.118"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.119"
       },
       "EnemyId": "E503_01_00_00000",
       "BadZoneAvoidanceComp": {
@@ -1113,11 +1126,11 @@
       },
       "PhaseComp": {
         "ObjectName": "SBEnemyPhaseComponent'Default__BP_QueensDaughter_C:EnemyPhaseComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.123"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.124"
       },
       "ModifierComp": {
         "ObjectName": "SBEnemyModifierComponent'Default__BP_QueensDaughter_C:EnemyModifierComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.119"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.120"
       },
       "ActionParamComp": {
         "ObjectName": "SBEnemyActionParamComponent'Default__BP_QueensDaughter_C:EnemyActionParamComp'",
@@ -1133,11 +1146,11 @@
       },
       "PartsManagerComp": {
         "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_QueensDaughter_C:EnemyPartsBreakComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.122"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.123"
       },
       "TargetingComp": {
         "ObjectName": "SBEnemyTargetingComponent'Default__BP_QueensDaughter_C:EnemyTargetingComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.130"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.132"
       },
       "AdjustRootMotionComp": {
         "ObjectName": "SBAdjustRootMotionComponent'Default__BP_QueensDaughter_C:AdjustRootMotionComp'",
@@ -1145,23 +1158,23 @@
       },
       "StanceComp": {
         "ObjectName": "SBEnemyStanceComponent'Default__BP_QueensDaughter_C:StanceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.127"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.129"
       },
       "SummonComponent": {
         "ObjectName": "SBEnemySummonComponent'Default__BP_QueensDaughter_C:SummonComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.129"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.131"
       },
       "MarkerManagerComp": {
         "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_QueensDaughter_C:MarkerManagerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.111"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.112"
       },
       "SenseChangerComp": {
         "ObjectName": "SBEnemySenseChangerComponent'Default__BP_QueensDaughter_C:SenseChangerComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.125"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.127"
       },
       "EnemyDropComp": {
         "ObjectName": "SBEnemyDropComponent'Default__BP_QueensDaughter_C:EnemyDropComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.116"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.117"
       },
       "DelegateHitAuthComp": {
         "ObjectName": "SBDelegateHitAuthComponent'Default__BP_QueensDaughter_C:DelegateHitAuthComp'",
@@ -1173,11 +1186,11 @@
       },
       "StateInitializerComponent": {
         "ObjectName": "SBStateInitializerComponent'Default__BP_QueensDaughter_C:StateInitializerComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.142"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.144"
       },
       "CollisionHitComp": {
         "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_QueensDaughter_C:EnemyCollisionHitComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.113"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.114"
       },
       "ChanceTimeDownComp": {
         "ObjectName": "SBCharacterChanceTimeDownComponent'Default__BP_QueensDaughter_C:ChanceTimeDownComponent'",
@@ -1185,7 +1198,7 @@
       },
       "EnemyDxBattleComp": {
         "ObjectName": "SBEnemyDxBattleComponent'Default__BP_QueensDaughter_C:EnemyDxBattleComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.117"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.118"
       },
       "AbilitySystemComp": {
         "ObjectName": "SBEnemyAbilitySystemComponent'Default__BP_QueensDaughter_C:AbilitySystemComp'",
@@ -1193,19 +1206,23 @@
       },
       "ConditionalVoiceComp": {
         "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_QueensDaughter_C:ConditionalVoiceComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.114"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.115"
       },
       "ExecDelegateWithConditionComp": {
         "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_QueensDaughter_C:ExecDelegateWithConditionComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.132"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.134"
       },
       "BuddyRevivalComp": {
         "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_QueensDaughter_C:BuddyRevivalComp'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.111"
+      },
+      "BuddyAlterWarpComp": {
+        "ObjectName": "SBEnemyBuddyAlterWarpComponent'Default__BP_QueensDaughter_C:BuddyAlterWarpComp'",
         "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.110"
       },
       "StateMachineReplayComp": {
         "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_QueensDaughter_C:StateMachineReplayComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.128"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.130"
       },
       "ActionUniqueCounterComp": {
         "ObjectName": "SBCharacterLoopCounterComponent'Default__BP_QueensDaughter_C:ActionUniqueCounterComp'",
@@ -1275,18 +1292,18 @@
       ],
       "PartsDamageAnimParamter": {
         "ObjectName": "SBPartsDamageAnimParamter'Default__BP_QueensDaughter_C:PartsDamageAnimParamter'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.137"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.139"
       },
       "m_DamageReactionPattern": {
         "RowName": "SuperHeavy"
       },
       "WeaponVisibilityComponent": {
         "ObjectName": "SBWeaponVisibilityComponent'Default__BP_QueensDaughter_C:WeaponVisibilityComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.145"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.147"
       },
       "SpawnComp": {
         "ObjectName": "SBProjectileSpawnComponent'Default__BP_QueensDaughter_C:ProjectileSpawnComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.140"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.142"
       },
       "BattleStatusComp": {
         "ObjectName": "SBBattleStatusComponent'Default__BP_QueensDaughter_C:BattleStatusComp'",
@@ -1294,15 +1311,15 @@
       },
       "ProjectileShareHitComp": {
         "ObjectName": "SBProjectileShareHitComponent'Default__BP_QueensDaughter_C:ProjectileShareHitComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.139"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.141"
       },
       "SendNetDataComp": {
         "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_QueensDaughter_C:ProjectileSendNetDataComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.138"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.140"
       },
       "StateManageComp": {
         "ObjectName": "SBProjectileStateManageComponent'Default__BP_QueensDaughter_C:ProjectileStateManageComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.141"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.143"
       },
       "AnimationControlComp": {
         "ObjectName": "SBAnimationControlComponent'Default__BP_QueensDaughter_C:AnimationControlComp'",
@@ -1318,7 +1335,7 @@
       },
       "FactionInfluenceComponent": {
         "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_QueensDaughter_C:FactionInfluenceComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.134"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.136"
       },
       "AISharedInfoComponent": {
         "ObjectName": "SBAISharedInfoComponent'Default__BP_QueensDaughter_C:AISharedInfoComponent'",
@@ -1326,7 +1343,7 @@
       },
       "MovePredictComponent": {
         "ObjectName": "SBMovementPredictComponent'Default__BP_QueensDaughter_C:MovementPredictComponent'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.136"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.138"
       },
       "ActorVisibilityComponent": {
         "ObjectName": "SBActorVisibilityComponent'Default__BP_QueensDaughter_C:ActorVisibilityComponent'",
@@ -1346,15 +1363,15 @@
       },
       "Mesh": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_QueensDaughter_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.128"
       },
       "CharacterMovement": {
         "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_QueensDaughter_C:CharMoveComp'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.112"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.113"
       },
       "CapsuleComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_QueensDaughter_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.124"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
       },
       "AIControllerClass": {
         "ObjectName": "BlueprintGeneratedClass'BP_AIQueensDaughter_C'",
@@ -1362,7 +1379,7 @@
       },
       "RootComponent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_QueensDaughter_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.124"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
       }
     }
   },
@@ -5542,7 +5559,7 @@
           },
           "ComponentTemplate": {
             "ObjectName": "SBFootprintComponent'BP_QueensDaughter_C:SBFootprint_GEN_VARIABLE'",
-            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.135"
+            "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.137"
           },
           "ComponentKey": {
             "OwnerClass": {
@@ -6080,23 +6097,28 @@
       "ChanceTimeTableStartElementalBurst": {
         "ChanceTimeMap": [
           {
-            "ESBAttribute::Fire": 10.0
+            "Key": "ESBAttribute::Fire",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Thunder": 10.0
+            "Key": "ESBAttribute::Thunder",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Light": 10.0
+            "Key": "ESBAttribute::Light",
+            "Value": 10.0
           },
           {
-            "ESBAttribute::Darkness": 10.0
+            "Key": "ESBAttribute::Darkness",
+            "Value": 10.0
           }
         ]
       },
       "ChanceTimeTablePartsBreak": {
         "ChanceTimeMap": [
           {
-            "AllBody": 5.0
+            "Key": "AllBody",
+            "Value": 5.0
           }
         ]
       },
@@ -6125,7 +6147,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_QueensDaughter_C:CharacterMesh0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.128"
       }
     }
   },
@@ -6179,7 +6201,7 @@
     "Properties": {
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_QueensDaughter_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.124"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
       }
     }
   },
@@ -6669,13 +6691,23 @@
     }
   },
   {
+    "Type": "SBEnemyBuddyAlterWarpComponent",
+    "Name": "BuddyAlterWarpComp",
+    "Outer": "Default__BP_QueensDaughter_C",
+    "Class": "UScriptClass'SBEnemyBuddyAlterWarpComponent'",
+    "Template": {
+      "ObjectName": "SBEnemyBuddyAlterWarpComponent'Default__BP_EnemyCharacter_C:BuddyAlterWarpComp'",
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.52"
+    }
+  },
+  {
     "Type": "SBEnemyBuddyRevivalComponent",
     "Name": "BuddyRevivalComp",
     "Outer": "Default__BP_QueensDaughter_C",
     "Class": "UScriptClass'SBEnemyBuddyRevivalComponent'",
     "Template": {
       "ObjectName": "SBEnemyBuddyRevivalComponent'Default__BP_EnemyCharacter_C:BuddyRevivalComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.52"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.53"
     }
   },
   {
@@ -6685,7 +6717,7 @@
     "Class": "UScriptClass'SBEnemyChantMarkerManagerComponent'",
     "Template": {
       "ObjectName": "SBEnemyChantMarkerManagerComponent'Default__BP_EnemyCharacter_C:MarkerManagerComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.53"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.54"
     }
   },
   {
@@ -6695,7 +6727,7 @@
     "Class": "UScriptClass'SBEnemyCharacterMovementComponent'",
     "Template": {
       "ObjectName": "SBEnemyCharacterMovementComponent'Default__BP_EnemyCharacter_C:CharMoveComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.54"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.55"
     },
     "Properties": {
       "MaxRunSpeed": 550.0,
@@ -6709,7 +6741,7 @@
     "Class": "UScriptClass'SBEnemyCollisionHitComponent'",
     "Template": {
       "ObjectName": "SBEnemyCollisionHitComponent'Default__BP_EnemyCharacter_C:EnemyCollisionHitComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.55"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.56"
     }
   },
   {
@@ -6719,7 +6751,7 @@
     "Class": "UScriptClass'SBEnemyConditionalVoiceComponent'",
     "Template": {
       "ObjectName": "SBEnemyConditionalVoiceComponent'Default__BP_EnemyCharacter_C:ConditionalVoiceComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.56"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.57"
     }
   },
   {
@@ -6729,12 +6761,13 @@
     "Class": "UScriptClass'SBEnemyDeathEffectComponent'",
     "Template": {
       "ObjectName": "SBEnemyDeathEffectComponent'Default__BP_EnemyCharacter_C:EnemyDeathEffectComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.57"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.58"
     },
     "Properties": {
       "DeathEffects": [
         {
-          "ESBAttribute::None": {
+          "Key": "ESBAttribute::None",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6772,7 +6805,8 @@
           }
         },
         {
-          "ESBAttribute::Earth": {
+          "Key": "ESBAttribute::Earth",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6810,7 +6844,8 @@
           }
         },
         {
-          "ESBAttribute::Fire": {
+          "Key": "ESBAttribute::Fire",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6848,7 +6883,8 @@
           }
         },
         {
-          "ESBAttribute::Ice": {
+          "Key": "ESBAttribute::Ice",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6886,7 +6922,8 @@
           }
         },
         {
-          "ESBAttribute::Thunder": {
+          "Key": "ESBAttribute::Thunder",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6924,7 +6961,8 @@
           }
         },
         {
-          "ESBAttribute::Light": {
+          "Key": "ESBAttribute::Light",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -6962,7 +7000,8 @@
           }
         },
         {
-          "ESBAttribute::Darkness": {
+          "Key": "ESBAttribute::Darkness",
+          "Value": {
             "EffectAttachPointName": "Root_J",
             "EffectActorScale": {
               "X": 1.0,
@@ -7009,7 +7048,7 @@
     "Class": "UScriptClass'SBEnemyDropComponent'",
     "Template": {
       "ObjectName": "SBEnemyDropComponent'Default__BP_EnemyCharacter_C:EnemyDropComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.58"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.59"
     }
   },
   {
@@ -7019,7 +7058,7 @@
     "Class": "UScriptClass'SBEnemyDxBattleComponent'",
     "Template": {
       "ObjectName": "SBEnemyDxBattleComponent'Default__BP_EnemyCharacter_C:EnemyDxBattleComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.59"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.60"
     }
   },
   {
@@ -7029,7 +7068,7 @@
     "Class": "UScriptClass'SBEnemyExitEffectComponent'",
     "Template": {
       "ObjectName": "SBEnemyExitEffectComponent'Default__BP_EnemyCharacter_C:EnemyExitEffectComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.60"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.61"
     }
   },
   {
@@ -7039,25 +7078,27 @@
     "Class": "UScriptClass'SBEnemyModifierComponent'",
     "Template": {
       "ObjectName": "SBEnemyModifierComponent'Default__BP_EnemyCharacter_C:EnemyModifierComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.61"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.62"
     },
     "Properties": {
       "ModifierMap": [
         {
-          "Stance_Standard": {
+          "Key": "Stance_Standard",
+          "Value": {
             "OverrideParentConfigName": "None",
             "Modifier": {
               "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_QueensDaughter_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_0'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.120"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.121"
             }
           }
         },
         {
-          "Stance_Tantrum": {
+          "Key": "Stance_Tantrum",
+          "Value": {
             "OverrideParentConfigName": "None",
             "Modifier": {
               "ObjectName": "SBEnemyModifierTemplate_BlueprintBase'Default__BP_QueensDaughter_C:EnemyModifierComp.SBEnemyModifierTemplate_BlueprintBase_1'",
-              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.121"
+              "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.122"
             }
           }
         }
@@ -7119,7 +7160,7 @@
     "Class": "UScriptClass'SBEnemyPartsManagerComponent'",
     "Template": {
       "ObjectName": "SBEnemyPartsManagerComponent'Default__BP_EnemyCharacter_C:EnemyPartsBreakComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.62"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.63"
     },
     "Properties": {
       "PartsBreakInfo": [
@@ -7181,7 +7222,25 @@
     "Class": "UScriptClass'SBEnemyPhaseComponent'",
     "Template": {
       "ObjectName": "SBEnemyPhaseComponent'Default__BP_EnemyCharacter_C:EnemyPhaseComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.63"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.64"
+    }
+  },
+  {
+    "Type": "SBEnemySABComponent",
+    "Name": "SBEnemySAB_GEN_VARIABLE",
+    "Outer": "BP_QueensDaughter_C",
+    "Class": "UScriptClass'SBEnemySABComponent'",
+    "Properties": {
+      "BreakEffectSetting": {
+        "Particle": {
+          "AssetPathName": "/Game/Effect/Particle/Enemy/00_ECommon/Reinforce/PS_ECMN_Content_Attack.PS_ECMN_Content_Attack",
+          "SubPathString": ""
+        },
+        "Sound": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon_Class/ContentAction/Play_ContentAction_Break_Success.Play_ContentAction_Break_Success",
+          "SubPathString": ""
+        }
+      }
     }
   },
   {
@@ -7191,7 +7250,7 @@
     "Class": "UScriptClass'SBEnemySceneComponent'",
     "Template": {
       "ObjectName": "SBEnemySceneComponent'Default__BP_EnemyCharacter_C:CollisionCylinder'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.64"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.65"
     },
     "Properties": {
       "CapsuleHalfHeight": 300.0,
@@ -7205,7 +7264,7 @@
     "Class": "UScriptClass'SBEnemySenseChangerComponent'",
     "Template": {
       "ObjectName": "SBEnemySenseChangerComponent'Default__BP_EnemyCharacter_C:SenseChangerComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.65"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.66"
     }
   },
   {
@@ -7215,7 +7274,7 @@
     "Class": "UScriptClass'SBEnemySkeletalMeshComponent'",
     "Template": {
       "ObjectName": "SBEnemySkeletalMeshComponent'Default__BP_EnemyCharacter_C:CharacterMesh0'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.66"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.67"
     },
     "Properties": {
       "bDisableServerRefreshBones": false,
@@ -7229,7 +7288,7 @@
       },
       "AttachParent": {
         "ObjectName": "SBEnemySceneComponent'Default__BP_QueensDaughter_C:CollisionCylinder'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.124"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.126"
       },
       "RelativeLocation": {
         "X": 0.0,
@@ -7245,7 +7304,7 @@
     "Class": "UScriptClass'SBEnemyStanceComponent'",
     "Template": {
       "ObjectName": "SBEnemyStanceComponent'Default__BP_EnemyCharacter_C:StanceComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.67"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.68"
     },
     "Properties": {
       "StanceSettings": [
@@ -7271,7 +7330,7 @@
     "Class": "UScriptClass'SBEnemyStateMachineReplayComponent'",
     "Template": {
       "ObjectName": "SBEnemyStateMachineReplayComponent'Default__BP_EnemyCharacter_C:StateMachineReplayComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.68"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.69"
     }
   },
   {
@@ -7281,7 +7340,7 @@
     "Class": "UScriptClass'SBEnemySummonComponent'",
     "Template": {
       "ObjectName": "SBEnemySummonComponent'Default__BP_EnemyCharacter_C:SummonComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.69"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.70"
     }
   },
   {
@@ -7291,7 +7350,7 @@
     "Class": "UScriptClass'SBEnemyTargetingComponent'",
     "Template": {
       "ObjectName": "SBEnemyTargetingComponent'Default__BP_EnemyCharacter_C:EnemyTargetingComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.70"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.71"
     }
   },
   {
@@ -7301,7 +7360,7 @@
     "Class": "UScriptClass'SBEnemyTideComponent'",
     "Template": {
       "ObjectName": "SBEnemyTideComponent'Default__BP_EnemyCharacter_C:EnemyTideComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.71"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.72"
     }
   },
   {
@@ -7311,7 +7370,7 @@
     "Class": "UScriptClass'SBExecDelegateWithConditionComponent'",
     "Template": {
       "ObjectName": "SBExecDelegateWithConditionComponent'Default__BP_EnemyCharacter_C:ExecDelegateWithConditionComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.73"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.74"
     }
   },
   {
@@ -7321,7 +7380,7 @@
     "Class": "UScriptClass'SBFacialAnimationDataHolder'",
     "Template": {
       "ObjectName": "SBFacialAnimationDataHolder'Default__BP_EnemyCharacter_C:CharaCreate.FacialAnimationDataHolder'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.74"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.75"
     }
   },
   {
@@ -7331,7 +7390,7 @@
     "Class": "UScriptClass'SBFactionInfluenceSourceComponent'",
     "Template": {
       "ObjectName": "SBFactionInfluenceSourceComponent'Default__BP_EnemyCharacter_C:FactionInfluenceComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.75"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.76"
     }
   },
   {
@@ -7341,7 +7400,7 @@
     "Class": "UScriptClass'SBFootprintComponent'",
     "Template": {
       "ObjectName": "SBFootprintComponent'BP_EnemyCharacter_C:SBFootprint_GEN_VARIABLE'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.76"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.77"
     },
     "Properties": {
       "m_ParticleScale": 3.0,
@@ -7411,7 +7470,7 @@
     "Class": "UScriptClass'SBMovementPredictComponent'",
     "Template": {
       "ObjectName": "SBMovementPredictComponent'Default__BP_EnemyCharacter_C:MovementPredictComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.77"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.78"
     }
   },
   {
@@ -7421,7 +7480,7 @@
     "Class": "UScriptClass'SBPartsDamageAnimParamter'",
     "Template": {
       "ObjectName": "SBPartsDamageAnimParamter'Default__BP_EnemyCharacter_C:PartsDamageAnimParamter'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.79"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.80"
     }
   },
   {
@@ -7431,7 +7490,7 @@
     "Class": "UScriptClass'SBProjectileSendNetDataComponent'",
     "Template": {
       "ObjectName": "SBProjectileSendNetDataComponent'Default__BP_EnemyCharacter_C:ProjectileSendNetDataComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.80"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.81"
     }
   },
   {
@@ -7441,7 +7500,7 @@
     "Class": "UScriptClass'SBProjectileShareHitComponent'",
     "Template": {
       "ObjectName": "SBProjectileShareHitComponent'Default__BP_EnemyCharacter_C:ProjectileShareHitComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.81"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.82"
     }
   },
   {
@@ -7451,7 +7510,7 @@
     "Class": "UScriptClass'SBProjectileSpawnComponent'",
     "Template": {
       "ObjectName": "SBProjectileSpawnComponent'Default__BP_EnemyCharacter_C:ProjectileSpawnComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.82"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.83"
     },
     "Properties": {
       "ProjectileBuildResource": [
@@ -7475,7 +7534,7 @@
     "Class": "UScriptClass'SBProjectileStateManageComponent'",
     "Template": {
       "ObjectName": "SBProjectileStateManageComponent'Default__BP_EnemyCharacter_C:ProjectileStateManageComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.83"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.84"
     }
   },
   {
@@ -7485,7 +7544,7 @@
     "Class": "UScriptClass'SBStateInitializerComponent'",
     "Template": {
       "ObjectName": "SBStateInitializerComponent'Default__BP_EnemyCharacter_C:StateInitializerComp'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.84"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.85"
     }
   },
   {
@@ -7517,7 +7576,7 @@
     "Class": "UScriptClass'SBWeaponVisibilityComponent'",
     "Template": {
       "ObjectName": "SBWeaponVisibilityComponent'Default__BP_EnemyCharacter_C:WeaponVisibilityComponent'",
-      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.85"
+      "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/BP_EnemyCharacter.86"
     }
   },
   {
@@ -7538,7 +7597,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SceneComponent'BP_QueensDaughter_C:DefaultSceneRoot_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.146"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.148"
       },
       "VariableGuid": "5891422E-4FC72B5F-C7E159AA-79AFF74D",
       "InternalVariableName": "DefaultSceneRoot"
@@ -7766,7 +7825,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBTargetableComponent'BP_QueensDaughter_C:SBTargetable_Head_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.143"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.145"
       },
       "AttachToName": "Head1_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -7922,7 +7981,7 @@
       },
       "ComponentTemplate": {
         "ObjectName": "SBTargetableComponent'BP_QueensDaughter_C:SBTargetable_Main_GEN_VARIABLE'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.144"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.146"
       },
       "AttachToName": "Hip_J",
       "ParentComponentOrVariableName": "CharacterMesh0",
@@ -8275,215 +8334,215 @@
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_195'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.160"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_196'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.161"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_197'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.162"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_198'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_196'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.163"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_199'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_197'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.164"
         },
         {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_198'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.165"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_199'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.166"
+        },
+        {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_200'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.167"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_201'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.168"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_202'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.169"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_203'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_201'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.170"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_204'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_202'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.171"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_205'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_203'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.172"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_206'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_204'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.173"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_207'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_205'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.174"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_212'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_206'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.175"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_207'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.176"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_213'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.177"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_214'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_212'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.178"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_215'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_213'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.179"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_216'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_214'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.180"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_217'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_215'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.181"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_218'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_216'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.182"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_219'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_217'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.183"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_220'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_218'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.184"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_219'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.185"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_221'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.186"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_222'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_220'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.187"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_223'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_221'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.188"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_224'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_222'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.189"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_225'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_223'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.190"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_226'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_224'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.191"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_227'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_225'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.192"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_228'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_226'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.193"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_250'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.217"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_229'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_227'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.194"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_230'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_228'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.195"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_250'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.220"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_229'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.196"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_231'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.197"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_232'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_230'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.198"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_233'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_231'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.199"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_234'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_232'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.200"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_235'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_233'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.201"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_236'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_234'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.202"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_237'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_235'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.203"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_238'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_236'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.204"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_239'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_237'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.205"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_240'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_238'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.206"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_239'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.207"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_241'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.208"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_242'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_240'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.209"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_243'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_241'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.210"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_244'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_242'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.211"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_245'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_243'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.212"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_246'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_244'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.213"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_247'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_245'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.214"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_248'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_246'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.215"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_249'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_247'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.216"
         },
         {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_248'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.217"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_249'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.218"
+        },
+        {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_194'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.159"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.161"
         }
       ],
       "VariableGuid": "6F311143-47367DB4-6DA492BD-F4BDF341",
@@ -9104,6 +9163,24 @@
   },
   {
     "Type": "SCS_Node",
+    "Name": "SCS_Node_25",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SBEnemySABComponent'",
+        "ObjectPath": "/Script/SkyBlue"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SBEnemySABComponent'BP_QueensDaughter_C:SBEnemySAB_GEN_VARIABLE'",
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.125"
+      },
+      "VariableGuid": "10219E3C-4F502C06-AC2EEDA0-BAFF9A03",
+      "InternalVariableName": "SBEnemySAB"
+    }
+  },
+  {
+    "Type": "SCS_Node",
     "Name": "SCS_Node_250",
     "Outer": "SimpleConstructionScript_0",
     "Class": "UScriptClass'SCS_Node'",
@@ -9202,7 +9279,7 @@
       "ChildNodes": [
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_41'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.222"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.225"
         }
       ],
       "VariableGuid": "72904F9C-40C6DC39-330F7D89-3AEAB655",
@@ -9342,434 +9419,442 @@
       "RootNodes": [
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.165"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.167"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.219"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.222"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.224"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.148"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.220"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.223"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_8'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.226"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_9'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.227"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.149"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.150"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.223"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.226"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.229"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.230"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_10'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.151"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_11'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.152"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_12'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.153"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_13'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.154"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_14'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.155"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_15'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.156"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_16'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.157"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_20'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.166"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_17'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.158"
         },
         {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.159"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.168"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.160"
+        },
+        {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_7'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.225"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.228"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_21'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.175"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.177"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_23'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.195"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.197"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_24'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.206"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.208"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_40'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.221"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.224"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_22'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.184"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.186"
         },
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_26'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.218"
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.221"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.219"
         }
       ],
       "AllNodes": [
         {
           "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_2'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.165"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_3'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.219"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_6'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.224"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_1'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.148"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_4'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.220"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_5'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.223"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_8'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.226"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_9'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.227"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_10'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.149"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_11'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.150"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_12'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.151"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_13'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.152"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_14'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.153"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_15'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.154"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_16'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.155"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_17'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.156"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_18'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.157"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_20'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.166"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_19'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.158"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_7'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.225"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_21'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.175"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_23'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.195"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_24'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.206"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_40'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.221"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_41'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.222"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_195'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.160"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_196'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.161"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_197'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.162"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_198'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.163"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_199'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.164"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_200'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.167"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_201'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.168"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.222"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_202'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.169"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.227"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_203'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.170"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.150"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_204'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.171"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.223"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_205'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.172"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.226"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_206'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.173"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.229"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_207'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.174"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.230"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_212'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.176"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.151"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_213'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.177"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.152"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_214'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.178"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.153"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_215'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.179"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_13'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.154"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_216'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.180"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_14'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.155"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_217'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.181"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_15'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.156"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_218'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.182"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_16'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.157"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_219'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.183"
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_17'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.158"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_220'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.185"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_221'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.186"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_222'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.187"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_223'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.188"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_224'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.189"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_225'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.190"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_226'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.191"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_227'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.192"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_228'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.193"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_250'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.217"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_229'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.194"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_230'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.196"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_231'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.197"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_232'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.198"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_233'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.199"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_234'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.200"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_235'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.201"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_236'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.202"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_237'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.203"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_238'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.204"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_239'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.205"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_240'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.207"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_241'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.208"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_242'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.209"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_243'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.210"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_244'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.211"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_245'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.212"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_246'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.213"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_247'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.214"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_248'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.215"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_249'",
-          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.216"
-        },
-        {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_194'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_18'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.159"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_20'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.168"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.160"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.228"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.177"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_23'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.197"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_24'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.208"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_40'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.224"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_41'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.225"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_195'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.162"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_196'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.163"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_197'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.164"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_198'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.165"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_199'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.166"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_200'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.169"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_201'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.170"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_202'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.171"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_203'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.172"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_204'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.173"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_205'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.174"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_206'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.175"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_207'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.176"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_212'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.178"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_213'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.179"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_214'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.180"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_215'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.181"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_216'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.182"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_217'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.183"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_218'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.184"
         },
         {
-          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_219'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.185"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_220'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.187"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_221'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.188"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_222'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.189"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_223'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.190"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_224'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.191"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_225'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.192"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_226'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.193"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_227'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.194"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_228'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.195"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_250'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.220"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_229'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.196"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_230'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.198"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_231'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.199"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_232'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.200"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_233'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.201"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_234'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.202"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_235'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.203"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_236'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.204"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_237'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.205"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_238'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.206"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_239'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.207"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_240'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.209"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_241'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.210"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_242'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.211"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_243'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.212"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_244'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.213"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_245'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.214"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_246'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.215"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_247'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.216"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_248'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.217"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_249'",
           "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.218"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_194'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.161"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_22'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.186"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_26'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.221"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_25'",
+          "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.219"
         }
       ],
       "DefaultSceneRootNode": {
         "ObjectName": "SCS_Node'BP_QueensDaughter_C:SimpleConstructionScript_0.SCS_Node_0'",
-        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.147"
+        "ObjectPath": "BLUEPROTOCOL/Content/Blueprints/Enemy/E503_01_QueensDaughter/BP_QueensDaughter.149"
       }
     }
   }
